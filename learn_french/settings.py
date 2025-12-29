@@ -1,5 +1,5 @@
 """
-Django settings for project_valerie project.
+Django settings for learn_french project.
 
 For more information on this file, see
 https://docs.djangoproject.com/en/5.2/topics/settings/
@@ -129,7 +129,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'project_valerie.urls'
+ROOT_URLCONF = 'learn_french.urls'
 
 TEMPLATES = [
     {
@@ -147,7 +147,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'project_valerie.wsgi.application'
+WSGI_APPLICATION = 'learn_french.wsgi.application'
 
 
 # Database

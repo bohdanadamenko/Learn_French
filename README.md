@@ -87,7 +87,7 @@ python manage.py runserver
 │   ├── 📄 models.py            # 📊 Data models
 │   ├── 📄 admin.py             # 🔧 Admin settings
 │   └── 📄 views.py             # 👁️ Views
-├── 📂 project_valerie/         # ⚙️ Django settings
+├── 📂 learn_french/            # ⚙️ Django settings
 ├── 📄 .env                     # 🔐 Secrets (not in git!)
 ├── 📄 requirements.txt         # 📦 Dependencies
 └── 📄 manage.py                # 🚀 Django CLI
