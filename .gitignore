@@ -15,6 +15,7 @@ db.sqlite3-journal
 /media
 /staticfiles
 /static_root
+lessons/mobile_menu_button/
 
 # Environment
 .env
