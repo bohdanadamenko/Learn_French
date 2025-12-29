@@ -1,7 +1,7 @@
 # lessons/models.py
 from django.db import models
 from django.utils.translation import gettext_lazy as _
-from ckeditor.fields import RichTextField
+from django_ckeditor_5.fields import CKEditor5Field
 
 
 class Lesson(models.Model):
@@ -13,10 +13,10 @@ class Lesson(models.Model):
     title_en = models.CharField(max_length=255, verbose_name=_("Заголовок (EN)"), blank=True, null=True)
     title_fr = models.CharField(max_length=255, verbose_name=_("Заголовок (FR)"), blank=True, null=True)
 
-    content_html_ru = RichTextField(verbose_name=_("Контент (RU)"), blank=True, null=True)
-    content_html_ua = RichTextField(verbose_name=_("Контент (UA)"), blank=True, null=True)
-    content_html_en = RichTextField(verbose_name=_("Контент (EN)"), blank=True, null=True)
-    content_html_fr = RichTextField(verbose_name=_("Контент (FR)"), blank=True, null=True)
+    content_html_ru = CKEditor5Field(verbose_name=_("Контент (RU)"), blank=True, null=True, config_name='extends')
+    content_html_ua = CKEditor5Field(verbose_name=_("Контент (UA)"), blank=True, null=True, config_name='extends')
+    content_html_en = CKEditor5Field(verbose_name=_("Контент (EN)"), blank=True, null=True, config_name='extends')
+    content_html_fr = CKEditor5Field(verbose_name=_("Контент (FR)"), blank=True, null=True, config_name='extends')
 
     # Старые поля (оставляем для миграции)
     title = models.CharField(
@@ -25,8 +25,8 @@ class Lesson(models.Model):
     data_lesson_id = models.CharField(
         max_length=20, unique=True, verbose_name=_("ID урока (lesson1, lesson2...)"))
     
-    content_html = RichTextField(
-        verbose_name=_("HTML-содержимое урока (с тегами H3, P, UL и т.д.)"))
+    content_html = CKEditor5Field(
+        verbose_name=_("HTML-содержимое урока (с тегами H3, P, UL и т.д.)"), config_name='extends')
 
     # Порядок сортировки в меню
     order = models.IntegerField(default=0, verbose_name=_("Порядок сортировки"))
