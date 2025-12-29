@@ -1,0 +1,344 @@
+{% load static %}
+{% load lesson_filters %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Français | Crystal Edition</title>
+    <link rel="icon" type="image/png" href="{% static 'favicon.ico' %}">
+    <link rel="apple-touch-icon" href="{% static 'apple-touch-icon.png' %}">
+    <link rel="stylesheet" href="{% static 'lessons/styles_unified.css' %}?v=1">
+</head>
+<body data-theme="light">
+
+    <!-- Mesh Background (visible in dark theme) -->
+    <div class="mesh-background" aria-hidden="true"></div>
+
+    <!-- Top Header Bar -->
+    <header class="top-bar">
+        <div class="brand-area">
+            <!-- Simple hamburger for light theme mobile -->
+            <button class="header-hamburger" onclick="toggleSidebar()" aria-label="Menu">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+            
+            <a href="/" class="brand-logo">
+                <div class="brand-icon">F</div>
+                <span class="brand-text">FRANÇAIS.BE</span>
+            </a>
+        </div>
+        
+        <div class="top-actions">
+            <div class="search-box">
+                <svg class="search-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+                <input type="text" class="search-input" placeholder="Поиск..." aria-label="Search lessons">
+            </div>
+            
+            <!-- Settings Button -->
+            <div class="settings-wrapper">
+                <button class="settings-btn" onclick="toggleSettings()" aria-label="Настройки">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="3"></circle>
+                        <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+                    </svg>
+                </button>
+                
+                <div class="settings-dropdown" id="settingsDropdown">
+                    <div class="settings-section theme-section">
+                        <div class="theme-switcher">
+                            <span class="theme-icon">☀️</span>
+                            <label class="switch">
+                                <input type="checkbox" id="themeToggle">
+                                <span class="slider"></span>
+                            </label>
+                            <span class="theme-icon">🌙</span>
+                        </div>
+                    </div>
+                    
+                    <div class="settings-divider"></div>
+                    
+                    <div class="settings-section">
+                        <div class="settings-options lang-options">
+                            <button class="option-btn" data-lang="ua">🇺🇦</button>
+                            <span class="option-divider"></span>
+                            <button class="option-btn" data-lang="fr">🇫🇷</button>
+                            <span class="option-divider"></span>
+                            <button class="option-btn" data-lang="en">🇬🇧</button>
+                            <span class="option-divider"></span>
+                            <button class="option-btn active" data-lang="ru">🇷🇺</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="user-profile">
+                <div class="user-info">
+                    <span class="user-name">Student</span>
+                    <span class="user-role">Free Plan</span>
+                </div>
+                <div class="avatar">S</div>
+            </div>
+        </div>
+    </header>
+
+    <div class="app-layout">
+        
+        <!-- Sidebar Overlay (for mobile) -->
+        <div class="sidebar-overlay" id="sidebarOverlay"></div>
+        
+        <!-- Sidebar -->
+        <aside class="sidebar" id="sidebar">
+            
+            <!-- Mobile Search -->
+            <div class="mobile-search-box">
+                <svg class="search-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+                <input type="text" class="search-input mobile-search-input" placeholder="Поиск..." aria-label="Search lessons">
+            </div>
+
+            <nav class="nav-menu" role="navigation" aria-label="Lessons navigation">
+                
+                {% for lesson in lessons %}
+                <div class="nav-item {% if forloop.first %}active{% endif %}" 
+                     onclick="switchLesson('{{ lesson.data_lesson_id }}', this)"
+                     data-lesson-id="{{ lesson.data_lesson_id }}"
+                     role="button"
+                     tabindex="0"
+                     aria-label="Lesson {{ forloop.counter }}">
+                    <div class="progress-indicator" role="checkbox" aria-checked="false" aria-label="Mark lesson as completed"></div>
+                    <span class="nav-number">{{ forloop.counter }}.</span>
+                    
+                    <!-- Localized Titles in Sidebar -->
+                    <span class="lang-content lang-ru">
+                        <span class="nav-emoji">{{ lesson.title_ru|get_emoji }}</span>
+                        <span class="nav-text">{{ lesson.title_ru|get_text_after_emoji }}</span>
+                    </span>
+                    <span class="lang-content lang-ua">
+                        <span class="nav-emoji">{{ lesson.title_ua|default:lesson.title_ru|get_emoji }}</span>
+                        <span class="nav-text">{{ lesson.title_ua|default:lesson.title_ru|get_text_after_emoji }}</span>
+                    </span>
+                    <span class="lang-content lang-en">
+                        <span class="nav-emoji">{{ lesson.title_en|default:lesson.title_ru|get_emoji }}</span>
+                        <span class="nav-text">{{ lesson.title_en|default:lesson.title_ru|get_text_after_emoji }}</span>
+                    </span>
+                    <span class="lang-content lang-fr">
+                        <span class="nav-emoji">{{ lesson.title_fr|default:lesson.title_ru|get_emoji }}</span>
+                        <span class="nav-text">{{ lesson.title_fr|default:lesson.title_ru|get_text_after_emoji }}</span>
+                    </span>
+                </div>
+                {% endfor %}
+            </nav>
+            
+            <div class="sidebar-footer">
+                <!-- Phone -->
+                <a href="tel:+32474050057" class="social-icon" aria-label="Phone">
+                    <svg viewBox="0 0 24 24"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/></svg>
+                </a>
+                
+                <!-- Google Maps -->
+                <a href="https://maps.google.com/?q=Brussels" target="_blank" class="social-icon" aria-label="Google Maps">
+                    <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                </a>
+
+                <!-- Telegram -->
+                <a href="https://t.me/francais_facile_be" target="_blank" class="social-icon" aria-label="Telegram">
+                    <svg viewBox="0 0 24 24"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+                </a>
+
+                <!-- WhatsApp -->
+                <a href="https://wa.me/32474050057" target="_blank" class="social-icon" aria-label="WhatsApp">
+                    <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                </a>
+
+                <!-- Facebook -->
+                <a href="https://facebook.com" target="_blank" class="social-icon" aria-label="Facebook">
+                    <svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                </a>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="lesson-scroll-area">
+                {% for lesson in lessons %}
+                <div class="lesson-view {% if forloop.first %}active{% endif %}" id="{{ lesson.data_lesson_id }}">
+                    <div class="content-card">
+                        <!-- Localized Title in Content -->
+                        <h2 class="lesson-title lang-content lang-ru">
+                            <span class="lesson-title-emoji">{{ lesson.title_ru|get_emoji }}</span>
+                            <span class="lesson-title-text">{{ lesson.title_ru|get_text_after_emoji }}</span>
+                        </h2>
+                        <h2 class="lesson-title lang-content lang-ua">
+                            <span class="lesson-title-emoji">{{ lesson.title_ua|default:lesson.title_ru|get_emoji }}</span>
+                            <span class="lesson-title-text">{{ lesson.title_ua|default:lesson.title_ru|get_text_after_emoji }}</span>
+                        </h2>
+                        <h2 class="lesson-title lang-content lang-en">
+                            <span class="lesson-title-emoji">{{ lesson.title_en|default:lesson.title_ru|get_emoji }}</span>
+                            <span class="lesson-title-text">{{ lesson.title_en|default:lesson.title_ru|get_text_after_emoji }}</span>
+                        </h2>
+                        <h2 class="lesson-title lang-content lang-fr">
+                            <span class="lesson-title-emoji">{{ lesson.title_fr|default:lesson.title_ru|get_emoji }}</span>
+                            <span class="lesson-title-text">{{ lesson.title_fr|default:lesson.title_ru|get_text_after_emoji }}</span>
+                        </h2>
+
+                        <!-- Localized Content -->
+                        <div class="lesson-body lang-content lang-ru">
+                            {{ lesson.content_html_ru|safe }}
+                        </div>
+                        <div class="lesson-body lang-content lang-ua">
+                            {{ lesson.content_html_ua|default:lesson.content_html_ru|safe }}
+                        </div>
+                        <div class="lesson-body lang-content lang-en">
+                            {{ lesson.content_html_en|default:lesson.content_html_ru|safe }}
+                        </div>
+                        <div class="lesson-body lang-content lang-fr">
+                            {{ lesson.content_html_fr|default:lesson.content_html_ru|safe }}
+                        </div>
+
+                        <!-- Quiz Section (Hidden by default) -->
+                        <div class="quiz-container" id="quiz-{{ lesson.data_lesson_id }}" style="display: none;">
+                            <div class="quiz-header">
+                                <div class="quiz-meta">
+                                    <span class="quiz-counter">1 / 1</span>
+                                </div>
+                                <div class="quiz-progress">
+                                    <div class="quiz-progress-segments"></div>
+                                </div>
+                            </div>
+
+                            <div class="quiz-questions">
+                                {% for question in lesson.questions.all %}
+                                <div class="quiz-question-card {% if forloop.first %}active{% endif %}" data-question-index="{{ forloop.counter0 }}">
+                                    <h3 class="quiz-question-text">
+                                        <span class="lang-content lang-ru">❓ {{ question.text_ru }}</span>
+                                        <span class="lang-content lang-ua">❓ {{ question.text_ua }}</span>
+                                        <span class="lang-content lang-en">❓ {{ question.text_en }}</span>
+                                        <span class="lang-content lang-fr">❓ {{ question.text_fr }}</span>
+                                    </h3>
+                                    <div class="quiz-choices">
+                                        {% for choice in question.choices.all %}
+                                        <button class="quiz-choice-btn" 
+                                                onclick="checkAnswer(this)"
+                                                data-is-correct="{{ choice.is_correct|yesno:'true,false' }}">
+                                            <span class="lang-content lang-ru">{{ choice.text_ru }}</span>
+                                            <span class="lang-content lang-ua">{{ choice.text_ua }}</span>
+                                            <span class="lang-content lang-en">{{ choice.text_en }}</span>
+                                            <span class="lang-content lang-fr">{{ choice.text_fr }}</span>
+                                        </button>
+                                        {% endfor %}
+                                    </div>
+                                </div>
+                                {% endfor %}
+                            </div>
+
+                            <div class="quiz-results" style="display: none;">
+                                <div class="results-icon">🏆</div>
+                                <h4 class="results-title">
+                                    <span class="lang-content lang-ru">Результат</span>
+                                    <span class="lang-content lang-ua">Результат</span>
+                                    <span class="lang-content lang-en">Result</span>
+                                    <span class="lang-content lang-fr">Résultat</span>
+                                </h4>
+                                <p class="results-score">0 / 0</p>
+                                <button class="btn-next-lesson" onclick="confirmNextLesson()">
+                                    <span class="lang-content lang-ru">Следующий урок →</span>
+                                    <span class="lang-content lang-ua">Наступний урок →</span>
+                                    <span class="lang-content lang-en">Next Lesson →</span>
+                                    <span class="lang-content lang-fr">Leçon suivante →</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Navigation Buttons -->
+                        <div class="lesson-footer-nav">
+                            <button class="nav-btn prev" onclick="navigateLesson('prev')">
+                                <span class="lang-content lang-ru">← Назад</span>
+                                <span class="lang-content lang-ua">← Назад</span>
+                                <span class="lang-content lang-en">← Back</span>
+                                <span class="lang-content lang-fr">← Retour</span>
+                            </button>
+                            
+                            <button class="nav-btn next" onclick="openNextModal()">
+                                <span class="lang-content lang-ru">Далее →</span>
+                                <span class="lang-content lang-ua">Далі →</span>
+                                <span class="lang-content lang-en">Next →</span>
+                                <span class="lang-content lang-fr">Suivant →</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </main>
+
+    </div>
+
+    <!-- Animated Hamburger Button -->
+    <div id="hamburger" class="hamburglar is-closed" onclick="toggleSidebar()" role="button" aria-label="Toggle menu" tabindex="0">
+        <div class="burger-icon">
+            <div class="burger-container">
+                <span class="burger-bun-top"></span>
+                <span class="burger-filling"></span>
+                <span class="burger-bun-bot"></span>
+            </div>
+        </div>
+        
+        <div class="burger-ring">
+            <svg class="svg-ring">
+                <path class="path" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="4" d="M 34 2 C 16.3 2 2 16.3 2 34 s 14.3 32 32 32 s 32 -14.3 32 -32 S 51.7 2 34 2" />
+            </svg>
+        </div>
+        
+        <svg width="0" height="0">
+            <mask id="mask">
+                <path xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#ff0000" stroke-miterlimit="10" stroke-width="4" d="M 34 2 c 11.6 0 21.8 6.2 27.4 15.5 c 2.9 4.8 5 16.5 -9.4 16.5 h -4" />
+            </mask>
+        </svg>
+        <div class="path-burger">
+            <div class="animate-path">
+                <div class="path-rotation"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Next Lesson Modal -->
+    <div id="nextLessonModal" class="modal-overlay" onclick="closeModal(event)">
+        <div class="modal-card">
+            <span class="modal-icon">🎯</span>
+            <h3 class="modal-title">
+                <span class="lang-content lang-ru">Отличная работа!</span>
+                <span class="lang-content lang-ua">Чудова робота!</span>
+                <span class="lang-content lang-en">Great job!</span>
+                <span class="lang-content lang-fr">Bon travail !</span>
+            </h3>
+            <p class="modal-text">
+                <span class="lang-content lang-ru">Вы завершили теорию. Хотите закрепить знания коротким тестом или перейти сразу к следующему уроку?</span>
+                <span class="lang-content lang-ua">Ви завершили теорію. Хочете закріпити знання коротким тестом чи перейти одразу до наступного уроку?</span>
+                <span class="lang-content lang-en">You've finished the theory. Would you like to reinforce your knowledge with a short quiz or proceed directly to the next lesson?</span>
+                <span class="lang-content lang-fr">Vous avez terminé la théorie. Souhaitez-vous renforcer vos connaissances avec un petit quiz ou passer directement à la leçon suivante ?</span>
+            </p>
+            
+            <div class="modal-actions">
+                <button class="btn-quiz" onclick="startQuiz()">
+                    <span class="lang-content lang-ru">Пройти тест (Рекомендуем)</span>
+                    <span class="lang-content lang-ua">Пройти тест (Рекомендуємо)</span>
+                    <span class="lang-content lang-en">Take Quiz (Recommended)</span>
+                    <span class="lang-content lang-fr">Faire le quiz (Recommandé)</span>
+                </button>
+                <button class="btn-skip" onclick="confirmNextLesson()">
+                    <span class="lang-content lang-ru">Пропустить и перейти далее</span>
+                    <span class="lang-content lang-ua">Пропустити та перейти далі</span>
+                    <span class="lang-content lang-en">Skip and continue</span>
+                    <span class="lang-content lang-fr">Passer et continuer</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="{% static 'lessons/script_unified.js' %}?v=1"></script>
+</body>
+</html>

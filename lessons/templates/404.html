@@ -1,0 +1,69 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Страница не найдена | Français.be</title>
+    <link rel="icon" type="image/png" href="{% static 'favicon.ico' %}">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .error-container {
+            max-width: 500px;
+        }
+        .error-code {
+            font-size: 8rem;
+            font-weight: 700;
+            line-height: 1;
+            text-shadow: 0 4px 20px rgba(0,0,0,0.2);
+        }
+        .error-emoji { font-size: 4rem; margin: 20px 0; }
+        .error-title {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+        .error-message {
+            opacity: 0.9;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+        .home-btn {
+            display: inline-block;
+            padding: 14px 32px;
+            background: white;
+            color: #667eea;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .home-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="error-container">
+        <div class="error-code">404</div>
+        <div class="error-emoji">🔍</div>
+        <h1 class="error-title">Страница не найдена</h1>
+        <p class="error-message">
+            К сожалению, запрашиваемая страница не существует или была перемещена.
+        </p>
+        <a href="/" class="home-btn">← Вернуться на главную</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,182 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-20 22:52+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: uk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#: admin.py:25
+msgid "Урок (RU)"
+msgstr "Урок (RU)"
+
+#: admin.py:26
+msgid "Урок (UA)"
+msgstr "Урок (UA)"
+
+#: admin.py:27
+msgid "Урок (EN)"
+msgstr "Урок (EN)"
+
+#: admin.py:28
+msgid "Урок (FR)"
+msgstr "Урок (FR)"
+
+#: admin.py:46
+msgid "Связь"
+msgstr "Зв'язок"
+
+#: admin.py:47 admin.py:62 admin.py:80
+msgid "Русский язык (RU)"
+msgstr ""
+
+#: admin.py:48 admin.py:63 admin.py:83
+msgid "Українська мова (UA)"
+msgstr ""
+
+#: admin.py:49 admin.py:64 admin.py:86
+msgid "English (EN)"
+msgstr ""
+
+#: admin.py:50 admin.py:65 admin.py:89
+msgid "Français (FR)"
+msgstr ""
+
+#: admin.py:77
+msgid "Основные настройки"
+msgstr ""
+
+#: admin.py:92
+msgid "Старые поля (для справки)"
+msgstr ""
+
+#: models.py:10
+msgid "Заголовок (RU)"
+msgstr "Заголовок (RU)"
+
+#: models.py:11
+msgid "Заголовок (UA)"
+msgstr "Заголовок (UA)"
+
+#: models.py:12
+msgid "Заголовок (EN)"
+msgstr "Заголовок (EN)"
+
+#: models.py:13
+msgid "Заголовок (FR)"
+msgstr "Заголовок (FR)"
+
+#: models.py:15
+msgid "Контент (RU)"
+msgstr "Вміст (RU)"
+
+#: models.py:16
+msgid "Контент (UA)"
+msgstr "Вміст (UA)"
+
+#: models.py:17
+msgid "Контент (EN)"
+msgstr "Вміст (EN)"
+
+#: models.py:18
+msgid "Контент (FR)"
+msgstr "Вміст (FR)"
+
+#: models.py:22
+msgid "Заголовок и эмодзи (напр., Урок 1: 🇫🇷 Фонетика)"
+msgstr "Заголовок та емодзі (напр., Урок 1: 🇫🇷 Фонетика)"
+
+#: models.py:25
+msgid "ID урока (lesson1, lesson2...)"
+msgstr "ID уроку (lesson1, lesson2...)"
+
+#: models.py:28
+msgid "HTML-содержимое урока (с тегами H3, P, UL и т.д.)"
+msgstr "HTML-вміст уроку (з тегами H3, P, UL тощо)"
+
+#: models.py:31
+msgid "Порядок сортировки"
+msgstr "Порядок сортування"
+
+#: models.py:34
+msgid "Дата создания"
+msgstr "Дата створення"
+
+#: models.py:37 models.py:48
+msgid "Урок"
+msgstr "Урок"
+
+#: models.py:38
+msgid "Уроки"
+msgstr "Уроки"
+
+#: models.py:50
+msgid "Текст вопроса (RU)"
+msgstr "Текст питання (RU)"
+
+#: models.py:51
+msgid "Текст вопроса (UA)"
+msgstr "Текст питання (UA)"
+
+#: models.py:52
+msgid "Текст вопроса (EN)"
+msgstr "Текст питання (EN)"
+
+#: models.py:53
+msgid "Текст вопроса (FR)"
+msgstr "Текст питання (FR)"
+
+#: models.py:55
+msgid "Порядок"
+msgstr "Порядок"
+
+#: models.py:58
+msgid "Вопрос"
+msgstr "Питання"
+
+#: models.py:59
+msgid "Вопросы"
+msgstr "Питання"
+
+#: models.py:70
+msgid "Текст ответа (RU)"
+msgstr "Текст відповіді (RU)"
+
+#: models.py:71
+msgid "Текст ответа (UA)"
+msgstr "Текст відповіді (UA)"
+
+#: models.py:72
+msgid "Текст ответа (EN)"
+msgstr "Текст відповіді (EN)"
+
+#: models.py:73
+msgid "Текст ответа (FR)"
+msgstr "Текст відповіді (FR)"
+
+#: models.py:75
+msgid "Это правильный ответ?"
+msgstr "Це правильна відповідь?"
+
+#: models.py:78
+msgid "Вариант ответа"
+msgstr "Варіант відповіді"
+
+#: models.py:79
+msgid "Варианты ответов"
+msgstr "Варіанти відповідей"
+
+#: templates/admin/base_site.html:4
+msgid "Django site admin"
+msgstr "Адміністрування сайту Django"
+
+#: templates/admin/base_site.html:7
+msgid "Django administration"
+msgstr "Адміністрування Django"
