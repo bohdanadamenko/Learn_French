@@ -7,23 +7,23 @@ from .models import Lesson, Question, Choice
 class ChoiceInline(admin.TabularInline):
     model = Choice
     extra = 0
-    fields = ('text_ru', 'text_ua', 'text_en', 'text_fr', 'is_correct')
+    fields = ('text_ru', 'text_uk', 'text_en', 'text_fr', 'is_correct')
 
 
 @admin.register(Question)
 class QuestionAdmin(admin.ModelAdmin):
-    list_display = ('text_ru', 'text_ua', 'text_en', 'text_fr', 'lesson_ru', 'lesson_ua', 'lesson_en', 'lesson_fr', 'order')
-    list_display_links = ('text_ru', 'text_ua', 'text_en', 'text_fr')
+    list_display = ('text_ru', 'text_uk', 'text_en', 'text_fr', 'lesson_ru', 'lesson_uk', 'lesson_en', 'lesson_fr', 'order')
+    list_display_links = ('text_ru', 'text_uk', 'text_en', 'text_fr')
     list_filter = ('lesson',)
     inlines = [ChoiceInline]
     
     def lesson_ru(self, obj): return obj.lesson.title_ru
-    def lesson_ua(self, obj): return obj.lesson.title_ua
+    def lesson_uk(self, obj): return obj.lesson.title_uk
     def lesson_en(self, obj): return obj.lesson.title_en
     def lesson_fr(self, obj): return obj.lesson.title_fr
     
     lesson_ru.short_description = _("Урок (RU)")
-    lesson_ua.short_description = _("Урок (UA)")
+    lesson_uk.short_description = _("Урок (UK)")
     lesson_en.short_description = _("Урок (EN)")
     lesson_fr.short_description = _("Урок (FR)")
 
@@ -32,7 +32,7 @@ class QuestionAdmin(admin.ModelAdmin):
         from django.utils.safestring import mark_safe
         import json
         lessons = Lesson.objects.all()
-        data = {str(l.id): {'ru': l.title_ru, 'ua': l.title_ua, 'en': l.title_en, 'fr': l.title_fr} for l in lessons}
+        data = {str(l.id): {'ru': l.title_ru, 'uk': l.title_uk, 'en': l.title_en, 'fr': l.title_fr} for l in lessons}
         script = f'<script id="lesson-translations-data" type="application/json">{json.dumps(data)}</script>'
         
         extra_context = extra_context or {}
@@ -45,7 +45,7 @@ class QuestionAdmin(admin.ModelAdmin):
     fieldsets = (
         (_('Связь'), {'fields': ('lesson', 'order')}),
         (_('Русский язык (RU)'), {'fields': ('text_ru',)}),
-        (_('Українська мова (UA)'), {'fields': ('text_ua',)}),
+        (_('Українська мова (UK)'), {'fields': ('text_uk',)}),
         (_('English (EN)'), {'fields': ('text_en',)}),
         (_('Français (FR)'), {'fields': ('text_fr',)}),
     )
@@ -60,7 +60,7 @@ class QuestionInline(admin.StackedInline):
     show_change_link = True
     fieldsets = (
         (_('Русский язык (RU)'), {'fields': ('text_ru', 'order')}),
-        (_('Українська мова (UA)'), {'fields': ('text_ua',)}),
+        (_('Українська мова (UK)'), {'fields': ('text_uk',)}),
         (_('English (EN)'), {'fields': ('text_en',)}),
         (_('Français (FR)'), {'fields': ('text_fr',)}),
     )
@@ -68,8 +68,8 @@ class QuestionInline(admin.StackedInline):
 
 @admin.register(Lesson)
 class LessonAdmin(admin.ModelAdmin):
-    list_display = ('title_ru', 'title_ua', 'title_en', 'title_fr', 'data_lesson_id', 'order', 'date_added')
-    list_display_links = ('title_ru', 'title_ua', 'title_en', 'title_fr')
+    list_display = ('title_ru', 'title_uk', 'title_en', 'title_fr', 'data_lesson_id', 'order', 'date_added')
+    list_display_links = ('title_ru', 'title_uk', 'title_en', 'title_fr')
     search_fields = ('title_ru', 'title_en', 'content_html_ru', 'content_html_en')
     list_editable = ('order',)
 
@@ -80,8 +80,8 @@ class LessonAdmin(admin.ModelAdmin):
         (_('Русский язык (RU)'), {
             'fields': ('title_ru', 'content_html_ru'),
         }),
-        (_('Українська мова (UA)'), {
-            'fields': ('title_ua', 'content_html_ua'),
+        (_('Українська мова (UK)'), {
+            'fields': ('title_uk', 'content_html_uk'),
         }),
         (_('English (EN)'), {
             'fields': ('title_en', 'content_html_en'),
@@ -91,7 +91,5 @@ class LessonAdmin(admin.ModelAdmin):
         }),
     )
     
-    # inlines = [QuestionInline]
-
     class Media:
         js = ('lessons/admin_lang_tabs.js',)

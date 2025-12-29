@@ -5,10 +5,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Français | Crystal Edition</title>
+    <title>Learn French | Crystal Edition</title>
     <link rel="icon" type="image/png" href="{% static 'favicon.ico' %}">
     <link rel="apple-touch-icon" href="{% static 'apple-touch-icon.png' %}">
-    <link rel="stylesheet" href="{% static 'lessons/styles_unified.css' %}?v=1">
+    <link rel="stylesheet" href="{% static 'lessons/styles_unified.css' %}?v=5">
 </head>
 <body data-theme="light">
 
@@ -29,7 +29,7 @@
             
             <a href="/" class="brand-logo">
                 <div class="brand-icon">F</div>
-                <span class="brand-text">FRANÇAIS.BE</span>
+                <span class="brand-text">Learn French</span>
             </a>
         </div>
         
@@ -118,8 +118,8 @@
                         <span class="nav-text">{{ lesson.title_ru|get_text_after_emoji }}</span>
                     </span>
                     <span class="lang-content lang-ua">
-                        <span class="nav-emoji">{{ lesson.title_ua|default:lesson.title_ru|get_emoji }}</span>
-                        <span class="nav-text">{{ lesson.title_ua|default:lesson.title_ru|get_text_after_emoji }}</span>
+                        <span class="nav-emoji">{{ lesson.title_uk|default:lesson.title_ru|get_emoji }}</span>
+                        <span class="nav-text">{{ lesson.title_uk|default:lesson.title_ru|get_text_after_emoji }}</span>
                     </span>
                     <span class="lang-content lang-en">
                         <span class="nav-emoji">{{ lesson.title_en|default:lesson.title_ru|get_emoji }}</span>
@@ -173,8 +173,8 @@
                             <span class="lesson-title-text">{{ lesson.title_ru|get_text_after_emoji }}</span>
                         </h2>
                         <h2 class="lesson-title lang-content lang-ua">
-                            <span class="lesson-title-emoji">{{ lesson.title_ua|default:lesson.title_ru|get_emoji }}</span>
-                            <span class="lesson-title-text">{{ lesson.title_ua|default:lesson.title_ru|get_text_after_emoji }}</span>
+                            <span class="lesson-title-emoji">{{ lesson.title_uk|default:lesson.title_ru|get_emoji }}</span>
+                            <span class="lesson-title-text">{{ lesson.title_uk|default:lesson.title_ru|get_text_after_emoji }}</span>
                         </h2>
                         <h2 class="lesson-title lang-content lang-en">
                             <span class="lesson-title-emoji">{{ lesson.title_en|default:lesson.title_ru|get_emoji }}</span>
@@ -190,7 +190,7 @@
                             {{ lesson.content_html_ru|safe }}
                         </div>
                         <div class="lesson-body lang-content lang-ua">
-                            {{ lesson.content_html_ua|default:lesson.content_html_ru|safe }}
+                            {{ lesson.content_html_uk|default:lesson.content_html_ru|safe }}
                         </div>
                         <div class="lesson-body lang-content lang-en">
                             {{ lesson.content_html_en|default:lesson.content_html_ru|safe }}
@@ -215,7 +215,7 @@
                                 <div class="quiz-question-card {% if forloop.first %}active{% endif %}" data-question-index="{{ forloop.counter0 }}">
                                     <h3 class="quiz-question-text">
                                         <span class="lang-content lang-ru">❓ {{ question.text_ru }}</span>
-                                        <span class="lang-content lang-ua">❓ {{ question.text_ua }}</span>
+                                        <span class="lang-content lang-ua">❓ {{ question.text_uk }}</span>
                                         <span class="lang-content lang-en">❓ {{ question.text_en }}</span>
                                         <span class="lang-content lang-fr">❓ {{ question.text_fr }}</span>
                                     </h3>
@@ -225,7 +225,7 @@
                                                 onclick="checkAnswer(this)"
                                                 data-is-correct="{{ choice.is_correct|yesno:'true,false' }}">
                                             <span class="lang-content lang-ru">{{ choice.text_ru }}</span>
-                                            <span class="lang-content lang-ua">{{ choice.text_ua }}</span>
+                                            <span class="lang-content lang-ua">{{ choice.text_uk }}</span>
                                             <span class="lang-content lang-en">{{ choice.text_en }}</span>
                                             <span class="lang-content lang-fr">{{ choice.text_fr }}</span>
                                         </button>

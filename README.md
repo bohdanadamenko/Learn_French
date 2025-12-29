@@ -1,163 +1,163 @@
-# 🇫🇷 Français Facile Belgique
+# 🇫🇷 Français Facile Belgium
 
-&lt;div align="center"&gt;
+<div align="center">
 
-![Django](https://img.shields.io/badge/Django-5.2-092E20?style=for-the-badge&amp;logo=django&amp;logoColor=white)
-![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&amp;logo=python&amp;logoColor=white)
-![CKEditor](https://img.shields.io/badge/CKEditor-5-0287D0?style=for-the-badge&amp;logo=ckeditor&amp;logoColor=white)
+![Django](https://img.shields.io/badge/Django-5.2-092E20?style=for-the-badge&logo=django&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![CKEditor](https://img.shields.io/badge/CKEditor-5-0287D0?style=for-the-badge&logo=ckeditor&logoColor=white)
 ![License](https://img.shields.io/badge/License-Proprietary-red?style=for-the-badge)
 
-**🎓 Интерактивная платформа для изучения французского языка**
+**🎓 Interactive platform for learning French**
 
-*Современное веб-приложение с мультиязычной поддержкой и адаптивным дизайном*
+*Modern web application with multilingual support and responsive design*
 
-[🚀 Демо](#-быстрый-старт) • [📖 Документация](#-структура-проекта) • [🛠️ Установка](#установка)
+[🚀 Demo](#-quick-start) • [📖 Documentation](#-project-structure) • [🛠️ Installation](#installation)
 
-&lt;/div&gt;
+</div>
 
 ---
 
-## ✨ Возможности
+## ✨ Features
 
-| 🌍 Мультиязычность | 🎨 Современный UI | 📱 Адаптивность |
+| 🌍 Multilingual | 🎨 Modern UI | 📱 Responsive |
 |:---:|:---:|:---:|
-| RU • UA • EN • FR | Glassmorphism & Dark Mode | Desktop & Mobile |
+| RU • UK • EN • FR | Glassmorphism & Dark Mode | Desktop & Mobile |
 
-- 🎯 **Уроки французского** с интерактивными тестами
-- 📝 **CKEditor 5** для rich-text контента в админке
-- 🔐 **Jazzmin Admin** — красивая и функциональная админ-панель
-- 🌙 **Темная/светлая тема** с плавными переходами
-- ⌨️ **Горячие клавиши** для быстрой навигации
-- 🔍 **Поиск по урокам** в реальном времени
+- 🎯 **French Lessons** with interactive quizzes
+- 📝 **CKEditor 5** for rich-text content in admin
+- 🔐 **Jazzmin Admin** — beautiful and functional admin panel
+- 🌙 **Dark/Light Theme** with smooth transitions
+- ⌨️ **Hotkeys** for quick navigation
+- 🔍 **Real-time Lesson Search**
 
 ---
 
-## 🚀 Быстрый старт
+## 🚀 Quick Start
 
-### Требования
+### Requirements
 
 - 🐍 Python 3.10+
 - 📦 pip
 
-### Установка
+### Installation
 
 ```bash
-# 1️⃣ Клонируйте репозиторий
-git clone https://github.com/YOUR_USERNAME/francais-facile-be.git
+# 1️⃣ Clone the repository
+git clone https://github.com/bohdanadamenko/Learn_French.git
 cd francais-facile-be
 
-# 2️⃣ Создайте виртуальное окружение
+# 2️⃣ Create a virtual environment
 python3 -m venv .venv
 source .venv/bin/activate  # Windows: .venv\Scripts\activate
 
-# 3️⃣ Установите зависимости
+# 3️⃣ Install dependencies
 pip install -r requirements.txt
 
-# 4️⃣ Настройте переменные окружения
-cat &gt; .env &lt;&lt; EOF
+# 4️⃣ Configure environment variables
+cat > .env << EOF
 SECRET_KEY=your-super-secret-key-here
 DEBUG=True
 ALLOWED_HOSTS=localhost,127.0.0.1
 EOF
 
-# 5️⃣ Примените миграции
+# 5️⃣ Apply migrations
 python manage.py migrate
 
-# 6️⃣ Создайте суперпользователя
+# 6️⃣ Create a superuser
 python manage.py createsuperuser
 
-# 7️⃣ Запустите сервер
+# 7️⃣ Run the server
 python manage.py runserver
 ```
 
-🌐 Откройте: **http://127.0.0.1:8000**
+🌐 Open: **http://127.0.0.1:8000**
 
 ---
 
-## 📁 Структура проекта
+## 📁 Project Structure
 
 ```
 📦 francais-facile-be/
-├── 📂 lessons/                  # 🎓 Основное приложение
-│   ├── 📂 locale/              # 🌍 Переводы (RU/UA/EN/FR)
-│   ├── 📂 management/          # ⚙️ Django команды
-│   ├── 📂 migrations/          # 🗄️ Миграции БД
-│   ├── 📂 static/lessons/      # 🎨 CSS, JS файлы
-│   ├── 📂 templates/           # 📄 HTML шаблоны
-│   ├── 📄 models.py            # 📊 Модели данных
-│   ├── 📄 admin.py             # 🔧 Настройки админки
-│   └── 📄 views.py             # 👁️ Представления
-├── 📂 project_valerie/         # ⚙️ Настройки Django
-├── 📄 .env                     # 🔐 Секреты (не в git!)
-├── 📄 requirements.txt         # 📦 Зависимости
+├── 📂 lessons/                  # 🎓 Main application
+│   ├── 📂 locale/              # 🌍 Translations (RU/UK/EN/FR)
+│   ├── 📂 management/          # ⚙️ Django commands
+│   ├── 📂 migrations/          # 🗄️ DB Migrations
+│   ├── 📂 static/lessons/      # 🎨 CSS, JS files
+│   ├── 📂 templates/           # 📄 HTML templates
+│   ├── 📄 models.py            # 📊 Data models
+│   ├── 📄 admin.py             # 🔧 Admin settings
+│   └── 📄 views.py             # 👁️ Views
+├── 📂 project_valerie/         # ⚙️ Django settings
+├── 📄 .env                     # 🔐 Secrets (not in git!)
+├── 📄 requirements.txt         # 📦 Dependencies
 └── 📄 manage.py                # 🚀 Django CLI
 ```
 
 ---
 
-## 🛠️ Технологии
+## 🛠️ Technologies
 
 | Backend | Frontend | Database | Admin |
 |:-------:|:--------:|:--------:|:-----:|
-| ![Django](https://img.shields.io/badge/-Django%205.2-092E20?logo=django) | ![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?logo=javascript&amp;logoColor=black) | ![SQLite](https://img.shields.io/badge/-SQLite-003B57?logo=sqlite) | ![Jazzmin](https://img.shields.io/badge/-Jazzmin-purple) |
-| ![Python](https://img.shields.io/badge/-Python%203.10-3776AB?logo=python&amp;logoColor=white) | ![CSS3](https://img.shields.io/badge/-CSS3-1572B6?logo=css3) | | ![CKEditor5](https://img.shields.io/badge/-CKEditor%205-0287D0?logo=ckeditor) |
+| ![Django](https://img.shields.io/badge/-Django%205.2-092E20?logo=django) | ![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?logo=javascript&logoColor=black) | ![SQLite](https://img.shields.io/badge/-SQLite-003B57?logo=sqlite) | ![Jazzmin](https://img.shields.io/badge/-Jazzmin-purple) |
+| ![Python](https://img.shields.io/badge/-Python%203.10-3776AB?logo=python&logoColor=white) | ![CSS3](https://img.shields.io/badge/-CSS3-1572B6?logo=css3) | | ![CKEditor5](https://img.shields.io/badge/-CKEditor%205-0287D0?logo=ckeditor) |
 
 ---
 
-## ⌨️ Горячие клавиши
+## ⌨️ Hotkeys
 
-| Клавиша | Действие |
+| Key | Action |
 |:-------:|:---------|
-| `→` | Следующий урок |
-| `←` | Предыдущий урок |
-| `/` | Быстрый поиск |
-| `Esc` | Закрыть меню |
+| `→` | Next lesson |
+| `←` | Previous lesson |
+| `/` | Quick search |
+| `Esc` | Close menu |
 
 ---
 
-## 🔧 Управление контентом
+## 🔧 Content Management
 
-Для редактирования уроков используйте **Django Admin**:
+To edit lessons, use **Django Admin**:
 
 ```
 🔗 http://127.0.0.1:8000/admin
 ```
 
-### Возможности админки:
+### Admin Features:
 
-- ✏️ Редактирование уроков на 4 языках
-- 📊 Управление вопросами и тестами  
-- 🖼️ Загрузка изображений через CKEditor 5
-- 🏷️ Языковые вкладки для удобной работы
+- ✏️ Edit lessons in 4 languages
+- 📊 Manage questions and quizzes
+- 🖼️ Upload images via CKEditor 5
+- 🏷️ Language tabs for convenient editing
 
 ---
 
-## 🔒 Безопасность
+## 🔒 Security
 
-| Мера | Описание |
+| Measure | Description |
 |:----:|:---------|
-| 🔑 | `SECRET_KEY` хранится в `.env` файле |
-| 🛡️ | `DEBUG=False` в продакшене |
-| 🌐 | `ALLOWED_HOSTS` ограничен |
-| 🔐 | Пароли валидируются Django |
+| 🔑 | `SECRET_KEY` stored in `.env` file |
+| 🛡️ | `DEBUG=False` in production |
+| 🌐 | `ALLOWED_HOSTS` restricted |
+| 🔐 | Passwords validated by Django |
 
 ---
 
-## 📄 Лицензия
+## 📄 License
 
 ```
 © 2024 Project Valerie. All rights reserved.
-Proprietary License - не для распространения
+Proprietary License - not for distribution
 ```
 
 ---
 
-&lt;div align="center"&gt;
+<div align="center">
 
-### 👨‍💻 Разработка
+### 👨‍💻 Development
 
 **Project Valerie Team** 🇧🇪
 
-[![Made with ❤️](https://img.shields.io/badge/Made%20with-❤️-red?style=flat-square)](https://github.com/YOUR_USERNAME)
+[![Made with ❤️](https://img.shields.io/badge/Made%20with-❤️-red?style=flat-square)](https://github.com/bohdanadamenko)
 
-&lt;/div&gt;
+</div>

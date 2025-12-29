@@ -40,3 +40,10 @@ Thumbs.db
 htmlcov/
 .coverage
 .coverage.*
+
+# Utility scripts and exports
+full_ls.txt
+lessons_export.json
+export_lessons.py
+translate_lessons.py
+translate_po.py

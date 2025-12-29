@@ -198,22 +198,52 @@ body {
 .brand-icon {
     width: 36px;
     height: 36px;
-    background: linear-gradient(135deg, #0052B4 0%, #FDDA24 50%, #EF4135 100%);
-    color: white;
+    background: #111111;
     border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     font-weight: 700;
-    box-shadow: 0 4px 12px rgba(0, 82, 180, 0.3);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Belgian tricolor gradient for the F letter in light theme */
+[data-theme="light"] .brand-icon {
+    background: #111111;
+    color: #FFFFFF;
+}
+
+[data-theme="light"] .brand-icon::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: #111111;
+    border-radius: 10px;
+    z-index: -1;
 }
 
 [data-theme="dark"] .brand-icon {
     background: linear-gradient(135deg, var(--accent-blue), var(--accent-purple));
-    color: white;
-    box-shadow: 0 0 15px rgba(59, 130, 246, 0.3);
+    -webkit-background-clip: border-box;
+    background-clip: border-box;
+    color: #FFFFFF !important;
+    -webkit-text-fill-color: #FFFFFF;
+    font-weight: 800;
+    /* Neon Text Glow */
+    text-shadow: 
+        0 0 5px rgba(255, 255, 255, 0.8),
+        0 0 10px rgba(255, 255, 255, 0.5),
+        0 0 20px rgba(59, 130, 246, 0.5);
+    /* Neon Box Glow */
+    box-shadow: 
+        0 0 10px rgba(59, 130, 246, 0.6),
+        0 0 20px rgba(59, 130, 246, 0.4),
+        0 0 30px rgba(139, 92, 246, 0.4),
+        inset 0 0 10px rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .top-actions {
