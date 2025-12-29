@@ -78,16 +78,13 @@ python manage.py runserver
 
 ```
 📦 francais-facile-be/
-├── 📂 lessons/                 # 🎓 Main application
-│   ├── 📂 locale/              # 🌍 Translations (RU/UK/EN/FR)
-│   ├── 📂 management/          # ⚙️ Django commands
-│   ├── 📂 migrations/          # 🗄️ DB Migrations
-│   ├── 📂 static/lessons/      # 🎨 CSS, JS files
-│   ├── 📂 templates/           # 📄 HTML templates
-│   ├── 📄 models.py            # 📊 Data models
-│   ├── 📄 admin.py             # 🔧 Admin settings
-│   └── 📄 views.py             # 👁️ Views
+├── 📂 apps/                    # 🧩 Application Domains
+│   ├── 📂 core/                # 🏠 Core logic (Views, Templates, Static)
+│   ├── 📂 lessons/             # 🎓 Lessons Domain (Models, Selectors)
+│   └── 📂 quizzes/             # ❓ Quizzes Domain (Models, Selectors)
 ├── 📂 learn_french/            # ⚙️ Django settings
+├── 📂 locale/                  # 🌍 Global Translations
+├── 📂 utils/                   # 🛠️ Utility scripts
 ├── 📄 .env                     # 🔐 Secrets (not in git!)
 ├── 📄 requirements.txt         # 📦 Dependencies
 └── 📄 manage.py                # 🚀 Django CLI
@@ -146,7 +143,7 @@ To edit lessons, use **Django Admin**:
 ## 📄 License
 
 ```
-© 2025 Project Valerie. All rights reserved.
+© 2025 Learn French. All rights reserved.
 Proprietary License - not for distribution
 ```
 
@@ -156,7 +153,7 @@ Proprietary License - not for distribution
 
 ### 👨‍💻 Development
 
-**Project Valerie Team** 🇧🇪
+**Learn French Team** 🇧🇪
 
 [![Made with ❤️](https://img.shields.io/badge/Made%20with-❤️-red?style=flat-square)](https://github.com/bohdanadamenko)
 

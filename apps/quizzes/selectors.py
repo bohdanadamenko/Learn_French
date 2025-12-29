@@ -19,4 +19,6 @@ def get_lesson_translations_json(lessons: QuerySet[Lesson] = None) -> str:
         } 
         for l in lessons
     }
-    return json.dumps(data)
+    json_str = json.dumps(data)
+    # Escape characters that are dangerous in HTML script tags
+    return json_str.replace('<', '\\u003c').replace('>', '\\u003e').replace('&', '\\u0026')

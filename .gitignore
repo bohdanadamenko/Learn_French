@@ -10,12 +10,12 @@ build/
 
 # Django
 *.log
-db.sqlite3
+*.sqlite3
 db.sqlite3-journal
-/media
-/staticfiles
-/static_root
-lessons/mobile_menu_button/
+/media/
+/staticfiles/
+/static_root/
+local_settings.py
 
 # Environment
 .env
@@ -41,9 +41,10 @@ htmlcov/
 .coverage
 .coverage.*
 
-# Utility scripts and exports
-full_ls.txt
-lessons_export.json
-export_lessons.py
-translate_lessons.py
-translate_po.py
+# Utils & Exports
+utils/full_ls.txt
+utils/lessons_export.json
+# Scripts (if they should be ignored, keeping previous behavior)
+utils/export_lessons.py
+utils/translate_lessons.py
+utils/translate_po.py
