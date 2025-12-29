@@ -1,4 +1,4 @@
-# �� Français Facile Belgium
+# 🇧🇪 Français Facile Belgium
 
 <div align="center">
 
@@ -99,7 +99,7 @@ python manage.py runserver
 
 | Backend | Frontend | Database | Admin |
 |:-------:|:--------:|:--------:|:-----:|
-| ![Django](https://img.shields.io/badge/-Django%205.2-092E20?logo=django) | ![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?logo=javascript&logoColor=black) | ![SQLite](https://img.shields.io/badge/-SQLite-003B57?logo=sqlite) | ![Jazzmin](https://img.shields.io/badge/-Jazzmin-purple) |
+| ![Django](https://img.shields.io/badge/-Django%205.2-092E20?logo=django) | ![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?logo=javascript&logoColor=black) | ![SQLite](https://img.shields.io/badge/-SQLite-003B57?logo=sqlite) | ![Jazzmin](https://img.shields.io/badge/-Jazzmin-black) |
 | ![Python](https://img.shields.io/badge/-Python%203.10-3776AB?logo=python&logoColor=white) | ![CSS3](https://img.shields.io/badge/-CSS3-1572B6?logo=css3) | | ![CKEditor5](https://img.shields.io/badge/-CKEditor%205-0287D0?logo=ckeditor) |
 
 ---
