@@ -38,7 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'lessons',
+    'apps.core',
+    'apps.lessons',
+    'apps.quizzes',
     'django_ckeditor_5',
 ]
 
@@ -132,7 +134,7 @@ ROOT_URLCONF = 'project_valerie.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'lessons' / 'templates'],
+        'DIRS': [BASE_DIR / 'apps' / 'core' / 'templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -196,7 +198,7 @@ USE_I18N = True
 
 USE_TZ = True
 
-LOCALE_PATHS = [BASE_DIR / 'lessons' / 'locale']
+LOCALE_PATHS = [BASE_DIR / 'locale']
 
 
 # Static files (CSS, JavaScript, Images)

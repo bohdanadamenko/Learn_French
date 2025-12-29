@@ -1,0 +1,61 @@
+    <!-- Animated Hamburger Button -->
+    <div id="hamburger" class="hamburglar is-closed" onclick="toggleSidebar()" role="button" aria-label="Toggle menu" tabindex="0">
+        <div class="burger-icon">
+            <div class="burger-container">
+                <span class="burger-bun-top"></span>
+                <span class="burger-filling"></span>
+                <span class="burger-bun-bot"></span>
+            </div>
+        </div>
+        
+        <div class="burger-ring">
+            <svg class="svg-ring">
+                <path class="path" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="4" d="M 34 2 C 16.3 2 2 16.3 2 34 s 14.3 32 32 32 s 32 -14.3 32 -32 S 51.7 2 34 2" />
+            </svg>
+        </div>
+        
+        <svg width="0" height="0">
+            <mask id="mask">
+                <path xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#ff0000" stroke-miterlimit="10" stroke-width="4" d="M 34 2 c 11.6 0 21.8 6.2 27.4 15.5 c 2.9 4.8 5 16.5 -9.4 16.5 h -4" />
+            </mask>
+        </svg>
+        <div class="path-burger">
+            <div class="animate-path">
+                <div class="path-rotation"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Next Lesson Modal -->
+    <div id="nextLessonModal" class="modal-overlay" onclick="closeModal(event)">
+        <div class="modal-card">
+            <span class="modal-icon">🎯</span>
+            <h3 class="modal-title">
+                <span class="lang-content lang-ru">Отличная работа!</span>
+                <span class="lang-content lang-ua">Чудова робота!</span>
+                <span class="lang-content lang-en">Great job!</span>
+                <span class="lang-content lang-fr">Bon travail !</span>
+            </h3>
+            <p class="modal-text">
+                <span class="lang-content lang-ru">Вы завершили теорию. Хотите закрепить знания коротким тестом или перейти сразу к следующему уроку?</span>
+                <span class="lang-content lang-ua">Ви завершили теорію. Хочете закріпити знання коротким тестом чи перейти одразу до наступного уроку?</span>
+                <span class="lang-content lang-en">You've finished the theory. Would you like to reinforce your knowledge with a short quiz or proceed directly to the next lesson?</span>
+                <span class="lang-content lang-fr">Vous avez terminé la théorie. Souhaitez-vous renforcer vos connaissances avec un petit quiz ou passer directement à la leçon suivante ?</span>
+            </p>
+            
+            <div class="modal-actions">
+                <button class="btn-quiz" onclick="startQuiz()">
+                    <span class="lang-content lang-ru">Пройти тест (Рекомендуем)</span>
+                    <span class="lang-content lang-ua">Пройти тест (Рекомендуємо)</span>
+                    <span class="lang-content lang-en">Take Quiz (Recommended)</span>
+                    <span class="lang-content lang-fr">Faire le quiz (Recommandé)</span>
+                </button>
+                <button class="btn-skip" onclick="confirmNextLesson()">
+                    <span class="lang-content lang-ru">Пропустить и перейти далее</span>
+                    <span class="lang-content lang-ua">Пропустити та перейти далі</span>
+                    <span class="lang-content lang-en">Skip and continue</span>
+                    <span class="lang-content lang-fr">Passer et continuer</span>
+                </button>
+            </div>
+        </div>
+    </div>

@@ -1,0 +1,18 @@
+from django.shortcuts import render
+from apps.lessons.models import Lesson
+
+
+def index(request):
+    # Загружаем все уроки из БД, отсортированные по полю order
+    lessons = Lesson.objects.all().order_by('order')
+    return render(request, 'core/index.html', {'lessons': lessons})
+
+
+def custom_404(request, exception):
+    """Custom 404 error page"""
+    return render(request, '404.html', status=404)
+
+
+def custom_500(request):
+    """Custom 500 error page"""
+    return render(request, '500.html', status=500)
