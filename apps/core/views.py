@@ -1,10 +1,10 @@
 from django.shortcuts import render
-from apps.lessons.models import Lesson
+from apps.lessons.selectors import get_lessons_list
 
 
 def index(request):
-    # Загружаем все уроки из БД, отсортированные по полю order
-    lessons = Lesson.objects.all().order_by('order')
+    # Загружаем все уроки через селектор
+    lessons = get_lessons_list()
     return render(request, 'core/index.html', {'lessons': lessons})
 
 

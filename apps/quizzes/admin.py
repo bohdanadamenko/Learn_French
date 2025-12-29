@@ -1,7 +1,6 @@
 from django.contrib import admin
 from django.utils.translation import gettext_lazy as _
 from .models import Question, Choice
-from apps.lessons.models import Lesson
 
 class ChoiceInline(admin.TabularInline):
     model = Choice
@@ -29,10 +28,10 @@ class QuestionAdmin(admin.ModelAdmin):
     def changelist_view(self, request, extra_context=None):
         """Инъекция JSON с переводами уроков для JS через заголовок страницы"""
         from django.utils.safestring import mark_safe
-        import json
-        lessons = Lesson.objects.all()
-        data = {str(l.id): {'ru': l.title_ru, 'uk': l.title_uk, 'en': l.title_en, 'fr': l.title_fr} for l in lessons}
-        script = f'<script id="lesson-translations-data" type="application/json">{json.dumps(data)}</script>'
+        from apps.quizzes.selectors import get_lesson_translations_json
+        
+        json_data = get_lesson_translations_json()
+        script = f'<script id="lesson-translations-data" type="application/json">{json_data}</script>'
         
         extra_context = extra_context or {}
         # Добавляем скрипт к заголовку (он не будет виден визуально, но будет в DOM)
