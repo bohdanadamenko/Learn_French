@@ -78,7 +78,7 @@ python manage.py runserver
 
 ```
 📦 francais-facile-be/
-├── 📂 lessons/                  # 🎓 Main application
+├── 📂 lessons/                 # 🎓 Main application
 │   ├── 📂 locale/              # 🌍 Translations (RU/UK/EN/FR)
 │   ├── 📂 management/          # ⚙️ Django commands
 │   ├── 📂 migrations/          # 🗄️ DB Migrations
@@ -146,7 +146,7 @@ To edit lessons, use **Django Admin**:
 ## 📄 License
 
 ```
-© 2024 Project Valerie. All rights reserved.
+© 2025 Project Valerie. All rights reserved.
 Proprietary License - not for distribution
 ```
 
