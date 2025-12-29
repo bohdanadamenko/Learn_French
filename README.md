@@ -1,4 +1,4 @@
-# 🇫🇷 Français Facile Belgium
+# �� Français Facile Belgium
 
 <div align="center">
 
