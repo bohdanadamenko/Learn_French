@@ -1,0 +1,107 @@
+{% load lesson_filters %}
+                <div class="lesson-view {% if forloop.first %}active{% endif %}" id="{{ lesson.data_lesson_id }}">
+                    <div class="content-card">
+                        <!-- Localized Title in Content -->
+                        <h2 class="lesson-title lang-content lang-ru">
+                            <span class="lesson-title-emoji">{{ lesson.title_ru|get_emoji }}</span>
+                            <span class="lesson-title-text">{{ lesson.title_ru|get_text_after_emoji }}</span>
+                        </h2>
+                        <h2 class="lesson-title lang-content lang-ua">
+                            <span class="lesson-title-emoji">{{ lesson.title_uk|default:lesson.title_ru|get_emoji }}</span>
+                            <span class="lesson-title-text">{{ lesson.title_uk|default:lesson.title_ru|get_text_after_emoji }}</span>
+                        </h2>
+                        <h2 class="lesson-title lang-content lang-en">
+                            <span class="lesson-title-emoji">{{ lesson.title_en|default:lesson.title_ru|get_emoji }}</span>
+                            <span class="lesson-title-text">{{ lesson.title_en|default:lesson.title_ru|get_text_after_emoji }}</span>
+                        </h2>
+                        <h2 class="lesson-title lang-content lang-fr">
+                            <span class="lesson-title-emoji">{{ lesson.title_fr|default:lesson.title_ru|get_emoji }}</span>
+                            <span class="lesson-title-text">{{ lesson.title_fr|default:lesson.title_ru|get_text_after_emoji }}</span>
+                        </h2>
+
+                        <!-- Localized Content -->
+                        <div class="lesson-body lang-content lang-ru">
+                            {{ lesson.content_html_ru|safe }}
+                        </div>
+                        <div class="lesson-body lang-content lang-ua">
+                            {{ lesson.content_html_uk|default:lesson.content_html_ru|safe }}
+                        </div>
+                        <div class="lesson-body lang-content lang-en">
+                            {{ lesson.content_html_en|default:lesson.content_html_ru|safe }}
+                        </div>
+                        <div class="lesson-body lang-content lang-fr">
+                            {{ lesson.content_html_fr|default:lesson.content_html_ru|safe }}
+                        </div>
+
+                        <!-- Quiz Section (Hidden by default) -->
+                        <div class="quiz-container" id="quiz-{{ lesson.data_lesson_id }}" style="display: none;">
+                            <div class="quiz-header">
+                                <div class="quiz-meta">
+                                    <span class="quiz-counter">1 / 1</span>
+                                </div>
+                                <div class="quiz-progress">
+                                    <div class="quiz-progress-segments"></div>
+                                </div>
+                            </div>
+
+                            <div class="quiz-questions">
+                                {% for question in lesson.questions.all %}
+                                <div class="quiz-question-card {% if forloop.first %}active{% endif %}" data-question-index="{{ forloop.counter0 }}">
+                                    <h3 class="quiz-question-text">
+                                        <span class="lang-content lang-ru">❓ {{ question.text_ru }}</span>
+                                        <span class="lang-content lang-ua">❓ {{ question.text_uk }}</span>
+                                        <span class="lang-content lang-en">❓ {{ question.text_en }}</span>
+                                        <span class="lang-content lang-fr">❓ {{ question.text_fr }}</span>
+                                    </h3>
+                                    <div class="quiz-choices">
+                                        {% for choice in question.choices.all %}
+                                        <button class="quiz-choice-btn" 
+                                                onclick="checkAnswer(this)"
+                                                data-is-correct="{{ choice.is_correct|yesno:'true,false' }}">
+                                            <span class="lang-content lang-ru">{{ choice.text_ru }}</span>
+                                            <span class="lang-content lang-ua">{{ choice.text_uk }}</span>
+                                            <span class="lang-content lang-en">{{ choice.text_en }}</span>
+                                            <span class="lang-content lang-fr">{{ choice.text_fr }}</span>
+                                        </button>
+                                        {% endfor %}
+                                    </div>
+                                </div>
+                                {% endfor %}
+                            </div>
+
+                            <div class="quiz-results" style="display: none;">
+                                <div class="results-icon">🏆</div>
+                                <h4 class="results-title">
+                                    <span class="lang-content lang-ru">Результат</span>
+                                    <span class="lang-content lang-ua">Результат</span>
+                                    <span class="lang-content lang-en">Result</span>
+                                    <span class="lang-content lang-fr">Résultat</span>
+                                </h4>
+                                <p class="results-score">0 / 0</p>
+                                <button class="btn-next-lesson" onclick="confirmNextLesson()">
+                                    <span class="lang-content lang-ru">Следующий урок →</span>
+                                    <span class="lang-content lang-ua">Наступний урок →</span>
+                                    <span class="lang-content lang-en">Next Lesson →</span>
+                                    <span class="lang-content lang-fr">Leçon suivante →</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Navigation Buttons -->
+                        <div class="lesson-footer-nav">
+                            <button class="nav-btn prev" onclick="navigateLesson('prev')">
+                                <span class="lang-content lang-ru">← Назад</span>
+                                <span class="lang-content lang-ua">← Назад</span>
+                                <span class="lang-content lang-en">← Back</span>
+                                <span class="lang-content lang-fr">← Retour</span>
+                            </button>
+                            
+                            <button class="nav-btn next" onclick="openNextModal()">
+                                <span class="lang-content lang-ru">Далее →</span>
+                                <span class="lang-content lang-ua">Далі →</span>
+                                <span class="lang-content lang-en">Next →</span>
+                                <span class="lang-content lang-fr">Suivant →</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>

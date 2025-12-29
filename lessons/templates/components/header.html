@@ -1,0 +1,71 @@
+{% load static %}
+    <!-- Top Header Bar -->
+    <header class="top-bar">
+        <div class="brand-area">
+            <!-- Simple hamburger for light theme mobile -->
+            <button class="header-hamburger" onclick="toggleSidebar()" aria-label="Menu">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+            
+            <a href="/" class="brand-logo">
+                <div class="brand-icon">F</div>
+                <span class="brand-text">Learn French</span>
+            </a>
+        </div>
+        
+        <div class="top-actions">
+            <div class="search-box">
+                <svg class="search-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+                <input type="text" class="search-input" placeholder="Поиск..." aria-label="Search lessons">
+            </div>
+            
+            <!-- Settings Button -->
+            <div class="settings-wrapper">
+                <button class="settings-btn" onclick="toggleSettings()" aria-label="Настройки">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="3"></circle>
+                        <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+                    </svg>
+                </button>
+                
+                <div class="settings-dropdown" id="settingsDropdown">
+                    <div class="settings-section theme-section">
+                        <div class="theme-switcher">
+                            <span class="theme-icon">☀️</span>
+                            <label class="switch">
+                                <input type="checkbox" id="themeToggle">
+                                <span class="slider"></span>
+                            </label>
+                            <span class="theme-icon">🌙</span>
+                        </div>
+                    </div>
+                    
+                    <div class="settings-divider"></div>
+                    
+                    <div class="settings-section">
+                        <div class="settings-options lang-options">
+                            <button class="option-btn" data-lang="ua">🇺🇦</button>
+                            <span class="option-divider"></span>
+                            <button class="option-btn" data-lang="fr">🇫🇷</button>
+                            <span class="option-divider"></span>
+                            <button class="option-btn" data-lang="en">🇬🇧</button>
+                            <span class="option-divider"></span>
+                            <button class="option-btn active" data-lang="ru">🇷🇺</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="user-profile">
+                <div class="user-info">
+                    <span class="user-name">Student</span>
+                    <span class="user-role">Free Plan</span>
+                </div>
+                <div class="avatar">S</div>
+            </div>
+        </div>
+    </header>
