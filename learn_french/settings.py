@@ -44,10 +44,17 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.sites',
     'apps.core',
+    'apps.users',
     'apps.lessons',
     'apps.quizzes',
-    'apps.users',
+
+    # Allauth
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
+    'allauth.socialaccount.providers.google',
     'django_ckeditor_5',
 ]
 
@@ -134,6 +141,9 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    
+    # Allauth middleware
+    'allauth.account.middleware.AccountMiddleware',
 ]
 
 ROOT_URLCONF = 'learn_french.urls'
@@ -160,7 +170,7 @@ WSGI_APPLICATION = 'learn_french.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
-DATABASES = {
+DATABASES  = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
@@ -222,10 +232,41 @@ MEDIA_ROOT = BASE_DIR / 'media'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-# Custom User Model
+# Authentication
 AUTH_USER_MODEL = 'users.User'
-
 LOGIN_REDIRECT_URL = 'core:index'
 LOGOUT_REDIRECT_URL = 'core:index'
 LOGIN_URL = 'users:login'
 
+AUTHENTICATION_BACKENDS = [
+    'django.contrib.auth.backends.ModelBackend',
+    'allauth.account.auth_backends.AuthenticationBackend',
+]
+
+# Allauth settings
+SITE_ID = 1
+ACCOUNT_EMAIL_REQUIRED = True
+ACCOUNT_USERNAME_REQUIRED = False
+ACCOUNT_AUTHENTICATION_METHOD = 'email'
+ACCOUNT_EMAIL_VERIFICATION = 'none' # For development simplicity
+SOCIALACCOUNT_LOGIN_ON_GET = True
+
+SOCIALACCOUNT_PROVIDERS = {
+    'google': {
+        'APPS': [
+            {
+                'client_id': config('GOOGLE_CLIENT_ID', default='your-client-id'),
+                'secret': config('GOOGLE_CLIENT_SECRET', default='your-client-secret'),
+                'key': ''
+            },
+        ],
+        'SCOPE': [
+            'profile',
+            'email',
+        ],
+        'AUTH_PARAMS': {
+            'access_type': 'online',
+        },
+        'OAUTH_PKCE_ENABLED': True,
+    }
+}
