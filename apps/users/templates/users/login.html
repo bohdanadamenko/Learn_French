@@ -1,14 +1,27 @@
 {% extends "users/base_auth.html" %}
+{% load i18n %}
 
-{% block title %}Вход | Learn French{% endblock %}
-{% block auth_title %}С возвращением!{% endblock %}
+{% block title %}{% trans "Вход" %} | Learn French{% endblock %}
+{% block auth_title %}{% trans "С возвращением!" %}{% endblock %}
 
 {% block auth_form %}
+    <p class="auth-subtitle">{% trans "Войдите в свой аккаунт, чтобы продолжить обучение" %}</p>
     {{ form.as_p }}
 {% endblock %}
 
-{% block btn_text %}Войти{% endblock %}
+{% block btn_text %}{% trans "Войти в аккаунт" %}{% endblock %}
 
 {% block auth_footer %}
-    Нет аккаунта? <a href="{% url 'users:signup' %}">Зарегистрироваться</a>
+    <div class="auth-divider">
+        <span>{% trans "или" %}</span>
+    </div>
+
+    <a href="{% url 'users:guest_login' %}" class="guest-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+        {% trans "Войти как гость" %}
+    </a>
+
+    <div style="margin-top: 24px;">
+        {% trans "Нет аккаунта?" %} <a href="{% url 'users:signup' %}">{% trans "Зарегистрироваться" %}</a>
+    </div>
 {% endblock %}

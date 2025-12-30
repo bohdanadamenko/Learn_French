@@ -27,8 +27,11 @@
 - 📝 **CKEditor 5** for rich-text content in admin
 - 🔐 **Jazzmin Admin** — beautiful and functional admin panel
 - 🌙 **Dark/Light Theme** with smooth transitions
-- ⌨️ **Hotkeys** for quick navigation
+- 🔐 **Premium Auth System** — Login, Signup, and Glassmorphism Guest Login
+- 👤 **Enhanced User Menu** — accessible profile dropdown for all users
+- 🌍 **Elegant Language Selection** — refined active states and transitions
 - 🔍 **Real-time Lesson Search**
+- ⌨️ **Hotkeys** for quick navigation
 
 ---
 
@@ -135,7 +138,7 @@ To edit lessons, use **Django Admin**:
 |:----:|:---------|
 | 🔑 | `SECRET_KEY` stored in `.env` file |
 | 🛡️ | `DEBUG=False` in production |
-| 🌐 | `ALLOWED_HOSTS` restricted |
+| 🌐 | `ALLOWED_HOSTS` & `CSRF_TRUSTED_ORIGINS` restricted |
 | 🔐 | Passwords validated by Django |
 
 ---

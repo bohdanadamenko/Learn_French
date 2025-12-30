@@ -1,4 +1,4 @@
-{% load static %}
+{% load static i18n %}
     <!-- Top Header Bar -->
     <header class="top-bar">
         <div class="brand-area">
@@ -20,12 +20,12 @@
         <div class="top-actions">
             <div class="search-box">
                 <svg class="search-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
-                <input type="text" class="search-input" placeholder="Поиск..." aria-label="Search lessons">
+                <input type="text" class="search-input" placeholder="{% trans 'Поиск...' %}" aria-label="Search lessons">
             </div>
             
             <!-- Settings Button -->
             <div class="settings-wrapper">
-                <button class="settings-btn" onclick="toggleSettings()" aria-label="Настройки">
+                <button class="settings-btn" onclick="toggleSettings()" aria-label="{% trans 'Настройки' %}">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <circle cx="12" cy="12" r="3"></circle>
                         <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
@@ -47,36 +47,75 @@
                     <div class="settings-divider"></div>
                     
                     <div class="settings-section">
-                        <div class="settings-options lang-options">
-                            <button class="option-btn" data-lang="ua">🇺🇦</button>
-                            <span class="option-divider"></span>
-                            <button class="option-btn" data-lang="fr">🇫🇷</button>
-                            <span class="option-divider"></span>
-                            <button class="option-btn" data-lang="en">🇬🇧</button>
-                            <span class="option-divider"></span>
-                            <button class="option-btn active" data-lang="ru">🇷🇺</button>
-                        </div>
-                    </div>
-
-                    <div class="settings-divider"></div>
-                    
-                    <div class="settings-section">
-                        <form action="{% url 'users:logout' %}" method="post" style="width: 100%;">
+                        <form action="{% url 'set_language' %}" method="post" class="settings-options lang-options">
                             {% csrf_token %}
-                            <button type="submit" class="option-btn" style="width: 100%; justify-content: center; color: #ff4b4b;">
-                                🚪 Выйти
-                            </button>
+                            <input name="next" type="hidden" value="{{ request.get_full_path }}">
+                            <button type="submit" name="language" value="uk" class="option-btn {% if LANGUAGE_CODE == 'uk' %}active{% endif %}" data-lang="uk" onclick="localStorage.setItem('preferredLang', 'uk')">🇺🇦</button>
+                            <span class="option-divider"></span>
+                            <button type="submit" name="language" value="fr" class="option-btn {% if LANGUAGE_CODE == 'fr' %}active{% endif %}" data-lang="fr" onclick="localStorage.setItem('preferredLang', 'fr')">🇫🇷</button>
+                            <span class="option-divider"></span>
+                            <button type="submit" name="language" value="en" class="option-btn {% if LANGUAGE_CODE == 'en' %}active{% endif %}" data-lang="en" onclick="localStorage.setItem('preferredLang', 'en')">🇬🇧</button>
+                            <span class="option-divider"></span>
+                            <button type="submit" name="language" value="ru" class="option-btn {% if LANGUAGE_CODE == 'ru' %}active{% endif %}" data-lang="ru" onclick="localStorage.setItem('preferredLang', 'ru')">🇷🇺</button>
                         </form>
                     </div>
+
                 </div>
             </div>
             
-            <div class="user-profile">
-                <div class="user-info">
-                    <span class="user-name">{{ user.username }}</span>
-                    <span class="user-role">{% if user.is_staff %}Admin{% else %}Student{% endif %}</span>
+            {% if user.is_authenticated %}
+                <div class="user-profile-wrapper">
+                    <div class="user-profile" onclick="toggleUserMenu()">
+                        <div class="user-info">
+                            <span class="user-name">{{ user.username }}</span>
+                            <span class="user-role">{% if user.is_staff %}Admin{% else %}Student{% endif %}</span>
+                        </div>
+                        <div class="avatar">{{ user.username|first|upper }}</div>
+                        <svg class="dropdown-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="margin-left: 4px; opacity: 0.5;">
+                            <path d="M6 9l6 6 6-6"></path>
+                        </svg>
+                    </div>
+                    
+                    <div class="user-profile-dropdown" id="userMenuDropdown">
+                        <div class="settings-section">
+                            <form action="{% url 'users:logout' %}" method="post" style="width: 100%;">
+                                {% csrf_token %}
+                                <button type="submit" class="option-btn" style="width: 100%; justify-content: center; color: #ff4b4b;">
+                                    🚪 {% trans "Выйти" %}
+                                </button>
+                            </form>
+                        </div>
+                    </div>
                 </div>
-                <div class="avatar">{{ user.username|first|upper }}</div>
-            </div>
+            {% else %}
+                <div class="user-profile-wrapper">
+                    <div class="user-profile" onclick="toggleUserMenu()">
+                        <div class="user-info">
+                            <span class="user-name">{% trans "Войти" %}</span>
+                        </div>
+                        <div class="avatar">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="12" cy="7" r="4"></circle>
+                            </svg>
+                        </div>
+                        <svg class="dropdown-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="margin-left: 4px; opacity: 0.5;">
+                            <path d="M6 9l6 6 6-6"></path>
+                        </svg>
+                    </div>
+                    
+                    <div class="user-profile-dropdown" id="userMenuDropdown">
+                        <div class="settings-section">
+                            <a href="{% url 'users:login' %}" class="option-btn" style="text-decoration: none; width: 100%; justify-content: center;">
+                                🔑 {% trans "Вход" %}
+                            </a>
+                            <div class="settings-divider"></div>
+                            <a href="{% url 'users:signup' %}" class="option-btn" style="text-decoration: none; width: 100%; justify-content: center;">
+                                📝 {% trans "Регистрация" %}
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            {% endif %}
         </div>
     </header>

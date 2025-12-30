@@ -12,6 +12,45 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
+msgid "Вход"
+msgstr "Connexion"
+
+msgid "С возвращением!"
+msgstr "Bon retour !"
+
+msgid "Войдите в свой аккаунт, чтобы продолжить обучение"
+msgstr "Connectez-vous à votre compte pour continuer à apprendre"
+
+msgid "Войти в аккаунт"
+msgstr "Se connecter au compte"
+
+msgid "или"
+msgstr "ou"
+
+msgid "Войти как гость"
+msgstr "Se connecter en tant qu'invité"
+
+msgid "Нет аккаунта?"
+msgstr "Vous n'avez pas de compte ?"
+
+msgid "Зарегистрироваться"
+msgstr "S'inscrire"
+
+msgid "Регистрация"
+msgstr "Inscription"
+
+msgid "Создать аккаунт"
+msgstr "Créer un compte"
+
+msgid "Присоединяйтесь к нам и начните учить французский сегодня!"
+msgstr "Rejoignez-nous et commencez à apprendre le français dès aujourd'hui !"
+
+msgid "Уже есть аккаунт?"
+msgstr "Vous avez déjà un compte ?"
+
+msgid "Войти"
+msgstr "Se connecter"
+
 #: admin.py:25
 msgid "Урок (RU)"
 msgstr "Leçon (RU)"

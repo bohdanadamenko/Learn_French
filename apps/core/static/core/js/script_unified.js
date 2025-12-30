@@ -36,20 +36,26 @@ function applyStoredTheme() {
 }
 
 function applyStoredLang() {
-    const savedLang = localStorage.getItem('preferredLang') || 'ru';
-    document.body.setAttribute('data-lang', savedLang);
+    const bodyLang = document.body.getAttribute('data-lang');
+    const savedLang = localStorage.getItem('preferredLang');
+    
+    // Server-side (bodyLang) is the primary source of truth on load
+    const finalLang = bodyLang || savedLang || 'ru';
+    
+    document.body.setAttribute('data-lang', finalLang);
+    localStorage.setItem('preferredLang', finalLang);
     
     document.querySelectorAll('.option-btn[data-lang]').forEach(btn => {
-        btn.classList.toggle('active', btn.dataset.lang === savedLang);
+        btn.classList.toggle('active', btn.dataset.lang === finalLang);
     });
     
-    updateSearchPlaceholders(savedLang);
+    updateSearchPlaceholders(finalLang);
 }
 
 function updateSearchPlaceholders(lang) {
     const placeholders = {
         'ru': 'Поиск...',
-        'ua': 'Пошук...',
+        'uk': 'Пошук...',
         'en': 'Search...',
         'fr': 'Rechercher...'
     };
@@ -220,10 +226,12 @@ function toggleSidebar() {
     const overlay = document.getElementById('sidebarOverlay');
     const hamburger = document.getElementById('hamburger');
     
+    if (!sidebar) return;
+
     const isOpening = !sidebar.classList.contains('active');
     
     sidebar.classList.toggle('active');
-    overlay.classList.toggle('active');
+    if (overlay) overlay.classList.toggle('active');
     
     if (hamburger) {
         if (isOpening) {
@@ -245,7 +253,7 @@ function closeSidebar() {
     
     if (sidebar && sidebar.classList.contains('active')) {
         sidebar.classList.remove('active');
-        overlay?.classList.remove('active');
+        if (overlay) overlay.classList.remove('active');
         if (hamburger) {
             hamburger.classList.remove('is-open');
             hamburger.classList.add('is-closed');
@@ -695,13 +703,31 @@ function showQuizResults() {
 function toggleSettings() {
     const dropdown = document.getElementById('settingsDropdown');
     dropdown.classList.toggle('open');
+    // Close user menu if open
+    document.getElementById('userMenuDropdown')?.classList.remove('open');
+}
+
+function toggleUserMenu() {
+    const dropdown = document.getElementById('userMenuDropdown');
+    const profile = document.querySelector('.user-profile');
+    const isOpen = dropdown.classList.toggle('open');
+    profile?.classList.toggle('menu-open', isOpen);
+    // Close settings if open
+    document.getElementById('settingsDropdown')?.classList.remove('open');
 }
 
 document.addEventListener('click', (e) => {
-    const wrapper = document.querySelector('.settings-wrapper');
-    const dropdown = document.getElementById('settingsDropdown');
+    const settingsWrapper = document.querySelector('.settings-wrapper');
+    const settingsDropdown = document.getElementById('settingsDropdown');
+    const userWrapper = document.querySelector('.user-profile-wrapper');
+    const userDropdown = document.getElementById('userMenuDropdown');
     
-    if (wrapper && dropdown && !wrapper.contains(e.target)) {
-        dropdown.classList.remove('open');
+    if (settingsWrapper && settingsDropdown && !settingsWrapper.contains(e.target)) {
+        settingsDropdown.classList.remove('open');
+    }
+    
+    if (userWrapper && userDropdown && !userWrapper.contains(e.target)) {
+        userDropdown.classList.remove('open');
+        document.querySelector('.user-profile')?.classList.remove('menu-open');
     }
 });

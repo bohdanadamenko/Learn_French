@@ -313,6 +313,70 @@ body {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
+.user-profile-wrapper {
+    position: relative;
+}
+
+.user-profile-dropdown {
+    position: absolute;
+    top: calc(100% + 12px);
+    right: 0;
+    width: auto;
+    min-width: 160px;
+    background: #EAEAEC;
+    border: 1px solid #D1D1D6;
+    border-radius: 16px;
+    padding: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+    z-index: 200;
+}
+
+.user-profile-dropdown::before {
+    content: '';
+    position: absolute;
+    top: -8px;
+    right: 24px;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid #EAEAEC;
+}
+
+[data-theme="dark"] .user-profile-dropdown::before {
+    border-bottom-color: #0f172a;
+}
+
+.user-profile-dropdown.open {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.user-profile-wrapper .user-profile .dropdown-arrow {
+    transition: transform 0.3s ease;
+}
+
+.user-profile-wrapper .user-profile-dropdown.open ~ .user-profile .dropdown-arrow {
+    transform: rotate(180deg);
+}
+
+/* Fix for the sibling selector above: it doesn't work because dropdown is AFTER profile. 
+   Let's use a class on the wrapper or just handle it in JS if needed, 
+   but CSS is better if we change the order or use :has() if supported. 
+   Actually, let's just add a class to the profile when open via JS. */
+.user-profile.menu-open .dropdown-arrow {
+    transform: rotate(180deg);
+}
+
+[data-theme="dark"] .user-profile-dropdown {
+    background: #0f172a;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8);
+}
+
 .user-info {
     display: flex;
     flex-direction: column;
@@ -796,7 +860,7 @@ body {
 }
 
 [data-lang="ru"] .lang-ru,
-[data-lang="ua"] .lang-ua,
+[data-lang="uk"] .lang-uk,
 [data-lang="en"] .lang-en,
 [data-lang="fr"] .lang-fr {
     display: inline-block;
@@ -810,7 +874,7 @@ div.lang-content[style*="display: inline-block"] {
 
 /* Better way for block elements */
 [data-lang="ru"] h2.lang-ru, [data-lang="ru"] div.lang-ru,
-[data-lang="ua"] h2.lang-ua, [data-lang="ua"] div.lang-ua,
+[data-lang="uk"] h2.lang-uk, [data-lang="uk"] div.lang-uk,
 [data-lang="en"] h2.lang-en, [data-lang="en"] div.lang-en,
 [data-lang="fr"] h2.lang-fr, [data-lang="fr"] div.lang-fr {
     display: block;
@@ -868,6 +932,13 @@ mark {
     color: var(--text-primary);
     transform: translateX(-4px);
 }
+
+.option-btn:hover {
+    background: var(--bg-app);
+    transform: translateY(-1px);
+}
+
+/* Removed redundant .option-btn.active styles */
 
 .nav-btn.next {
     background: var(--text-primary);
@@ -1141,6 +1212,20 @@ mark {
     z-index: 200;
 }
 
+.settings-dropdown::before {
+    content: '';
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid #EAEAEC;
+}
+
+[data-theme="dark"] .settings-dropdown::before {
+    border-bottom-color: #0f172a;
+}
+
 .settings-dropdown.open {
     opacity: 1;
     visibility: visible;
@@ -1276,17 +1361,17 @@ mark {
     transform: scale(1.1);
 }
 
-[data-theme="dark"] .lang-options .option-btn:hover {
-    background: rgba(255, 255, 255, 0.08);
-}
-
 .lang-options .option-btn.active {
-    background: rgba(0, 122, 255, 0.1);
-    transform: scale(1.1);
+    background: rgba(0, 122, 255, 0.08);
+    border: 1px solid rgba(0, 122, 255, 0.2) !important;
+    box-shadow: none;
+    transform: scale(1.05);
+    opacity: 1;
 }
 
 [data-theme="dark"] .lang-options .option-btn.active {
-    background: rgba(59, 130, 246, 0.2);
+    background: rgba(59, 130, 246, 0.15);
+    border-color: rgba(59, 130, 246, 0.3) !important;
 }
 
 .option-divider {
