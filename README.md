@@ -35,6 +35,17 @@
 
 ---
 
+## 🔐 Registration & Authentication
+
+The platform offers multiple ways to access the content:
+
+- 📧 **Email Registration**: Standard signup with email and password.
+- 🌐 **Google OAuth 2.0**: Quick and secure login via your Google account.
+- 🔗 **Automatic Linking**: Existing accounts are automatically linked to Google if the email addresses match.
+- 👤 **Guest Login**: One-click access to explore the platform without registration, featuring a premium glassmorphism design.
+
+---
+
 ## 🚀 Quick Start
 
 ### Requirements
