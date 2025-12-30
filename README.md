@@ -2,16 +2,16 @@
 
 <div align="center">
 
-<a href="#"><img src="https://img.shields.io/badge/Django-5.2-092E20?style=for-the-badge&logo=django&logoColor=white" alt="Django"></a>
-<a href="#"><img src="https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"></a>
-<a href="#"><img src="https://img.shields.io/badge/CKEditor-5-0287D0?style=for-the-badge&logo=ckeditor&logoColor=white" alt="CKEditor"></a>
-<a href="#"><img src="https://img.shields.io/badge/License-Proprietary-red?style=for-the-badge" alt="License"></a>
+<img src="https://img.shields.io/badge/Django-5.2-092E20?style=for-the-badge&logo=django&logoColor=white" alt="Django">
+<img src="https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
+<img src="https://img.shields.io/badge/CKEditor-5-0287D0?style=for-the-badge&logo=ckeditor&logoColor=white" alt="CKEditor">
+<img src="https://img.shields.io/badge/License-Proprietary-red?style=for-the-badge" alt="License">
 
 **🎓 Interactive platform for learning French**
 
 *Modern web application with multilingual support and responsive design*
 
-[🚀 Demo](#-quick-start) • [📖 Documentation](#-project-structure) • [🛠️ Installation](#installation)
+[🚀 Demo](#quick-start) • [📖 Documentation](#project-structure) • [🛠️ Installation](#installation)
 
 </div>
 
@@ -44,7 +44,7 @@
 ```bash
 # 1️⃣ Clone the repository
 git clone https://github.com/bohdanadamenko/Learn_French.git
-cd francais-facile-be
+cd Learn_French
 
 # 2️⃣ Create a virtual environment
 python3 -m venv .venv
@@ -77,7 +77,7 @@ python manage.py runserver
 ## 📁 Project Structure
 
 ```
-📦 francais-facile-be/
+📦 Learn_French/
 ├── 📂 apps/                    # 🧩 Application Domains
 │   ├── 📂 core/                # 🏠 Core logic (Views, Templates, Static)
 │   ├── 📂 lessons/             # 🎓 Lessons Domain (Models, Selectors)
@@ -96,8 +96,8 @@ python manage.py runserver
 
 | Backend | Frontend | Database | Admin |
 |:-------:|:--------:|:--------:|:-----:|
-| <a href="#"><img src="https://img.shields.io/badge/-Django%205.2-092E20?logo=django" alt="Django"></a> | <a href="#"><img src="https://img.shields.io/badge/-JavaScript-F7DF1E?logo=javascript&logoColor=black" alt="JavaScript"></a> | <a href="#"><img src="https://img.shields.io/badge/-SQLite-003B57?logo=sqlite" alt="SQLite"></a> | <a href="#"><img src="https://img.shields.io/badge/-Jazzmin-black" alt="Jazzmin"></a> |
-| <a href="#"><img src="https://img.shields.io/badge/-Python%203.10-3776AB?logo=python&logoColor=white" alt="Python"></a> | <a href="#"><img src="https://img.shields.io/badge/-CSS3-1572B6?logo=css3" alt="CSS3"></a> | | <a href="#"><img src="https://img.shields.io/badge/-CKEditor%205-0287D0?logo=ckeditor" alt="CKEditor 5"></a> |
+| <img src="https://img.shields.io/badge/-Django%205.2-092E20?logo=django" alt="Django"> | <img src="https://img.shields.io/badge/-JavaScript-F7DF1E?logo=javascript&logoColor=black" alt="JavaScript"> | <img src="https://img.shields.io/badge/-SQLite-003B57?logo=sqlite" alt="SQLite"> | <img src="https://img.shields.io/badge/-Jazzmin-black" alt="Jazzmin"> |
+| <img src="https://img.shields.io/badge/-Python%203.10-3776AB?logo=python&logoColor=white" alt="Python"> | <img src="https://img.shields.io/badge/-CSS3-1572B6?logo=css3" alt="CSS3"> | | <img src="https://img.shields.io/badge/-CKEditor%205-0287D0?logo=ckeditor" alt="CKEditor 5"> |
 
 ---
 

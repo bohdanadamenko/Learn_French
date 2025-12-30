@@ -1,0 +1,14 @@
+{% extends "users/base_auth.html" %}
+
+{% block title %}Регистрация | Learn French{% endblock %}
+{% block auth_title %}Создать аккаунт{% endblock %}
+
+{% block auth_form %}
+    {{ form.as_p }}
+{% endblock %}
+
+{% block btn_text %}Зарегистрироваться{% endblock %}
+
+{% block auth_footer %}
+    Уже есть аккаунт? <a href="{% url 'users:login' %}">Войти</a>
+{% endblock %}

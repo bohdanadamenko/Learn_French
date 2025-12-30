@@ -11,7 +11,7 @@
                 </svg>
             </button>
             
-            <a href="/" class="brand-logo">
+            <a href="{% url 'core:index' %}" class="brand-logo">
                 <div class="brand-icon">F</div>
                 <span class="brand-text">Learn French</span>
             </a>
@@ -57,15 +57,26 @@
                             <button class="option-btn active" data-lang="ru">🇷🇺</button>
                         </div>
                     </div>
+
+                    <div class="settings-divider"></div>
+                    
+                    <div class="settings-section">
+                        <form action="{% url 'users:logout' %}" method="post" style="width: 100%;">
+                            {% csrf_token %}
+                            <button type="submit" class="option-btn" style="width: 100%; justify-content: center; color: #ff4b4b;">
+                                🚪 Выйти
+                            </button>
+                        </form>
+                    </div>
                 </div>
             </div>
             
             <div class="user-profile">
                 <div class="user-info">
-                    <span class="user-name">Student</span>
-                    <span class="user-role">Free Plan</span>
+                    <span class="user-name">{{ user.username }}</span>
+                    <span class="user-role">{% if user.is_staff %}Admin{% else %}Student{% endif %}</span>
                 </div>
-                <div class="avatar">S</div>
+                <div class="avatar">{{ user.username|first|upper }}</div>
             </div>
         </div>
     </header>

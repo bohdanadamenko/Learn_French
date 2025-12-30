@@ -41,17 +41,18 @@ INSTALLED_APPS = [
     'apps.core',
     'apps.lessons',
     'apps.quizzes',
+    'apps.users',
     'django_ckeditor_5',
 ]
 
 
 
 JAZZMIN_SETTINGS = {
-    "site_title": "Valerie Admin",
-    "site_header": "Valerie",
-    "site_brand": "Valerie",
-    "welcome_sign": "Welcome to Valerie Project",
-    "copyright": "Valerie Project",
+    "site_title": "Learn French Admin",
+    "site_header": "Learn French",
+    "site_brand": "Learn French",
+    "welcome_sign": "Welcome to Learn French Project",
+    "copyright": "Learn French Team",
     "search_model": "lessons.Lesson",
     "user_avatar": None,
     "topmenu_links": [
@@ -214,3 +215,10 @@ MEDIA_ROOT = BASE_DIR / 'media'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# Custom User Model
+AUTH_USER_MODEL = 'users.User'
+
+LOGIN_REDIRECT_URL = 'core:index'
+LOGOUT_REDIRECT_URL = 'core:index'
+

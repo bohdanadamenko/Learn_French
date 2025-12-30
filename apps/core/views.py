@@ -1,7 +1,8 @@
-from django.shortcuts import render
+from django.contrib.auth.decorators import login_required
 from apps.lessons.selectors import get_lessons_list
 
 
+@login_required
 def index(request):
     # Загружаем все уроки через селектор
     lessons = get_lessons_list()
