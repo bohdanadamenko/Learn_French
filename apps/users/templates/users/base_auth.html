@@ -4,9 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}Learn French{% endblock %}</title>
+    <title>{% block title %}FrenchLessons{% endblock %}</title>
     <link rel="icon" type="image/png" href="{% static 'favicon.ico' %}">
     <link rel="stylesheet" href="{% static 'core/css/styles_unified.css' %}?v=5">
+    <script>
+        // Apply saved theme immediately to prevent flashing
+        const savedTheme = localStorage.getItem('preferredTheme') || 'light';
+        document.documentElement.setAttribute('data-theme', savedTheme);
+    </script>
     <style>
         :root {
             --glass-bg: rgba(255, 255, 255, 0.9);
@@ -29,7 +34,7 @@
         }
 
         .auth-container {
-            min-height: calc(100vh - 70px);
+            min-height: calc(100vh - var(--header-height, 70px));
             display: flex;
             align-items: center;
             justify-content: center;
@@ -37,7 +42,7 @@
             background: transparent;
             position: relative;
             overflow: hidden;
-            margin-top: 70px;
+            margin-top: var(--header-height, 70px);
         }
 
         .auth-card {
@@ -339,7 +344,7 @@
         }
     </style>
 </head>
-<body data-theme="light" data-lang="{{ LANGUAGE_CODE }}">
+<body data-lang="{{ LANGUAGE_CODE }}">
     <div class="mesh-background" aria-hidden="true"></div>
     
     <div class="sidebar-overlay" id="sidebarOverlay"></div>
@@ -359,10 +364,5 @@
         </div>
     </div>
     <script src="{% static 'core/js/script_unified.js' %}?v=1"></script>
-    <script>
-        // Apply saved theme
-        const savedTheme = localStorage.getItem('preferredTheme') || 'light';
-        document.body.setAttribute('data-theme', savedTheme);
-    </script>
 </body>
 </html>

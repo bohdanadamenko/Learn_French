@@ -1,5 +1,4 @@
-# 🇧🇪 Français Facile Belgium
-
+# 🇧🇪 FrenchLessons
 <div align="center">
 
 <img src="https://img.shields.io/badge/Django-5.2-092E20?style=for-the-badge&logo=django&logoColor=white" alt="Django">
@@ -24,6 +23,7 @@
 | RU • UK • EN • FR | Glassmorphism & Dark Mode | Desktop & Mobile |
 
 - 🎯 **French Lessons** with interactive quizzes
+- 🔐 **Google Authentication** — seamless login with automatic account linking
 - 📝 **CKEditor 5** for rich-text content in admin
 - 🔐 **Jazzmin Admin** — beautiful and functional admin panel
 - 🌙 **Dark/Light Theme** with smooth transitions
@@ -47,7 +47,7 @@
 ```bash
 # 1️⃣ Clone the repository
 git clone https://github.com/bohdanadamenko/Learn_French.git
-cd Learn_French
+cd FrenchLessons
 
 # 2️⃣ Create a virtual environment
 python3 -m venv .venv
@@ -61,6 +61,8 @@ cat > .env << EOF
 SECRET_KEY=your-super-secret-key-here
 DEBUG=True
 ALLOWED_HOSTS=localhost,127.0.0.1
+GOOGLE_CLIENT_ID=your-google-client-id
+GOOGLE_CLIENT_SECRET=your-google-client-secret
 EOF
 
 # 5️⃣ Apply migrations
@@ -80,13 +82,14 @@ python manage.py runserver
 ## 📁 Project Structure
 
 ```
-📦 Learn_French/
+📦 FrenchLessons/
 ├── 📂 apps/                    # 🧩 Application Domains
 │   ├── 📂 core/                # 🏠 Core logic (Views, Templates, Static)
 │   ├── 📂 lessons/             # 🎓 Lessons Domain (Models, Selectors)
 │   └── 📂 quizzes/             # ❓ Quizzes Domain (Models, Selectors)
 ├── 📂 learn_french/            # ⚙️ Django settings
 ├── 📂 locale/                  # 🌍 Global Translations
+├── 📂 templates/               # 🎨 Global Template Overrides
 ├── 📂 utils/                   # 🛠️ Utility scripts
 ├── 📄 .env                     # 🔐 Secrets (not in git!)
 ├── 📄 requirements.txt         # 📦 Dependencies
@@ -140,13 +143,14 @@ To edit lessons, use **Django Admin**:
 | 🛡️ | `DEBUG=False` in production |
 | 🌐 | `ALLOWED_HOSTS` & `CSRF_TRUSTED_ORIGINS` restricted |
 | 🔐 | Passwords validated by Django |
+| 🛡️ | CSRF Protection enabled |
 
 ---
 
 ## 📄 License
 
 ```
-© 2025 Learn French. All rights reserved.
+© 2025 FrenchLessons. All rights reserved.
 Proprietary License - not for distribution
 ```
 
@@ -156,7 +160,7 @@ Proprietary License - not for distribution
 
 ### 👨‍💻 Development
 
-**Learn French Team** 🇧🇪
+**FrenchLessons Team** 🇧🇪
 
 [![Made with ❤️](https://img.shields.io/badge/Made%20with-❤️-red?style=flat-square)](https://github.com/bohdanadamenko)
 

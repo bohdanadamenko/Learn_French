@@ -1,5 +1,5 @@
 """
-Django settings for learn_french project.
+Django settings for FrenchLessons project.
 
 For more information on this file, see
 https://docs.djangoproject.com/en/5.2/topics/settings/
@@ -151,7 +151,10 @@ ROOT_URLCONF = 'learn_french.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'apps' / 'core' / 'templates'],
+        'DIRS': [
+            BASE_DIR / 'templates',
+            BASE_DIR / 'apps' / 'core' / 'templates',
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -249,17 +252,14 @@ ACCOUNT_EMAIL_REQUIRED = True
 ACCOUNT_USERNAME_REQUIRED = False
 ACCOUNT_AUTHENTICATION_METHOD = 'email'
 ACCOUNT_EMAIL_VERIFICATION = 'none' # For development simplicity
+SOCIALACCOUNT_EMAIL_AUTHENTICATION = True
+SOCIALACCOUNT_EMAIL_REQUIRED = True
+SOCIALACCOUNT_QUERY_EMAIL = True
 SOCIALACCOUNT_LOGIN_ON_GET = True
 
 SOCIALACCOUNT_PROVIDERS = {
     'google': {
-        'APPS': [
-            {
-                'client_id': config('GOOGLE_CLIENT_ID', default='your-client-id'),
-                'secret': config('GOOGLE_CLIENT_SECRET', default='your-client-secret'),
-                'key': ''
-            },
-        ],
+        # APPS configuration moved to database to avoid MultipleObjectsReturned
         'SCOPE': [
             'profile',
             'email',

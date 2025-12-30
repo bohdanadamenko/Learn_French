@@ -4,7 +4,7 @@ from django.utils.translation import gettext_lazy as _
 
 class User(AbstractUser):
     """
-    Custom User model for Learn French project.
+    Custom User model for FrenchLessons project.
     Allows for future extensions like profile pictures, bio, etc.
     """
     email = models.EmailField(_('email address'), unique=True)

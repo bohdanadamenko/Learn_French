@@ -10,23 +10,21 @@ let pendingNextLessonId = null;
 // ========================================
 
 function toggleTheme() {
+    const root = document.documentElement;
     const body = document.body;
     const themeToggle = document.getElementById('themeToggle');
-    const isDark = body.getAttribute('data-theme') === 'dark';
+    const isDark = root.getAttribute('data-theme') === 'dark';
+    const newTheme = isDark ? 'light' : 'dark';
     
-    if (isDark) {
-        body.setAttribute('data-theme', 'light');
-        if (themeToggle) themeToggle.checked = false;
-        localStorage.setItem('preferredTheme', 'light');
-    } else {
-        body.setAttribute('data-theme', 'dark');
-        if (themeToggle) themeToggle.checked = true;
-        localStorage.setItem('preferredTheme', 'dark');
-    }
+    root.setAttribute('data-theme', newTheme);
+    body.setAttribute('data-theme', newTheme);
+    if (themeToggle) themeToggle.checked = !isDark;
+    localStorage.setItem('preferredTheme', newTheme);
 }
 
 function applyStoredTheme() {
     const savedTheme = localStorage.getItem('preferredTheme') || 'light';
+    document.documentElement.setAttribute('data-theme', savedTheme);
     document.body.setAttribute('data-theme', savedTheme);
     
     const themeToggle = document.getElementById('themeToggle');
@@ -42,6 +40,7 @@ function applyStoredLang() {
     // Server-side (bodyLang) is the primary source of truth on load
     const finalLang = bodyLang || savedLang || 'ru';
     
+    document.documentElement.setAttribute('data-lang', finalLang);
     document.body.setAttribute('data-lang', finalLang);
     localStorage.setItem('preferredLang', finalLang);
     
@@ -135,6 +134,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.option-btn[data-lang]').forEach(btn => {
         btn.addEventListener('click', () => {
             const lang = btn.dataset.lang;
+            document.documentElement.setAttribute('data-lang', lang);
             document.body.setAttribute('data-lang', lang);
             
             btn.parentElement.querySelectorAll('.option-btn').forEach(b => b.classList.remove('active'));
@@ -702,13 +702,16 @@ function showQuizResults() {
 
 function toggleSettings() {
     const dropdown = document.getElementById('settingsDropdown');
+    if (!dropdown) return;
     dropdown.classList.toggle('open');
     // Close user menu if open
     document.getElementById('userMenuDropdown')?.classList.remove('open');
+    document.querySelector('.user-profile')?.classList.remove('menu-open');
 }
 
 function toggleUserMenu() {
     const dropdown = document.getElementById('userMenuDropdown');
+    if (!dropdown) return;
     const profile = document.querySelector('.user-profile');
     const isOpen = dropdown.classList.toggle('open');
     profile?.classList.toggle('menu-open', isOpen);

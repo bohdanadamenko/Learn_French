@@ -5,12 +5,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Learn French</title>
+    <title>FrenchLessons</title>
     <link rel="icon" type="image/png" href="{% static 'favicon.ico' %}">
     <link rel="apple-touch-icon" href="{% static 'apple-touch-icon.png' %}">
     <link rel="stylesheet" href="{% static 'core/css/styles_unified.css' %}?v=5">
+    <script>
+        // Apply saved theme immediately to prevent flashing
+        const savedTheme = localStorage.getItem('preferredTheme') || 'light';
+        document.documentElement.setAttribute('data-theme', savedTheme);
+    </script>
 </head>
-<body data-theme="light" data-lang="{{ LANGUAGE_CODE }}">
+<body data-lang="{{ LANGUAGE_CODE }}">
 
     <!-- Mesh Background (visible in dark theme) -->
     <div class="mesh-background" aria-hidden="true"></div>

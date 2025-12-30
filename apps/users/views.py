@@ -31,5 +31,5 @@ class GuestLoginView(generic.RedirectView):
             guest_user.set_unusable_password()
             guest_user.save()
         
-        login(request, guest_user)
+        login(request, guest_user, backend='django.contrib.auth.backends.ModelBackend')
         return super().get(request, *args, **kwargs)
