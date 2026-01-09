@@ -47,23 +47,39 @@ jobs:
             exit 1
           fi
           
-          echo "Console $CONSOLE_ID created. Waiting for execution (45s)..."
-          sleep 45
+          echo "Console $CONSOLE_ID created. Waiting for execution..."
           
-          # 2. Check output for success marker
-          echo "Checking deployment output..."
-          OUTPUT=$(curl -s "https://www.pythonanywhere.com/api/v0/user/$PA_USERNAME/consoles/$CONSOLE_ID/get_latest_output/" \
-               -H "Authorization: Token $PA_API_TOKEN" | jq -r '.output')
+          MAX_CHECK_RETRIES=3
+          CHECK_COUNT=0
+          DEPLOY_SUCCESS=false
           
-          echo "--- Console Output Start ---"
-          echo "$OUTPUT"
-          echo "--- Console Output End ---"
+          while [ $CHECK_COUNT -lt $MAX_CHECK_RETRIES ]; do
+            echo "Waiting 30s before checking output (Attempt $((CHECK_COUNT+1))/$MAX_CHECK_RETRIES)..."
+            sleep 30
+            
+            # 2. Check output for success marker
+            echo "Checking deployment output..."
+            OUTPUT=$(curl -s "https://www.pythonanywhere.com/api/v0/user/$PA_USERNAME/consoles/$CONSOLE_ID/get_latest_output/" \
+                 -H "Authorization: Token $PA_API_TOKEN" | jq -r '.output')
+            
+            if echo "$OUTPUT" | grep -q "DEPLOYMENT_COMPLETE"; then
+              echo "--- Console Output Start ---"
+              echo "$OUTPUT"
+              echo "--- Console Output End ---"
+              echo "✅ Deployment commands executed successfully!"
+              DEPLOY_SUCCESS=true
+              break
+            fi
+            
+            echo "Marker 'DEPLOYMENT_COMPLETE' not found yet."
+            CHECK_COUNT=$((CHECK_COUNT+1))
+          done
           
-          if echo "$OUTPUT" | grep -q "DEPLOYMENT_COMPLETE"; then
-            echo "✅ Deployment commands executed successfully!"
-          else
-            echo "❌ Error: Deployment marker 'DEPLOYMENT_COMPLETE' not found in output."
-            # We don't exit 1 here yet to allow console deletion, but we'll fail later
+          if [ "$DEPLOY_SUCCESS" = false ]; then
+            echo "❌ Error: Deployment marker 'DEPLOYMENT_COMPLETE' not found after all attempts."
+            echo "--- Final Console Output Start ---"
+            echo "$OUTPUT"
+            echo "--- Final Console Output End ---"
             DEPLOY_FAILED=true
           fi
           
