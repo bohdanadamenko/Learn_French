@@ -37,7 +37,14 @@ jobs:
                -d "{\"executable\": \"bash\", \"working_directory\": \"/home/$PA_USERNAME/Learn_French\"}" \
                > console.json
           
-          CONSOLE_ID=$(grep -o '"id": [0-9]*' console.json | awk '{print $2}')
+          CONSOLE_ID=$(jq '.id' console.json)
+          
+          if [ "$CONSOLE_ID" == "null" ] || [ -z "$CONSOLE_ID" ]; then
+            echo "Error: Failed to create console or get ID. Response:"
+            cat console.json
+            exit 1
+          fi
+          
           echo "Console created with ID: $CONSOLE_ID"
           
           # 2. Send commands to the console
