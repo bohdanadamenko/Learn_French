@@ -34,3 +34,5 @@ jobs:
         SECRET_KEY: 'test-key-for-ci'
         DEBUG: 'True'
         ALLOWED_HOSTS: 'localhost'
+        GOOGLE_CLIENT_ID: 'dummy-client-id-for-ci'
+        GOOGLE_CLIENT_SECRET: 'dummy-client-secret-for-ci'
