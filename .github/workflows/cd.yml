@@ -54,16 +54,27 @@ jobs:
           CONSOLE_READY=false
           
           while [ $POLL_COUNT -lt $MAX_POLL_RETRIES ]; do
-            STATE=$(curl -s -H "Authorization: Token $PA_API_TOKEN" \
-                    "https://www.pythonanywhere.com/api/v0/user/$PA_USERNAME/consoles/" \
-                    | jq -r ".[] | select(.id == $CONSOLE_ID) | .state")
+            # Fetch all consoles and filter by ID
+            RESPONSE=$(curl -s -H "Authorization: Token $PA_API_TOKEN" \
+                    "https://www.pythonanywhere.com/api/v0/user/$PA_USERNAME/consoles/")
             
-            echo "Current state: $STATE"
+            # Debug: show response if it's not a list
+            if ! echo "$RESPONSE" | jq -e 'type == "array"' > /dev/null; then
+              echo "Warning: Unexpected API response format:"
+              echo "$RESPONSE"
+            fi
+
+            STATE=$(echo "$RESPONSE" | jq -r ".[] | select(.id | tostring == \"$CONSOLE_ID\") | .state")
             
-            if [ "$STATE" == "running" ]; then
-              CONSOLE_READY=true
-              echo "Console is ready!"
-              break
+            if [ -z "$STATE" ] || [ "$STATE" == "null" ]; then
+              echo "Console $CONSOLE_ID not found in list yet, waiting..."
+            else
+              echo "Current state: $STATE"
+              if [ "$STATE" == "running" ]; then
+                CONSOLE_READY=true
+                echo "Console is ready!"
+                break
+              fi
             fi
             
             sleep 5
