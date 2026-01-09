@@ -164,6 +164,32 @@ To edit lessons, use **Django Admin**:
 
 ---
 
+## 🔄 CI/CD & Automation
+
+The project uses **GitHub Actions** for continuous integration and deployment.
+
+- **CI (Tests)**: Runs automatically on every push to `main`.
+- **CD (Deploy)**: Deploys to PythonAnywhere automatically if tests pass.
+
+[![Django CI](https://github.com/bohdanadamenko/Learn_French/actions/workflows/ci.yml/badge.svg)](https://github.com/bohdanadamenko/Learn_French/actions/workflows/ci.yml)
+
+---
+
+## 💾 Database Management
+
+### Restore Database from Backup
+If you need to restore the database content (lessons, quizzes) from the backup file:
+
+```bash
+# 1️⃣ Make sure you have the backup file
+# It should be named 'backup_data.json' in the root directory
+
+# 2️⃣ Load data into the database
+python manage.py loaddata backup_data.json
+```
+
+---
+
 ## 📄 License
 
 ```
