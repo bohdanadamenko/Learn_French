@@ -59,9 +59,11 @@ jobs:
         run: |
           ssh -o StrictHostKeyChecking=no ${{ secrets.SSH_USERNAME }}@ssh.pythonanywhere.com << 'EOF'
             set -e
-            echo "🚀 Starting deployment via SSH..."
+            echo "🚀 Starting deployment..."
             
-            PROJECT_DIR="~/Learn_French"
+            # Используем $HOME или whoami для определения пути
+            USERNAME=$(whoami)
+            PROJECT_DIR="/home/$USERNAME/Learn_French"
             VENV_PATH="$PROJECT_DIR/.venv"
             
             if [ ! -d "$PROJECT_DIR" ]; then
@@ -70,6 +72,7 @@ jobs:
             fi
             
             cd $PROJECT_DIR
+            echo "📂 Working in: $(pwd)"
             
             echo "📥 Fetching and resetting to latest changes (force pull)..."
             git fetch origin main
@@ -104,5 +107,5 @@ jobs:
               echo "⚠️ Health check warning: $HEALTH_CHECK_URL returned non-200 status."
             fi
             
-            echo "🎉 Deployment finished successfully!"
+            echo "🎉 Deployment successful!"
           EOF
