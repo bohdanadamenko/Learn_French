@@ -223,6 +223,14 @@ USE_I18N = True
 
 USE_TZ = True
 
+# Security settings for production (PythonAnywhere)
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+ACCOUNT_DEFAULT_HTTP_PROTOCOL = 'https'
+
+USE_I18N = True
+
+USE_TZ = True
+
 LOCALE_PATHS = [BASE_DIR / 'locale']
 
 
