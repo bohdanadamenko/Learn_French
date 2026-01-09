@@ -1,12 +1,14 @@
-# 🇧🇪 FrenchLessons 
+# FrenchLessons 🇫🇷🚀
+
+![CI/CD Pipeline](https://github.com/bohdanadamenko/Learn_French/actions/workflows/deploy.yml/badge.svg)
+
+An interactive platform for learning French, featuring lessons, quizzes, and progress tracking. Now with fully automated deployment to PythonAnywhere!
 <div align="center">
 
 <img src="https://img.shields.io/badge/Django-5.2-092E20?style=for-the-badge&logo=django&logoColor=white" alt="Django">
 <img src="https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
 <img src="https://img.shields.io/badge/CKEditor-5-0287D0?style=for-the-badge&logo=ckeditor&logoColor=white" alt="CKEditor">
 <img src="https://img.shields.io/badge/License-Proprietary-red?style=for-the-badge" alt="License">
-
-**🎓 Interactive platform for learning French**
 
 *Modern web application with multilingual support and responsive design*
 
