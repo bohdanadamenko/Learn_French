@@ -48,66 +48,11 @@ jobs:
         uses: appleboy/ssh-action@v1.0.3
         with:
           host: ssh.pythonanywhere.com
-          username: ${{ secrets.SSH_USERNAME || secrets.PA_USERNAME }}
-          password: ${{ secrets.PA_PASSWORD }}
+          username: ${{ secrets.SSH_USERNAME }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: 22
+          debug: true
           script: |
-            set -e
-            echo "🚀 Starting deployment via SSH..."
-            echo "📍 Current user: $(whoami)"
-            echo "📍 Current directory: $(pwd)"
-            
-            PROJECT_DIR="~/Learn_French"
-            VENV_PATH="$PROJECT_DIR/.venv"
-            
-            if [ ! -d "$PROJECT_DIR" ]; then
-              echo "❌ Error: Project directory $PROJECT_DIR not found!"
-              exit 1
-            fi
-            
-            cd $PROJECT_DIR
-            
-            echo "📥 Fetching and resetting to latest changes (force pull)..."
-            git fetch origin main
-            git reset --hard origin/main
-            
-            echo "🐍 Activating virtualenv and installing dependencies..."
-            if [ -d "$VENV_PATH" ]; then
-              source $VENV_PATH/bin/activate
-            else
-              echo "⚠️ Virtualenv not found at $VENV_PATH, trying ~/.virtualenvs/myenv"
-              source ~/.virtualenvs/myenv/bin/activate || echo "❌ Could not find virtualenv"
-            fi
-            
-            pip install -r requirements.txt
-            
-            echo "🗄️ Running migrations..."
-            python manage.py migrate
-            
-            echo "📁 Collecting static files (with cleanup)..."
-            python manage.py collectstatic --noinput --clear
-            
-            echo "♻️ Reloading web app..."
-            PA_USER=${{ secrets.SSH_USERNAME || secrets.PA_USERNAME }}
-            WSGI_FILE="/var/www/${PA_USER}_pythonanywhere_com_wsgi.py"
-            CUSTOM_WSGI="/var/www/$(echo "${{ secrets.PA_HOST }}" | sed 's/\./_/g')_wsgi.py"
-            
-            if [ -f "$CUSTOM_WSGI" ]; then
-              echo "Touching custom domain WSGI: $CUSTOM_WSGI"
-              touch "$CUSTOM_WSGI"
-            else
-              echo "Touching default WSGI: $WSGI_FILE"
-              touch "$WSGI_FILE"
-            fi
-            
-            echo "🔍 Performing health check..."
-            sleep 5
-            HEALTH_CHECK_URL="https://${{ secrets.PA_HOST }}"
-            if curl -s --head "$HEALTH_CHECK_URL" | grep "200 OK" > /dev/null; then
-              echo "✅ Health check passed: $HEALTH_CHECK_URL is up!"
-            else
-              echo "⚠️ Health check warning: $HEALTH_CHECK_URL returned non-200 status. Please check manually."
-            fi
-            
-            echo "🎉 Deployment finished successfully!"
+            whoami
+            pwd
+            echo "✅ SSH connection successful!"
