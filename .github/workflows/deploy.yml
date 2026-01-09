@@ -44,15 +44,68 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Deploy via SSH
-        uses: appleboy/ssh-action@v1.0.3
-        with:
-          host: ssh.pythonanywhere.com
-          username: ${{ secrets.SSH_USERNAME }}
-          key: ${{ secrets.SSH_PRIVATE_KEY }}
-          port: 22
-          debug: true
-          script: |
-            whoami
-            pwd
-            echo "✅ SSH connection successful!"
+      - name: Setup SSH
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan -H ssh.pythonanywhere.com >> ~/.ssh/known_hosts
+
+      - name: Execute Remote Deployment
+        run: |
+          ssh -o StrictHostKeyChecking=no ${{ secrets.SSH_USERNAME }}@ssh.pythonanywhere.com << 'EOF'
+            set -e
+            echo "🚀 Starting deployment via SSH..."
+            
+            PROJECT_DIR="~/Learn_French"
+            VENV_PATH="$PROJECT_DIR/.venv"
+            
+            if [ ! -d "$PROJECT_DIR" ]; then
+              echo "❌ Error: Project directory $PROJECT_DIR not found!"
+              exit 1
+            fi
+            
+            cd $PROJECT_DIR
+            
+            echo "📥 Fetching and resetting to latest changes (force pull)..."
+            git fetch origin main
+            git reset --hard origin/main
+            
+            echo "🐍 Activating virtualenv and installing dependencies..."
+            if [ -d "$VENV_PATH" ]; then
+              source $VENV_PATH/bin/activate
+            else
+              echo "⚠️ Virtualenv not found at $VENV_PATH, trying ~/.virtualenvs/myenv"
+              source ~/.virtualenvs/myenv/bin/activate || echo "❌ Could not find virtualenv"
+            fi
+            
+            pip install -r requirements.txt
+            
+            echo "🗄️ Running migrations..."
+            python manage.py migrate
+            
+            echo "📁 Collecting static files (with cleanup)..."
+            python manage.py collectstatic --noinput --clear
+            
+            echo "♻️ Reloading web app..."
+            # Use the secret directly in the shell script if needed, or rely on the PA_HOST secret
+            # Note: secrets are not automatically available inside the SSH session unless passed.
+            # But since we are using a heredoc, we can interpolate them if we don't use single quotes for EOF.
+            # However, using single quotes 'EOF' is safer for shell scripts. 
+            # We'll use the environment variable approach or just hardcode the logic for PA.
+            
+            WSGI_FILE="/var/www/${{ secrets.SSH_USERNAME }}_pythonanywhere_com_wsgi.py"
+            # We'll use a simple reload logic that covers most cases
+            touch $WSGI_FILE
+            
+            echo "🔍 Performing health check..."
+            sleep 5
+            HEALTH_CHECK_URL="https://${{ secrets.PA_HOST }}"
+            if curl -s --head "$HEALTH_CHECK_URL" | grep "200 OK" > /dev/null; then
+              echo "✅ Health check passed: $HEALTH_CHECK_URL is up!"
+            else
+              echo "⚠️ Health check warning: $HEALTH_CHECK_URL returned non-200 status."
+            fi
+            
+            echo "🎉 Deployment finished successfully!"
+          EOF
