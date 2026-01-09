@@ -168,12 +168,12 @@ To edit lessons, use **Django Admin**:
 
 ## 🔄 CI/CD & Automation
 
-The project uses **GitHub Actions** for continuous integration and deployment.
+The project uses **GitHub Actions** for a fully automated CI/CD pipeline.
 
-- **CI (Tests)**: Runs automatically on every push to `main`.
-- **CD (Deploy)**: Deploys to PythonAnywhere automatically if tests pass.
+- **CI/CD Pipeline**: A single workflow that runs tests and deploys to PythonAnywhere automatically if tests pass.
+- **Error Tracking**: Integrated with **Sentry** for real-time production error monitoring.
 
-[![Django CI](https://github.com/bohdanadamenko/Learn_French/actions/workflows/ci.yml/badge.svg)](https://github.com/bohdanadamenko/Learn_French/actions/workflows/ci.yml)
+[![CI/CD Pipeline](https://github.com/bohdanadamenko/Learn_French/actions/workflows/deploy.yml/badge.svg)](https://github.com/bohdanadamenko/Learn_French/actions/workflows/deploy.yml)
 
 ---
 
