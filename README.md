@@ -1,4 +1,4 @@
-# 🇧🇪 FrenchLessons
+# 🇧🇪 FrenchLessons 
 <div align="center">
 
 <img src="https://img.shields.io/badge/Django-5.2-092E20?style=for-the-badge&logo=django&logoColor=white" alt="Django">
