@@ -22,22 +22,34 @@ jobs:
           PA_API_TOKEN: ${{ secrets.PA_API_TOKEN }}
           PA_HOST: ${{ secrets.PA_HOST }}
         run: |
+          set -e  # Exit immediately if a command exits with a non-zero status
+
+          if [ -z "$PA_API_TOKEN" ]; then
+            echo "Error: PA_API_TOKEN secret is missing!"
+            exit 1
+          fi
+
           # 1. Create a new Bash console
-          curl -X POST "https://www.pythonanywhere.com/api/v0/user/$PA_USERNAME/consoles/" \
+          echo "Creating console..."
+          curl -f -X POST "https://www.pythonanywhere.com/api/v0/user/$PA_USERNAME/consoles/" \
                -H "Authorization: Token $PA_API_TOKEN" \
                -H "Content-Type: application/json" \
                -d "{\"executable\": \"bash\", \"working_directory\": \"/home/$PA_USERNAME/Learn_French\"}" \
                > console.json
           
           CONSOLE_ID=$(grep -o '"id": [0-9]*' console.json | awk '{print $2}')
+          echo "Console created with ID: $CONSOLE_ID"
           
           # 2. Send commands to the console
-          # We use double quotes for the JSON payload and escape inner quotes
-          curl -X POST "https://www.pythonanywhere.com/api/v0/user/$PA_USERNAME/consoles/$CONSOLE_ID/send_input/" \
+          echo "Sending deployment commands..."
+          curl -f -X POST "https://www.pythonanywhere.com/api/v0/user/$PA_USERNAME/consoles/$CONSOLE_ID/send_input/" \
                -H "Authorization: Token $PA_API_TOKEN" \
                -H "Content-Type: application/json" \
                -d "{\"input\": \"git pull\nsource /home/$PA_USERNAME/.virtualenvs/myenv/bin/activate\npip install -r requirements.txt\npython manage.py migrate\npython manage.py collectstatic --noinput\nexit\n\"}"
 
           # 3. Reload the web app
-          curl -X POST "https://www.pythonanywhere.com/api/v0/user/$PA_USERNAME/webapps/$PA_HOST/reload/" \
+          echo "Reloading web app..."
+          curl -f -X POST "https://www.pythonanywhere.com/api/v0/user/$PA_USERNAME/webapps/$PA_HOST/reload/" \
                -H "Authorization: Token $PA_API_TOKEN"
+          
+          echo "Deployment completed successfully!"
