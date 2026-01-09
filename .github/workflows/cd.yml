@@ -22,80 +22,63 @@ jobs:
           PA_API_TOKEN: ${{ secrets.PA_API_TOKEN }}
           PA_HOST: ${{ secrets.PA_HOST }}
         run: |
-          set -e  # Exit immediately if a command exits with a non-zero status
-
+          set -e
+          
           if [ -z "$PA_API_TOKEN" ]; then
             echo "Error: PA_API_TOKEN secret is missing!"
             exit 1
           fi
 
-          # 1. Create a new Bash console
-          echo "Creating console..."
-          curl -f -X POST "https://www.pythonanywhere.com/api/v0/user/$PA_USERNAME/consoles/" \
+          # 1. Create console and execute all commands at once
+          # This is more robust than send_input
+          echo "Creating console and executing deployment script..."
+          DEPLOY_SCRIPT="cd ~/Learn_French && git pull && source /home/$PA_USERNAME/.virtualenvs/myenv/bin/activate && pip install -r requirements.txt && python manage.py migrate && python manage.py collectstatic --noinput && echo DEPLOYMENT_COMPLETE"
+          
+          RESPONSE=$(curl -s -X POST "https://www.pythonanywhere.com/api/v0/user/$PA_USERNAME/consoles/" \
                -H "Authorization: Token $PA_API_TOKEN" \
                -H "Content-Type: application/json" \
-               -d "{\"executable\": \"bash\", \"working_directory\": \"/home/$PA_USERNAME/Learn_French\"}" \
-               > console.json
+               -d "{\"executable\": \"bash\", \"arguments\": [\"-c\", \"$DEPLOY_SCRIPT\"]}")
           
-          CONSOLE_ID=$(jq '.id' console.json)
+          CONSOLE_ID=$(echo "$RESPONSE" | jq -r '.id')
           
           if [ "$CONSOLE_ID" == "null" ] || [ -z "$CONSOLE_ID" ]; then
-            echo "Error: Failed to create console or get ID. Response:"
-            cat console.json
+            echo "Error: Failed to create console. Response:"
+            echo "$RESPONSE"
             exit 1
           fi
           
-          echo "Console created with ID: $CONSOLE_ID"
+          echo "Console $CONSOLE_ID created. Waiting for execution (45s)..."
+          sleep 45
           
-          # Wait for the console to be ready by polling its state
-          echo "Waiting for console $CONSOLE_ID to be 'running'..."
-          MAX_POLL_RETRIES=24 # 24 * 5s = 120s (2 minutes)
-          POLL_COUNT=0
-          CONSOLE_READY=false
+          # 2. Check output for success marker
+          echo "Checking deployment output..."
+          OUTPUT=$(curl -s "https://www.pythonanywhere.com/api/v0/user/$PA_USERNAME/consoles/$CONSOLE_ID/get_latest_output/" \
+               -H "Authorization: Token $PA_API_TOKEN" | jq -r '.output')
           
-          while [ $POLL_COUNT -lt $MAX_POLL_RETRIES ]; do
-            # Fetch all consoles and filter by ID
-            RESPONSE=$(curl -s -H "Authorization: Token $PA_API_TOKEN" \
-                    "https://www.pythonanywhere.com/api/v0/user/$PA_USERNAME/consoles/")
-            
-            # Debug: show response if it's not a list
-            if ! echo "$RESPONSE" | jq -e 'type == "array"' > /dev/null; then
-              echo "Warning: Unexpected API response format:"
-              echo "$RESPONSE"
-            fi
-
-            STATE=$(echo "$RESPONSE" | jq -r ".[] | select(.id | tostring == \"$CONSOLE_ID\") | .state")
-            
-            if [ -z "$STATE" ] || [ "$STATE" == "null" ]; then
-              echo "Console $CONSOLE_ID not found in list yet, waiting..."
-            else
-              echo "Current state: $STATE"
-              if [ "$STATE" == "running" ]; then
-                CONSOLE_READY=true
-                echo "Console is ready!"
-                break
-              fi
-            fi
-            
-            sleep 5
-            POLL_COUNT=$((POLL_COUNT+1))
-          done
+          echo "--- Console Output Start ---"
+          echo "$OUTPUT"
+          echo "--- Console Output End ---"
           
-          if [ "$CONSOLE_READY" = false ]; then
-            echo "Error: Console did not reach 'running' state in time."
-            exit 1
+          if echo "$OUTPUT" | grep -q "DEPLOYMENT_COMPLETE"; then
+            echo "✅ Deployment commands executed successfully!"
+          else
+            echo "❌ Error: Deployment marker 'DEPLOYMENT_COMPLETE' not found in output."
+            # We don't exit 1 here yet to allow console deletion, but we'll fail later
+            DEPLOY_FAILED=true
           fi
           
-          # 2. Send commands to the console
-          echo "Sending deployment commands..."
-          curl -f -X POST "https://www.pythonanywhere.com/api/v0/user/$PA_USERNAME/consoles/$CONSOLE_ID/send_input/" \
-               -H "Authorization: Token $PA_API_TOKEN" \
-               -H "Content-Type: application/json" \
-               -d "{\"input\": \"git pull\nsource /home/$PA_USERNAME/.virtualenvs/myenv/bin/activate\npip install -r requirements.txt\npython manage.py migrate\npython manage.py collectstatic --noinput\nexit\n\"}"
+          # 3. Delete the console to clean up
+          echo "Deleting console $CONSOLE_ID..."
+          curl -s -X DELETE "https://www.pythonanywhere.com/api/v0/user/$PA_USERNAME/consoles/$CONSOLE_ID/" \
+               -H "Authorization: Token $PA_API_TOKEN"
+          
+          if [ "$DEPLOY_FAILED" = true ]; then
+            exit 1
+          fi
 
-          # 3. Reload the web app
-          echo "Reloading web app..."
+          # 4. Reload the web app
+          echo "Reloading web app $PA_HOST..."
           curl -f -X POST "https://www.pythonanywhere.com/api/v0/user/$PA_USERNAME/webapps/$PA_HOST/reload/" \
                -H "Authorization: Token $PA_API_TOKEN"
           
-          echo "Deployment completed successfully!"
+          echo "🚀 Deployment completed successfully!"
