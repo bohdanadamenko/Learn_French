@@ -47,9 +47,13 @@ jobs:
       - name: Setup SSH
         run: |
           mkdir -p ~/.ssh
-          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
+          echo "${{ secrets.SSH_PRIVATE_KEY_BASE64 }}" | base64 -d > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
           ssh-keyscan -H ssh.pythonanywhere.com >> ~/.ssh/known_hosts
+
+      - name: Test SSH connection
+        run: |
+          ssh -v ${{ secrets.SSH_USERNAME }}@ssh.pythonanywhere.com 'echo "✅ SSH Connected!"'
 
       - name: Execute Remote Deployment
         run: |
@@ -88,14 +92,7 @@ jobs:
             python manage.py collectstatic --noinput --clear
             
             echo "♻️ Reloading web app..."
-            # Use the secret directly in the shell script if needed, or rely on the PA_HOST secret
-            # Note: secrets are not automatically available inside the SSH session unless passed.
-            # But since we are using a heredoc, we can interpolate them if we don't use single quotes for EOF.
-            # However, using single quotes 'EOF' is safer for shell scripts. 
-            # We'll use the environment variable approach or just hardcode the logic for PA.
-            
             WSGI_FILE="/var/www/${{ secrets.SSH_USERNAME }}_pythonanywhere_com_wsgi.py"
-            # We'll use a simple reload logic that covers most cases
             touch $WSGI_FILE
             
             echo "🔍 Performing health check..."
