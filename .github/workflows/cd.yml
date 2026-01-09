@@ -47,41 +47,40 @@ jobs:
           
           echo "Console created with ID: $CONSOLE_ID"
           
-          # Wait for the console to be ready
-          echo "Waiting for console to initialize (60s)..."
-          sleep 60
+          # Wait for the console to be ready by polling its state
+          echo "Waiting for console $CONSOLE_ID to be 'running'..."
+          MAX_POLL_RETRIES=24 # 24 * 5s = 120s (2 minutes)
+          POLL_COUNT=0
+          CONSOLE_READY=false
+          
+          while [ $POLL_COUNT -lt $MAX_POLL_RETRIES ]; do
+            STATE=$(curl -s -H "Authorization: Token $PA_API_TOKEN" \
+                    "https://www.pythonanywhere.com/api/v0/user/$PA_USERNAME/consoles/" \
+                    | jq -r ".[] | select(.id == $CONSOLE_ID) | .state")
+            
+            echo "Current state: $STATE"
+            
+            if [ "$STATE" == "running" ]; then
+              CONSOLE_READY=true
+              echo "Console is ready!"
+              break
+            fi
+            
+            sleep 5
+            POLL_COUNT=$((POLL_COUNT+1))
+          done
+          
+          if [ "$CONSOLE_READY" = false ]; then
+            echo "Error: Console did not reach 'running' state in time."
+            exit 1
+          fi
           
           # 2. Send commands to the console
           echo "Sending deployment commands..."
-          MAX_RETRIES=5
-          RETRY_COUNT=0
-          SUCCESS=false
-          
-          while [ $RETRY_COUNT -lt $MAX_RETRIES ]; do
-            # We use -s to silence progress but -S to show errors, and we check exit code
-            HTTP_CODE=$(curl -s -o /dev/null -w "%{http_code}" -X POST "https://www.pythonanywhere.com/api/v0/user/$PA_USERNAME/consoles/$CONSOLE_ID/send_input/" \
-                 -H "Authorization: Token $PA_API_TOKEN" \
-                 -H "Content-Type: application/json" \
-                 -d "{\"input\": \"git pull\nsource /home/$PA_USERNAME/.virtualenvs/myenv/bin/activate\npip install -r requirements.txt\npython manage.py migrate\npython manage.py collectstatic --noinput\nexit\n\"}")
-            
-            if [ "$HTTP_CODE" -eq 200 ] || [ "$HTTP_CODE" -eq 201 ]; then
-              SUCCESS=true
-              echo "Commands sent successfully!"
-              break
-            elif [ "$HTTP_CODE" -eq 412 ]; then
-              echo "Console not ready (412), retrying in 10s... (Attempt $((RETRY_COUNT+1))/$MAX_RETRIES)"
-              sleep 10
-              RETRY_COUNT=$((RETRY_COUNT+1))
-            else
-              echo "Error: Unexpected HTTP code $HTTP_CODE"
-              exit 1
-            fi
-          done
-          
-          if [ "$SUCCESS" = false ]; then
-            echo "Error: Failed to send commands after $MAX_RETRIES retries."
-            exit 1
-          fi
+          curl -f -X POST "https://www.pythonanywhere.com/api/v0/user/$PA_USERNAME/consoles/$CONSOLE_ID/send_input/" \
+               -H "Authorization: Token $PA_API_TOKEN" \
+               -H "Content-Type: application/json" \
+               -d "{\"input\": \"git pull\nsource /home/$PA_USERNAME/.virtualenvs/myenv/bin/activate\npip install -r requirements.txt\npython manage.py migrate\npython manage.py collectstatic --noinput\nexit\n\"}"
 
           # 3. Reload the web app
           echo "Reloading web app..."
