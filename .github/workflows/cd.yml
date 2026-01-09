@@ -37,7 +37,7 @@ jobs:
           RESPONSE=$(curl -s -X POST "https://www.pythonanywhere.com/api/v0/user/$PA_USERNAME/consoles/" \
                -H "Authorization: Token $PA_API_TOKEN" \
                -H "Content-Type: application/json" \
-               -d "{\"executable\": \"bash\", \"arguments\": [\"-c\", \"$DEPLOY_SCRIPT\"]}")
+               -d "{\"executable\": \"bash\", \"arguments\": \"-c '$DEPLOY_SCRIPT'\"}")
           
           CONSOLE_ID=$(echo "$RESPONSE" | jq -r '.id')
           
