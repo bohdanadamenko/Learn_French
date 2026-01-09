@@ -30,24 +30,24 @@ class LessonModelTest(TestCase):
         )
 
     def test_lesson_creation(self):
-        """Test that lessons are created correctly."""
+        """Test that lessons are created correctly. ✨"""
         self.assertEqual(Lesson.objects.count(), 2)
         self.assertEqual(self.lesson1.title_ru, "Тестовый урок 1")
         self.assertEqual(self.lesson1.data_lesson_id, "lesson1")
 
     def test_lesson_ordering(self):
-        """Test that lessons are ordered by 'order' field."""
+        """Test that lessons are ordered by 'order' field. 🔢"""
         lessons = Lesson.objects.all()
         self.assertEqual(lessons[0], self.lesson1)
         self.assertEqual(lessons[1], self.lesson2)
 
     def test_lesson_str_method(self):
-        """Test the __str__ method returns title_fr by default."""
+        """Test the __str__ method returns title_fr by default. 📝"""
         # Default language is 'fr' in settings
         self.assertEqual(str(self.lesson1), "Leçon de test 1")
 
     def test_unique_data_lesson_id(self):
-        """Test that data_lesson_id is unique."""
+        """Test that data_lesson_id is unique. 🆔"""
         with self.assertRaises(Exception):
             Lesson.objects.create(
                 title="Duplicate",
@@ -85,12 +85,12 @@ class LessonSelectorTest(TestCase):
         )
 
     def test_get_lessons_list_returns_all(self):
-        """Test that get_lessons_list returns all lessons."""
+        """Test that get_lessons_list returns all lessons. 📋"""
         lessons = get_lessons_list()
         self.assertEqual(lessons.count(), 3)
 
     def test_get_lessons_list_ordered(self):
-        """Test that lessons are returned in order."""
+        """Test that lessons are returned in order. 📐"""
         lessons = list(get_lessons_list())
         self.assertEqual(lessons[0].order, 1)
         self.assertEqual(lessons[1].order, 2)
@@ -101,20 +101,20 @@ class TemplateTagTest(TestCase):
     """Tests for lesson template tags."""
 
     def test_split_filter(self):
-        """Test the split filter."""
+        """Test the split filter. ✂️"""
         from apps.lessons.templatetags.lesson_filters import split
         self.assertEqual(split("a,b,c", ","), ["a", "b", "c"])
         self.assertEqual(split("hello world", " "), ["hello", "world"])
 
     def test_get_emoji_filter(self):
-        """Test the get_emoji filter."""
+        """Test the get_emoji filter. 😀"""
         from apps.lessons.templatetags.lesson_filters import get_emoji
         self.assertEqual(get_emoji("🇫🇷 French"), "🇫🇷")
         self.assertEqual(get_emoji("NoEmoji"), "NoEmoji")
         self.assertEqual(get_emoji(""), "")
 
     def test_get_text_after_emoji_filter(self):
-        """Test the get_text_after_emoji filter."""
+        """Test the get_text_after_emoji filter. 🔡"""
         from apps.lessons.templatetags.lesson_filters import get_text_after_emoji
         self.assertEqual(get_text_after_emoji("🇫🇷 French"), "French")
         self.assertEqual(get_text_after_emoji("NoEmoji"), "")

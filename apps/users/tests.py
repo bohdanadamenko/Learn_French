@@ -11,7 +11,7 @@ class UserModelTest(TestCase):
     """Tests for the custom User model."""
 
     def test_create_user(self):
-        """Test creating a regular user."""
+        """Test creating a regular user. 👤"""
         user = User.objects.create_user(
             username="testuser",
             email="test@example.com",
@@ -24,7 +24,7 @@ class UserModelTest(TestCase):
         self.assertFalse(user.is_superuser)
 
     def test_create_superuser(self):
-        """Test creating a superuser."""
+        """Test creating a superuser. 👑"""
         admin = User.objects.create_superuser(
             username="admin",
             email="admin@example.com",
@@ -35,7 +35,7 @@ class UserModelTest(TestCase):
         self.assertTrue(admin.is_superuser)
 
     def test_email_unique(self):
-        """Test that email must be unique."""
+        """Test that email must be unique. 📧"""
         User.objects.create_user(
             username="user1",
             email="unique@example.com",
@@ -49,7 +49,7 @@ class UserModelTest(TestCase):
             )
 
     def test_user_str(self):
-        """Test the __str__ method returns username."""
+        """Test the __str__ method returns username. 🆔"""
         user = User.objects.create_user(
             username="displayname",
             email="display@example.com",

@@ -30,20 +30,20 @@ class IndexViewTest(TestCase):
         )
 
     def test_index_requires_login(self):
-        """Test that index page requires authentication."""
+        """Test that index page requires authentication. 🔐"""
         response = self.client.get(reverse('core:index'))
         # Should redirect to login
         self.assertEqual(response.status_code, 302)
         self.assertIn('login', response.url.lower())
 
     def test_index_authenticated(self):
-        """Test that authenticated user can access index."""
+        """Test that authenticated user can access index. ✅"""
         self.client.login(username="testuser", password="testpass123")
         response = self.client.get(reverse('core:index'))
         self.assertEqual(response.status_code, 200)
 
     def test_index_contains_lessons(self):
-        """Test that index page contains lessons in context."""
+        """Test that index page contains lessons in context. 📚"""
         self.client.login(username="testuser", password="testpass123")
         response = self.client.get(reverse('core:index'))
         self.assertIn('lessons', response.context)
@@ -55,12 +55,12 @@ class ErrorPagesTest(TestCase):
 
     @override_settings(DEBUG=False)
     def test_404_page(self):
-        """Test that 404 page returns correct status and uses custom template."""
+        """Test that 404 page returns correct status and uses custom template. 🔍"""
         response = self.client.get('/nonexistent-page-12345/')
         self.assertEqual(response.status_code, 404)
 
     def test_custom_404_handler_direct(self):
-        """Test 404 handler function directly."""
+        """Test 404 handler function directly. 🚫"""
         from django.test import RequestFactory
         from apps.core.views import custom_404
         
@@ -71,7 +71,7 @@ class ErrorPagesTest(TestCase):
         self.assertIn(b'404', response.content)
 
     def test_custom_500_handler_direct(self):
-        """Test 500 handler function directly."""
+        """Test 500 handler function directly. 💥"""
         from django.test import RequestFactory
         from apps.core.views import custom_500
         

@@ -32,18 +32,18 @@ class QuestionModelTest(TestCase):
         )
 
     def test_question_creation(self):
-        """Test that questions are created correctly."""
+        """Test that questions are created correctly. ❓"""
         self.assertEqual(Question.objects.count(), 2)
         self.assertEqual(self.question1.lesson, self.lesson)
 
     def test_question_ordering(self):
-        """Test that questions are ordered by 'order' field."""
+        """Test that questions are ordered by 'order' field. 🔢"""
         questions = Question.objects.all()
         self.assertEqual(questions[0], self.question1)
         self.assertEqual(questions[1], self.question2)
 
     def test_question_cascade_delete(self):
-        """Test that questions are deleted when lesson is deleted."""
+        """Test that questions are deleted when lesson is deleted. 🗑️"""
         self.lesson.delete()
         self.assertEqual(Question.objects.count(), 0)
 
@@ -78,22 +78,22 @@ class ChoiceModelTest(TestCase):
         )
 
     def test_choice_creation(self):
-        """Test that choices are created correctly."""
+        """Test that choices are created correctly. ✨"""
         self.assertEqual(Choice.objects.count(), 2)
         self.assertEqual(self.choice_correct.question, self.question)
 
     def test_correct_answer_flag(self):
-        """Test is_correct flag works."""
+        """Test is_correct flag works. ✅"""
         self.assertTrue(self.choice_correct.is_correct)
         self.assertFalse(self.choice_wrong.is_correct)
 
     def test_choice_cascade_delete(self):
-        """Test that choices are deleted when question is deleted."""
+        """Test that choices are deleted when question is deleted. 🗑️"""
         self.question.delete()
         self.assertEqual(Choice.objects.count(), 0)
 
     def test_one_correct_answer(self):
-        """Test multiple correct answers can exist (quiz logic should handle this)."""
+        """Test multiple correct answers can exist (quiz logic should handle this). 🎯"""
         another_correct = Choice.objects.create(
             question=self.question,
             text_ru="La",
