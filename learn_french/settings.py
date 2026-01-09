@@ -211,10 +211,10 @@ AUTH_PASSWORD_VALIDATORS = [
 LANGUAGE_CODE = 'fr'
 
 LANGUAGES = [
-    ('ru', 'Russian'),
+    ('ru', 'French'),
     ('uk', 'Ukrainian'),
     ('en', 'English'),
-    ('fr', 'French'),
+    ('fr', 'Russian'),
 ]
 
 TIME_ZONE = 'UTC'

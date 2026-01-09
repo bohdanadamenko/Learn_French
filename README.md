@@ -89,7 +89,7 @@ python manage.py createsuperuser
 python manage.py runserver
 
 # 8️⃣ Run tests
-python manage.py test apps
+python manage.py test apps -v 2
 ```
 
 🌐 Open: **http://127.0.0.1:8000**
