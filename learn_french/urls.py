@@ -5,11 +5,7 @@ from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
 
-def trigger_error(request):
-    division_by_zero = 1 / 0
-
 urlpatterns = [
-    path('sentry-debug/', trigger_error),
     path('admin/', admin.site.urls),
     path('i18n/', include('django.conf.urls.i18n')),
     path('ckeditor5/', include('django_ckeditor_5.urls')),
