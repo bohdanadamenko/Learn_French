@@ -38,6 +38,9 @@ jobs:
             source $VENV_PATH/bin/activate
             pip install -r requirements.txt
             
+            echo "🧹 Cleaning up duplicate SocialApps (to use settings.py config)..."
+            python manage.py shell -c "from allauth.socialaccount.models import SocialApp; SocialApp.objects.filter(provider='google').delete(); print('Cleaned up google SocialApps')"
+            
             echo "🗄️ Running migrations..."
             python manage.py migrate
             
