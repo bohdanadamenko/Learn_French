@@ -91,6 +91,9 @@ jobs:
             echo "🗄️ Running migrations..."
             python manage.py migrate
             
+            echo "📥 Loading new lesson data..."
+            python manage.py loaddata backup_data.json
+            
             echo "📁 Collecting static files (with cleanup)..."
             python manage.py collectstatic --noinput --clear
             

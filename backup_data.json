@@ -3,17 +3,17 @@
     "model": "lessons_app.lesson",
     "pk": 9,
     "fields": {
+        "title": "📚 Alphabet et lecture",
         "title_ru": "📚 Алфавит и чтение",
         "title_uk": "📚 Алфавіт та читання",
         "title_en": "📚 Alphabet and Reading",
         "title_fr": "📚 Alphabet et lecture",
+        "data_lesson_id": "lesson1",
+        "content_html": "\n            <h2>Bases de la phonétique</h2>\n            <p>Le français est beau mais complexe. Ce que vous voyez sur le papier n'est souvent pas lu comme c'est écrit.</p>\n            <h3>Sons complexes</h3>\n            <p>Il n'y a pas d'équivalents directs pour ces sons dans de nombreuses langues :</p>\n            <ul>\n                <li><strong>[y]</strong> (u) — les lèvres en tube comme pour le \"OU\", mais on essaie de dire \"I\". (tu, salut)</li>\n                <li><strong>[œ]</strong> (eu) — quelque chose entre le \"O\" et le \"E\". (peur, fleur)</li>\n                <li><strong>Nasales</strong> (an, on, in) — se prononcent \"par le nez\", sans fermer les lèvres.</li>\n            </ul>\n            <div class=\"example-box\">\n                <strong>Règle de lecture :</strong>\n                <p>L'accent est TOUJOURS sur la dernière syllabe prononcée.<br>\n                Les lettres <strong>e, s, t, d, x, z</strong> à la fin des mots ne sont généralement PAS prononcées.</p>\n            </div>\n        ",
         "content_html_ru": "\n                    <h2>Основы фонетики</h2>\n                    <p>Французский язык красив, но коварен. То, что вы видите на бумаге, часто не читается так, как написано.</p>\n                    <h3>Сложные звуки</h3>\n                    <p>В русском языке нет полных аналогов этих звуков:</p>\n                    <ul>\n                        <li><strong>[y]</strong> (u) — губы трубочкой как для \"У\", но пытаемся сказать \"И\". (tu, salut)</li>\n                        <li><strong>[œ]</strong> (eu) — что-то среднее между \"О\" и \"Э\". (peur, fleur)</li>\n                        <li><strong>Носовые</strong> (an, on, in) — произносятся \"в нос\", не смыкая губ.</li>\n                    </ul>\n                    <div class=\"example-box\">\n                        <strong>Правило чтения:</strong>\n                        <p>Ударение ВСЕГДА на последний произносимый слог.<br>\n                        Буквы <strong>e, s, t, d, x, z</strong> в конце слов обычно НЕ читаются.</p>\n                    </div>\n                ",
         "content_html_uk": "\n            <h2>Основи фонетики</h2>\n            <p>Французька мова красива, але підступна. Те, що ви бачите на папері, часто читається не так, як написано.</p>\n            <h3>Складні звуки</h3>\n            <p>В українській мові немає повних аналогів цих звуків:</p>\n            <ul>\n                <li><strong>[y]</strong> (u) — губи трубочкою як для \"У\", але намагаємося сказати \"І\". (tu, salut)</li>\n                <li><strong>[œ]</strong> (eu) — щось середнє між \"О\" та \"Е\". (peur, fleur)</li>\n                <li><strong>Носові</strong> (an, on, in) — вимовляються \"в ніс\", не стуляючи губ.</li>\n            </ul>\n            <div class=\"example-box\">\n                <strong>Правило читання:</strong>\n                <p>Наголос ЗАВЖДИ на останній склад, що вимовляється.<br>\n                Букви <strong>e, s, t, d, x, z</strong> в кінці слів зазвичай НЕ читаються.</p>\n            </div>\n        ",
         "content_html_en": "\n            <h2>Phonetics Basics</h2>\n            <p>French is beautiful but tricky. What you see on paper is often not read the way it's written.</p>\n            <h3>Complex Sounds</h3>\n            <p>There are no direct equivalents for these sounds in many languages:</p>\n            <ul>\n                <li><strong>[y]</strong> (u) — lips in a tube like for \"U\", but try to say \"I\". (tu, salut)</li>\n                <li><strong>[œ]</strong> (eu) — something between \"O\" and \"E\". (peur, fleur)</li>\n                <li><strong>Nasals</strong> (an, on, in) — pronounced \"through the nose\" without closing the lips.</li>\n            </ul>\n            <div class=\"example-box\">\n                <strong>Reading Rule:</strong>\n                <p>Stress is ALWAYS on the last pronounced syllable.<br>\n                Letters <strong>e, s, t, d, x, z</strong> at the end of words are usually NOT pronounced.</p>\n            </div>\n        ",
         "content_html_fr": "\n            <h2>Bases de la phonétique</h2>\n            <p>Le français est beau mais complexe. Ce que vous voyez sur le papier n'est souvent pas lu comme c'est écrit.</p>\n            <h3>Sons complexes</h3>\n            <p>Il n'y a pas d'équivalents directs pour ces sons dans de nombreuses langues :</p>\n            <ul>\n                <li><strong>[y]</strong> (u) — les lèvres en tube comme pour le \"OU\", mais on essaie de dire \"I\". (tu, salut)</li>\n                <li><strong>[œ]</strong> (eu) — quelque chose entre le \"O\" et le \"E\". (peur, fleur)</li>\n                <li><strong>Nasales</strong> (an, on, in) — se prononcent \"par le nez\", sans fermer les lèvres.</li>\n            </ul>\n            <div class=\"example-box\">\n                <strong>Règle de lecture :</strong>\n                <p>L'accent est TOUJOURS sur la dernière syllabe prononcée.<br>\n                Les lettres <strong>e, s, t, d, x, z</strong> à la fin des mots ne sont généralement PAS prononcées.</p>\n            </div>\n        ",
-        "title": "📚 Алфавит и чтение",
-        "data_lesson_id": "lesson1",
-        "content_html": "\n                    <h2>Основы фонетики</h2>\n                    <p>Французский язык красив, но коварен. То, что вы видите на бумаге, часто не читается так, как написано.</p>\n                    <h3>Сложные звуки</h3>\n                    <p>В русском языке нет полных аналогов этих звуков:</p>\n                    <ul>\n                        <li><strong>[y]</strong> (u) — губы трубочкой как для \"У\", но пытаемся сказать \"И\". (tu, salut)</li>\n                        <li><strong>[œ]</strong> (eu) — что-то среднее между \"О\" и \"Э\". (peur, fleur)</li>\n                        <li><strong>Носовые</strong> (an, on, in) — произносятся \"в нос\", не смыкая губ.</li>\n                    </ul>\n                    <div class=\"example-box\">\n                        <strong>Правило чтения:</strong>\n                        <p>Ударение ВСЕГДА на последний произносимый слог.<br>\n                        Буквы <strong>e, s, t, d, x, z</strong> в конце слов обычно НЕ читаются.</p>\n                    </div>\n                ",
         "order": 1,
         "date_added": "2025-11-28T06:58:01.707Z"
     }
@@ -22,17 +22,17 @@
     "model": "lessons_app.lesson",
     "pk": 10,
     "fields": {
+        "title": "🇧🇪 Particularités belges",
         "title_ru": "🇧🇪 Бельгийские особенности",
         "title_uk": "🇧🇪 Бельгійські особливості",
         "title_en": "🇧🇪 Belgian Features",
         "title_fr": "🇧🇪 Particularités belges",
+        "data_lesson_id": "lesson-be",
+        "content_html": "\n            <h2>Différences avec la France</h2>\n            <p>Le français belge est plus simple et plus logique ! Voici les principales différences qui vous feront passer pour un local.</p>\n            <h3>1. Mathématiques (Nombres)</h3>\n            <p>Les Français disent \"60 + 10\" au lieu de 70. Les Belges le disent normalement :</p>\n            <div class=\"example-box warning\">\n                <p>70 — <strong>Septante</strong></p>\n                <p>90 — <strong>Nonante</strong></p>\n            </div>\n            <h3>2. Nourriture (Moments de la journée)</h3>\n            <ul>\n                <li>🕗 Matin : <strong>Le déjeuner</strong> (Petit-déjeuner)</li>\n                <li>🕛 Midi : <strong>Le dîner</strong> (Déjeuner) <span style=\"color:#e74c3c;\">← Important !</span></li>\n                <li>🕕 Soir : <strong>Le souper</strong> (Dîner)</li>\n            </ul>\n            <h3>3. Vocabulaire</h3>\n            <p><strong>S'il vous plaît</strong> est utilisé lorsque vous donnez quelque chose (comme \"voici\").</p>\n        ",
         "content_html_ru": "\n                    <h2>Отличия от Франции</h2>\n                    <p>Бельгийский французский проще и логичнее! Вот главные отличия, которые выдадут в вас местного.</p>\n                    <h3>1. Математика (Числа)</h3>\n                    <p>Французы говорят \"60 + 10\" вместо 70. Бельгийцы говорят нормально:</p>\n                    <div class=\"example-box warning\">\n                        <p>70 — <strong>Septante</strong> [септант]</p>\n                        <p>90 — <strong>Nonante</strong> [нонант]</p>\n                    </div>\n                    <h3>2. Еда (Время суток)</h3>\n                    <ul>\n                        <li>🕗 Утро: <strong>Le déjeuner</strong> (Завтрак)</li>\n                        <li>🕛 День: <strong>Le dîner</strong> (Обед) <span style=\"color:#e74c3c;\">← Важно!</span></li>\n                        <li>🕕 Вечер: <strong>Le souper</strong> (Ужин)</li>\n                    </ul>\n                    <h3>3. Словарь</h3>\n                    <p><strong>S'il vous plaît</strong> используется, когда вы что-то отдаете (как \"вот, пожалуйста\").</p>\n                ",
         "content_html_uk": "\n            <h2>Відмінності від Франції</h2>\n            <p>Бельгійська французька простіша та логічніша! Ось головні відмінності, які видадуть у вас місцевого.</p>\n            <h3>1. Математика (Числа)</h3>\n            <p>Французи кажуть \"60 + 10\" замість 70. Бельгійці кажуть нормально:</p>\n            <div class=\"example-box warning\">\n                <p>70 — <strong>Septante</strong> [септант]</p>\n                <p>90 — <strong>Nonante</strong> [нонант]</p>\n            </div>\n            <h3>2. Їжа (Час доби)</h3>\n            <ul>\n                <li>🕗 Ранок: <strong>Le déjeuner</strong> (Сніданок)</li>\n                <li>🕛 День: <strong>Le dîner</strong> (Обід) <span style=\"color:#e74c3c;\">← Важливо!</span></li>\n                <li>🕕 Вечір: <strong>Le souper</strong> (Вечеря)</li>\n            </ul>\n            <h3>3. Словник</h3>\n            <p><strong>S'il vous plaît</strong> використовується, коли ви щось віддаєте (як \"ось, будь ласка\").</p>\n        ",
         "content_html_en": "\n            <h2>Differences from France</h2>\n            <p>Belgian French is simpler and more logical! Here are the main differences that will give you away as a local.</p>\n            <h3>1. Math (Numbers)</h3>\n            <p>The French say \"60 + 10\" instead of 70. Belgians say it normally:</p>\n            <div class=\"example-box warning\">\n                <p>70 — <strong>Septante</strong></p>\n                <p>90 — <strong>Nonante</strong></p>\n            </div>\n            <h3>2. Food (Time of Day)</h3>\n            <ul>\n                <li>🕗 Morning: <strong>Le déjeuner</strong> (Breakfast)</li>\n                <li>🕛 Afternoon: <strong>Le dîner</strong> (Lunch) <span style=\"color:#e74c3c;\">← Important!</span></li>\n                <li>🕕 Evening: <strong>Le souper</strong> (Dinner)</li>\n            </ul>\n            <h3>3. Vocabulary</h3>\n            <p><strong>S'il vous plaît</strong> is used when you are giving something (like \"here you go\").</p>\n        ",
         "content_html_fr": "\n            <h2>Différences avec la France</h2>\n            <p>Le français belge est plus simple et plus logique ! Voici les principales différences qui vous feront passer pour un local.</p>\n            <h3>1. Mathématiques (Nombres)</h3>\n            <p>Les Français disent \"60 + 10\" au lieu de 70. Les Belges le disent normalement :</p>\n            <div class=\"example-box warning\">\n                <p>70 — <strong>Septante</strong></p>\n                <p>90 — <strong>Nonante</strong></p>\n            </div>\n            <h3>2. Nourriture (Moments de la journée)</h3>\n            <ul>\n                <li>🕗 Matin : <strong>Le déjeuner</strong> (Petit-déjeuner)</li>\n                <li>🕛 Midi : <strong>Le dîner</strong> (Déjeuner) <span style=\"color:#e74c3c;\">← Important !</span></li>\n                <li>🕕 Soir : <strong>Le souper</strong> (Dîner)</li>\n            </ul>\n            <h3>3. Vocabulaire</h3>\n            <p><strong>S'il vous plaît</strong> est utilisé lorsque vous donnez quelque chose (comme \"voici\").</p>\n        ",
-        "title": "🇧🇪 Бельгийские особенности",
-        "data_lesson_id": "lesson-be",
-        "content_html": "\n                    <h2>Отличия от Франции</h2>\n                    <p>Бельгийский французский проще и логичнее! Вот главные отличия, которые выдадут в вас местного.</p>\n                    <h3>1. Математика (Числа)</h3>\n                    <p>Французы говорят \"60 + 10\" вместо 70. Бельгийцы говорят нормально:</p>\n                    <div class=\"example-box warning\">\n                        <p>70 — <strong>Septante</strong> [септант]</p>\n                        <p>90 — <strong>Nonante</strong> [нонант]</p>\n                    </div>\n                    <h3>2. Еда (Время суток)</h3>\n                    <ul>\n                        <li>🕗 Утро: <strong>Le déjeuner</strong> (Завтрак)</li>\n                        <li>🕛 День: <strong>Le dîner</strong> (Обед) <span style=\"color:#e74c3c;\">← Важно!</span></li>\n                        <li>🕕 Вечер: <strong>Le souper</strong> (Ужин)</li>\n                    </ul>\n                    <h3>3. Словарь</h3>\n                    <p><strong>S'il vous plaît</strong> используется, когда вы что-то отдаете (как \"вот, пожалуйста\").</p>\n                ",
         "order": 2,
         "date_added": "2025-11-28T06:58:01.708Z"
     }
@@ -41,17 +41,17 @@
     "model": "lessons_app.lesson",
     "pk": 11,
     "fields": {
+        "title": "👋 Salutations et politesse",
         "title_ru": "👋 Приветствия и вежливость",
         "title_uk": "👋 Привітання та ввічливість",
         "title_en": "👋 Greetings and Politeness",
         "title_fr": "👋 Salutations et politesse",
+        "data_lesson_id": "lesson2",
+        "content_html": "\n            <h2>Étiquette de communication</h2>\n            <h3>La clé universelle</h3>\n            <div class=\"example-box\">\n                <strong>Ça va?</strong>\n                <p>Une phrase joker : \"Comment ça va ?\", \"Ça va\", \"Tout va bien !\".</p>\n            </div>\n            <h3>Formel et informel</h3>\n            <ul>\n                <li><strong>Bonjour</strong> — Bonjour (jusqu'à 18h00).</li>\n                <li><strong>Bonsoir</strong> — Bonsoir.</li>\n                <li><strong>Salut</strong> — Salut (aux amis).</li>\n                <li><strong>Au revoir</strong> — Au revoir.</li>\n            </ul>\n        ",
         "content_html_ru": "\n                    <h2>Этикет общения</h2>\n                    <h3>Универсальный ключ</h3>\n                    <div class=\"example-box\">\n                        <strong>Ça va? [са ва]</strong>\n                        <p>Фраза-джокер: \"Как дела?\", \"Нормально\", \"Всё супер!\".</p>\n                    </div>\n                    <h3>Формально и неформально</h3>\n                    <ul>\n                        <li><strong>Bonjour</strong> — Здравствуйте (до 18:00).</li>\n                        <li><strong>Bonsoir</strong> — Добрый вечер.</li>\n                        <li><strong>Salut</strong> — Привет / Пока (друзьям).</li>\n                        <li><strong>Au revoir</strong> — До свидания.</li>\n                    </ul>\n                ",
         "content_html_uk": "\n            <h2>Етикет спілкування</h2>\n            <h3>Універсальний ключ</h3>\n            <div class=\"example-box\">\n                <strong>Ça va? [са ва]</strong>\n                <p>Фраза-джокер: \"Як справи?\", \"Нормально\", \"Все супер!\".</p>\n            </div>\n            <h3>Формально та неформально</h3>\n            <ul>\n                <li><strong>Bonjour</strong> — Добрий день (до 18:00).</li>\n                <li><strong>Bonsoir</strong> — Добрий вечір.</li>\n                <li><strong>Salut</strong> — Привіт / Бувай (друзям).</li>\n                <li><strong>Au revoir</strong> — До побачення.</li>\n            </ul>\n        ",
         "content_html_en": "\n            <h2>Communication Etiquette</h2>\n            <h3>The Universal Key</h3>\n            <div class=\"example-box\">\n                <strong>Ça va? [sa va]</strong>\n                <p>A joker phrase: \"How are you?\", \"Fine\", \"Everything's great!\".</p>\n            </div>\n            <h3>Formal and Informal</h3>\n            <ul>\n                <li><strong>Bonjour</strong> — Hello (until 6:00 PM).</li>\n                <li><strong>Bonsoir</strong> — Good evening.</li>\n                <li><strong>Salut</strong> — Hi / Bye (to friends).</li>\n                <li><strong>Au revoir</strong> — Goodbye.</li>\n            </ul>\n        ",
         "content_html_fr": "\n            <h2>Étiquette de communication</h2>\n            <h3>La clé universelle</h3>\n            <div class=\"example-box\">\n                <strong>Ça va?</strong>\n                <p>Une phrase joker : \"Comment ça va ?\", \"Ça va\", \"Tout va bien !\".</p>\n            </div>\n            <h3>Formel et informel</h3>\n            <ul>\n                <li><strong>Bonjour</strong> — Bonjour (jusqu'à 18h00).</li>\n                <li><strong>Bonsoir</strong> — Bonsoir.</li>\n                <li><strong>Salut</strong> — Salut (aux amis).</li>\n                <li><strong>Au revoir</strong> — Au revoir.</li>\n            </ul>\n        ",
-        "title": "👋 Приветствия и вежливость",
-        "data_lesson_id": "lesson2",
-        "content_html": "\n                    <h2>Этикет общения</h2>\n                    <h3>Универсальный ключ</h3>\n                    <div class=\"example-box\">\n                        <strong>Ça va? [са ва]</strong>\n                        <p>Фраза-джокер: \"Как дела?\", \"Нормально\", \"Всё супер!\".</p>\n                    </div>\n                    <h3>Формально и неформально</h3>\n                    <ul>\n                        <li><strong>Bonjour</strong> — Здравствуйте (до 18:00).</li>\n                        <li><strong>Bonsoir</strong> — Добрый вечер.</li>\n                        <li><strong>Salut</strong> — Привет / Пока (друзьям).</li>\n                        <li><strong>Au revoir</strong> — До свидания.</li>\n                    </ul>\n                ",
         "order": 3,
         "date_added": "2025-11-28T06:58:01.708Z"
     }
@@ -60,17 +60,17 @@
     "model": "lessons_app.lesson",
     "pk": 12,
     "fields": {
+        "title": "📝 Verbe être",
         "title_ru": "📝 Глагол être (быть)",
         "title_uk": "📝 Дієслово être (бути)",
         "title_en": "📝 Verb être (to be)",
         "title_fr": "📝 Verbe être",
+        "data_lesson_id": "lesson3",
+        "content_html": "<h2>Le fondement de la grammaire</h2>\r\n\r\n<p>Je suis, tu es... Les Fran&ccedil;ais n&#39;omettent jamais ce verbe (&quot;Je <strong>suis</strong> &eacute;tudiant&quot;).</p>\r\n\r\n<div>\r\n<div><strong>Je suis</strong></div>\r\n\r\n<div><strong>Tu es</strong></div>\r\n\r\n<div><strong>Il est</strong></div>\r\n\r\n<div><strong>Nous sommes</strong></div>\r\n\r\n<div><strong>Vous &ecirc;tes</strong></div>\r\n\r\n<div><strong>Ils sont</strong></div>\r\n</div>\r\n\r\n<h3>Exemples :</h3>\r\n\r\n<ul>\r\n\t<li>Je suis fatigu&eacute;.</li>\r\n\t<li>Vous &ecirc;tes belge ?</li>\r\n</ul>",
         "content_html_ru": "<h2>Фундамент грамматики</h2>\r\n\r\n<p>Я есть, ты есть... Французы никогда не опускают этот глагол (&quot;Je <strong>suis</strong> &eacute;tudiant&quot;).</p>\r\n\r\n<div>\r\n<div><strong>Je suis</strong><br />\r\nЯ есть</div>\r\n\r\n<div><strong>Tu es</strong><br />\r\nТы есть</div>\r\n\r\n<div><strong>Il est</strong><br />\r\nОн есть</div>\r\n\r\n<div><strong>Nous sommes</strong><br />\r\nМы есть</div>\r\n\r\n<div><strong>Vous &ecirc;tes</strong><br />\r\nВы есть</div>\r\n\r\n<div><strong>Ils sont</strong><br />\r\nОни есть</div>\r\n</div>\r\n\r\n<h3>Примеры:</h3>\r\n\r\n<ul>\r\n\t<li>Je suis fatigu&eacute; &mdash; Я устал.</li>\r\n\t<li>Vous &ecirc;tes belge? &mdash; Вы бельгиец?</li>\r\n</ul>",
         "content_html_uk": "<h2>Фундамент граматики</h2>\r\n\r\n<p>Я є, ти є... Французи ніколи не опускають це дієслово (&quot;Je <strong>suis</strong> &eacute;tudiant&quot;).</p>\r\n\r\n<div>\r\n<div><strong>Je suis</strong><br />\r\nЯ є</div>\r\n\r\n<div><strong>Tu es</strong><br />\r\nТи є</div>\r\n\r\n<div><strong>Il est</strong><br />\r\nВін є</div>\r\n\r\n<div><strong>Nous sommes</strong><br />\r\nМи є</div>\r\n\r\n<div><strong>Vous &ecirc;tes</strong><br />\r\nВи є</div>\r\n\r\n<div><strong>Ils sont</strong><br />\r\nВони є</div>\r\n</div>\r\n\r\n<h3>Приклади:</h3>\r\n\r\n<ul>\r\n\t<li>Je suis fatigu&eacute; &mdash; Я втомився.</li>\r\n\t<li>Vous &ecirc;tes belge? &mdash; Ви бельгієць?</li>\r\n</ul>",
         "content_html_en": "<h2>The Foundation of Grammar</h2>\r\n\r\n<p>I am, you are... The French never omit this verb (&quot;Je <strong>suis</strong> &eacute;tudiant&quot;).</p>\r\n\r\n<div>\r\n<div><strong>Je suis</strong><br />\r\nI am</div>\r\n\r\n<div><strong>Tu es</strong><br />\r\nYou are</div>\r\n\r\n<div><strong>Il est</strong><br />\r\nHe is</div>\r\n\r\n<div><strong>Nous sommes</strong><br />\r\nWe are</div>\r\n\r\n<div><strong>Vous &ecirc;tes</strong><br />\r\nYou are</div>\r\n\r\n<div><strong>Ils sont</strong><br />\r\nThey are</div>\r\n</div>\r\n\r\n<h3>Examples:</h3>\r\n\r\n<ul>\r\n\t<li>Je suis fatigu&eacute; &mdash; I am tired.</li>\r\n\t<li>Vous &ecirc;tes belge? &mdash; Are you Belgian?</li>\r\n</ul>",
         "content_html_fr": "<h2>Le fondement de la grammaire</h2>\r\n\r\n<p>Je suis, tu es... Les Fran&ccedil;ais n&#39;omettent jamais ce verbe (&quot;Je <strong>suis</strong> &eacute;tudiant&quot;).</p>\r\n\r\n<div>\r\n<div><strong>Je suis</strong></div>\r\n\r\n<div><strong>Tu es</strong></div>\r\n\r\n<div><strong>Il est</strong></div>\r\n\r\n<div><strong>Nous sommes</strong></div>\r\n\r\n<div><strong>Vous &ecirc;tes</strong></div>\r\n\r\n<div><strong>Ils sont</strong></div>\r\n</div>\r\n\r\n<h3>Exemples :</h3>\r\n\r\n<ul>\r\n\t<li>Je suis fatigu&eacute;.</li>\r\n\t<li>Vous &ecirc;tes belge ?</li>\r\n</ul>",
-        "title": "📝 Глагол être (быть)",
-        "data_lesson_id": "lesson3",
-        "content_html": "\n                    <h2>Фундамент грамматики</h2>\n                    <p>Я есть, ты есть... Французы никогда не опускают этот глагол (\"Je <strong>suis</strong> étudiant\").</p>\n                    <div class=\"conjugation-grid\">\n                        <div><strong>Je suis</strong><br>Я есть</div>\n                        <div><strong>Tu es</strong><br>Ты есть</div>\n                        <div><strong>Il est</strong><br>Он есть</div>\n                        <div><strong>Nous sommes</strong><br>Мы есть</div>\n                        <div><strong>Vous êtes</strong><br>Вы есть</div>\n                        <div><strong>Ils sont</strong><br>Они есть</div>\n                    </div>\n                    <h3 style=\"margin-top:20px;\">Примеры:</h3>\n                    <ul>\n                        <li>Je suis fatigué — Я устал.</li>\n                        <li>Vous êtes belge? — Вы бельгиец?</li>\n                    </ul>\n                ",
         "order": 4,
         "date_added": "2025-11-28T06:58:01.709Z"
     }
@@ -79,17 +79,17 @@
     "model": "lessons_app.lesson",
     "pk": 13,
     "fields": {
+        "title": "🎯 Articles et genre",
         "title_ru": "🎯 Артикли и род",
         "title_uk": "🎯 Артиклі та рід",
         "title_en": "🎯 Articles and Gender",
         "title_fr": "🎯 Articles et genre",
+        "data_lesson_id": "lesson4",
+        "content_html": "\n            <h2>Le passeport du mot</h2>\n            <p>L'article indique le genre du nom (masculin ou féminin).</p>\n            <h3>Définis (objet spécifique)</h3>\n            <ul>\n                <li><strong>Le</strong> (m.) : Le train</li>\n                <li><strong>La</strong> (f.) : La gare</li>\n                <li><strong>L'</strong> (devant une voyelle) : L'aéroport</li>\n                <li><strong>Les</strong> (pl.) : Les frites</li>\n            </ul>\n            <h3>Indéfinis (un parmi d'autres)</h3>\n            <ul>\n                <li><strong>Un</strong> (m.) : Un croissant</li>\n                <li><strong>Une</strong> (f.) : Une gaufre</li>\n                <li><strong>Des</strong> (pl.) : Des chocolats</li>\n            </ul>\n        ",
         "content_html_ru": "\n                    <h2>Паспорт слова</h2>\n                    <p>Артикль показывает род существительного (мужской или женский).</p>\n                    <h3>Определенные (конкретный предмет)</h3>\n                    <ul>\n                        <li><strong>Le</strong> (м.р.): Le train (поезд)</li>\n                        <li><strong>La</strong> (ж.р.): La gare (вокзал)</li>\n                        <li><strong>L'</strong> (перед гласной): L'aéroport</li>\n                        <li><strong>Les</strong> (мн.ч.): Les frites</li>\n                    </ul>\n                    <h3>Неопределенные (один из)</h3>\n                    <ul>\n                        <li><strong>Un</strong> (м.р.): Un croissant</li>\n                        <li><strong>Une</strong> (ж.р.): Une gaufre</li>\n                        <li><strong>Des</strong> (мн.ч.): Des chocolats</li>\n                    </ul>\n                ",
         "content_html_uk": "\n            <h2>Паспорт слова</h2>\n            <p>Артикль показує рід іменника (чоловічий або жіночий).</p>\n            <h3>Визначені (конкретний предмет)</h3>\n            <ul>\n                <li><strong>Le</strong> (ч.р.): Le train (потяг)</li>\n                <li><strong>La</strong> (ж.р.): La gare (вокзал)</li>\n                <li><strong>L'</strong> (перед голосною): L'aéroport</li>\n                <li><strong>Les</strong> (мн.): Les frites</li>\n            </ul>\n            <h3>Невизначені (один із)</h3>\n            <ul>\n                <li><strong>Un</strong> (ч.р.): Un croissant</li>\n                <li><strong>Une</strong> (ж.р.): Une gaufre</li>\n                <li><strong>Des</strong> (мн.): Des chocolats</li>\n            </ul>\n        ",
         "content_html_en": "\n            <h2>The Word's Passport</h2>\n            <p>The article shows the gender of the noun (masculine or feminine).</p>\n            <h3>Definite (specific item)</h3>\n            <ul>\n                <li><strong>Le</strong> (m): Le train (the train)</li>\n                <li><strong>La</strong> (f): La gare (the station)</li>\n                <li><strong>L'</strong> (before a vowel): L'aéroport</li>\n                <li><strong>Les</strong> (plural): Les frites</li>\n            </ul>\n            <h3>Indefinite (one of many)</h3>\n            <ul>\n                <li><strong>Un</strong> (m): Un croissant</li>\n                <li><strong>Une</strong> (f): Une gaufre</li>\n                <li><strong>Des</strong> (plural): Des chocolats</li>\n            </ul>\n        ",
         "content_html_fr": "\n            <h2>Le passeport du mot</h2>\n            <p>L'article indique le genre du nom (masculin ou féminin).</p>\n            <h3>Définis (objet spécifique)</h3>\n            <ul>\n                <li><strong>Le</strong> (m.) : Le train</li>\n                <li><strong>La</strong> (f.) : La gare</li>\n                <li><strong>L'</strong> (devant une voyelle) : L'aéroport</li>\n                <li><strong>Les</strong> (pl.) : Les frites</li>\n            </ul>\n            <h3>Indéfinis (un parmi d'autres)</h3>\n            <ul>\n                <li><strong>Un</strong> (m.) : Un croissant</li>\n                <li><strong>Une</strong> (f.) : Une gaufre</li>\n                <li><strong>Des</strong> (pl.) : Des chocolats</li>\n            </ul>\n        ",
-        "title": "🎯 Артикли и род",
-        "data_lesson_id": "lesson4",
-        "content_html": "\n                    <h2>Паспорт слова</h2>\n                    <p>Артикль показывает род существительного (мужской или женский).</p>\n                    <h3>Определенные (конкретный предмет)</h3>\n                    <ul>\n                        <li><strong>Le</strong> (м.р.): Le train (поезд)</li>\n                        <li><strong>La</strong> (ж.р.): La gare (вокзал)</li>\n                        <li><strong>L'</strong> (перед гласной): L'aéroport</li>\n                        <li><strong>Les</strong> (мн.ч.): Les frites</li>\n                    </ul>\n                    <h3>Неопределенные (один из)</h3>\n                    <ul>\n                        <li><strong>Un</strong> (м.р.): Un croissant</li>\n                        <li><strong>Une</strong> (ж.р.): Une gaufre</li>\n                        <li><strong>Des</strong> (мн.ч.): Des chocolats</li>\n                    </ul>\n                ",
         "order": 5,
         "date_added": "2025-11-28T06:58:01.710Z"
     }
@@ -98,17 +98,17 @@
     "model": "lessons_app.lesson",
     "pk": 14,
     "fields": {
+        "title": "💼 Verbe avoir",
         "title_ru": "💼 Глагол avoir (иметь)",
         "title_uk": "💼 Дієслово avoir (мати)",
         "title_en": "💼 Verb avoir (to have)",
         "title_fr": "💼 Verbe avoir",
+        "data_lesson_id": "lesson-avoir",
+        "content_html": "\n            <h2>Le deuxième pilier de la grammaire</h2>\n            <p>Utilisé non seulement pour la possession (\"J'ai\") mais aussi pour l'âge et les sensations.</p>\n            <div class=\"conjugation-grid\">\n                <div><strong>J'ai</strong></div>\n                <div><strong>Tu as</strong></div>\n                <div><strong>Il a</strong></div>\n                <div><strong>Nous avons</strong></div>\n                <div><strong>Vous avez</strong></div>\n                <div><strong>Ils ont</strong></div>\n            </div>\n            <h3 style=\"margin-top:20px;\">Expressions courantes :</h3>\n            <ul>\n                <li><strong>J'ai 25 ans.</strong></li>\n                <li><strong>J'ai faim.</strong></li>\n                <li><strong>J'ai soif.</strong></li>\n            </ul>\n        ",
         "content_html_ru": "\n                    <h2>Второй кит грамматики</h2>\n                    <p>Используется не только для владения (\"У меня есть\"), но и для возраста и ощущений.</p>\n                    <div class=\"conjugation-grid\">\n                        <div><strong>J'ai</strong> [же]<br>Я имею</div>\n                        <div><strong>Tu as</strong> [тю а]<br>Ты имеешь</div>\n                        <div><strong>Il a</strong> [иль а]<br>Он имеет</div>\n                        <div><strong>Nous avons</strong> [ну за-вон]<br>Мы имеем</div>\n                        <div><strong>Vous avez</strong> [ву за-ве]<br>Вы имеете</div>\n                        <div><strong>Ils ont</strong> [иль зон]<br>Они имеют</div>\n                    </div>\n                    <h3 style=\"margin-top:20px;\">Устойчивые выражения:</h3>\n                    <ul>\n                        <li><strong>J'ai 25 ans</strong> — Мне 25 лет (дословно: \"Я имею 25 лет\").</li>\n                        <li><strong>J'ai faim</strong> — Я голоден (\"Имею голод\").</li>\n                        <li><strong>J'ai soif</strong> — Я хочу пить (\"Имею жажду\").</li>\n                    </ul>\n                ",
         "content_html_uk": "\n            <h2>Другий кит грамматики</h2>\n            <p>Використовується не тільки для володіння (\"У мене є\"), але й для віку та відчуттів.</p>\n            <div class=\"conjugation-grid\">\n                <div><strong>J'ai</strong> [же]<br>Я маю</div>\n                <div><strong>Tu as</strong> [тю а]<br>Ти маєш</div>\n                <div><strong>Il a</strong> [іль а]<br>Він має</div>\n                <div><strong>Nous avons</strong> [ну за-вон]<br>Ми маємо</div>\n                <div><strong>Vous avez</strong> [ву за-ве]<br>Ви маєте</div>\n                <div><strong>Ils ont</strong> [іль зон]<br>Вони мають</div>\n            </div>\n            <h3 style=\"margin-top:20px;\">Стійкі вирази:</h3>\n            <ul>\n                <li><strong>J'ai 25 ans</strong> — Мені 25 років (дослівно: \"Я маю 25 років\").</li>\n                <li><strong>J'ai faim</strong> — Я голодний (\"Маю голод\").</li>\n                <li><strong>J'ai soif</strong> — Я хочу пити (\"Маю спрагу\").</li>\n            </ul>\n        ",
         "content_html_en": "\n            <h2>The Second Pillar of Grammar</h2>\n            <p>Used not only for possession (\"I have\") but also for age and feelings.</p>\n            <div class=\"conjugation-grid\">\n                <div><strong>J'ai</strong><br>I have</div>\n                <div><strong>Tu as</strong><br>You have</div>\n                <div><strong>Il a</strong><br>He has</div>\n                <div><strong>Nous avons</strong><br>We have</div>\n                <div><strong>Vous avez</strong><br>You have</div>\n                <div><strong>Ils ont</strong><br>They have</div>\n            </div>\n            <h3 style=\"margin-top:20px;\">Common Expressions:</h3>\n            <ul>\n                <li><strong>J'ai 25 ans</strong> — I am 25 years old (literally: \"I have 25 years\").</li>\n                <li><strong>J'ai faim</strong> — I am hungry (\"I have hunger\").</li>\n                <li><strong>J'ai soif</strong> — I am thirsty (\"I have thirst\").</li>\n            </ul>\n        ",
         "content_html_fr": "\n            <h2>Le deuxième pilier de la grammaire</h2>\n            <p>Utilisé non seulement pour la possession (\"J'ai\") mais aussi pour l'âge et les sensations.</p>\n            <div class=\"conjugation-grid\">\n                <div><strong>J'ai</strong></div>\n                <div><strong>Tu as</strong></div>\n                <div><strong>Il a</strong></div>\n                <div><strong>Nous avons</strong></div>\n                <div><strong>Vous avez</strong></div>\n                <div><strong>Ils ont</strong></div>\n            </div>\n            <h3 style=\"margin-top:20px;\">Expressions courantes :</h3>\n            <ul>\n                <li><strong>J'ai 25 ans.</strong></li>\n                <li><strong>J'ai faim.</strong></li>\n                <li><strong>J'ai soif.</strong></li>\n            </ul>\n        ",
-        "title": "💼 Глагол avoir (иметь)",
-        "data_lesson_id": "lesson-avoir",
-        "content_html": "\n                    <h2>Второй кит грамматики</h2>\n                    <p>Используется не только для владения (\"У меня есть\"), но и для возраста и ощущений.</p>\n                    <div class=\"conjugation-grid\">\n                        <div><strong>J'ai</strong> [же]<br>Я имею</div>\n                        <div><strong>Tu as</strong> [тю а]<br>Ты имеешь</div>\n                        <div><strong>Il a</strong> [иль а]<br>Он имеет</div>\n                        <div><strong>Nous avons</strong> [ну за-вон]<br>Мы имеем</div>\n                        <div><strong>Vous avez</strong> [ву за-ве]<br>Вы имеете</div>\n                        <div><strong>Ils ont</strong> [иль зон]<br>Они имеют</div>\n                    </div>\n                    <h3 style=\"margin-top:20px;\">Устойчивые выражения:</h3>\n                    <ul>\n                        <li><strong>J'ai 25 ans</strong> — Мне 25 лет (дословно: \"Я имею 25 лет\").</li>\n                        <li><strong>J'ai faim</strong> — Я голоден (\"Имею голод\").</li>\n                        <li><strong>J'ai soif</strong> — Я хочу пить (\"Имею жажду\").</li>\n                    </ul>\n                ",
         "order": 6,
         "date_added": "2025-11-28T06:58:01.710Z"
     }
@@ -117,17 +117,17 @@
     "model": "lessons_app.lesson",
     "pk": 15,
     "fields": {
+        "title": "🚫 La négation",
         "title_ru": "🚫 Отрицание (Ne ... pas)",
         "title_uk": "🚫 Заперечення (Ne ... pas)",
         "title_en": "🚫 Negation (Ne ... pas)",
         "title_fr": "🚫 La négation",
+        "data_lesson_id": "lesson-negation",
+        "content_html": "\n            <h2>Comment dire \"NON\"</h2>\n            <p>La négation française se compose de deux parties qui \"encadrent\" le verbe.</p>\n            <div class=\"example-box\">\n                <strong>Ne + Verbe + Pas</strong>\n            </div>\n            <h3>Exemples :</h3>\n            <ul>\n                <li>Je <strong>ne</strong> suis <strong>pas</strong> français.</li>\n                <li>Tu <strong>n'</strong>as <strong>pas</strong> faim ? <br><em>*Ne devient N' devant une voyelle.</em></li>\n            </ul>\n            <div class=\"example-box warning\">\n                <strong>À l'oral :</strong>\n                <p>Les Français omettent souvent le <strong>ne</strong>.<br>\n                \"Je sais pas\" au lieu de \"Je ne sais pas\".</p>\n            </div>\n        ",
         "content_html_ru": "\n                    <h2>Как сказать \"НЕТ\"</h2>\n                    <p>Французское отрицание состоит из двух частей, которые \"обнимают\" глагол.</p>\n                    <div class=\"example-box\">\n                        <strong>Ne + Глагол + Pas</strong>\n                    </div>\n                    <h3>Примеры:</h3>\n                    <ul>\n                        <li>Je <strong>ne</strong> suis <strong>pas</strong> français. (Я не француз)</li>\n                        <li>Tu <strong>n'</strong>as <strong>pas</strong> faim? (Ты не голоден?) <br><em>*Ne превращается в N' перед гласной.</em></li>\n                    </ul>\n                    <div class=\"example-box warning\">\n                        <strong>В разговорной речи:</strong>\n                        <p>Французы часто \"глотают\" частицу <strong>ne</strong>.<br>\n                        \"Je sais pas\" вместо \"Je ne sais pas\".</p>\n                    </div>\n                ",
         "content_html_uk": "\n            <h2>Як сказати \"НІ\"</h2>\n            <p>Французьке заперечення складається з двох частин, які \"обіймають\" дієслово.</p>\n            <div class=\"example-box\">\n                <strong>Ne + Дієслово + Pas</strong>\n            </div>\n            <h3>Приклади:</h3>\n            <ul>\n                <li>Je <strong>ne</strong> suis <strong>pas</strong> français. (Я не француз)</li>\n                <li>Tu <strong>n'</strong>as <strong>pas</strong> faim? (Ти не голодний?) <br><em>*Ne перетворюється на N' перед голосною.</em></li>\n            </ul>\n            <div class=\"example-box warning\">\n                <strong>У розмовній мові:</strong>\n                <p>Французи часто \"ковтають\" частку <strong>ne</strong>.<br>\n                \"Je sais pas\" замість \"Je ne sais pas\".</p>\n            </div>\n        ",
         "content_html_en": "\n            <h2>How to say \"NO\"</h2>\n            <p>French negation consists of two parts that \"hug\" the verb.</p>\n            <div class=\"example-box\">\n                <strong>Ne + Verb + Pas</strong>\n            </div>\n            <h3>Examples:</h3>\n            <ul>\n                <li>Je <strong>ne</strong> suis <strong>pas</strong> français. (I am not French)</li>\n                <li>Tu <strong>n'</strong>as <strong>pas</strong> faim? (Are you not hungry?) <br><em>*Ne becomes N' before a vowel.</em></li>\n            </ul>\n            <div class=\"example-box warning\">\n                <strong>In casual speech:</strong>\n                <p>The French often \"swallow\" the <strong>ne</strong> particle.<br>\n                \"Je sais pas\" instead of \"Je ne sais pas\".</p>\n            </div>\n        ",
         "content_html_fr": "\n            <h2>Comment dire \"NON\"</h2>\n            <p>La négation française se compose de deux parties qui \"encadrent\" le verbe.</p>\n            <div class=\"example-box\">\n                <strong>Ne + Verbe + Pas</strong>\n            </div>\n            <h3>Exemples :</h3>\n            <ul>\n                <li>Je <strong>ne</strong> suis <strong>pas</strong> français.</li>\n                <li>Tu <strong>n'</strong>as <strong>pas</strong> faim ? <br><em>*Ne devient N' devant une voyelle.</em></li>\n            </ul>\n            <div class=\"example-box warning\">\n                <strong>À l'oral :</strong>\n                <p>Les Français omettent souvent le <strong>ne</strong>.<br>\n                \"Je sais pas\" au lieu de \"Je ne sais pas\".</p>\n            </div>\n        ",
-        "title": "🚫 Отрицание (Ne ... pas)",
-        "data_lesson_id": "lesson-negation",
-        "content_html": "\n                    <h2>Как сказать \"НЕТ\"</h2>\n                    <p>Французское отрицание состоит из двух частей, которые \"обнимают\" глагол.</p>\n                    <div class=\"example-box\">\n                        <strong>Ne + Глагол + Pas</strong>\n                    </div>\n                    <h3>Примеры:</h3>\n                    <ul>\n                        <li>Je <strong>ne</strong> suis <strong>pas</strong> français. (Я не француз)</li>\n                        <li>Tu <strong>n'</strong>as <strong>pas</strong> faim? (Ты не голоден?) <br><em>*Ne превращается в N' перед гласной.</em></li>\n                    </ul>\n                    <div class=\"example-box warning\">\n                        <strong>В разговорной речи:</strong>\n                        <p>Французы часто \"глотают\" частицу <strong>ne</strong>.<br>\n                        \"Je sais pas\" вместо \"Je ne sais pas\".</p>\n                    </div>\n                ",
         "order": 7,
         "date_added": "2025-11-28T06:58:01.711Z"
     }
@@ -136,17 +136,17 @@
     "model": "lessons_app.lesson",
     "pk": 16,
     "fields": {
+        "title": "🏃 Verbes du 1er groupe",
         "title_ru": "🏃 Глаголы 1-й группы (-ER)",
         "title_uk": "🏃 Дієслова 1-ї групи (-ER)",
         "title_en": "🏃 Group 1 Verbs (-ER)",
         "title_fr": "🏃 Verbes du 1er groupe",
+        "data_lesson_id": "lesson-er-verbs",
+        "content_html": "\n            <h2>Des milliers de verbes, une seule règle</h2>\n            <p>Les verbes se terminant par <strong>-ER</strong> (parler, habiter, aimer) se conjuguent de la même manière.</p>\n            <h3>Schéma (exemple : Parler) :</h3>\n            <p>On enlève -er, on ajoute les terminaisons :</p>\n            <div class=\"conjugation-grid\">\n                <div>Je parl<strong>e</strong></div>\n                <div>Tu parl<strong>es</strong></div>\n                <div>Il parl<strong>e</strong></div>\n                <div>Nous parl<strong>ons</strong></div>\n                <div>Vous parl<strong>ez</strong></div>\n                <div>Ils parl<strong>ent</strong></div>\n            </div>\n            <p><strong>Important :</strong> Pour 4 des 6 formes, la terminaison ne se prononce pas ! \"Parle, parles, parle, parlent\" se prononcent de la même façon.</p>\n        ",
         "content_html_ru": "\n                    <h2>Тысячи глаголов по одному правилу</h2>\n                    <p>Глаголы, оканчивающиеся на <strong>-ER</strong> (parler, habiter, aimer), спрягаются одинаково.</p>\n                    <h3>Схема (на примере Parler):</h3>\n                    <p>Убираем -er, добавляем окончания:</p>\n                    <div class=\"conjugation-grid\">\n                        <div>Je parl<strong>e</strong> (не читается)</div>\n                        <div>Tu parl<strong>es</strong> (не читается)</div>\n                        <div>Il parl<strong>e</strong> (не читается)</div>\n                        <div>Nous parl<strong>ons</strong> [он]</div>\n                        <div>Vous parl<strong>ez</strong> [э]</div>\n                        <div>Ils parl<strong>ent</strong> (не читается!)</div>\n                    </div>\n                    <p><strong>Важно:</strong> В 4 из 6 форм окончание не произносится! \"Parle, parles, parle, parlent\" звучат одинаково.</p>\n                ",
         "content_html_uk": "\n            <h2>Тисячі дієслів за одним правилом</h2>\n            <p>Дієслова, що закінчуються на <strong>-ER</strong> (parler, habiter, aimer), відмінюються однаково.</p>\n            <h3>Схема (на прикладі Parler):</h3>\n            <p>Прибираємо -er, додаємо закінчення:</p>\n            <div class=\"conjugation-grid\">\n                <div>Je parl<strong>e</strong> (не читається)</div>\n                <div>Tu parl<strong>es</strong> (не читається)</div>\n                <div>Il parl<strong>e</strong> (не читається)</div>\n                <div>Nous parl<strong>ons</strong> [он]</div>\n                <div>Vous parl<strong>ez</strong> [е]</div>\n                <div>Ils parl<strong>ent</strong> (не читається!)</div>\n            </div>\n            <p><strong>Важливо:</strong> У 4 з 6 форм закінчення не вимовляється! \"Parle, parles, parle, parlent\" звучать однаково.</p>\n        ",
         "content_html_en": "\n            <h2>Thousands of Verbs, One Rule</h2>\n            <p>Verbs ending in <strong>-ER</strong> (parler, habiter, aimer) are conjugated the same way.</p>\n            <h3>Scheme (using Parler as an example):</h3>\n            <p>Remove -er, add endings:</p>\n            <div class=\"conjugation-grid\">\n                <div>Je parl<strong>e</strong> (silent)</div>\n                <div>Tu parl<strong>es</strong> (silent)</div>\n                <div>Il parl<strong>e</strong> (silent)</div>\n                <div>Nous parl<strong>ons</strong> [on]</div>\n                <div>Vous parl<strong>ez</strong> [ay]</div>\n                <div>Ils parl<strong>ent</strong> (silent!)</div>\n            </div>\n            <p><strong>Important:</strong> In 4 out of 6 forms, the ending is not pronounced! \"Parle, parles, parle, parlent\" sound identical.</p>\n        ",
         "content_html_fr": "\n            <h2>Des milliers de verbes, une seule règle</h2>\n            <p>Les verbes se terminant par <strong>-ER</strong> (parler, habiter, aimer) se conjuguent de la même manière.</p>\n            <h3>Schéma (exemple : Parler) :</h3>\n            <p>On enlève -er, on ajoute les terminaisons :</p>\n            <div class=\"conjugation-grid\">\n                <div>Je parl<strong>e</strong></div>\n                <div>Tu parl<strong>es</strong></div>\n                <div>Il parl<strong>e</strong></div>\n                <div>Nous parl<strong>ons</strong></div>\n                <div>Vous parl<strong>ez</strong></div>\n                <div>Ils parl<strong>ent</strong></div>\n            </div>\n            <p><strong>Important :</strong> Pour 4 des 6 formes, la terminaison ne se prononce pas ! \"Parle, parles, parle, parlent\" se prononcent de la même façon.</p>\n        ",
-        "title": "🏃 Глаголы 1-й группы (-ER)",
-        "data_lesson_id": "lesson-er-verbs",
-        "content_html": "\n                    <h2>Тысячи глаголов по одному правилу</h2>\n                    <p>Глаголы, оканчивающиеся на <strong>-ER</strong> (parler, habiter, aimer), спрягаются одинаково.</p>\n                    <h3>Схема (на примере Parler):</h3>\n                    <p>Убираем -er, добавляем окончания:</p>\n                    <div class=\"conjugation-grid\">\n                        <div>Je parl<strong>e</strong> (не читается)</div>\n                        <div>Tu parl<strong>es</strong> (не читается)</div>\n                        <div>Il parl<strong>e</strong> (не читается)</div>\n                        <div>Nous parl<strong>ons</strong> [он]</div>\n                        <div>Vous parl<strong>ez</strong> [э]</div>\n                        <div>Ils parl<strong>ent</strong> (не читается!)</div>\n                    </div>\n                    <p><strong>Важно:</strong> В 4 из 6 форм окончание не произносится! \"Parle, parles, parle, parlent\" звучат одинаково.</p>\n                ",
         "order": 8,
         "date_added": "2025-11-28T06:58:01.712Z"
     }
@@ -155,17 +155,17 @@
     "model": "lessons_app.lesson",
     "pk": 17,
     "fields": {
+        "title": "🎨 Les adjectifs",
         "title_ru": "🎨 Прилагательные",
         "title_uk": "🎨 Прикметники",
         "title_en": "🎨 Adjectives",
         "title_fr": "🎨 Les adjectifs",
+        "data_lesson_id": "lesson-adjectives",
+        "content_html": "\n            <h2>Colorer le discours</h2>\n            <p>En français, les adjectifs doivent s'accorder en genre et en nombre avec le nom.</p>\n            <h3>Féminin (+e)</h3>\n            <ul>\n                <li>Il est petit → Elle est petit<strong>e</strong>.</li>\n                <li>Il est grand → Elle est grand<strong>e</strong>.</li>\n            </ul>\n            <h3>Pluriel (+s)</h3>\n            <ul>\n                <li>Ils sont petits.</li>\n            </ul>\n            <div class=\"example-box\">\n                <strong>Place de l'adjectif :</strong>\n                <p>Généralement APRÈS le nom : <em>Une voiture rouge</em>.<br>\n                Mais les adjectifs courts et fréquents (bon, mauvais, grand, petit) se placent AVANT : <em>Une petite maison</em>.</p>\n            </div>\n        ",
         "content_html_ru": "\n                    <h2>Делаем речь красочной</h2>\n                    <p>Прилагательные во французском должны согласовываться с существительным в роде и числе.</p>\n                    <h3>Женский род (+e)</h3>\n                    <ul>\n                        <li>Il est petit (Он маленький) → Elle est petit<strong>e</strong> (Она маленькая).</li>\n                        <li>Il est grand → Elle est grand<strong>e</strong>.</li>\n                    </ul>\n                    <h3>Множественное число (+s)</h3>\n                    <ul>\n                        <li>Ils sont petits. (Они маленькие)</li>\n                    </ul>\n                    <div class=\"example-box\">\n                        <strong>Место прилагательного:</strong>\n                        <p>Обычно ПОСЛЕ существительного: <em>Une voiture rouge</em>.<br>\n                        Но короткие и частые (хороший, плохой, большой, маленький) ставятся ДО: <em>Une petite maison</em>.</p>\n                    </div>\n                ",
         "content_html_uk": "\n            <h2>Робимо мову яскравою</h2>\n            <p>Прикметники у французькій мові мають узгоджуватися з іменником у роді та числі.</p>\n            <h3>Жіночий рід (+e)</h3>\n            <ul>\n                <li>Il est petit (Він маленький) → Elle est petit<strong>e</strong> (Вона маленька).</li>\n                <li>Il est grand → Elle est grand<strong>e</strong>.</li>\n            </ul>\n            <h3>Множина (+s)</h3>\n            <ul>\n                <li>Ils sont petits. (Вони маленькі)</li>\n            </ul>\n            <div class=\"example-box\">\n                <strong>Місце прикметника:</strong>\n                <p>Зазвичай ПІСЛЯ іменника: <em>Une voiture rouge</em>.<br>\n                Але короткі та часті (хороший, поганий, великий, маленький) ставляться ДО: <em>Une petite maison</em>.</p>\n            </div>\n        ",
         "content_html_en": "\n            <h2>Making Speech Colorful</h2>\n            <p>Adjectives in French must agree with the noun in gender and number.</p>\n            <h3>Feminine Gender (+e)</h3>\n            <ul>\n                <li>Il est petit (He is small) → Elle est petit<strong>e</strong> (She is small).</li>\n                <li>Il est grand → Elle est grand<strong>e</strong>.</li>\n            </ul>\n            <h3>Plural Number (+s)</h3>\n            <ul>\n                <li>Ils sont petits. (They are small)</li>\n            </ul>\n            <div class=\"example-box\">\n                <strong>Adjective Placement:</strong>\n                <p>Usually AFTER the noun: <em>Une voiture rouge</em>.<br>\n                But short and common ones (good, bad, big, small) are placed BEFORE: <em>Une petite maison</em>.</p>\n            </div>\n        ",
         "content_html_fr": "\n            <h2>Colorer le discours</h2>\n            <p>En français, les adjectifs doivent s'accorder en genre et en nombre avec le nom.</p>\n            <h3>Féminin (+e)</h3>\n            <ul>\n                <li>Il est petit → Elle est petit<strong>e</strong>.</li>\n                <li>Il est grand → Elle est grand<strong>e</strong>.</li>\n            </ul>\n            <h3>Pluriel (+s)</h3>\n            <ul>\n                <li>Ils sont petits.</li>\n            </ul>\n            <div class=\"example-box\">\n                <strong>Place de l'adjectif :</strong>\n                <p>Généralement APRÈS le nom : <em>Une voiture rouge</em>.<br>\n                Mais les adjectifs courts et fréquents (bon, mauvais, grand, petit) se placent AVANT : <em>Une petite maison</em>.</p>\n            </div>\n        ",
-        "title": "🎨 Прилагательные",
-        "data_lesson_id": "lesson-adjectives",
-        "content_html": "\n                    <h2>Делаем речь красочной</h2>\n                    <p>Прилагательные во французском должны согласовываться с существительным в роде и числе.</p>\n                    <h3>Женский род (+e)</h3>\n                    <ul>\n                        <li>Il est petit (Он маленький) → Elle est petit<strong>e</strong> (Она маленькая).</li>\n                        <li>Il est grand → Elle est grand<strong>e</strong>.</li>\n                    </ul>\n                    <h3>Множественное число (+s)</h3>\n                    <ul>\n                        <li>Ils sont petits. (Они маленькие)</li>\n                    </ul>\n                    <div class=\"example-box\">\n                        <strong>Место прилагательного:</strong>\n                        <p>Обычно ПОСЛЕ существительного: <em>Une voiture rouge</em>.<br>\n                        Но короткие и частые (хороший, плохой, большой, маленький) ставятся ДО: <em>Une petite maison</em>.</p>\n                    </div>\n                ",
         "order": 9,
         "date_added": "2025-11-28T06:58:01.713Z"
     }
@@ -174,17 +174,17 @@
     "model": "lessons_app.lesson",
     "pk": 18,
     "fields": {
+        "title": "❓ Poser des questions",
         "title_ru": "❓ Задаем вопросы",
         "title_uk": "❓ Ставимо запитання",
         "title_en": "❓ Asking Questions",
         "title_fr": "❓ Poser des questions",
+        "data_lesson_id": "lesson-questions",
+        "content_html": "\n            <h2>Trois façons de poser une question</h2>\n            <p>Du plus simple au plus complexe.</p>\n            <h3>1. L'intonation (familier)</h3>\n            <p>On monte simplement la voix à la fin.<br>\n            — Tu habites à Bruxelles ?</p>\n            <h3>2. Est-ce que (neutre)</h3>\n            <p>La phrase magique au début.<br>\n            — <strong>Est-ce que</strong> tu habites à Bruxelles ?</p>\n            <h3>3. L'inversion (soutenu)</h3>\n            <p>On inverse le verbe et le pronom.<br>\n            — Habites-tu à Bruxelles ?</p>\n            <hr>\n            <p><strong>Mots interrogatifs :</strong> Qui, Quoi, Où, Quand, Pourquoi.</p>\n        ",
         "content_html_ru": "\n                    <h2>Три способа спросить</h2>\n                    <p>От простого к сложному.</p>\n                    <h3>1. Интонация (Разговорный)</h3>\n                    <p>Просто повышаем голос в конце.<br>\n                    — Tu habites à Bruxelles? (Ты живешь в Брюсселе?)</p>\n                    <h3>2. Est-ce que (Нейтральный)</h3>\n                    <p>Магическая фраза \"Эс-кё\" в начале.<br>\n                    — <strong>Est-ce que</strong> tu habites à Bruxelles?</p>\n                    <h3>3. Инверсия (Формальный)</h3>\n                    <p>Меняем глагол и местоимение местами.<br>\n                    — Habites-tu à Bruxelles?</p>\n                    <hr>\n                    <p><strong>Вопросительные слова:</strong> Qui (кто), Quoi (что), Où (где), Quand (когда), Pourquoi (почему).</p>\n                ",
         "content_html_uk": "\n            <h2>Три способи запитати</h2>\n            <p>Від простого до складного.</p>\n            <h3>1. Інтонація (Розмовний)</h3>\n            <p>Просто підвищуємо голос наприкінці.<br>\n            — Tu habites à Bruxelles? (Ти живеш у Брюсселі?)</p>\n            <h3>2. Est-ce que (Нейтральний)</h3>\n            <p>Магічна фраза \"Ес-кьо\" на початку.<br>\n            — <strong>Est-ce que</strong> tu habites à Bruxelles?</p>\n            <h3>3. Інверсія (Офіційний)</h3>\n            <p>Міняємо дієслово та займенник місцями.<br>\n            — Habites-tu à Bruxelles?</p>\n            <hr>\n            <p><strong>Питальні слова:</strong> Qui (хто), Quoi (що), Où (де), Quand (коли), Pourquoi (чому).</p>\n        ",
         "content_html_en": "\n            <h2>Three Ways to Ask</h2>\n            <p>From simple to complex.</p>\n            <h3>1. Intonation (Casual)</h3>\n            <p>Just raise your voice at the end.<br>\n            — Tu habites à Bruxelles? (Do you live in Brussels?)</p>\n            <h3>2. Est-ce que (Neutral)</h3>\n            <p>The magic phrase \"Es-kuh\" at the beginning.<br>\n            — <strong>Est-ce que</strong> tu habites à Bruxelles?</p>\n            <h3>3. Inversion (Formal)</h3>\n            <p>Swap the verb and the pronoun.<br>\n            — Habites-tu à Bruxelles?</p>\n            <hr>\n            <p><strong>Question Words:</strong> Qui (who), Quoi (what), Où (where), Quand (when), Pourquoi (why).</p>\n        ",
         "content_html_fr": "\n            <h2>Trois façons de poser une question</h2>\n            <p>Du plus simple au plus complexe.</p>\n            <h3>1. L'intonation (familier)</h3>\n            <p>On monte simplement la voix à la fin.<br>\n            — Tu habites à Bruxelles ?</p>\n            <h3>2. Est-ce que (neutre)</h3>\n            <p>La phrase magique au début.<br>\n            — <strong>Est-ce que</strong> tu habites à Bruxelles ?</p>\n            <h3>3. L'inversion (soutenu)</h3>\n            <p>On inverse le verbe et le pronom.<br>\n            — Habites-tu à Bruxelles ?</p>\n            <hr>\n            <p><strong>Mots interrogatifs :</strong> Qui, Quoi, Où, Quand, Pourquoi.</p>\n        ",
-        "title": "❓ Задаем вопросы",
-        "data_lesson_id": "lesson-questions",
-        "content_html": "\n                    <h2>Три способа спросить</h2>\n                    <p>От простого к сложному.</p>\n                    <h3>1. Интонация (Разговорный)</h3>\n                    <p>Просто повышаем голос в конце.<br>\n                    — Tu habites à Bruxelles? (Ты живешь в Брюсселе?)</p>\n                    <h3>2. Est-ce que (Нейтральный)</h3>\n                    <p>Магическая фраза \"Эс-кё\" в начале.<br>\n                    — <strong>Est-ce que</strong> tu habites à Bruxelles?</p>\n                    <h3>3. Инверсия (Формальный)</h3>\n                    <p>Меняем глагол и местоимение местами.<br>\n                    — Habites-tu à Bruxelles?</p>\n                    <hr>\n                    <p><strong>Вопросительные слова:</strong> Qui (кто), Quoi (что), Où (где), Quand (когда), Pourquoi (почему).</p>\n                ",
         "order": 10,
         "date_added": "2025-11-28T06:58:01.713Z"
     }
@@ -193,17 +193,17 @@
     "model": "lessons_app.lesson",
     "pk": 19,
     "fields": {
+        "title": "🔮 Le futur proche",
         "title_ru": "🔮 Ближайшее будущее",
         "title_uk": "🔮 Найближче майбутнє",
         "title_en": "🔮 Near Future",
         "title_fr": "🔮 Le futur proche",
+        "data_lesson_id": "lesson-futur-proche",
+        "content_html": "\n            <h2>Le futur proche</h2>\n            <p>La façon la plus simple de parler de ses projets (\"Je vais faire...\").</p>\n            <div class=\"example-box\">\n                <strong>Verbe Aller + Infinitif</strong>\n            </div>\n            <h3>Exemples :</h3>\n            <ul>\n                <li>Je <strong>vais</strong> manger.</li>\n                <li>Tu <strong>vas</strong> dormir ?</li>\n                <li>Nous <strong>allons</strong> partir.</li>\n            </ul>\n            <p>Il suffit d'apprendre la conjugaison du verbe <em>Aller</em> !</p>\n        ",
         "content_html_ru": "\n                    <h2>Futur Proche</h2>\n                    <p>Самый простой способ сказать о планах (\"Я собираюсь сделать...\").</p>\n                    <div class=\"example-box\">\n                        <strong>Глагол Aller (идти) + Инфинитив</strong>\n                    </div>\n                    <h3>Примеры:</h3>\n                    <ul>\n                        <li>Je <strong>vais</strong> manger. (Я собираюсь поесть / Я поем).</li>\n                        <li>Tu <strong>vas</strong> dormir? (Ты будешь спать?)</li>\n                        <li>Nous <strong>allons</strong> partir. (Мы уезжаем).</li>\n                    </ul>\n                    <p>Нужно только выучить спряжение глагола <em>Aller</em>!</p>\n                ",
         "content_html_uk": "\n            <h2>Futur Proche</h2>\n            <p>Найпростіший спосіб сказати про плани (\"Я збираюся зробити...\").</p>\n            <div class=\"example-box\">\n                <strong>Дієслово Aller (йти) + Інфінітив</strong>\n            </div>\n            <h3>Приклади:</h3>\n            <ul>\n                <li>Je <strong>vais</strong> manger. (Я збираюся поїсти / Я поїм).</li>\n                <li>Tu <strong>vas</strong> dormir? (Ти будеш спати?)</li>\n                <li>Nous <strong>allons</strong> partir. (Ми їдемо).</li>\n            </ul>\n            <p>Потрібно лише вивчити відмінювання дієслова <em>Aller</em>!</p>\n        ",
         "content_html_en": "\n            <h2>Futur Proche</h2>\n            <p>The easiest way to talk about plans (\"I am going to do...\").</p>\n            <div class=\"example-box\">\n                <strong>Verb Aller (to go) + Infinitive</strong>\n            </div>\n            <h3>Examples:</h3>\n            <ul>\n                <li>Je <strong>vais</strong> manger. (I am going to eat).</li>\n                <li>Tu <strong>vas</strong> dormir? (Are you going to sleep?)</li>\n                <li>Nous <strong>allons</strong> partir. (We are leaving).</li>\n            </ul>\n            <p>You only need to learn the conjugation of the verb <em>Aller</em>!</p>\n        ",
         "content_html_fr": "\n            <h2>Le futur proche</h2>\n            <p>La façon la plus simple de parler de ses projets (\"Je vais faire...\").</p>\n            <div class=\"example-box\">\n                <strong>Verbe Aller + Infinitif</strong>\n            </div>\n            <h3>Exemples :</h3>\n            <ul>\n                <li>Je <strong>vais</strong> manger.</li>\n                <li>Tu <strong>vas</strong> dormir ?</li>\n                <li>Nous <strong>allons</strong> partir.</li>\n            </ul>\n            <p>Il suffit d'apprendre la conjugaison du verbe <em>Aller</em> !</p>\n        ",
-        "title": "🔮 Ближайшее будущее",
-        "data_lesson_id": "lesson-futur-proche",
-        "content_html": "\n                    <h2>Futur Proche</h2>\n                    <p>Самый простой способ сказать о планах (\"Я собираюсь сделать...\").</p>\n                    <div class=\"example-box\">\n                        <strong>Глагол Aller (идти) + Инфинитив</strong>\n                    </div>\n                    <h3>Примеры:</h3>\n                    <ul>\n                        <li>Je <strong>vais</strong> manger. (Я собираюсь поесть / Я поем).</li>\n                        <li>Tu <strong>vas</strong> dormir? (Ты будешь спать?)</li>\n                        <li>Nous <strong>allons</strong> partir. (Мы уезжаем).</li>\n                    </ul>\n                    <p>Нужно только выучить спряжение глагола <em>Aller</em>!</p>\n                ",
         "order": 11,
         "date_added": "2025-11-28T06:58:01.715Z"
     }
@@ -212,17 +212,17 @@
     "model": "lessons_app.lesson",
     "pk": 20,
     "fields": {
+        "title": "🕰 Le passé composé",
         "title_ru": "🕰 Прошедшее время",
         "title_uk": "🕰 Минулий час",
         "title_en": "🕰 Past Tense",
         "title_fr": "🕰 Le passé composé",
+        "data_lesson_id": "lesson-passe-compose",
+        "content_html": "\n            <h2>Le passé composé</h2>\n            <p>Le principal temps du passé pour les actions terminées.</p>\n            <div class=\"example-box\">\n                <strong>Auxiliaire (Avoir) + Participe passé</strong>\n            </div>\n            <h3>Comment former le participe passé ?</h3>\n            <ul>\n                <li>Verbes en -ER (parler) → <strong>é</strong> (parlé)</li>\n                <li>Manger → Mangé</li>\n                <li>Regarder → Regardé</li>\n            </ul>\n            <h3>Exemples :</h3>\n            <ul>\n                <li>J'<strong>ai</strong> mangé une pizza.</li>\n                <li>Tu <strong>as</strong> regardé le film.</li>\n            </ul>\n        ",
         "content_html_ru": "\n                    <h2>Passé Composé</h2>\n                    <p>Основное прошедшее время для законченных действий.</p>\n                    <div class=\"example-box\">\n                        <strong>Вспомогательный глагол (Avoir) + Причастие</strong>\n                    </div>\n                    <h3>Как образовать причастие?</h3>\n                    <ul>\n                        <li>Глаголы на -ER (parler) → <strong>é</strong> (parlé)</li>\n                        <li>Manger → Mangé (поел)</li>\n                        <li>Regarder → Regardé (посмотрел)</li>\n                    </ul>\n                    <h3>Примеры:</h3>\n                    <ul>\n                        <li>J'<strong>ai</strong> mangé une pizza. (Я съел пиццу).</li>\n                        <li>Tu <strong>as</strong> regardé le film. (Ты посмотрел фильм).</li>\n                    </ul>\n                ",
         "content_html_uk": "\n            <h2>Passé Composé</h2>\n            <p>Основний минулий час для закінчених дій.</p>\n            <div class=\"example-box\">\n                <strong>Допоміжне дієслово (Avoir) + Дієприкметник</strong>\n            </div>\n            <h3>Як утворити дієприкметник?</h3>\n            <ul>\n                <li>Дієслова на -ER (parler) → <strong>é</strong> (parlé)</li>\n                <li>Manger → Mangé (поїв)</li>\n                <li>Regarder → Regardé (подивився)</li>\n            </ul>\n            <h3>Приклади:</h3>\n            <ul>\n                <li>J'<strong>ai</strong> mangé une pizza. (Я з'їв піцу).</li>\n                <li>Tu <strong>as</strong> regardé le film. (Ти подивився фільм).</li>\n            </ul>\n        ",
         "content_html_en": "\n            <h2>Passé Composé</h2>\n            <p>The main past tense for completed actions.</p>\n            <div class=\"example-box\">\n                <strong>Auxiliary Verb (Avoir) + Participle</strong>\n            </div>\n            <h3>How to form the participle?</h3>\n            <ul>\n                <li>Verbs ending in -ER (parler) → <strong>é</strong> (parlé)</li>\n                <li>Manger → Mangé (eaten)</li>\n                <li>Regarder → Regardé (watched)</li>\n            </ul>\n            <h3>Examples:</h3>\n            <ul>\n                <li>J'<strong>ai</strong> mangé une pizza. (I ate a pizza).</li>\n                <li>Tu <strong>as</strong> regardé le film. (You watched the movie).</li>\n            </ul>\n        ",
         "content_html_fr": "\n            <h2>Le passé composé</h2>\n            <p>Le principal temps du passé pour les actions terminées.</p>\n            <div class=\"example-box\">\n                <strong>Auxiliaire (Avoir) + Participe passé</strong>\n            </div>\n            <h3>Comment former le participe passé ?</h3>\n            <ul>\n                <li>Verbes en -ER (parler) → <strong>é</strong> (parlé)</li>\n                <li>Manger → Mangé</li>\n                <li>Regarder → Regardé</li>\n            </ul>\n            <h3>Exemples :</h3>\n            <ul>\n                <li>J'<strong>ai</strong> mangé une pizza.</li>\n                <li>Tu <strong>as</strong> regardé le film.</li>\n            </ul>\n        ",
-        "title": "🕰 Прошедшее время",
-        "data_lesson_id": "lesson-passe-compose",
-        "content_html": "\n                    <h2>Passé Composé</h2>\n                    <p>Основное прошедшее время для законченных действий.</p>\n                    <div class=\"example-box\">\n                        <strong>Вспомогательный глагол (Avoir) + Причастие</strong>\n                    </div>\n                    <h3>Как образовать причастие?</h3>\n                    <ul>\n                        <li>Глаголы на -ER (parler) → <strong>é</strong> (parlé)</li>\n                        <li>Manger → Mangé (поел)</li>\n                        <li>Regarder → Regardé (посмотрел)</li>\n                    </ul>\n                    <h3>Примеры:</h3>\n                    <ul>\n                        <li>J'<strong>ai</strong> mangé une pizza. (Я съел пиццу).</li>\n                        <li>Tu <strong>as</strong> regardé le film. (Ты посмотрел фильм).</li>\n                    </ul>\n                ",
         "order": 12,
         "date_added": "2025-11-28T06:58:01.715Z"
     }
@@ -231,17 +231,17 @@
     "model": "lessons_app.lesson",
     "pk": 21,
     "fields": {
+        "title": "📍 Les prépositions de lieu",
         "title_ru": "📍 Предлоги места",
         "title_uk": "📍 Прийменники місця",
         "title_en": "📍 Prepositions of Place",
         "title_fr": "📍 Les prépositions de lieu",
+        "data_lesson_id": "lesson-prepositions",
+        "content_html": "\n            <h2>Où êtes-vous ?</h2>\n            <h3>Les villes (À)</h3>\n            <p>Avec les villes, on utilise toujours <strong>à</strong>.<br>\n            — J'habite <strong>à</strong> Paris, <strong>à</strong> Moscou.</p>\n            <h3>Les pays (En / Au)</h3>\n            <ul>\n                <li>Féminin (se terminant par -e) : <strong>En</strong> France, <strong>En</strong> Belgique.</li>\n                <li>Masculin : <strong>Au</strong> Japon, <strong>Au</strong> Canada.</li>\n            </ul>\n            <h3>Chez quelqu'un (Chez)</h3>\n            <p>Si vous allez chez une personne ou si vous y êtes.<br>\n            — Je suis <strong>chez</strong> moi.<br>\n            — Je vais <strong>chez</strong> le médecin.</p>\n        ",
         "content_html_ru": "\n                    <h2>Где вы находитесь?</h2>\n                    <h3>Города (À)</h3>\n                    <p>С городами всегда используем <strong>à</strong>.<br>\n                    — J'habite <strong>à</strong> Paris, <strong>à</strong> Moscou.</p>\n                    <h3>Страны (En / Au)</h3>\n                    <ul>\n                        <li>Женский род (оканчиваются на -e): <strong>En</strong> France, <strong>En</strong> Belgique.</li>\n                        <li>Мужской род: <strong>Au</strong> Japon, <strong>Au</strong> Canada.</li>\n                    </ul>\n                    <h3>У кого-то (Chez)</h3>\n                    <p>Если вы идете к человеку или находитесь у него.<br>\n                    — Je suis <strong>chez</strong> moi. (Я у себя дома).<br>\n                    — Je vais <strong>chez</strong> le docteur. (Я иду к врачу).</p>\n                ",
         "content_html_uk": "\n            <h2>Де ви знаходитесь?</h2>\n            <h3>Міста (À)</h3>\n            <p>З містами завжди використовуємо <strong>à</strong>.<br>\n            — J'habite <strong>à</strong> Paris, <strong>à</strong> Moscou.</p>\n            <h3>Країни (En / Au)</h3>\n            <ul>\n                <li>Жіночий рід (закінчуються на -e): <strong>En</strong> France, <strong>En</strong> Belgique.</li>\n                <li>Чоловічий рід: <strong>Au</strong> Japon, <strong>Au</strong> Canada.</li>\n            </ul>\n            <h3>У когось (Chez)</h3>\n            <p>Якщо ви йдете до людини або перебуваєте у неї.<br>\n            — Je suis <strong>chez</strong> moi. (Я у себе вдома).<br>\n            — Je vais <strong>chez</strong> le docteur. (Я йду до лікаря).</p>\n        ",
         "content_html_en": "\n            <h2>Where are you?</h2>\n            <h3>Cities (À)</h3>\n            <p>With cities, we always use <strong>à</strong>.<br>\n            — J'habite <strong>à</strong> Paris, <strong>à</strong> Moscow.</p>\n            <h3>Countries (En / Au)</h3>\n            <ul>\n                <li>Feminine (ending in -e): <strong>En</strong> France, <strong>En</strong> Belgique.</li>\n                <li>Masculine: <strong>Au</strong> Japon, <strong>Au</strong> Canada.</li>\n            </ul>\n            <h3>At someone's place (Chez)</h3>\n            <p>If you are going to a person or are at their place.<br>\n            — Je suis <strong>chez</strong> moi. (I am at home).<br>\n            — Je vais <strong>chez</strong> le docteur. (I am going to the doctor).</p>\n        ",
         "content_html_fr": "\n            <h2>Où êtes-vous ?</h2>\n            <h3>Les villes (À)</h3>\n            <p>Avec les villes, on utilise toujours <strong>à</strong>.<br>\n            — J'habite <strong>à</strong> Paris, <strong>à</strong> Moscou.</p>\n            <h3>Les pays (En / Au)</h3>\n            <ul>\n                <li>Féminin (se terminant par -e) : <strong>En</strong> France, <strong>En</strong> Belgique.</li>\n                <li>Masculin : <strong>Au</strong> Japon, <strong>Au</strong> Canada.</li>\n            </ul>\n            <h3>Chez quelqu'un (Chez)</h3>\n            <p>Si vous allez chez une personne ou si vous y êtes.<br>\n            — Je suis <strong>chez</strong> moi.<br>\n            — Je vais <strong>chez</strong> le médecin.</p>\n        ",
-        "title": "📍 Предлоги места",
-        "data_lesson_id": "lesson-prepositions",
-        "content_html": "\n                    <h2>Где вы находитесь?</h2>\n                    <h3>Города (À)</h3>\n                    <p>С городами всегда используем <strong>à</strong>.<br>\n                    — J'habite <strong>à</strong> Paris, <strong>à</strong> Moscou.</p>\n                    <h3>Страны (En / Au)</h3>\n                    <ul>\n                        <li>Женский род (оканчиваются на -e): <strong>En</strong> France, <strong>En</strong> Belgique.</li>\n                        <li>Мужской род: <strong>Au</strong> Japon, <strong>Au</strong> Canada.</li>\n                    </ul>\n                    <h3>У кого-то (Chez)</h3>\n                    <p>Если вы идете к человеку или находитесь у него.<br>\n                    — Je suis <strong>chez</strong> moi. (Я у себя дома).<br>\n                    — Je vais <strong>chez</strong> le docteur. (Я иду к врачу).</p>\n                ",
         "order": 13,
         "date_added": "2025-11-28T06:58:01.725Z"
     }
@@ -250,17 +250,17 @@
     "model": "lessons_app.lesson",
     "pk": 22,
     "fields": {
+        "title": "🔄 Les verbes pronominaux",
         "title_ru": "🔄 Возвратные глаголы",
         "title_uk": "🔄 Зворотні дієслова",
         "title_en": "🔄 Reflexive Verbs",
         "title_fr": "🔄 Les verbes pronominaux",
+        "data_lesson_id": "lesson-reflexive",
+        "content_html": "\n            <h2>Actions sur soi-même</h2>\n            <p>Verbes avec la particule \"se\" (se laver, s'habiller).</p>\n            <h3>Se laver</h3>\n            <div class=\"conjugation-grid\">\n                <div>Je <strong>me</strong> lave</div>\n                <div>Tu <strong>te</strong> laves</div>\n                <div>Il <strong>se</strong> lave</div>\n                <div>Nous <strong>nous</strong> lavons</div>\n                <div>Vous <strong>vous</strong> lavez</div>\n                <div>Ils <strong>se</strong> lavent</div>\n            </div>\n            <p><strong>Important :</strong> Au passé composé, ces verbes se conjuguent avec l'auxiliaire <em>Être</em> !</p>\n        ",
         "content_html_ru": "\n                    <h2>Действия над собой</h2>\n                    <p>Глаголы с частицей \"ся\" (умываться, одеваться).</p>\n                    <h3>Se laver (Умываться)</h3>\n                    <div class=\"conjugation-grid\">\n                        <div>Je <strong>me</strong> lave</div>\n                        <div>Tu <strong>te</strong> laves</div>\n                        <div>Il <strong>se</strong> lave</div>\n                        <div>Nous <strong>nous</strong> lavons</div>\n                        <div>Vous <strong>vous</strong> lavez</div>\n                        <div>Ils <strong>se</strong> lavent</div>\n                    </div>\n                    <p><strong>Важно:</strong> В прошедшем времени такие глаголы спрягаются с <em>Être</em>!</p>\n                ",
         "content_html_uk": "\n            <h2>Дії над собою</h2>\n            <p>Дієслова з часткою \"ся\" (вмиватися, одягатися).</p>\n            <h3>Se laver (Вмиватися)</h3>\n            <div class=\"conjugation-grid\">\n                <div>Je <strong>me</strong> lave</div>\n                <div>Tu <strong>te</strong> laves</div>\n                <div>Il <strong>se</strong> lave</div>\n                <div>Nous <strong>nous</strong> lavons</div>\n                <div>Vous <strong>vous</strong> lavez</div>\n                <div>Ils <strong>se</strong> lavent</div>\n            </div>\n            <p><strong>Важливо:</strong> У минулому часі такі дієслова відмінюються з <em>Être</em>!</p>\n        ",
         "content_html_en": "\n            <h2>Actions on Oneself</h2>\n            <p>Verbs with the \"self\" particle (to wash oneself, to dress oneself).</p>\n            <h3>Se laver (To wash oneself)</h3>\n            <div class=\"conjugation-grid\">\n                <div>Je <strong>me</strong> lave</div>\n                <div>Tu <strong>te</strong> laves</div>\n                <div>Il <strong>se</strong> lave</div>\n                <div>Nous <strong>nous</strong> lavons</div>\n                <div>Vous <strong>vous</strong> lavez</div>\n                <div>Ils <strong>se</strong> lavent</div>\n            </div>\n            <p><strong>Important:</strong> In the past tense, these verbs are conjugated with <em>Être</em>!</p>\n        ",
         "content_html_fr": "\n            <h2>Actions sur soi-même</h2>\n            <p>Verbes avec la particule \"se\" (se laver, s'habiller).</p>\n            <h3>Se laver</h3>\n            <div class=\"conjugation-grid\">\n                <div>Je <strong>me</strong> lave</div>\n                <div>Tu <strong>te</strong> laves</div>\n                <div>Il <strong>se</strong> lave</div>\n                <div>Nous <strong>nous</strong> lavons</div>\n                <div>Vous <strong>vous</strong> lavez</div>\n                <div>Ils <strong>se</strong> lavent</div>\n            </div>\n            <p><strong>Important :</strong> Au passé composé, ces verbes se conjuguent avec l'auxiliaire <em>Être</em> !</p>\n        ",
-        "title": "🔄 Возвратные глаголы",
-        "data_lesson_id": "lesson-reflexive",
-        "content_html": "\n                    <h2>Действия над собой</h2>\n                    <p>Глаголы с частицей \"ся\" (умываться, одеваться).</p>\n                    <h3>Se laver (Умываться)</h3>\n                    <div class=\"conjugation-grid\">\n                        <div>Je <strong>me</strong> lave</div>\n                        <div>Tu <strong>te</strong> laves</div>\n                        <div>Il <strong>se</strong> lave</div>\n                        <div>Nous <strong>nous</strong> lavons</div>\n                        <div>Vous <strong>vous</strong> lavez</div>\n                        <div>Ils <strong>se</strong> lavent</div>\n                    </div>\n                    <p><strong>Важно:</strong> В прошедшем времени такие глаголы спрягаются с <em>Être</em>!</p>\n                ",
         "order": 14,
         "date_added": "2025-11-28T06:58:01.726Z"
     }
@@ -269,1243 +269,76 @@
     "model": "lessons_app.lesson",
     "pk": 23,
     "fields": {
+        "title": "🎬 Supports vidéo",
         "title_ru": "🎬 Видеоматериалы",
         "title_uk": "🎬 Відеоматеріали",
         "title_en": "🎬 Video Materials",
         "title_fr": "🎬 Supports vidéo",
+        "data_lesson_id": "lesson-video",
+        "content_html": "\n            <h2>Immersion</h2>\n            <p>La meilleure façon de s'habituer à la mélodie de la langue.</p>\n            <div class=\"video-container\">\n                <iframe src=\"https://www.youtube.com/embed/KkH5N1vV8MI\" allowfullscreen></iframe>\n            </div>\n            <div class=\"example-box\">\n                <strong>Conseil :</strong>\n                <p>Dans les paramètres de la vidéo, activez les sous-titres français (CC) pour voir l'orthographe des mots.</p>\n            </div>\n        ",
         "content_html_ru": "\n                    <h2>Погружение в среду</h2>\n                    <p>Лучший способ привыкнуть к мелодике языка.</p>\n                    <div class=\"video-container\">\n                        <iframe src=\"https://www.youtube.com/embed/KkH5N1vV8MI\" allowfullscreen></iframe>\n                    </div>\n                    <div class=\"example-box\">\n                        <strong>Совет:</strong>\n                        <p>В настройках видео включите французские субтитры (CC), чтобы видеть написание слов.</p>\n                    </div>\n                ",
         "content_html_uk": "\n            <h2>Занурення в середовище</h2>\n            <p>Найкращий спосіб звикнути до мелодики мови.</p>\n            <div class=\"video-container\">\n                <iframe src=\"https://www.youtube.com/embed/KkH5N1vV8MI\" allowfullscreen></iframe>\n            </div>\n            <div class=\"example-box\">\n                <strong>Порада:</strong>\n                <p>У налаштуваннях відео увімкніть французькі субтитри (CC), щоб бачити написання слів.</p>\n            </div>\n        ",
         "content_html_en": "\n            <h2>Immersion</h2>\n            <p>The best way to get used to the melody of the language.</p>\n            <div class=\"video-container\">\n                <iframe src=\"https://www.youtube.com/embed/KkH5N1vV8MI\" allowfullscreen></iframe>\n            </div>\n            <div class=\"example-box\">\n                <strong>Tip:</strong>\n                <p>In the video settings, turn on French subtitles (CC) to see how the words are spelled.</p>\n            </div>\n        ",
         "content_html_fr": "\n            <h2>Immersion</h2>\n            <p>La meilleure façon de s'habituer à la mélodie de la langue.</p>\n            <div class=\"video-container\">\n                <iframe src=\"https://www.youtube.com/embed/KkH5N1vV8MI\" allowfullscreen></iframe>\n            </div>\n            <div class=\"example-box\">\n                <strong>Conseil :</strong>\n                <p>Dans les paramètres de la vidéo, activez les sous-titres français (CC) pour voir l'orthographe des mots.</p>\n            </div>\n        ",
-        "title": "🎬 Видеоматериалы",
-        "data_lesson_id": "lesson-video",
-        "content_html": "\n                    <h2>Погружение в среду</h2>\n                    <p>Лучший способ привыкнуть к мелодике языка.</p>\n                    <div class=\"video-container\">\n                        <iframe src=\"https://www.youtube.com/embed/KkH5N1vV8MI\" allowfullscreen></iframe>\n                    </div>\n                    <div class=\"example-box\">\n                        <strong>Совет:</strong>\n                        <p>В настройках видео включите французские субтитры (CC), чтобы видеть написание слов.</p>\n                    </div>\n                ",
         "order": 15,
         "date_added": "2025-11-28T06:58:01.727Z"
     }
 },
 {
-    "model": "quizzes.question",
-    "pk": 12,
-    "fields": {
-        "lesson": 13,
-        "text_ru": "Выберите правильную форму глагола Être для 'Je':",
-        "text_uk": "Виберіть правильну форму дієслова Être для 'Je':",
-        "text_en": "Choose the correct form of the verb Être for 'Je':",
-        "text_fr": "Choisissez la forme correcte du verbe Être pour 'Je' :",
-        "order": 0
-    }
-},
-{
-    "model": "quizzes.question",
-    "pk": 18,
-    "fields": {
-        "lesson": 11,
-        "text_ru": "Как сказать 'Как дела?' (неформально)?",
-        "text_uk": "Як сказати 'Як справи?' (неформально)?",
-        "text_en": "How do you say 'How are you?' (informally)?",
-        "text_fr": "Comment dit-on 'How are you?' (informellement) ?",
-        "order": 0
-    }
-},
-{
-    "model": "quizzes.question",
-    "pk": 19,
-    "fields": {
-        "lesson": 12,
-        "text_ru": "Как будет 'Мы' по-французски?",
-        "text_uk": "Як буде 'Ми' французькою?",
-        "text_en": "How do you say 'We' in French?",
-        "text_fr": "Comment dit-on 'We' en français ?",
-        "order": 0
-    }
-},
-{
-    "model": "quizzes.question",
-    "pk": 20,
-    "fields": {
-        "lesson": 10,
-        "text_ru": "Выберите правильную форму глагола Être для 'Je':",
-        "text_uk": "Виберіть правильну форму дієслова Être для 'Je':",
-        "text_en": "Choose the correct form of the verb Être for 'Je':",
-        "text_fr": "Choisissez la forme correcte du verbe Être pour 'Je' :",
-        "order": 0
-    }
-},
-{
-    "model": "quizzes.question",
-    "pk": 21,
-    "fields": {
-        "lesson": 14,
-        "text_ru": "Как сказать 'У меня есть'?",
-        "text_uk": "Як сказати 'У мене є'?",
-        "text_en": "How do you say 'I have'?",
-        "text_fr": "Comment dit-on 'I have' ?",
-        "order": 0
-    }
-},
-{
-    "model": "quizzes.question",
-    "pk": 22,
-    "fields": {
-        "lesson": 15,
-        "text_ru": "Какая частица ставится ПОСЛЕ глагола при отрицании?",
-        "text_uk": "Яка частка ставиться ПІСЛЯ дієслова при запереченні?",
-        "text_en": "Which particle is placed AFTER the verb in negation?",
-        "text_fr": "Quelle particule est placée APRÈS le verbe dans la négation ?",
-        "order": 0
-    }
-},
-{
-    "model": "quizzes.question",
-    "pk": 23,
-    "fields": {
-        "lesson": 16,
-        "text_ru": "Какое окончание у глаголов на -ER для местоимения 'Nous'?",
-        "text_uk": "Яке закінчення у дієслів на -ER для займенника 'Nous'?",
-        "text_en": "What is the ending for -ER verbs with 'Nous'?",
-        "text_fr": "Quelle est la terminaison des verbes en -ER avec 'Nous' ?",
-        "order": 0
-    }
-},
-{
-    "model": "quizzes.question",
+    "model": "lessons_app.lesson",
     "pk": 24,
     "fields": {
-        "lesson": 17,
-        "text_ru": "Какое окончание обычно добавляется к прилагательному в женском роде?",
-        "text_uk": "Яке закінчення зазвичай додається до прикметника в жіночому роді?",
-        "text_en": "What ending is usually added to an adjective in the feminine form?",
-        "text_fr": "Quelle terminaison est généralement добавлена к прилагательному au féminin ?",
-        "order": 0
+        "title": "🚗 Transport et voyages",
+        "title_ru": "🚗 Транспорт и путешествия",
+        "title_uk": "🚗 Транспорт та подорожі",
+        "title_en": "🚗 Transport and Travel",
+        "title_fr": "🚗 Transport et voyages",
+        "data_lesson_id": "lesson-transport",
+        "content_html": "\n                    <h2>Se déplacer</h2>\n                    <p>La France et la Belgique ont d'excellents systèmes de transports publics.</p>\n                    <h3>Principaux modes de transport</h3>\n                    <ul>\n                        <li><strong>Le train</strong> — Le train (TGV — train à grande vitesse)</li>\n                        <li><strong>L'avion</strong> — L'avion</li>\n                        <li><strong>La voiture</strong> — La voiture</li>\n                        <li><strong>Le vélo</strong> — Le vélo</li>\n                        <li><strong>Le métro / Le bus</strong> — Le métro / Le bus</li>\n                    </ul>\n                    <div class=\"example-box\">\n                        <strong>Phrases utiles :</strong>\n                        <p>Je prends le train — Je prends le train.<br>\n                        Où est la gare ? — Où est la gare ?</p>\n                    </div>\n                ",
+        "content_html_ru": "\n                    <h2>Как передвигаться по городу</h2>\n                    <p>Во Франции и Бельгии отличная система общественного транспорта.</p>\n                    <h3>Основные виды транспорта</h3>\n                    <ul>\n                        <li><strong>Le train</strong> — Поезд (TGV — скоростной поезд)</li>\n                        <li><strong>L'avion</strong> — Самолет</li>\n                        <li><strong>La voiture</strong> — Машина</li>\n                        <li><strong>Le vélo</strong> — Велосипед</li>\n                        <li><strong>Le métro / Le bus</strong> — Метро / Автобус</li>\n                    </ul>\n                    <div class=\"example-box\">\n                        <strong>Полезные фразы:</strong>\n                        <p>Je prends le train — Я еду на поезде.<br>\n                        Où est la gare? — Где вокзал?</p>\n                    </div>\n                ",
+        "content_html_uk": "\n                    <h2>Як пересуватися містом</h2>\n                    <p>У Франції та Бельгії чудова система громадського транспорту.</p>\n                    <h3>Основні види транспорту</h3>\n                    <ul>\n                        <li><strong>Le train</strong> — Потяг (TGV — швидкісний потяг)</li>\n                        <li><strong>L'avion</strong> — Літак</li>\n                        <li><strong>La voiture</strong> — Машина</li>\n                        <li><strong>Le vélo</strong> — Велосипед</li>\n                        <li><strong>Le métro / Le bus</strong> — Метро / Автобус</li>\n                    </ul>\n                    <div class=\"example-box\">\n                        <strong>Корисні фрази:</strong>\n                        <p>Je prends le train — Я їду потягом.<br>\n                        Où est la gare? — Де вокзал?</p>\n                    </div>\n                ",
+        "content_html_en": "\n                    <h2>Getting Around</h2>\n                    <p>France and Belgium have excellent public transport systems.</p>\n                    <h3>Main Modes of Transport</h3>\n                    <ul>\n                        <li><strong>Le train</strong> — Train (TGV — high-speed train)</li>\n                        <li><strong>L'avion</strong> — Plane</li>\n                        <li><strong>La voiture</strong> — Car</li>\n                        <li><strong>Le vélo</strong> — Bicycle</li>\n                        <li><strong>Le métro / Le bus</strong> — Metro / Bus</li>\n                    </ul>\n                    <div class=\"example-box\">\n                        <strong>Useful Phrases:</strong>\n                        <p>Je prends le train — I take the train.<br>\n                        Où est la gare? — Where is the station?</p>\n                    </div>\n                ",
+        "content_html_fr": "\n                    <h2>Se déplacer</h2>\n                    <p>La France et la Belgique ont d'excellents systèmes de transports publics.</p>\n                    <h3>Principaux modes de transport</h3>\n                    <ul>\n                        <li><strong>Le train</strong> — Le train (TGV — train à grande vitesse)</li>\n                        <li><strong>L'avion</strong> — L'avion</li>\n                        <li><strong>La voiture</strong> — La voiture</li>\n                        <li><strong>Le vélo</strong> — Le vélo</li>\n                        <li><strong>Le métro / Le bus</strong> — Le métro / Le bus</li>\n                    </ul>\n                    <div class=\"example-box\">\n                        <strong>Phrases utiles :</strong>\n                        <p>Je prends le train — Je prends le train.<br>\n                        Où est la gare ? — Où est la gare ?</p>\n                    </div>\n                ",
+        "order": 16,
+        "date_added": "2026-01-09T19:08:23.511Z"
     }
 },
 {
-    "model": "quizzes.question",
+    "model": "lessons_app.lesson",
     "pk": 25,
     "fields": {
-        "lesson": 18,
-        "text_ru": "Какая конструкция используется для создания вопроса без изменения порядка слов?",
-        "text_uk": "Яка конструкція використовується для створення питання без зміни порядку слів?",
-        "text_en": "Which construction is used to create a question without changing the word order?",
-        "text_fr": "Quelle construction est utilisée pour créer une question sans changer l'ordre des mots ?",
-        "order": 0
+        "title": "🎬 Cinéma et divertissement",
+        "title_ru": "🎬 Кино и развлечения",
+        "title_uk": "🎬 Кіно та розваги",
+        "title_en": "🎬 Movies and Entertainment",
+        "title_fr": "🎬 Cinéma et divertissement",
+        "data_lesson_id": "lesson-movies",
+        "content_html": "\n                    <h2>Le monde du cinéma</h2>\n                    <p>La France est le berceau du cinéma. Parlons de cinéma en français.</p>\n                    <h3>Genres de films</h3>\n                    <ul>\n                        <li><strong>Un film d'action</strong> — Un film d'action</li>\n                        <li><strong>Une comédie</strong> — Une comédie</li>\n                        <li><strong>Un drame</strong> — Un drame</li>\n                        <li><strong>Un dessin animé</strong> — Un dessin animé</li>\n                    </ul>\n                    <div class=\"example-box\">\n                        <strong>Au cinéma :</strong>\n                        <p>Un billet — Un billet<br>\n                        L'écran — L'écran<br>\n                        Les sous-titres — Les sous-titres</p>\n                    </div>\n                ",
+        "content_html_ru": "\n                    <h2>Мир кино</h2>\n                    <p>Франция — родина кинематографа. Поговорим о кино на французском.</p>\n                    <h3>Жанры кино</h3>\n                    <ul>\n                        <li><strong>Un film d'action</strong> — Боевик</li>\n                        <li><strong>Une comédie</strong> — Комедия</li>\n                        <li><strong>Un drame</strong> — Драма</li>\n                        <li><strong>Un dessin animé</strong> — Мультфильм</li>\n                    </ul>\n                    <div class=\"example-box\">\n                        <strong>В кинотеатре:</strong>\n                        <p>Un billet — Билет<br>\n                        L'écran — Экран<br>\n                        Les sous-titres — Субтитры</p>\n                    </div>\n                ",
+        "content_html_uk": "\n                    <h2>Світ кіно</h2>\n                    <p>Франція — батьківщина кінематографа. Поговоримо про кіно французькою.</p>\n                    <h3>Жанри кіно</h3>\n                    <ul>\n                        <li><strong>Un film d'action</strong> — Бойовик</li>\n                        <li><strong>Une comédie</strong> — Комедія</li>\n                        <li><strong>Un drame</strong> — Драма</li>\n                        <li><strong>Un dessin animé</strong> — Мультфільм</li>\n                    </ul>\n                    <div class=\"example-box\">\n                        <strong>У кінотеатрі:</strong>\n                        <p>Un billet — Квиток<br>\n                        L'écran — Екран<br>\n                        Les sous-titres — Субтитри</p>\n                    </div>\n                ",
+        "content_html_en": "\n                    <h2>The World of Cinema</h2>\n                    <p>France is the birthplace of cinema. Let's talk about movies in French.</p>\n                    <h3>Movie Genres</h3>\n                    <ul>\n                        <li><strong>Un film d'action</strong> — Action movie</li>\n                        <li><strong>Une comédie</strong> — Comedy</li>\n                        <li><strong>Un drame</strong> — Drama</li>\n                        <li><strong>Un dessin animé</strong> — Cartoon</li>\n                    </ul>\n                    <div class=\"example-box\">\n                        <strong>At the Cinema:</strong>\n                        <p>Un billet — A ticket<br>\n                        L'écran — The screen<br>\n                        Les sous-titres — Subtitles</p>\n                    </div>\n                ",
+        "content_html_fr": "\n                    <h2>Le monde du cinéma</h2>\n                    <p>La France est le berceau du cinéma. Parlons de cinéma en français.</p>\n                    <h3>Genres de films</h3>\n                    <ul>\n                        <li><strong>Un film d'action</strong> — Un film d'action</li>\n                        <li><strong>Une comédie</strong> — Une comédie</li>\n                        <li><strong>Un drame</strong> — Un drame</li>\n                        <li><strong>Un dessin animé</strong> — Un dessin animé</li>\n                    </ul>\n                    <div class=\"example-box\">\n                        <strong>Au cinéma :</strong>\n                        <p>Un billet — Un billet<br>\n                        L'écran — L'écran<br>\n                        Les sous-titres — Les sous-titres</p>\n                    </div>\n                ",
+        "order": 17,
+        "date_added": "2026-01-09T19:08:23.527Z"
     }
 },
 {
-    "model": "quizzes.question",
+    "model": "lessons_app.lesson",
     "pk": 26,
     "fields": {
-        "lesson": 19,
-        "text_ru": "Как образуется Futur Proche?",
-        "text_uk": "Як утворюється Futur Proche?",
-        "text_en": "How is Futur Proche formed?",
-        "text_fr": "Comment se forme le Futur Proche ?",
-        "order": 0
-    }
-},
-{
-    "model": "quizzes.question",
-    "pk": 27,
-    "fields": {
-        "lesson": 20,
-        "text_ru": "Какое окончание у причастий глаголов на -ER?",
-        "text_uk": "Яке закінчення у дієприкметників дієслів на -ER?",
-        "text_en": "What is the ending for participles of -ER verbs?",
-        "text_fr": "Quelle est la terminaison des participes des verbes en -ER ?",
-        "order": 0
-    }
-},
-{
-    "model": "quizzes.question",
-    "pk": 28,
-    "fields": {
-        "lesson": 21,
-        "text_ru": "Какой предлог используется с городами (напр., Paris)?",
-        "text_uk": "Який прийменник використовується з містами (напр., Paris)?",
-        "text_en": "Which preposition is used with cities (e.g., Paris)?",
-        "text_fr": "Quelle préposition est utilisée avec les villes (ex: Paris) ?",
-        "order": 0
-    }
-},
-{
-    "model": "quizzes.question",
-    "pk": 29,
-    "fields": {
-        "lesson": 22,
-        "text_ru": "Какое возвратное местоимение используется для 'Je'?",
-        "text_uk": "Який зворотний займенник використовується для 'Je'?",
-        "text_en": "Which reflexive pronoun is used for 'Je'?",
-        "text_fr": "Quel pronom réfléchi est utilisé pour 'Je' ?",
-        "order": 0
-    }
-},
-{
-    "model": "quizzes.question",
-    "pk": 31,
-    "fields": {
-        "lesson": 9,
-        "text_ru": "Сколько букв во французском алфавите?",
-        "text_uk": "Скільки букв у французькому алфавіті?",
-        "text_en": "How many letters are in the French alphabet?",
-        "text_fr": "Combien de lettres y a-t-il dans l'alphabet français ?",
-        "order": 0
-    }
-},
-{
-    "model": "quizzes.question",
-    "pk": 32,
-    "fields": {
-        "lesson": 9,
-        "text_ru": "Как произносится буква 'A'?",
-        "text_uk": "Як вимовляється буква 'A'?",
-        "text_en": "How is the letter 'A' pronounced?",
-        "text_fr": "Comment prononce-t-on la lettre 'A' ?",
-        "order": 1
-    }
-},
-{
-    "model": "quizzes.question",
-    "pk": 33,
-    "fields": {
-        "lesson": 9,
-        "text_ru": "Как называется буква 'H'?",
-        "text_uk": "Як називається буква 'H'?",
-        "text_en": "What is the letter 'H' called?",
-        "text_fr": "Comment s'appelle la lettre 'H' ?",
-        "order": 2
-    }
-},
-{
-    "model": "quizzes.question",
-    "pk": 34,
-    "fields": {
-        "lesson": 9,
-        "text_ru": "Какая буква называется 'i grec'?",
-        "text_uk": "Яка буква називається 'i grec'?",
-        "text_en": "Which letter is called 'i grec'?",
-        "text_fr": "Quelle lettre s'appelle 'i grec' ?",
-        "order": 3
-    }
-},
-{
-    "model": "quizzes.question",
-    "pk": 35,
-    "fields": {
-        "lesson": 9,
-        "text_ru": "Как произносится 'G'?",
-        "text_uk": "Як вимовляється 'G'?",
-        "text_en": "How is 'G' pronounced?",
-        "text_fr": "Comment prononce-t-on 'G' ?",
-        "order": 4
-    }
-},
-{
-    "model": "quizzes.question",
-    "pk": 36,
-    "fields": {
-        "lesson": 9,
-        "text_ru": "Как произносится 'J'?",
-        "text_uk": "Як вимовляється 'J'?",
-        "text_en": "How is 'J' pronounced?",
-        "text_fr": "Comment prononce-t-on 'J' ?",
-        "order": 5
-    }
-},
-{
-    "model": "quizzes.question",
-    "pk": 37,
-    "fields": {
-        "lesson": 9,
-        "text_ru": "Как называется буква 'W'?",
-        "text_uk": "Як називається буква 'W'?",
-        "text_en": "What is 'W' called?",
-        "text_fr": "Comment s'appelle 'W' ?",
-        "order": 6
-    }
-},
-{
-    "model": "quizzes.question",
-    "pk": 38,
-    "fields": {
-        "lesson": 9,
-        "text_ru": "Как произносится 'K'?",
-        "text_uk": "Як вимовляється 'K'?",
-        "text_en": "How is 'K' pronounced?",
-        "text_fr": "Comment prononce-t-on 'K' ?",
-        "order": 7
-    }
-},
-{
-    "model": "quizzes.question",
-    "pk": 39,
-    "fields": {
-        "lesson": 9,
-        "text_ru": "Как произносится буква 'U'?",
-        "text_uk": "Як вимовляється буква 'U'?",
-        "text_en": "How is 'U' pronounced?",
-        "text_fr": "Comment prononce-t-on 'U' ?",
-        "order": 8
-    }
-},
-{
-    "model": "quizzes.question",
-    "pk": 40,
-    "fields": {
-        "lesson": 9,
-        "text_ru": "Как произносится 'E'?",
-        "text_uk": "Як вимовляється 'E'?",
-        "text_en": "How is 'E' pronounced?",
-        "text_fr": "Comment prononce-t-on 'E' ?",
-        "order": 9
-    }
-},
-{
-    "model": "quizzes.choice",
-    "pk": 34,
-    "fields": {
-        "question": 12,
-        "text_ru": "es",
-        "text_uk": "es",
-        "text_en": "es",
-        "text_fr": "es",
-        "is_correct": false
-    }
-},
-{
-    "model": "quizzes.choice",
-    "pk": 35,
-    "fields": {
-        "question": 12,
-        "text_ru": "suis",
-        "text_uk": "suis",
-        "text_en": "suis",
-        "text_fr": "suis",
-        "is_correct": true
-    }
-},
-{
-    "model": "quizzes.choice",
-    "pk": 36,
-    "fields": {
-        "question": 12,
-        "text_ru": "est",
-        "text_uk": "est",
-        "text_en": "est",
-        "text_fr": "est",
-        "is_correct": false
-    }
-},
-{
-    "model": "quizzes.choice",
-    "pk": 52,
-    "fields": {
-        "question": 18,
-        "text_ru": "Ça va ?",
-        "text_uk": "Ça va ?",
-        "text_en": "Ça va ?",
-        "text_fr": "Ça va ?",
-        "is_correct": true
-    }
-},
-{
-    "model": "quizzes.choice",
-    "pk": 53,
-    "fields": {
-        "question": 18,
-        "text_ru": "Bonjour",
-        "text_uk": "Bonjour",
-        "text_en": "Bonjour",
-        "text_fr": "Bonjour",
-        "is_correct": false
-    }
-},
-{
-    "model": "quizzes.choice",
-    "pk": 54,
-    "fields": {
-        "question": 18,
-        "text_ru": "Merci",
-        "text_uk": "Merci",
-        "text_en": "Merci",
-        "text_fr": "Merci",
-        "is_correct": false
-    }
-},
-{
-    "model": "quizzes.choice",
-    "pk": 55,
-    "fields": {
-        "question": 19,
-        "text_ru": "Je",
-        "text_uk": "Je",
-        "text_en": "Je",
-        "text_fr": "Je",
-        "is_correct": false
-    }
-},
-{
-    "model": "quizzes.choice",
-    "pk": 56,
-    "fields": {
-        "question": 19,
-        "text_ru": "Nous",
-        "text_uk": "Nous",
-        "text_en": "Nous",
-        "text_fr": "Nous",
-        "is_correct": true
-    }
-},
-{
-    "model": "quizzes.choice",
-    "pk": 57,
-    "fields": {
-        "question": 19,
-        "text_ru": "Vous",
-        "text_uk": "Vous",
-        "text_en": "Vous",
-        "text_fr": "Vous",
-        "is_correct": false
-    }
-},
-{
-    "model": "quizzes.choice",
-    "pk": 58,
-    "fields": {
-        "question": 20,
-        "text_ru": "es",
-        "text_uk": "es",
-        "text_en": "es",
-        "text_fr": "es",
-        "is_correct": false
-    }
-},
-{
-    "model": "quizzes.choice",
-    "pk": 59,
-    "fields": {
-        "question": 20,
-        "text_ru": "suis",
-        "text_uk": "suis",
-        "text_en": "suis",
-        "text_fr": "suis",
-        "is_correct": true
-    }
-},
-{
-    "model": "quizzes.choice",
-    "pk": 60,
-    "fields": {
-        "question": 20,
-        "text_ru": "est",
-        "text_uk": "est",
-        "text_en": "est",
-        "text_fr": "est",
-        "is_correct": false
-    }
-},
-{
-    "model": "quizzes.choice",
-    "pk": 61,
-    "fields": {
-        "question": 21,
-        "text_ru": "J'ai",
-        "text_uk": "J'ai",
-        "text_en": "J'ai",
-        "text_fr": "J'ai",
-        "is_correct": true
-    }
-},
-{
-    "model": "quizzes.choice",
-    "pk": 62,
-    "fields": {
-        "question": 21,
-        "text_ru": "Je suis",
-        "text_uk": "Je suis",
-        "text_en": "Je suis",
-        "text_fr": "Je suis",
-        "is_correct": false
-    }
-},
-{
-    "model": "quizzes.choice",
-    "pk": 63,
-    "fields": {
-        "question": 21,
-        "text_ru": "Tu as",
-        "text_uk": "Tu as",
-        "text_en": "Tu as",
-        "text_fr": "Tu as",
-        "is_correct": false
-    }
-},
-{
-    "model": "quizzes.choice",
-    "pk": 64,
-    "fields": {
-        "question": 22,
-        "text_ru": "ne",
-        "text_uk": "ne",
-        "text_en": "ne",
-        "text_fr": "ne",
-        "is_correct": false
-    }
-},
-{
-    "model": "quizzes.choice",
-    "pk": 65,
-    "fields": {
-        "question": 22,
-        "text_ru": "pas",
-        "text_uk": "pas",
-        "text_en": "pas",
-        "text_fr": "pas",
-        "is_correct": true
-    }
-},
-{
-    "model": "quizzes.choice",
-    "pk": 66,
-    "fields": {
-        "question": 22,
-        "text_ru": "non",
-        "text_uk": "non",
-        "text_en": "non",
-        "text_fr": "non",
-        "is_correct": false
-    }
-},
-{
-    "model": "quizzes.choice",
-    "pk": 67,
-    "fields": {
-        "question": 23,
-        "text_ru": "-ez",
-        "text_uk": "-ez",
-        "text_en": "-ez",
-        "text_fr": "-ez",
-        "is_correct": false
-    }
-},
-{
-    "model": "quizzes.choice",
-    "pk": 68,
-    "fields": {
-        "question": 23,
-        "text_ru": "-ons",
-        "text_uk": "-ons",
-        "text_en": "-ons",
-        "text_fr": "-ons",
-        "is_correct": true
-    }
-},
-{
-    "model": "quizzes.choice",
-    "pk": 69,
-    "fields": {
-        "question": 23,
-        "text_ru": "-ent",
-        "text_uk": "-ent",
-        "text_en": "-ent",
-        "text_fr": "-ent",
-        "is_correct": false
-    }
-},
-{
-    "model": "quizzes.choice",
-    "pk": 70,
-    "fields": {
-        "question": 24,
-        "text_ru": "-s",
-        "text_uk": "-s",
-        "text_en": "-s",
-        "text_fr": "-s",
-        "is_correct": false
-    }
-},
-{
-    "model": "quizzes.choice",
-    "pk": 71,
-    "fields": {
-        "question": 24,
-        "text_ru": "-e",
-        "text_uk": "-e",
-        "text_en": "-e",
-        "text_fr": "-e",
-        "is_correct": true
-    }
-},
-{
-    "model": "quizzes.choice",
-    "pk": 72,
-    "fields": {
-        "question": 24,
-        "text_ru": "-x",
-        "text_uk": "-x",
-        "text_en": "-x",
-        "text_fr": "-x",
-        "is_correct": false
-    }
-},
-{
-    "model": "quizzes.choice",
-    "pk": 73,
-    "fields": {
-        "question": 25,
-        "text_ru": "Qu'est-ce que",
-        "text_uk": "Qu'est-ce que",
-        "text_en": "Qu'est-ce que",
-        "text_fr": "Qu'est-ce que",
-        "is_correct": false
-    }
-},
-{
-    "model": "quizzes.choice",
-    "pk": 74,
-    "fields": {
-        "question": 25,
-        "text_ru": "Est-ce que",
-        "text_uk": "Est-ce que",
-        "text_en": "Est-ce que",
-        "text_fr": "Est-ce que",
-        "is_correct": true
-    }
-},
-{
-    "model": "quizzes.choice",
-    "pk": 75,
-    "fields": {
-        "question": 25,
-        "text_ru": "Pourquoi",
-        "text_uk": "Pourquoi",
-        "text_en": "Pourquoi",
-        "text_fr": "Pourquoi",
-        "is_correct": false
-    }
-},
-{
-    "model": "quizzes.choice",
-    "pk": 76,
-    "fields": {
-        "question": 26,
-        "text_ru": "Être + Инфинитив",
-        "text_uk": "Être + Інфінітив",
-        "text_en": "Être + Infinitive",
-        "text_fr": "Être + Infinitif",
-        "is_correct": false
-    }
-},
-{
-    "model": "quizzes.choice",
-    "pk": 77,
-    "fields": {
-        "question": 26,
-        "text_ru": "Aller + Инфинитив",
-        "text_uk": "Aller + Інфінітив",
-        "text_en": "Aller + Infinitive",
-        "text_fr": "Aller + Infinitif",
-        "is_correct": true
-    }
-},
-{
-    "model": "quizzes.choice",
-    "pk": 78,
-    "fields": {
-        "question": 26,
-        "text_ru": "Avoir + Причастие",
-        "text_uk": "Avoir + Дієприкметник",
-        "text_en": "Avoir + Participle",
-        "text_fr": "Avoir + Participe",
-        "is_correct": false
-    }
-},
-{
-    "model": "quizzes.choice",
-    "pk": 79,
-    "fields": {
-        "question": 27,
-        "text_ru": "-i",
-        "text_uk": "-i",
-        "text_en": "-i",
-        "text_fr": "-i",
-        "is_correct": false
-    }
-},
-{
-    "model": "quizzes.choice",
-    "pk": 80,
-    "fields": {
-        "question": 27,
-        "text_ru": "-é",
-        "text_uk": "-é",
-        "text_en": "-é",
-        "text_fr": "-é",
-        "is_correct": true
-    }
-},
-{
-    "model": "quizzes.choice",
-    "pk": 81,
-    "fields": {
-        "question": 27,
-        "text_ru": "-u",
-        "text_uk": "-u",
-        "text_en": "-u",
-        "text_fr": "-u",
-        "is_correct": false
-    }
-},
-{
-    "model": "quizzes.choice",
-    "pk": 82,
-    "fields": {
-        "question": 28,
-        "text_ru": "En",
-        "text_uk": "En",
-        "text_en": "En",
-        "text_fr": "En",
-        "is_correct": false
-    }
-},
-{
-    "model": "quizzes.choice",
-    "pk": 83,
-    "fields": {
-        "question": 28,
-        "text_ru": "À",
-        "text_uk": "À",
-        "text_en": "À",
-        "text_fr": "À",
-        "is_correct": true
-    }
-},
-{
-    "model": "quizzes.choice",
-    "pk": 84,
-    "fields": {
-        "question": 28,
-        "text_ru": "Au",
-        "text_uk": "Au",
-        "text_en": "Au",
-        "text_fr": "Au",
-        "is_correct": false
-    }
-},
-{
-    "model": "quizzes.choice",
-    "pk": 85,
-    "fields": {
-        "question": 29,
-        "text_ru": "te",
-        "text_uk": "te",
-        "text_en": "te",
-        "text_fr": "te",
-        "is_correct": false
-    }
-},
-{
-    "model": "quizzes.choice",
-    "pk": 86,
-    "fields": {
-        "question": 29,
-        "text_ru": "me",
-        "text_uk": "me",
-        "text_en": "me",
-        "text_fr": "me",
-        "is_correct": true
-    }
-},
-{
-    "model": "quizzes.choice",
-    "pk": 87,
-    "fields": {
-        "question": 29,
-        "text_ru": "se",
-        "text_uk": "se",
-        "text_en": "se",
-        "text_fr": "se",
-        "is_correct": false
-    }
-},
-{
-    "model": "quizzes.choice",
-    "pk": 91,
-    "fields": {
-        "question": 31,
-        "text_ru": "24",
-        "text_uk": "24",
-        "text_en": "24",
-        "text_fr": "24",
-        "is_correct": false
-    }
-},
-{
-    "model": "quizzes.choice",
-    "pk": 92,
-    "fields": {
-        "question": 31,
-        "text_ru": "26",
-        "text_uk": "26",
-        "text_en": "26",
-        "text_fr": "26",
-        "is_correct": true
-    }
-},
-{
-    "model": "quizzes.choice",
-    "pk": 93,
-    "fields": {
-        "question": 31,
-        "text_ru": "33",
-        "text_uk": "33",
-        "text_en": "33",
-        "text_fr": "33",
-        "is_correct": false
-    }
-},
-{
-    "model": "quizzes.choice",
-    "pk": 94,
-    "fields": {
-        "question": 31,
-        "text_ru": "28",
-        "text_uk": "28",
-        "text_en": "28",
-        "text_fr": "28",
-        "is_correct": false
-    }
-},
-{
-    "model": "quizzes.choice",
-    "pk": 95,
-    "fields": {
-        "question": 32,
-        "text_ru": "А",
-        "text_uk": "А",
-        "text_en": "Ah",
-        "text_fr": "Ah",
-        "is_correct": true
-    }
-},
-{
-    "model": "quizzes.choice",
-    "pk": 96,
-    "fields": {
-        "question": 32,
-        "text_ru": "Э",
-        "text_uk": "Е",
-        "text_en": "Ay",
-        "text_fr": "Ay",
-        "is_correct": false
-    }
-},
-{
-    "model": "quizzes.choice",
-    "pk": 97,
-    "fields": {
-        "question": 32,
-        "text_ru": "О",
-        "text_uk": "О",
-        "text_en": "Oh",
-        "text_fr": "Oh",
-        "is_correct": false
-    }
-},
-{
-    "model": "quizzes.choice",
-    "pk": 98,
-    "fields": {
-        "question": 32,
-        "text_ru": "И",
-        "text_uk": "І",
-        "text_en": "Ee",
-        "text_fr": "Ee",
-        "is_correct": false
-    }
-},
-{
-    "model": "quizzes.choice",
-    "pk": 99,
-    "fields": {
-        "question": 33,
-        "text_ru": "Аш",
-        "text_uk": "Аш",
-        "text_en": "Ache",
-        "text_fr": "Ache",
-        "is_correct": true
-    }
-},
-{
-    "model": "quizzes.choice",
-    "pk": 100,
-    "fields": {
-        "question": 33,
-        "text_ru": "Ха",
-        "text_uk": "Ха",
-        "text_en": "Ha",
-        "text_fr": "Ha",
-        "is_correct": false
-    }
-},
-{
-    "model": "quizzes.choice",
-    "pk": 101,
-    "fields": {
-        "question": 33,
-        "text_ru": "Эйч",
-        "text_uk": "Ейч",
-        "text_en": "H",
-        "text_fr": "H",
-        "is_correct": false
-    }
-},
-{
-    "model": "quizzes.choice",
-    "pk": 102,
-    "fields": {
-        "question": 33,
-        "text_ru": "А",
-        "text_uk": "А",
-        "text_en": "A",
-        "text_fr": "A",
-        "is_correct": false
-    }
-},
-{
-    "model": "quizzes.choice",
-    "pk": 103,
-    "fields": {
-        "question": 34,
-        "text_ru": "I",
-        "text_uk": "I",
-        "text_en": "I",
-        "text_fr": "I",
-        "is_correct": false
-    }
-},
-{
-    "model": "quizzes.choice",
-    "pk": 104,
-    "fields": {
-        "question": 34,
-        "text_ru": "Y",
-        "text_uk": "Y",
-        "text_en": "Y",
-        "text_fr": "Y",
-        "is_correct": true
-    }
-},
-{
-    "model": "quizzes.choice",
-    "pk": 105,
-    "fields": {
-        "question": 34,
-        "text_ru": "G",
-        "text_uk": "G",
-        "text_en": "G",
-        "text_fr": "G",
-        "is_correct": false
-    }
-},
-{
-    "model": "quizzes.choice",
-    "pk": 106,
-    "fields": {
-        "question": 34,
-        "text_ru": "J",
-        "text_uk": "J",
-        "text_en": "J",
-        "text_fr": "J",
-        "is_correct": false
-    }
-},
-{
-    "model": "quizzes.choice",
-    "pk": 107,
-    "fields": {
-        "question": 35,
-        "text_ru": "Же",
-        "text_uk": "Же",
-        "text_en": "Gé",
-        "text_fr": "Gé",
-        "is_correct": true
-    }
-},
-{
-    "model": "quizzes.choice",
-    "pk": 108,
-    "fields": {
-        "question": 35,
-        "text_ru": "Ги",
-        "text_uk": "Ги",
-        "text_en": "Gui",
-        "text_fr": "Gui",
-        "is_correct": false
-    }
-},
-{
-    "model": "quizzes.choice",
-    "pk": 109,
-    "fields": {
-        "question": 35,
-        "text_ru": "Джи",
-        "text_uk": "Джи",
-        "text_en": "Ji",
-        "text_fr": "Ji",
-        "is_correct": false
-    }
-},
-{
-    "model": "quizzes.choice",
-    "pk": 110,
-    "fields": {
-        "question": 35,
-        "text_ru": "Га",
-        "text_uk": "Га",
-        "text_en": "Ga",
-        "text_fr": "Ga",
-        "is_correct": false
-    }
-},
-{
-    "model": "quizzes.choice",
-    "pk": 111,
-    "fields": {
-        "question": 36,
-        "text_ru": "Жи",
-        "text_uk": "Жи",
-        "text_en": "Ji",
-        "text_fr": "Ji",
-        "is_correct": true
-    }
-},
-{
-    "model": "quizzes.choice",
-    "pk": 112,
-    "fields": {
-        "question": 36,
-        "text_ru": "Же",
-        "text_uk": "Же",
-        "text_en": "Gé",
-        "text_fr": "Gé",
-        "is_correct": false
-    }
-},
-{
-    "model": "quizzes.choice",
-    "pk": 113,
-    "fields": {
-        "question": 36,
-        "text_ru": "Йот",
-        "text_uk": "Йот",
-        "text_en": "Yot",
-        "text_fr": "Yot",
-        "is_correct": false
-    }
-},
-{
-    "model": "quizzes.choice",
-    "pk": 114,
-    "fields": {
-        "question": 36,
-        "text_ru": "Джей",
-        "text_uk": "Джей",
-        "text_en": "Jay",
-        "text_fr": "Jay",
-        "is_correct": false
-    }
-},
-{
-    "model": "quizzes.choice",
-    "pk": 115,
-    "fields": {
-        "question": 37,
-        "text_ru": "Дубль-вэ",
-        "text_uk": "Дубль-ве",
-        "text_en": "Double V",
-        "text_fr": "Double V",
-        "is_correct": true
-    }
-},
-{
-    "model": "quizzes.choice",
-    "pk": 116,
-    "fields": {
-        "question": 37,
-        "text_ru": "Дабл-ю",
-        "text_uk": "Дабл-ю",
-        "text_en": "Double U",
-        "text_fr": "Double U",
-        "is_correct": false
-    }
-},
-{
-    "model": "quizzes.choice",
-    "pk": 117,
-    "fields": {
-        "question": 37,
-        "text_ru": "Вэ-вэ",
-        "text_uk": "Ве-ве",
-        "text_en": "V-V",
-        "text_fr": "V-V",
-        "is_correct": false
-    }
-},
-{
-    "model": "quizzes.choice",
-    "pk": 118,
-    "fields": {
-        "question": 37,
-        "text_ru": "Ва",
-        "text_uk": "Ва",
-        "text_en": "Wa",
-        "text_fr": "Wa",
-        "is_correct": false
-    }
-},
-{
-    "model": "quizzes.choice",
-    "pk": 119,
-    "fields": {
-        "question": 38,
-        "text_ru": "Ка",
-        "text_uk": "Ка",
-        "text_en": "Ka",
-        "text_fr": "Ka",
-        "is_correct": true
-    }
-},
-{
-    "model": "quizzes.choice",
-    "pk": 120,
-    "fields": {
-        "question": 38,
-        "text_ru": "Ке",
-        "text_uk": "Ке",
-        "text_en": "Ké",
-        "text_fr": "Ké",
-        "is_correct": false
-    }
-},
-{
-    "model": "quizzes.choice",
-    "pk": 121,
-    "fields": {
-        "question": 38,
-        "text_ru": "Ки",
-        "text_uk": "Ки",
-        "text_en": "Ki",
-        "text_fr": "Ki",
-        "is_correct": false
-    }
-},
-{
-    "model": "quizzes.choice",
-    "pk": 122,
-    "fields": {
-        "question": 38,
-        "text_ru": "Ко",
-        "text_uk": "Ко",
-        "text_en": "Ko",
-        "text_fr": "Ko",
-        "is_correct": false
-    }
-},
-{
-    "model": "quizzes.choice",
-    "pk": 123,
-    "fields": {
-        "question": 39,
-        "text_ru": "И (с вытянутыми губами)",
-        "text_uk": "І (з витягнутими губами)",
-        "text_en": "U (rounded lips)",
-        "text_fr": "U",
-        "is_correct": true
-    }
-},
-{
-    "model": "quizzes.choice",
-    "pk": 124,
-    "fields": {
-        "question": 39,
-        "text_ru": "У",
-        "text_uk": "У",
-        "text_en": "Ou",
-        "text_fr": "Ou",
-        "is_correct": false
-    }
-},
-{
-    "model": "quizzes.choice",
-    "pk": 125,
-    "fields": {
-        "question": 39,
-        "text_ru": "Ю",
-        "text_uk": "Ю",
-        "text_en": "You",
-        "text_fr": "You",
-        "is_correct": false
-    }
-},
-{
-    "model": "quizzes.choice",
-    "pk": 126,
-    "fields": {
-        "question": 39,
-        "text_ru": "А",
-        "text_uk": "А",
-        "text_en": "A",
-        "text_fr": "A",
-        "is_correct": false
-    }
-},
-{
-    "model": "quizzes.choice",
-    "pk": 127,
-    "fields": {
-        "question": 40,
-        "text_ru": "Ё (без й)",
-        "text_uk": "Е (як у слові 'мед')",
-        "text_en": "Euh",
-        "text_fr": "E",
-        "is_correct": true
-    }
-},
-{
-    "model": "quizzes.choice",
-    "pk": 128,
-    "fields": {
-        "question": 40,
-        "text_ru": "Э",
-        "text_uk": "Е",
-        "text_en": "Ay",
-        "text_fr": "Ay",
-        "is_correct": false
-    }
-},
-{
-    "model": "quizzes.choice",
-    "pk": 129,
-    "fields": {
-        "question": 40,
-        "text_ru": "И",
-        "text_uk": "І",
-        "text_en": "Ee",
-        "text_fr": "Ee",
-        "is_correct": false
-    }
-},
-{
-    "model": "quizzes.choice",
-    "pk": 130,
-    "fields": {
-        "question": 40,
-        "text_ru": "А",
-        "text_uk": "А",
-        "text_en": "A",
-        "text_fr": "A",
-        "is_correct": false
+        "title": "🥖 Articles partitifs",
+        "title_ru": "🥖 Частичные артикли",
+        "title_uk": "🥖 Часткові артиклі",
+        "title_en": "🥖 Partitive Articles",
+        "title_fr": "🥖 Articles partitifs",
+        "data_lesson_id": "lesson-partitive",
+        "content_html": "\n                    <h2>Quand on parle d'une partie d'un tout</h2>\n                    <p>Les articles partitifs sont utilisés quand on не peut pas compter la quantité (nourriture, boissons, concepts abstraits).</p>\n                    <h3>Formes des articles</h3>\n                    <ul>\n                        <li><strong>Du</strong> (m.) : Du pain, Du café</li>\n                        <li><strong>De la</strong> (f.) : De la viande, De la soupe</li>\n                        <li><strong>De l'</strong> (devant une voyelle) : De l'eau</li>\n                        <li><strong>Des</strong> (pl.) : Des pâtes</li>\n                    </ul>\n                    <div class=\"example-box warning\">\n                        <strong>Important :</strong>\n                        <p>À la forme négative, tous les articles partitifs deviennent <strong>DE</strong>.<br>\n                        Je mange <strong>du</strong> pain. → Je ne mange pas <strong>de</strong> pain.</p>\n                    </div>\n                ",
+        "content_html_ru": "\n                    <h2>Когда мы говорим о части целого</h2>\n                    <p>Частичные артикли используются, когда мы не можем посчитать количество (еда, напитки, абстрактные понятия).</p>\n                    <h3>Формы артиклей</h3>\n                    <ul>\n                        <li><strong>Du</strong> (м.р.): Du pain (хлеб), Du café (кофе)</li>\n                        <li><strong>De la</strong> (ж.р.): De la viande (мясо), De la soupe (суп)</li>\n                        <li><strong>De l'</strong> (перед гласной): De l'eau (вода)</li>\n                        <li><strong>Des</strong> (мн.ч.): Des pâtes (макароны)</li>\n                    </ul>\n                    <div class=\"example-box warning\">\n                        <strong>Важно:</strong>\n                        <p>В отрицании все частичные артикли превращаются в <strong>DE</strong>.<br>\n                        Je mange <strong>du</strong> pain. → Je не mange pas <strong>de</strong> pain.</p>\n                    </div>\n                ",
+        "content_html_uk": "\n                    <h2>Коли ми говоримо про частину цілого</h2>\n                    <p>Часткові артиклі використовуються, коли ми не можемо порахувати кількість (їжа, напої, абстрактні поняття).</p>\n                    <h3>Форми артиклів</h3>\n                    <ul>\n                        <li><strong>Du</strong> (ч.р.): Du pain (хліб), Du café (кава)</li>\n                        <li><strong>De la</strong> (ж.р.): De la viande (м'ясо), De la soupe (суп)</li>\n                        <li><strong>De l'</strong> (перед голосною): De l'eau (вода)</li>\n                        <li><strong>Des</strong> (мн.): Des pâtes (макарони)</li>\n                    </ul>\n                    <div class=\"example-box warning\">\n                        <strong>Важливо:</strong>\n                        <p>У запереченні всі часткові артиклі перетворюються на <strong>DE</strong>.<br>\n                        Je mange <strong>du</strong> pain. → Je не mange pas <strong>de</strong> pain.</p>\n                    </div>\n                ",
+        "content_html_en": "\n                    <h2>When Talking About a Part of a Whole</h2>\n                    <p>Partitive articles are used when we cannot count the quantity (food, drinks, abstract concepts).</p>\n                    <h3>Article Forms</h3>\n                    <ul>\n                        <li><strong>Du</strong> (m): Du pain (bread), Du café (coffee)</li>\n                        <li><strong>De la</strong> (f): De la viande (meat), De la soupe (soup)</li>\n                        <li><strong>De l'</strong> (before a vowel): De l'eau (water)</li>\n                        <li><strong>Des</strong> (plural): Des pâtes (pasta)</li>\n                    </ul>\n                    <div class=\"example-box warning\">\n                        <strong>Important:</strong>\n                        <p>In negative sentences, all partitive articles become <strong>DE</strong>.<br>\n                        Je mange <strong>du</strong> pain. → Je ne mange pas <strong>de</strong> pain.</p>\n                    </div>\n                ",
+        "content_html_fr": "\n                    <h2>Quand on parle d'une partie d'un tout</h2>\n                    <p>Les articles partitifs sont utilisés quand on не peut pas compter la quantité (nourriture, boissons, concepts abstraits).</p>\n                    <h3>Formes des articles</h3>\n                    <ul>\n                        <li><strong>Du</strong> (m.) : Du pain, Du café</li>\n                        <li><strong>De la</strong> (f.) : De la viande, De la soupe</li>\n                        <li><strong>De l'</strong> (devant une voyelle) : De l'eau</li>\n                        <li><strong>Des</strong> (pl.) : Des pâtes</li>\n                    </ul>\n                    <div class=\"example-box warning\">\n                        <strong>Important :</strong>\n                        <p>À la forme négative, tous les articles partitifs deviennent <strong>DE</strong>.<br>\n                        Je mange <strong>du</strong> pain. → Je ne mange pas <strong>de</strong> pain.</p>\n                    </div>\n                ",
+        "order": 18,
+        "date_added": "2026-01-09T19:08:23.544Z"
     }
 }
 ]
