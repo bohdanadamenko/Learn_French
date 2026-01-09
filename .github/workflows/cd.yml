@@ -31,10 +31,11 @@ jobs:
             
             cd $PROJECT_DIR
             
-            echo "� Pulling latest changes..."
-            git pull origin main
+            echo "📥 Fetching and resetting to latest changes (force pull)..."
+            git fetch origin main
+            git reset --hard origin/main
             
-            echo "�🐍 Activating virtualenv and installing dependencies..."
+            echo "🐍 Activating virtualenv and installing dependencies..."
             if [ -d "$VENV_PATH" ]; then
               source $VENV_PATH/bin/activate
             else
