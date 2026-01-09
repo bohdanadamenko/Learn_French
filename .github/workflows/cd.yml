@@ -27,18 +27,25 @@ jobs:
             echo "🚀 Starting deployment via SSH..."
             
             PROJECT_DIR="~/Learn_French"
-            VENV_PATH="~/.virtualenvs/myenv"
+            VENV_PATH="$PROJECT_DIR/.venv"
             
             cd $PROJECT_DIR
             
-            echo "📥 Pulling latest changes..."
+            echo "� Pulling latest changes..."
             git pull origin main
             
-            echo "🐍 Activating virtualenv and installing dependencies..."
-            source $VENV_PATH/bin/activate
+            echo "�🐍 Activating virtualenv and installing dependencies..."
+            if [ -d "$VENV_PATH" ]; then
+              source $VENV_PATH/bin/activate
+            else
+              echo "⚠️ Virtualenv not found at $VENV_PATH, trying ~/.virtualenvs/myenv"
+              source ~/.virtualenvs/myenv/bin/activate || echo "❌ Could not find virtualenv"
+            fi
+            
             pip install -r requirements.txt
             
             echo "🧹 Cleaning up duplicate SocialApps (to use settings.py config)..."
+            # Delete all SocialApps for google to ensure settings.py takes precedence
             python manage.py shell -c "from allauth.socialaccount.models import SocialApp; SocialApp.objects.filter(provider='google').delete(); print('Cleaned up google SocialApps')"
             
             echo "🗄️ Running migrations..."
