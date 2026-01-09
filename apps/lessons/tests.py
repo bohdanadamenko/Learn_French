@@ -42,9 +42,9 @@ class LessonModelTest(TestCase):
         self.assertEqual(lessons[1], self.lesson2)
 
     def test_lesson_str_method(self):
-        """Test the __str__ method returns title_ru by default."""
-        # Default language is 'ru' in settings
-        self.assertEqual(str(self.lesson1), "Тестовый урок 1")
+        """Test the __str__ method returns title_fr by default."""
+        # Default language is 'fr' in settings
+        self.assertEqual(str(self.lesson1), "Leçon de test 1")
 
     def test_unique_data_lesson_id(self):
         """Test that data_lesson_id is unique."""
