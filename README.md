@@ -32,6 +32,8 @@
 - 🌍 **Elegant Language Selection** — refined active states and transitions
 - 🔍 **Real-time Lesson Search**
 - ⌨️ **Hotkeys** for quick navigation
+- 🧪 **Comprehensive Testing** — 26+ tests covering models, views, and template tags
+- 🚀 **Production Ready** — configured with WhiteNoise for static files
 
 ---
 
@@ -83,7 +85,11 @@ python manage.py migrate
 python manage.py createsuperuser
 
 # 7️⃣ Run the server
+# 7️⃣ Run the server
 python manage.py runserver
+
+# 8️⃣ Run tests
+python manage.py test apps
 ```
 
 🌐 Open: **http://127.0.0.1:8000**

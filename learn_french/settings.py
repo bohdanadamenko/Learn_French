@@ -93,6 +93,9 @@ JAZZMIN_SETTINGS = {
     "language_chooser": True,
 }
 
+# Modeltranslation settings
+MODELTRANSLATION_CUSTOM_FIELDS = ('CKEditor5Field',)
+
 # CKEditor 5 Configuration
 CKEDITOR_5_CONFIGS = {
     'default': {
@@ -135,6 +138,7 @@ CKEDITOR5_UPLOAD_PATH = 'uploads/'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.locale.LocaleMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -227,6 +231,16 @@ LOCALE_PATHS = [BASE_DIR / 'locale']
 
 STATIC_URL = 'static/'
 STATIC_ROOT = BASE_DIR / 'staticfiles'
+
+# WhiteNoise configuration for production
+STORAGES = {
+    "default": {
+        "BACKEND": "django.core.files.storage.FileSystemStorage",
+    },
+    "staticfiles": {
+        "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage",
+    },
+}
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
