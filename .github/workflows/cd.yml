@@ -45,7 +45,17 @@ jobs:
             python manage.py collectstatic --noinput
             
             echo "♻️ Reloading web app..."
-            # Touching the WSGI file reloads the app on PythonAnywhere
-            touch /var/www/${{ secrets.PA_USERNAME }}_pythonanywhere_com_wsgi.py
+            # Attempt to reload by touching the WSGI file. 
+            # We try both the default username.pythonanywhere.com and the custom domain format.
+            WSGI_FILE="/var/www/${{ secrets.PA_USERNAME }}_pythonanywhere_com_wsgi.py"
+            CUSTOM_WSGI="/var/www/$(echo "${{ secrets.PA_HOST }}" | sed 's/\./_/g')_wsgi.py"
+            
+            if [ -f "$CUSTOM_WSGI" ]; then
+              echo "Touching custom domain WSGI: $CUSTOM_WSGI"
+              touch "$CUSTOM_WSGI"
+            else
+              echo "Touching default WSGI: $WSGI_FILE"
+              touch "$WSGI_FILE"
+            fi
             
             echo "✅ Deployment complete!"
