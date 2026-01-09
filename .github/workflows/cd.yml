@@ -29,58 +29,87 @@ jobs:
             exit 1
           fi
 
-          # 1. Upload the deploy.sh script to PA
-          echo "Uploading scripts/deploy.sh to PythonAnywhere..."
+          # 1. Upload the deploy.sh script using base64 to avoid character issues
+          echo "Uploading scripts/deploy.sh..."
+          SCRIPT_BASE64=$(base64 -w 0 scripts/deploy.sh)
           curl -s -X POST "https://www.pythonanywhere.com/api/v0/user/$PA_USERNAME/files/path/home/$PA_USERNAME/deploy.sh" \
                -H "Authorization: Token $PA_API_TOKEN" \
-               -F "content=@scripts/deploy.sh"
+               -H "Content-Type: application/json" \
+               -d "{\"content\": \"$SCRIPT_BASE64\"}"
           
-          # 2. Trigger the deploy.sh script on PA
-          echo "Triggering /home/$PA_USERNAME/deploy.sh..."
-          RESPONSE=$(curl -s -X POST "https://www.pythonanywhere.com/api/v0/user/$PA_USERNAME/consoles/" \
+          # 2. Make script executable via a temporary console
+          echo "Making script executable..."
+          CHMOD_RESPONSE=$(curl -s -X POST "https://www.pythonanywhere.com/api/v0/user/$PA_USERNAME/consoles/" \
                -H "Authorization: Token $PA_API_TOKEN" \
                -H "Content-Type: application/json" \
-               -d "{\"executable\": \"bash\", \"arguments\": \"/home/$PA_USERNAME/deploy.sh\"}")
+               -d "{\"executable\": \"bash\", \"arguments\": \"-c 'chmod +x /home/$PA_USERNAME/deploy.sh && echo CHMOD_DONE'\"}")
           
-          CONSOLE_ID=$(echo "$RESPONSE" | jq -r '.id')
+          CHMOD_CONSOLE_ID=$(echo "$CHMOD_RESPONSE" | jq -r '.id')
+          echo "Chmod console: $CHMOD_CONSOLE_ID"
+          sleep 5
           
-          if [ "$CONSOLE_ID" == "null" ] || [ -z "$CONSOLE_ID" ]; then
-            echo "Error: Failed to create console for deploy.sh. Response:"
-            echo "$RESPONSE"
+          # 3. Delete old log if it exists
+          echo "Cleaning old log..."
+          curl -s -X DELETE "https://www.pythonanywhere.com/api/v0/user/$PA_USERNAME/files/path/home/$PA_USERNAME/deploy.log" \
+               -H "Authorization: Token $PA_API_TOKEN" || true
+          
+          # 4. Trigger the deploy.sh script
+          echo "Executing deployment script..."
+          DEPLOY_RESPONSE=$(curl -s -X POST "https://www.pythonanywhere.com/api/v0/user/$PA_USERNAME/consoles/" \
+               -H "Authorization: Token $PA_API_TOKEN" \
+               -H "Content-Type: application/json" \
+               -d "{\"executable\": \"/home/$PA_USERNAME/deploy.sh\", \"arguments\": \"\"}")
+          
+          DEPLOY_CONSOLE_ID=$(echo "$DEPLOY_RESPONSE" | jq -r '.id')
+          echo "Deploy console: $DEPLOY_CONSOLE_ID"
+          
+          # 5. Poll the log file for progress
+          echo "Polling deployment log..."
+          MAX_ATTEMPTS=12
+          WAIT_TIME=10
+          DEPLOY_SUCCESS=false
+          
+          for i in $(seq 1 $MAX_ATTEMPTS); do
+            echo "Attempt $i/$MAX_ATTEMPTS (waiting ${WAIT_TIME}s)..."
+            sleep $WAIT_TIME
+            
+            LOG_CONTENT=$(curl -s "https://www.pythonanywhere.com/api/v0/user/$PA_USERNAME/files/path/home/$PA_USERNAME/deploy.log" \
+                 -H "Authorization: Token $PA_API_TOKEN")
+            
+            if [ -z "$LOG_CONTENT" ] || [[ "$LOG_CONTENT" == *"Not Found"* ]]; then
+              echo "Log file not created yet..."
+              continue
+            fi
+            
+            echo "=== Current Log Content ==="
+            echo "$LOG_CONTENT"
+            echo "==========================="
+            
+            if echo "$LOG_CONTENT" | grep -q "DEPLOYMENT_COMPLETE"; then
+              echo "✅ Deployment successful!"
+              DEPLOY_SUCCESS=true
+              break
+            fi
+            
+            if echo "$LOG_CONTENT" | grep -q "ERROR:"; then
+              echo "❌ Deployment script encountered errors."
+              exit 1
+            fi
+          done
+          
+          # 6. Cleanup consoles
+          echo "Cleaning up consoles..."
+          curl -s -X DELETE "https://www.pythonanywhere.com/api/v0/user/$PA_USERNAME/consoles/$CHMOD_CONSOLE_ID/" \
+               -H "Authorization: Token $PA_API_TOKEN" || true
+          curl -s -X DELETE "https://www.pythonanywhere.com/api/v0/user/$PA_USERNAME/consoles/$DEPLOY_CONSOLE_ID/" \
+               -H "Authorization: Token $PA_API_TOKEN" || true
+          
+          if [ "$DEPLOY_SUCCESS" = false ]; then
+            echo "❌ Timeout: Deployment did not complete in time."
             exit 1
           fi
-          
-          echo "Console $CONSOLE_ID started. Waiting for execution (60s)..."
-          sleep 60
-          
-          # 3. Read the log file via Files API
-          echo "Reading deployment log..."
-          LOG_CONTENT=$(curl -s "https://www.pythonanywhere.com/api/v0/user/$PA_USERNAME/files/path/home/$PA_USERNAME/deploy.log" \
-               -H "Authorization: Token $PA_API_TOKEN")
-          
-          echo "=== Deployment Log ==="
-          # The Files API returns raw content, but we check if it's a JSON error
-          if echo "$LOG_CONTENT" | jq -e '.detail' > /dev/null 2>&1; then
-            echo "Error from API: $(echo "$LOG_CONTENT" | jq -r '.detail')"
-            exit 1
-          fi
-          
-          echo "$LOG_CONTENT"
-          echo "======================"
-          
-          if echo "$LOG_CONTENT" | grep -q "DEPLOYMENT_COMPLETE"; then
-            echo "✅ Deployment successful!"
-          else
-            echo "❌ Error: 'DEPLOYMENT_COMPLETE' not found in log."
-            exit 1
-          fi
-          
-          # 4. Clean up: Delete the console
-          echo "Deleting console $CONSOLE_ID..."
-          curl -s -X DELETE "https://www.pythonanywhere.com/api/v0/user/$PA_USERNAME/consoles/$CONSOLE_ID/" \
-               -H "Authorization: Token $PA_API_TOKEN"
-          
-          # 5. Reload the web app
+
+          # 7. Reload the web app
           echo "Reloading web app $PA_HOST..."
           curl -f -X POST "https://www.pythonanywhere.com/api/v0/user/$PA_USERNAME/webapps/$PA_HOST/reload/" \
                -H "Authorization: Token $PA_API_TOKEN"
