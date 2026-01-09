@@ -29,12 +29,18 @@ jobs:
             exit 1
           fi
 
-          # 1. Trigger the deploy.sh script on PA
+          # 1. Upload the deploy.sh script to PA
+          echo "Uploading scripts/deploy.sh to PythonAnywhere..."
+          curl -s -X POST "https://www.pythonanywhere.com/api/v0/user/$PA_USERNAME/files/path/home/$PA_USERNAME/deploy.sh" \
+               -H "Authorization: Token $PA_API_TOKEN" \
+               -F "content=@scripts/deploy.sh"
+          
+          # 2. Trigger the deploy.sh script on PA
           echo "Triggering /home/$PA_USERNAME/deploy.sh..."
           RESPONSE=$(curl -s -X POST "https://www.pythonanywhere.com/api/v0/user/$PA_USERNAME/consoles/" \
                -H "Authorization: Token $PA_API_TOKEN" \
                -H "Content-Type: application/json" \
-               -d "{\"executable\": \"/home/$PA_USERNAME/deploy.sh\", \"arguments\": \"\"}")
+               -d "{\"executable\": \"bash\", \"arguments\": \"/home/$PA_USERNAME/deploy.sh\"}")
           
           CONSOLE_ID=$(echo "$RESPONSE" | jq -r '.id')
           
@@ -47,12 +53,18 @@ jobs:
           echo "Console $CONSOLE_ID started. Waiting for execution (60s)..."
           sleep 60
           
-          # 2. Read the log file via Files API
+          # 3. Read the log file via Files API
           echo "Reading deployment log..."
           LOG_CONTENT=$(curl -s "https://www.pythonanywhere.com/api/v0/user/$PA_USERNAME/files/path/home/$PA_USERNAME/deploy.log" \
                -H "Authorization: Token $PA_API_TOKEN")
           
           echo "=== Deployment Log ==="
+          # The Files API returns raw content, but we check if it's a JSON error
+          if echo "$LOG_CONTENT" | jq -e '.detail' > /dev/null 2>&1; then
+            echo "Error from API: $(echo "$LOG_CONTENT" | jq -r '.detail')"
+            exit 1
+          fi
+          
           echo "$LOG_CONTENT"
           echo "======================"
           
@@ -63,12 +75,12 @@ jobs:
             exit 1
           fi
           
-          # 3. Clean up: Delete the console
+          # 4. Clean up: Delete the console
           echo "Deleting console $CONSOLE_ID..."
           curl -s -X DELETE "https://www.pythonanywhere.com/api/v0/user/$PA_USERNAME/consoles/$CONSOLE_ID/" \
                -H "Authorization: Token $PA_API_TOKEN"
           
-          # 4. Reload the web app
+          # 5. Reload the web app
           echo "Reloading web app $PA_HOST..."
           curl -f -X POST "https://www.pythonanywhere.com/api/v0/user/$PA_USERNAME/webapps/$PA_HOST/reload/" \
                -H "Authorization: Token $PA_API_TOKEN"
