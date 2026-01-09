@@ -1,18 +1,14 @@
 name: Deploy to PythonAnywhere
 
 on:
-  workflow_run:
-    workflows: ["Django CI"]
-    branches: [main]
-    types:
-      - completed
+  push:
+    branches: [ main ]
   workflow_dispatch:
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    if: ${{ github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success' }}
-
+    
     steps:
       - uses: actions/checkout@v4
 
@@ -20,8 +16,10 @@ jobs:
         uses: appleboy/ssh-action@v1.0.3
         with:
           host: ssh.pythonanywhere.com
-          username: ${{ secrets.PA_USERNAME }}
+          username: ${{ secrets.SSH_USERNAME || secrets.PA_USERNAME }}
           password: ${{ secrets.PA_PASSWORD }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          port: 22
           script: |
             set -e
             echo "🚀 Starting deployment via SSH..."
@@ -61,7 +59,8 @@ jobs:
             echo "♻️ Reloading web app..."
             # Attempt to reload by touching the WSGI file. 
             # We try both the default username.pythonanywhere.com and the custom domain format.
-            WSGI_FILE="/var/www/${{ secrets.PA_USERNAME }}_pythonanywhere_com_wsgi.py"
+            PA_USER=${{ secrets.SSH_USERNAME || secrets.PA_USERNAME }}
+            WSGI_FILE="/var/www/${PA_USER}_pythonanywhere_com_wsgi.py"
             CUSTOM_WSGI="/var/www/$(echo "${{ secrets.PA_HOST }}" | sed 's/\./_/g')_wsgi.py"
             
             if [ -f "$CUSTOM_WSGI" ]; then
