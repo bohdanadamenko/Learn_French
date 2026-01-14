@@ -1,0 +1,18 @@
+{% extends "users/base_auth.html" %}
+{% load i18n %}
+
+{% block title %}FrenchLessons - {% trans "Редактировать профиль" %}{% endblock %}
+{% block auth_title %}{% trans "Редактировать профиль" %}{% endblock %}
+
+{% block auth_form %}
+    <p class="auth-subtitle">{% trans "Обновите информацию о своем аккаунте" %}</p>
+    {{ form.as_p }}
+{% endblock %}
+
+{% block btn_text %}{% trans "Сохранить изменения" %}{% endblock %}
+
+{% block auth_footer %}
+    <div style="margin-top: 16px;">
+        <a href="{% url 'users:profile' %}">{% trans "Отменить" %}</a>
+    </div>
+{% endblock %}
