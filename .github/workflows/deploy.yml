@@ -100,6 +100,9 @@ jobs:
             echo "📁 Collecting static files (with cleanup)..."
             python manage.py collectstatic --noinput --clear
             
+            echo "🌐 Compiling translation messages..."
+            python manage.py compilemessages --ignore=.venv
+            
             echo "♻️ Reloading web app..."
             touch /var/www/\${USERNAME}_pythonanywhere_com_wsgi.py
             
