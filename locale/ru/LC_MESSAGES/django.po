@@ -192,67 +192,61 @@ msgstr "Зарегистрироваться"
 #: apps/users/templates/users/profile.html:4
 #: apps/users/templates/users/profile.html:5
 msgid "Личный кабинет"
-msgstr ""
+msgstr "Личный кабинет"
 
 #: apps/users/templates/users/profile.html:129
 msgid "Имя пользователя"
-msgstr ""
+msgstr "Имя пользователя"
 
 #: apps/users/templates/users/profile.html:133
 msgid "Email"
-msgstr ""
+msgstr "Email"
 
 #: apps/users/templates/users/profile.html:138
 msgid "Имя"
-msgstr ""
+msgstr "Имя"
 
 #: apps/users/templates/users/profile.html:143
-#, fuzzy
-#| msgid "Регистрация"
 msgid "Дата регистрации"
-msgstr "Регистрация"
+msgstr "Дата регистрации"
 
 #: apps/users/templates/users/profile.html:147
-#, fuzzy
-#| msgid "Нет аккаунта?"
 msgid "Тип аккаунта"
-msgstr "Нет аккаунта?"
+msgstr "Тип аккаунта"
 
 #: apps/users/templates/users/profile.html:157
 msgid "Гость"
-msgstr ""
+msgstr "Гость"
 
 #: apps/users/templates/users/profile.html:162
 msgid "Стандартный"
-msgstr ""
+msgstr "Стандартный"
 
 #: apps/users/templates/users/profile.html:170
 #: apps/users/templates/users/profile_edit.html:4
 #: apps/users/templates/users/profile_edit.html:5
 msgid "Редактировать профиль"
-msgstr ""
+msgstr "Редактировать профиль"
 
 #: apps/users/templates/users/profile.html:181
 msgid "Вернуться к урокам"
-msgstr ""
+msgstr "Вернуться к урокам"
 
 #: apps/users/templates/users/profile.html:182
-#, fuzzy
-#| msgid "Войти в аккаунт"
 msgid "Выйти из аккаунта"
-msgstr "Войти в аккаунт"
+msgstr "Выйти из аккаунта"
 
 #: apps/users/templates/users/profile_edit.html:8
 msgid "Обновите информацию о своем аккаунте"
-msgstr ""
+msgstr "Обновите информацию о своем аккаунте"
 
 #: apps/users/templates/users/profile_edit.html:12
 msgid "Сохранить изменения"
-msgstr ""
+msgstr "Сохранить изменения"
 
 #: apps/users/templates/users/profile_edit.html:16
 msgid "Отменить"
-msgstr ""
+msgstr "Отменить"
 
 #: apps/users/templates/users/signup.html:5
 msgid "Создать аккаунт"

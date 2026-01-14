@@ -19,8 +19,11 @@ if SENTRY_DSN:
     sentry_sdk.init(
         dsn=SENTRY_DSN,
         integrations=[DjangoIntegration()],
+        # Set traces_sample_rate to 1.0 to capture 100%
+        # of transactions for performance monitoring.
         traces_sample_rate=1.0,
-        send_default_pii=True
+        # If you wish to associate users to errors (recommended)
+        send_default_pii=True,
     )
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -220,13 +223,13 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/4.1/topics/i18n/
 
-LANGUAGE_CODE = 'fr'
+LANGUAGE_CODE = 'ru'
 
 LANGUAGES = [
-    ('ru', 'French'),
+    ('ru', 'Russian'),
     ('uk', 'Ukrainian'),
     ('en', 'English'),
-    ('fr', 'Russian'),
+    ('fr', 'French'),
 ]
 
 TIME_ZONE = 'UTC'
@@ -238,10 +241,6 @@ USE_TZ = True
 # Security settings for production (PythonAnywhere)
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 ACCOUNT_DEFAULT_HTTP_PROTOCOL = 'https'
-
-USE_I18N = True
-
-USE_TZ = True
 
 LOCALE_PATHS = [BASE_DIR / 'locale']
 
