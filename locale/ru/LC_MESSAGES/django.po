@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-20 22:52+0000\n"
+"POT-Creation-Date: 2026-01-14 06:30+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,213 +16,281 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
-"(n%100>=11 && n%100<=14)? 2 : 3);\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
 
-#: admin.py:25
-msgid "Урок (RU)"
+#: apps/core/templates/components/header.html:23
+msgid "Поиск..."
 msgstr ""
 
-#: admin.py:26
-msgid "Урок (UA)"
+#: apps/core/templates/components/header.html:28
+msgid "Настройки"
 msgstr ""
 
-#: admin.py:27
-msgid "Урок (EN)"
+#: apps/core/templates/components/header.html:82
+msgid "Мой профиль"
 msgstr ""
 
-#: admin.py:28
-msgid "Урок (FR)"
+#: apps/core/templates/components/header.html:88
+msgid "Выйти"
 msgstr ""
 
-#: admin.py:46
-msgid "Связь"
-msgstr ""
+#: apps/core/templates/components/header.html:98
+#: apps/users/templates/users/base_auth.html:359
+#: apps/users/templates/users/signup.html:15
+#: templates/socialaccount/signup.html:31
+msgid "Войти"
+msgstr "Войти"
 
-#: admin.py:47 admin.py:62 admin.py:80
-msgid "Русский язык (RU)"
-msgstr ""
-
-#: admin.py:48 admin.py:63 admin.py:83
-msgid "Українська мова (UA)"
-msgstr ""
-
-#: admin.py:49 admin.py:64 admin.py:86
-msgid "English (EN)"
-msgstr ""
-
-#: admin.py:50 admin.py:65 admin.py:89
-msgid "Français (FR)"
-msgstr ""
-
-#: admin.py:77
-msgid "Основные настройки"
-msgstr ""
-
-#: admin.py:92
-msgid "Старые поля (для справки)"
-msgstr ""
-
-#: models.py:10
-msgid "Заголовок (RU)"
-msgstr ""
-
-#: models.py:11
-msgid "Заголовок (UA)"
-msgstr ""
-
-#: models.py:12
-msgid "Заголовок (EN)"
-msgstr ""
-
-#: models.py:13
-msgid "Заголовок (FR)"
-msgstr ""
-
-#: models.py:15
-msgid "Контент (RU)"
-msgstr ""
-
-#: models.py:16
-msgid "Контент (UA)"
-msgstr ""
-
-#: models.py:17
-msgid "Контент (EN)"
-msgstr ""
-
-#: models.py:18
-msgid "Контент (FR)"
-msgstr ""
-
-#: models.py:22
-msgid "Заголовок и эмодзи (напр., Урок 1: 🇫🇷 Фонетика)"
-msgstr ""
-
-#: models.py:25
-msgid "ID урока (lesson1, lesson2...)"
-msgstr ""
-
-#: models.py:28
-msgid "HTML-содержимое урока (с тегами H3, P, UL и т.д.)"
-msgstr ""
-
-#: models.py:31
-msgid "Порядок сортировки"
-msgstr ""
-
-#: models.py:34
-msgid "Дата создания"
-msgstr ""
-
-#: models.py:37 models.py:48
-msgid "Урок"
-msgstr ""
-
-#: models.py:38
-msgid "Уроки"
-msgstr ""
-
-#: models.py:50
-msgid "Текст вопроса (RU)"
-msgstr ""
-
-#: models.py:51
-msgid "Текст вопроса (UA)"
-msgstr ""
-
-#: models.py:52
-msgid "Текст вопроса (EN)"
-msgstr ""
-
-#: models.py:53
-msgid "Текст вопроса (FR)"
-msgstr ""
-
-#: models.py:55
-msgid "Порядок"
-msgstr ""
-
-#: models.py:58
-msgid "Вопрос"
-msgstr ""
-
-#: models.py:59
-msgid "Вопросы"
-msgstr ""
-
-#: models.py:70
-msgid "Текст ответа (RU)"
-msgstr ""
-
-#: models.py:71
-msgid "Текст ответа (UA)"
-msgstr ""
-
-#: models.py:72
-msgid "Текст ответа (EN)"
-msgstr ""
-
-#: models.py:73
-msgid "Текст ответа (FR)"
-msgstr ""
-
-#: models.py:75
-msgid "Это правильный ответ?"
-msgstr ""
-
-#: models.py:78
-msgid "Вариант ответа"
-msgstr ""
-
-#: models.py:79
-msgid "Варианты ответов"
-msgstr ""
-
-#: templates/admin/base_site.html:4
-msgid "Django site admin"
-msgstr ""
-
-#: templates/admin/base_site.html:7
-msgid "Django administration"
-msgstr "Администрирование Django"
-
+#: apps/core/templates/components/header.html:114
+#: apps/users/templates/users/login.html:4
 msgid "Вход"
 msgstr "Вход"
 
-msgid "С возвращением!"
-msgstr "С возвращением!"
-
-msgid "Войдите в свой аккаунт, чтобы продолжить обучение"
-msgstr "Войдите в свой аккаунт, чтобы продолжить обучение"
-
-msgid "Войти в аккаунт"
-msgstr "Войти в аккаунт"
-
-msgid "или"
-msgstr "или"
-
-msgid "Войти как гость"
-msgstr "Войти как гость"
-
-msgid "Нет аккаунта?"
-msgstr "Нет аккаунта?"
-
-msgid "Зарегистрироваться"
-msgstr "Зарегистрироваться"
-
+#: apps/core/templates/components/header.html:118
+#: apps/users/templates/users/signup.html:4
 msgid "Регистрация"
 msgstr "Регистрация"
 
+#: apps/lessons/admin.py:13
+msgid "Основные настройки"
+msgstr ""
+
+#: apps/lessons/admin.py:16 apps/quizzes/admin.py:45
+msgid "Русский язык (RU)"
+msgstr ""
+
+#: apps/lessons/admin.py:19 apps/quizzes/admin.py:46
+msgid "Українська мова (UK)"
+msgstr ""
+
+#: apps/lessons/admin.py:22 apps/quizzes/admin.py:47
+msgid "English (EN)"
+msgstr ""
+
+#: apps/lessons/admin.py:25 apps/quizzes/admin.py:48
+msgid "Français (FR)"
+msgstr ""
+
+#: apps/lessons/models.py:12
+msgid "Заголовок и эмодзи (напр., Урок 1: 🇫🇷 Фонетика)"
+msgstr ""
+
+#: apps/lessons/models.py:15
+msgid "ID урока (lesson1, lesson2...)"
+msgstr ""
+
+#: apps/lessons/models.py:18
+msgid "HTML-содержимое урока (с тегами H3, P, UL и т.д.)"
+msgstr ""
+
+#: apps/lessons/models.py:21
+msgid "Порядок сортировки"
+msgstr ""
+
+#: apps/lessons/models.py:24
+msgid "Дата создания"
+msgstr ""
+
+#: apps/lessons/models.py:27 apps/quizzes/models.py:7
+msgid "Урок"
+msgstr ""
+
+#: apps/lessons/models.py:28
+msgid "Уроки"
+msgstr ""
+
+#: apps/quizzes/admin.py:23
+msgid "Урок (RU)"
+msgstr ""
+
+#: apps/quizzes/admin.py:24
+msgid "Урок (UK)"
+msgstr ""
+
+#: apps/quizzes/admin.py:25
+msgid "Урок (EN)"
+msgstr ""
+
+#: apps/quizzes/admin.py:26
+msgid "Урок (FR)"
+msgstr ""
+
+#: apps/quizzes/admin.py:44
+msgid "Связь"
+msgstr ""
+
+#: apps/quizzes/models.py:9
+msgid "Текст вопроса"
+msgstr ""
+
+#: apps/quizzes/models.py:11
+msgid "Порядок"
+msgstr ""
+
+#: apps/quizzes/models.py:14
+msgid "Вопрос"
+msgstr ""
+
+#: apps/quizzes/models.py:15
+msgid "Вопросы"
+msgstr ""
+
+#: apps/quizzes/models.py:27
+msgid "Текст ответа"
+msgstr ""
+
+#: apps/quizzes/models.py:29
+msgid "Это правильный ответ?"
+msgstr ""
+
+#: apps/quizzes/models.py:32
+msgid "Вариант ответа"
+msgstr ""
+
+#: apps/quizzes/models.py:33
+msgid "Варианты ответов"
+msgstr ""
+
+#: apps/users/models.py:10
+msgid "email address"
+msgstr ""
+
+#: apps/users/templates/users/login.html:5
+msgid "С возвращением!"
+msgstr "С возвращением!"
+
+#: apps/users/templates/users/login.html:8
+msgid "Войдите в свой аккаунт, чтобы продолжить обучение"
+msgstr "Войдите в свой аккаунт, чтобы продолжить обучение"
+
+#: apps/users/templates/users/login.html:12
+msgid "Войти в аккаунт"
+msgstr "Войти в аккаунт"
+
+#: apps/users/templates/users/login.html:17
+#: apps/users/templates/users/signup.html:17
+msgid "или"
+msgstr "или"
+
+#: apps/users/templates/users/login.html:26
+msgid "Войти через Google"
+msgstr ""
+
+#: apps/users/templates/users/login.html:30
+msgid "Войти как гость"
+msgstr "Войти как гость"
+
+#: apps/users/templates/users/login.html:34
+msgid "Нет аккаунта?"
+msgstr "Нет аккаунта?"
+
+#: apps/users/templates/users/login.html:34
+#: apps/users/templates/users/signup.html:12
+msgid "Зарегистрироваться"
+msgstr "Зарегистрироваться"
+
+#: apps/users/templates/users/profile.html:4
+#: apps/users/templates/users/profile.html:5
+msgid "Личный кабинет"
+msgstr ""
+
+#: apps/users/templates/users/profile.html:129
+msgid "Имя пользователя"
+msgstr ""
+
+#: apps/users/templates/users/profile.html:133
+msgid "Email"
+msgstr ""
+
+#: apps/users/templates/users/profile.html:138
+msgid "Имя"
+msgstr ""
+
+#: apps/users/templates/users/profile.html:143
+#, fuzzy
+#| msgid "Регистрация"
+msgid "Дата регистрации"
+msgstr "Регистрация"
+
+#: apps/users/templates/users/profile.html:147
+#, fuzzy
+#| msgid "Нет аккаунта?"
+msgid "Тип аккаунта"
+msgstr "Нет аккаунта?"
+
+#: apps/users/templates/users/profile.html:157
+msgid "Гость"
+msgstr ""
+
+#: apps/users/templates/users/profile.html:162
+msgid "Стандартный"
+msgstr ""
+
+#: apps/users/templates/users/profile.html:170
+#: apps/users/templates/users/profile_edit.html:4
+#: apps/users/templates/users/profile_edit.html:5
+msgid "Редактировать профиль"
+msgstr ""
+
+#: apps/users/templates/users/profile.html:181
+msgid "Вернуться к урокам"
+msgstr ""
+
+#: apps/users/templates/users/profile.html:182
+#, fuzzy
+#| msgid "Войти в аккаунт"
+msgid "Выйти из аккаунта"
+msgstr "Войти в аккаунт"
+
+#: apps/users/templates/users/profile_edit.html:8
+msgid "Обновите информацию о своем аккаунте"
+msgstr ""
+
+#: apps/users/templates/users/profile_edit.html:12
+msgid "Сохранить изменения"
+msgstr ""
+
+#: apps/users/templates/users/profile_edit.html:16
+msgid "Отменить"
+msgstr ""
+
+#: apps/users/templates/users/signup.html:5
 msgid "Создать аккаунт"
 msgstr "Создать аккаунт"
 
+#: apps/users/templates/users/signup.html:8
 msgid "Присоединяйтесь к нам и начните учить французский сегодня!"
 msgstr "Присоединяйтесь к нам и начните учить французский сегодня!"
 
+#: apps/users/templates/users/signup.html:15
+#: templates/socialaccount/signup.html:31
 msgid "Уже есть аккаунт?"
 msgstr "Уже есть аккаунт?"
 
-msgid "Войти"
-msgstr "Войти"
+#: apps/users/templates/users/signup.html:25
+#, fuzzy
+#| msgid "Регистрация"
+msgid "Регистрация через Google"
+msgstr "Регистрация"
+
+#: templates/socialaccount/signup.html:4
+msgid "Завершение регистрации"
+msgstr ""
+
+#: templates/socialaccount/signup.html:5
+msgid "Почти готово"
+msgstr ""
+
+#: templates/socialaccount/signup.html:9
+#, python-format
+msgid "Вы собираетесь использовать свой аккаунт %(provider_name)s для входа в %(site_name)s. Пожалуйста, выберите имя пользователя для этого сайта ниже."
+msgstr ""
+
+#: templates/socialaccount/signup.html:26
+#, fuzzy
+#| msgid "Регистрация"
+msgid "Завершить регистрация"
+msgstr "Регистрация"
+
+#~ msgid "Django administration"
+#~ msgstr "Администрирование Django"
