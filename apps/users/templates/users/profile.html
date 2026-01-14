@@ -96,8 +96,8 @@
         .btn-secondary {
             padding: 14px;
             border-radius: 16px;
-            border: 1px solid var(--glass-border);
-            background: transparent;
+            border: 2px solid var(--glass-border);
+            background: rgba(255, 255, 255, 0.05);
             color: var(--text-dark);
             font-size: 1rem;
             font-weight: 600;
@@ -105,11 +105,19 @@
             transition: all 0.3s ease;
             text-decoration: none;
             text-align: center;
+            position: relative;
+        }
+        
+        /* Remove the underline effect from base_auth.html */
+        .btn-secondary::after {
+            display: none !important;
         }
         
         .btn-secondary:hover {
             background: var(--glass-border);
+            border-color: var(--accent-primary);
             transform: translateY(-2px);
+            color: var(--accent-primary);
         }
         
         .btn-danger {
@@ -119,6 +127,18 @@
         
         .btn-danger:hover {
             background: rgba(255, 59, 48, 0.1);
+            border-color: #FF3B30;
+            color: #FF3B30;
+        }
+
+        /* Style the main action button to have a subtle border too */
+        .auth-btn {
+            border: 2px solid rgba(255, 255, 255, 0.1) !important;
+            box-shadow: 0 8px 20px rgba(0, 122, 255, 0.2);
+        }
+        
+        .auth-btn:hover {
+            border-color: rgba(255, 255, 255, 0.4) !important;
         }
     </style>
     
