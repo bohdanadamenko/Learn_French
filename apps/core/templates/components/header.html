@@ -79,13 +79,13 @@
                     <div class="user-profile-dropdown" id="userMenuDropdown">
                         <div class="settings-section">
                             <a href="{% url 'users:profile' %}" class="option-btn" style="text-decoration: none; width: 100%; justify-content: center;">
-                                👤 {% trans "Мой профиль" %}
+                                {% trans "👤 Мой профиль" %}
                             </a>
                             <div class="settings-divider"></div>
                             <form action="{% url 'users:logout' %}" method="post" style="width: 100%;">
                                 {% csrf_token %}
                                 <button type="submit" class="option-btn" style="width: 100%; justify-content: center; color: #ff4b4b;">
-                                    🚪 {% trans "Выйти" %}
+                                    {% trans "🚪 Выйти" %}
                                 </button>
                             </form>
                         </div>

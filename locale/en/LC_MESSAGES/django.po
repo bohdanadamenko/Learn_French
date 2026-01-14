@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-14 07:01+0000\n"
+"POT-Creation-Date: 2026-01-14 07:10+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14,11 +14,11 @@ msgstr ""
 
 #: apps/core/templates/components/header.html:23
 msgid "Поиск..."
-msgstr ""
+msgstr "Search..."
 
 #: apps/core/templates/components/header.html:28
 msgid "Настройки"
-msgstr ""
+msgstr "Settings"
 
 #: apps/core/templates/components/header.html:71
 msgid "Администратор"
@@ -29,12 +29,12 @@ msgid "Студент"
 msgstr "Student"
 
 #: apps/core/templates/components/header.html:82
-msgid "Мой профиль"
-msgstr "My Profile"
+msgid "👤 Мой профиль"
+msgstr "👤 My Profile"
 
 #: apps/core/templates/components/header.html:88
-msgid "Выйти"
-msgstr "Log out"
+msgid "🚪 Выйти"
+msgstr "🚪 Log out"
 
 #: apps/core/templates/components/header.html:98
 #: apps/users/templates/users/base_auth.html:359
