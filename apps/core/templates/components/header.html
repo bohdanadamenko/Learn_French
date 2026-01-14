@@ -68,7 +68,7 @@
                     <div class="user-profile" onclick="toggleUserMenu()">
                         <div class="user-info">
                             <span class="user-name">{{ user.username }}</span>
-                            <span class="user-role">{% if user.is_staff %}Admin{% else %}Student{% endif %}</span>
+                            <span class="user-role">{% if user.is_staff %}{% trans "Администратор" %}{% else %}{% trans "Студент" %}{% endif %}</span>
                         </div>
                         <div class="avatar">{{ user.username|first|upper }}</div>
                         <svg class="dropdown-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="margin-left: 4px; opacity: 0.5;">

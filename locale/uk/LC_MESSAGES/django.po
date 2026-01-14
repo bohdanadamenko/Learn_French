@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-14 06:30+0000\n"
+"POT-Creation-Date: 2026-01-14 07:01+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,6 +19,14 @@ msgstr ""
 #: apps/core/templates/components/header.html:28
 msgid "Настройки"
 msgstr ""
+
+#: apps/core/templates/components/header.html:71
+msgid "Администратор"
+msgstr "Адміністратор"
+
+#: apps/core/templates/components/header.html:71
+msgid "Студент"
+msgstr "Студент"
 
 #: apps/core/templates/components/header.html:82
 msgid "Мой профиль"
@@ -194,57 +202,57 @@ msgstr "Зареєструватися"
 msgid "Личный кабинет"
 msgstr "Особистий кабінет"
 
-#: apps/users/templates/users/profile.html:129
+#: apps/users/templates/users/profile.html:158
 msgid "Имя пользователя"
 msgstr "Ім'я користувача"
 
-#: apps/users/templates/users/profile.html:133
+#: apps/users/templates/users/profile.html:162
 msgid "Email"
 msgstr "Email"
 
-#: apps/users/templates/users/profile.html:138
+#: apps/users/templates/users/profile.html:167
 msgid "Имя"
 msgstr "Ім'я"
 
-#: apps/users/templates/users/profile.html:143
+#: apps/users/templates/users/profile.html:172
 msgid "Дата регистрации"
 msgstr "Дата реєстрації"
 
-#: apps/users/templates/users/profile.html:147
+#: apps/users/templates/users/profile.html:176
 msgid "Тип аккаунта"
 msgstr "Тип акаунту"
 
-#: apps/users/templates/users/profile.html:157
+#: apps/users/templates/users/profile.html:186
 msgid "Гость"
 msgstr "Гість"
 
-#: apps/users/templates/users/profile.html:162
+#: apps/users/templates/users/profile.html:191
 msgid "Стандартный"
 msgstr "Стандартний"
 
-#: apps/users/templates/users/profile.html:170
+#: apps/users/templates/users/profile.html:199
 #: apps/users/templates/users/profile_edit.html:4
 #: apps/users/templates/users/profile_edit.html:5
 msgid "Редактировать профиль"
 msgstr "Редагувати профіль"
 
-#: apps/users/templates/users/profile.html:181
+#: apps/users/templates/users/profile.html:210
 msgid "Вернуться к урокам"
 msgstr "Повернутися до уроків"
 
-#: apps/users/templates/users/profile.html:182
+#: apps/users/templates/users/profile.html:211
 msgid "Выйти из аккаунта"
 msgstr "Вийти з акаунту"
 
-#: apps/users/templates/users/profile_edit.html:8
+#: apps/users/templates/users/profile_edit.html:56
 msgid "Обновите информацию о своем аккаунте"
 msgstr "Оновіть інформацію про свій акаунт"
 
-#: apps/users/templates/users/profile_edit.html:12
+#: apps/users/templates/users/profile_edit.html:60
 msgid "Сохранить изменения"
 msgstr "Зберегти зміни"
 
-#: apps/users/templates/users/profile_edit.html:16
+#: apps/users/templates/users/profile_edit.html:64
 msgid "Отменить"
 msgstr "Скасувати"
 
