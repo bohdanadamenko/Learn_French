@@ -93,48 +93,57 @@
             margin-top: 16px;
         }
         
-        .btn-secondary {
-            padding: 14px;
+        .profile-actions .btn-secondary {
+            padding: 14px 24px;
             border-radius: 16px;
-            border: 2px solid var(--glass-border);
+            border: 2px solid var(--glass-border) !important;
             background: rgba(255, 255, 255, 0.05);
-            color: var(--text-dark);
+            color: var(--text-dark) !important;
             font-size: 1rem;
             font-weight: 600;
             cursor: pointer;
             transition: all 0.3s ease;
-            text-decoration: none;
+            text-decoration: none !important;
             text-align: center;
             position: relative;
+            display: block;
+            width: 100%;
+            box-sizing: border-box;
         }
         
         /* Remove the underline effect from base_auth.html */
-        .btn-secondary::after {
+        .profile-actions .btn-secondary::after {
+            content: none !important;
             display: none !important;
         }
         
-        .btn-secondary:hover {
-            background: var(--glass-border);
-            border-color: var(--accent-primary);
+        .profile-actions .btn-secondary:hover {
+            background: var(--glass-border) !important;
+            border-color: var(--accent-primary) !important;
             transform: translateY(-2px);
-            color: var(--accent-primary);
+            color: var(--accent-primary) !important;
         }
         
-        .btn-danger {
-            color: #FF3B30;
-            border-color: rgba(255, 59, 48, 0.3);
+        .profile-actions .btn-danger {
+            color: #FF3B30 !important;
+            border-color: rgba(255, 59, 48, 0.3) !important;
         }
         
-        .btn-danger:hover {
-            background: rgba(255, 59, 48, 0.1);
-            border-color: #FF3B30;
-            color: #FF3B30;
+        .profile-actions .btn-danger:hover {
+            background: rgba(255, 59, 48, 0.1) !important;
+            border-color: #FF3B30 !important;
+            color: #FF3B30 !important;
         }
 
         /* Style the main action button to have a subtle border too */
         .auth-btn {
             border: 2px solid rgba(255, 255, 255, 0.1) !important;
             box-shadow: 0 8px 20px rgba(0, 122, 255, 0.2);
+            text-decoration: none !important;
+        }
+        
+        .auth-btn::after {
+            content: none !important;
         }
         
         .auth-btn:hover {

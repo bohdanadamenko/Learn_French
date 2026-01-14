@@ -5,6 +5,54 @@
 {% block auth_title %}{% trans "Редактировать профиль" %}{% endblock %}
 
 {% block auth_form %}
+    <style>
+        .profile-actions {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-top: 16px;
+        }
+        
+        .profile-actions .btn-secondary {
+            padding: 14px 24px;
+            border-radius: 16px;
+            border: 2px solid var(--glass-border) !important;
+            background: rgba(255, 255, 255, 0.05);
+            color: var(--text-dark) !important;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none !important;
+            text-align: center;
+            position: relative;
+            display: block;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        
+        .profile-actions .btn-secondary::after {
+            content: none !important;
+            display: none !important;
+        }
+        
+        .profile-actions .btn-secondary:hover {
+            background: var(--glass-border) !important;
+            border-color: var(--accent-primary) !important;
+            transform: translateY(-2px);
+            color: var(--accent-primary) !important;
+        }
+
+        .auth-btn {
+            border: 2px solid rgba(255, 255, 255, 0.1) !important;
+            box-shadow: 0 8px 20px rgba(0, 122, 255, 0.2);
+            text-decoration: none !important;
+        }
+        
+        .auth-btn::after {
+            content: none !important;
+        }
+    </style>
     <p class="auth-subtitle">{% trans "Обновите информацию о своем аккаунте" %}</p>
     {{ form.as_p }}
 {% endblock %}
@@ -12,7 +60,7 @@
 {% block btn_text %}{% trans "Сохранить изменения" %}{% endblock %}
 
 {% block auth_footer %}
-    <div style="margin-top: 16px;">
-        <a href="{% url 'users:profile' %}">{% trans "Отменить" %}</a>
+    <div class="profile-actions">
+        <a href="{% url 'users:profile' %}" class="btn-secondary">{% trans "Отменить" %}</a>
     </div>
 {% endblock %}
