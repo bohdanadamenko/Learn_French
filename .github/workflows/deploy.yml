@@ -112,3 +112,4 @@ jobs:
             
             echo "🎉 Deployment successful!"
           EOF
+# Triggered manual redeploy
