@@ -56,33 +56,36 @@ jobs:
           ssh -v ${{ secrets.SSH_USERNAME }}@ssh.pythonanywhere.com 'echo "✅ SSH Connected!"'
 
       - name: Execute Remote Deployment
+        env:
+          PA_USERNAME: ${{ secrets.SSH_USERNAME }}
+          PA_HOST: ${{ secrets.PA_HOST }}
         run: |
-          ssh -o StrictHostKeyChecking=no ${{ secrets.SSH_USERNAME }}@ssh.pythonanywhere.com << 'EOF'
+          ssh -o StrictHostKeyChecking=no ${{ secrets.SSH_USERNAME }}@ssh.pythonanywhere.com << EOF
             set -e
             echo "🚀 Starting deployment..."
             
-            # Используем $HOME или whoami для определения пути
-            USERNAME=$(whoami)
-            PROJECT_DIR="/home/$USERNAME/Learn_French"
-            VENV_PATH="$PROJECT_DIR/.venv"
+            # Используем whoami для определения пути
+            USERNAME=\$(whoami)
+            PROJECT_DIR="/home/\$USERNAME/Learn_French"
+            VENV_PATH="\$PROJECT_DIR/.venv"
             
-            if [ ! -d "$PROJECT_DIR" ]; then
-              echo "❌ Error: Project directory $PROJECT_DIR not found!"
+            if [ ! -d "\$PROJECT_DIR" ]; then
+              echo "❌ Error: Project directory \$PROJECT_DIR not found!"
               exit 1
             fi
             
-            cd $PROJECT_DIR
-            echo "📂 Working in: $(pwd)"
+            cd \$PROJECT_DIR
+            echo "📂 Working in: \$(pwd)"
             
             echo "📥 Fetching and resetting to latest changes (force pull)..."
             git fetch origin main
             git reset --hard origin/main
             
             echo "🐍 Activating virtualenv and installing dependencies..."
-            if [ -d "$VENV_PATH" ]; then
-              source $VENV_PATH/bin/activate
+            if [ -d "\$VENV_PATH" ]; then
+              source \$VENV_PATH/bin/activate
             else
-              echo "⚠️ Virtualenv not found at $VENV_PATH, trying ~/.virtualenvs/myenv"
+              echo "⚠️ Virtualenv not found at \$VENV_PATH, trying ~/.virtualenvs/myenv"
               source ~/.virtualenvs/myenv/bin/activate || echo "❌ Could not find virtualenv"
             fi
             
@@ -98,18 +101,15 @@ jobs:
             python manage.py collectstatic --noinput --clear
             
             echo "♻️ Reloading web app..."
-            WSGI_FILE="/var/www/${{ secrets.SSH_USERNAME }}_pythonanywhere_com_wsgi.py"
-            touch $WSGI_FILE
+            touch /var/www/\${USERNAME}_pythonanywhere_com_wsgi.py
             
             echo "🔍 Performing health check..."
             sleep 5
-            HEALTH_CHECK_URL="https://${{ secrets.PA_HOST }}"
-            if curl -s --head "$HEALTH_CHECK_URL" | grep "200 OK" > /dev/null; then
-              echo "✅ Health check passed: $HEALTH_CHECK_URL is up!"
+            if curl -s --head "https://www.learn-french.be" | grep "200 OK" > /dev/null; then
+              echo "✅ Health check passed!"
             else
-              echo "⚠️ Health check warning: $HEALTH_CHECK_URL returned non-200 status."
+              echo "⚠️ Health check warning: site returned non-200 status."
             fi
             
             echo "🎉 Deployment successful!"
           EOF
-# Triggered manual redeploy
