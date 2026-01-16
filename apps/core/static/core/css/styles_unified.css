@@ -292,6 +292,7 @@ body {
     height: 18px;
     color: var(--text-tertiary);
     pointer-events: none;
+    display: block; /* Fix for cross-browser alignment */
 }
 
 /* User Profile */
@@ -468,6 +469,7 @@ body {
     padding: 0 16px;
     margin-bottom: 16px;
     position: relative;
+    align-items: center; /* Vertical centering for children */
 }
 
 .mobile-search-box .search-input {
@@ -1799,7 +1801,11 @@ input:checked + .slider:before {
     }
     
     .mobile-search-box {
-        display: block;
+        display: flex; /* Changed from block to flex */
+    }
+
+    .mobile-search-box .search-icon {
+        left: 30px; /* 16px padding + 14px offset */
     }
 
     .mobile-search-box .search-input {
