@@ -161,7 +161,7 @@ msgstr ""
 
 #: apps/users/models.py:10
 msgid "email address"
-msgstr "Эмейл"
+msgstr "📧"
 
 #: apps/users/templates/users/login.html:5
 msgid "С возвращением!"
@@ -208,7 +208,7 @@ msgstr "Имя пользователя"
 
 #: apps/users/templates/users/profile.html:162
 msgid "Email"
-msgstr "Эмейл"
+msgstr "📧"
 
 #: apps/users/templates/users/profile.html:167
 msgid "Имя"
