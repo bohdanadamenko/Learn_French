@@ -16,6 +16,10 @@ class SignUpForm(UserCreationForm):
 
 class ProfileUpdateForm(forms.ModelForm):
     """Form for updating user profile information."""
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.label_suffix = ""  # Remove colon from all labels
+
     class Meta:
         model = User
         fields = ('username', 'email', 'first_name', 'last_name')
@@ -26,7 +30,7 @@ class ProfileUpdateForm(forms.ModelForm):
             'last_name': forms.TextInput(attrs={'class': 'form-control'}),
         }
         labels = {
-            'email': 'эмейл',
+            'email': '',
         }
 
 
