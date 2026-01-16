@@ -208,7 +208,7 @@ msgstr "Nom d'utilisateur"
 
 #: apps/users/templates/users/profile.html:162
 msgid "Email"
-msgstr "📧"
+msgstr "Email"
 
 #: apps/users/templates/users/profile.html:167
 msgid "Имя"

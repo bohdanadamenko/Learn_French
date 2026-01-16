@@ -24,9 +24,6 @@ class ProfileUpdateForm(forms.ModelForm):
             'first_name': forms.TextInput(attrs={'class': 'form-control'}),
             'last_name': forms.TextInput(attrs={'class': 'form-control'}),
         }
-        labels = {
-            'email': '📧',
-        }
 
 
 class SignUpView(generic.CreateView):
