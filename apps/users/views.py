@@ -26,7 +26,7 @@ class ProfileUpdateForm(forms.ModelForm):
             'last_name': forms.TextInput(attrs={'class': 'form-control'}),
         }
         labels = {
-            'email': _('Email'),
+            'email': 'эмейл',
         }
 
 
