@@ -1376,6 +1376,15 @@ mark {
     border-color: rgba(59, 130, 246, 0.3) !important;
 }
 
+.lang-options .option-btn[data-lang="ru"] {
+    opacity: 0.85;
+}
+
+.lang-options .option-btn[data-lang="ru"]:hover,
+.lang-options .option-btn[data-lang="ru"].active {
+    opacity: 1;
+}
+
 .option-divider {
     width: 1px;
     height: 24px;

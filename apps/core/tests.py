@@ -29,12 +29,11 @@ class IndexViewTest(TestCase):
             order=1
         )
 
-    def test_index_requires_login(self):
-        """Test that index page requires authentication. 🔐"""
+    def test_index_accessible_without_login(self):
+        """Test that index page is accessible without authentication. 🌐"""
         response = self.client.get(reverse('core:index'))
-        # Should redirect to login
-        self.assertEqual(response.status_code, 302)
-        self.assertIn('login', response.url.lower())
+        self.assertEqual(response.status_code, 200)
+        self.assertIn('lessons', response.context)
 
     def test_index_authenticated(self):
         """Test that authenticated user can access index. ✅"""

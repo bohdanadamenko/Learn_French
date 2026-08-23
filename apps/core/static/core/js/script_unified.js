@@ -38,7 +38,7 @@ function applyStoredLang() {
     const savedLang = localStorage.getItem('preferredLang');
     
     // Server-side (bodyLang) is the primary source of truth on load
-    const finalLang = bodyLang || savedLang || 'ru';
+    const finalLang = bodyLang || 'uk';
     
     document.documentElement.setAttribute('data-lang', finalLang);
     document.body.setAttribute('data-lang', finalLang);
