@@ -9,7 +9,9 @@ https://docs.djangoproject.com/en/5.2/ref/settings/
 """
 
 from pathlib import Path
+import os
 from decouple import config, Csv
+import dj_database_url
 import sentry_sdk
 from sentry_sdk.integrations.django import DjangoIntegration
 
@@ -193,14 +195,31 @@ WSGI_APPLICATION = 'learn_french.wsgi.application'
 
 
 # Database
-# https://docs.djangoproject.com/en/4.1/ref/settings/#databases
+# https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
-DATABASES  = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+DATABASE_URL = config('DATABASE_URL', default=None)
+
+if DATABASE_URL:
+    DATABASES = {
+        'default': dj_database_url.config(
+            default=DATABASE_URL,
+            conn_max_age=600,
+            conn_health_checks=True,
+        )
     }
-}
+else:
+    # On Vercel / serverless environments without an external DB, store SQLite in /tmp
+    if os.environ.get('VERCEL') or os.environ.get('AWS_LAMBDA_FUNCTION_NAME'):
+        db_path = Path('/tmp') / 'db.sqlite3'
+    else:
+        db_path = BASE_DIR / 'db.sqlite3'
+
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': db_path,
+        }
+    }
 
 
 # Password validation
