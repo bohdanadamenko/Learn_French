@@ -69,17 +69,17 @@
     "pk": 9,
     "fields": {
         "topic": 1,
-        "title": "📚 Алфавіт та читання",
-        "title_uk": "📚 Алфавіт та читання",
-        "title_ru": "📚 Алфавит и чтение",
-        "title_en": "📚 Alphabet and Reading",
-        "title_fr": "📚 Alphabet et lecture",
+        "title": "📚 Французький алфавіт та правила читання",
+        "title_uk": "📚 Французький алфавіт та правила читання",
+        "title_ru": "📚 Французский алфавит и правила чтения",
+        "title_en": "📚 French Alphabet & Reading Rules",
+        "title_fr": "📚 L'alphabet français et la phonétique",
         "data_lesson_id": "lesson1",
-        "content_html": "\n            <h2>Основи фонетики</h2>\n            <p>Французька мова красива, але підступна. Те, що ви бачите на папері, часто читається не так, як написано.</p>\n            <h3>Складні звуки</h3>\n            <p>В українській мові немає повних аналогів цих звуків:</p>\n            <ul>\n                <li><strong>[y]</strong> (u) — губи трубочкою як для \"У\", але намагаємося сказати \"І\". (tu, salut)</li>\n                <li><strong>[œ]</strong> (eu) — щось середнє між \"О\" та \"Е\". (peur, fleur)</li>\n                <li><strong>Носові</strong> (an, on, in) — вимовляються \"в ніс\", не стуляючи губ.</li>\n            </ul>\n            <div class=\"example-box\">\n                <strong>Правило читання:</strong>\n                <p>Наголос ЗАВЖДИ на останній склад, що вимовляється.<br>\n                Букви <strong>e, s, t, d, x, z</strong> в кінці слів зазвичай НЕ читаються.</p>\n            </div>\n        ",
-        "content_html_uk": "\n            <h2>Основи фонетики</h2>\n            <p>Французька мова красива, але підступна. Те, що ви бачите на папері, часто читається не так, як написано.</p>\n            <h3>Складні звуки</h3>\n            <p>В українській мові немає повних аналогів цих звуків:</p>\n            <ul>\n                <li><strong>[y]</strong> (u) — губи трубочкою як для \"У\", але намагаємося сказати \"І\". (tu, salut)</li>\n                <li><strong>[œ]</strong> (eu) — щось середнє між \"О\" та \"Е\". (peur, fleur)</li>\n                <li><strong>Носові</strong> (an, on, in) — вимовляються \"в ніс\", не стуляючи губ.</li>\n            </ul>\n            <div class=\"example-box\">\n                <strong>Правило читання:</strong>\n                <p>Наголос ЗАВЖДИ на останній склад, що вимовляється.<br>\n                Букви <strong>e, s, t, d, x, z</strong> в кінці слів зазвичай НЕ читаються.</p>\n            </div>\n        ",
-        "content_html_ru": "\n                    <h2>Основы фонетики</h2>\n                    <p>Французский язык красив, но коварен. То, что вы видите на бумаге, часто не читается так, как написано.</p>\n                    <h3>Сложные звуки</h3>\n                    <p>В русском языке нет полных аналогов этих звуков:</p>\n                    <ul>\n                        <li><strong>[y]</strong> (u) — губы трубочкой как для \"У\", но пытаемся сказать \"И\". (tu, salut)</li>\n                        <li><strong>[œ]</strong> (eu) — что-то среднее между \"О\" и \"Э\". (peur, fleur)</li>\n                        <li><strong>Носовые</strong> (an, on, in) — произносятся \"в нос\", не смыкая губ.</li>\n                    </ul>\n                    <div class=\"example-box\">\n                        <strong>Правило чтения:</strong>\n                        <p>Ударение ВСЕГДА на последний произносимый слог.<br>\n                        Буквы <strong>e, s, t, d, x, z</strong> в конце слов обычно НЕ читаются.</p>\n                    </div>\n                ",
-        "content_html_en": "\n            <h2>Phonetics Basics</h2>\n            <p>French is beautiful but tricky. What you see on paper is often not read the way it's written.</p>\n            <h3>Complex Sounds</h3>\n            <p>There are no direct equivalents for these sounds in many languages:</p>\n            <ul>\n                <li><strong>[y]</strong> (u) — lips in a tube like for \"U\", but try to say \"I\". (tu, salut)</li>\n                <li><strong>[œ]</strong> (eu) — something between \"O\" and \"E\". (peur, fleur)</li>\n                <li><strong>Nasals</strong> (an, on, in) — pronounced \"through the nose\" without closing the lips.</li>\n            </ul>\n            <div class=\"example-box\">\n                <strong>Reading Rule:</strong>\n                <p>Stress is ALWAYS on the last pronounced syllable.<br>\n                Letters <strong>e, s, t, d, x, z</strong> at the end of words are usually NOT pronounced.</p>\n            </div>\n        ",
-        "content_html_fr": "\n            <h2>Bases de la phonétique</h2>\n            <p>Le français est beau mais complexe. Ce que vous voyez sur le papier n'est souvent pas lu comme c'est écrit.</p>\n            <h3>Sons complexes</h3>\n            <p>Il n'y a pas d'équivalents directs pour ces sons dans de nombreuses langues :</p>\n            <ul>\n                <li><strong>[y]</strong> (u) — les lèvres en tube comme pour le \"OU\", mais on essaie de dire \"I\". (tu, salut)</li>\n                <li><strong>[œ]</strong> (eu) — quelque chose entre le \"O\" et le \"E\". (peur, fleur)</li>\n                <li><strong>Nasales</strong> (an, on, in) — se prononcent \"par le nez\", sans fermer les lèvres.</li>\n            </ul>\n            <div class=\"example-box\">\n                <strong>Règle de lecture :</strong>\n                <p>L'accent est TOUJOURS sur la dernière syllabe prononcée.<br>\n                Les lettres <strong>e, s, t, d, x, z</strong> à la fin des mots ne sont généralement PAS prononcées.</p>\n            </div>\n        ",
+        "content_html": "\n    <h2>Французький алфавіт (L'alphabet français)</h2>\n    <p>У французькому алфавіті <strong>26 літер</strong>: 6 голосних (<em>A, E, I, O, U, Y</em>) та 20 приголосних.</p>\n\n    <div class=\"conjugation-grid\" style=\"grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 12px;\">\n        <div style=\"padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;\"><strong>A a</strong> [а]<br><em>Avion</em> (літак)</div>\n        <div style=\"padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;\"><strong>B b</strong> [бе]<br><em>Bonjour</em> (добрий день)</div>\n        <div style=\"padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;\"><strong>C c</strong> [се]<br><em>Café</em> (кава)</div>\n        <div style=\"padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;\"><strong>D d</strong> [де]<br><em>Deux</em> (два)</div>\n        <div style=\"padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;\"><strong>E e</strong> [е / о-подібний]<br><em>Eau</em> (вода)</div>\n        <div style=\"padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;\"><strong>F f</strong> [еф]<br><em>Frite</em> (картопля фрі)</div>\n        <div style=\"padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;\"><strong>G g</strong> [же]<br><em>Gare</em> (вокзал)</div>\n        <div style=\"padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;\"><strong>H h</strong> [аш] <em>(німий)</em><br><em>Hôtel</em> (готель)</div>\n        <div style=\"padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;\"><strong>I i</strong> [і]<br><em>Ici</em> (тут)</div>\n        <div style=\"padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;\"><strong>J j</strong> [жі]<br><em>Jour</em> (день)</div>\n        <div style=\"padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;\"><strong>K k</strong> [ка]<br><em>Kilo</em> (кілограм)</div>\n        <div style=\"padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;\"><strong>L l</strong> [ель]<br><em>Lune</em> (місяць)</div>\n        <div style=\"padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;\"><strong>M m</strong> [ем]<br><em>Merci</em> (дякую)</div>\n        <div style=\"padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;\"><strong>N n</strong> [ен]<br><em>Non</em> (ні)</div>\n        <div style=\"padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;\"><strong>O o</strong> [о]<br><em>Oui</em> (так)</div>\n        <div style=\"padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;\"><strong>P p</strong> [пе]<br><em>Paris</em> (Париж)</div>\n        <div style=\"padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;\"><strong>Q q</strong> [кю]<br><em>Quatre</em> (чотири)</div>\n        <div style=\"padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;\"><strong>R r</strong> [ер] <em>(грасуючий)</em><br><em>Rue</em> (вулиця)</div>\n        <div style=\"padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;\"><strong>S s</strong> [ес]<br><em>Salut</em> (привіт)</div>\n        <div style=\"padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;\"><strong>T t</strong> [те]<br><em>Train</em> (поїзд)</div>\n        <div style=\"padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;\"><strong>U u</strong> [ю / губний]<br><em>Une</em> (одна)</div>\n        <div style=\"padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;\"><strong>V v</strong> [ве]<br><em>Vélo</em> (велосипед)</div>\n        <div style=\"padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;\"><strong>W w</strong> [дубль-ве]<br><em>Wagon</em> (вагон)</div>\n        <div style=\"padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;\"><strong>X x</strong> [ікс]<br><em>Taxi</em> (таксі)</div>\n        <div style=\"padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;\"><strong>Y y</strong> [ігрек]<br><em>Yeux</em> (очі)</div>\n        <div style=\"padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;\"><strong>Z z</strong> [зед]<br><em>Zéro</em> (нуль)</div>\n    </div>\n\n    <h3>Акценти та особливі знаки</h3>\n    <ul>\n        <li><strong>É é (Accent aigu)</strong> — закритий звук [е]: <em>café, thé</em>.</li>\n        <li><strong>È è, À à, Ù ù (Accent grave)</strong> — відкритий звук [е] (<em>mère</em>) або для розрізнення слів (<em>où</em> = де, <em>ou</em> = або).</li>\n        <li><strong>Ç ç (Cédille)</strong> — седіль під літерою С. Читається як [С] перед A, O, U: <em>français, garçon, ça va</em>.</li>\n    </ul>\n\n    <h3>Головні буквосполучення</h3>\n    <div class=\"example-box\">\n        <p><strong>OI</strong> = [уа] — <em>moi, toi, bonsoir</em></p>\n        <p><strong>OU</strong> = [у] — <em>bonjour, vous, nous</em></p>\n        <p><strong>AU / EAU</strong> = [о] — <em>beau, restaurant, eau</em></p>\n        <p><strong>CH</strong> = [ш] — <em>chocolat, chat</em></p>\n        <p><strong>GN</strong> = [нь] — <em>champagne, montagne</em></p>\n    </div>\n\n    <div class=\"example-box warning\">\n        <strong>Кінцеві приголосні:</strong> Букви <strong>D, P, S, T, X, Z</strong> на кінці слів зазвичай <strong>не читаються</strong>!\n    </div>\n    ",
+        "content_html_uk": "\n    <h2>Французький алфавіт (L'alphabet français)</h2>\n    <p>У французькому алфавіті <strong>26 літер</strong>: 6 голосних (<em>A, E, I, O, U, Y</em>) та 20 приголосних.</p>\n\n    <div class=\"conjugation-grid\" style=\"grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 12px;\">\n        <div style=\"padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;\"><strong>A a</strong> [а]<br><em>Avion</em> (літак)</div>\n        <div style=\"padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;\"><strong>B b</strong> [бе]<br><em>Bonjour</em> (добрий день)</div>\n        <div style=\"padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;\"><strong>C c</strong> [се]<br><em>Café</em> (кава)</div>\n        <div style=\"padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;\"><strong>D d</strong> [де]<br><em>Deux</em> (два)</div>\n        <div style=\"padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;\"><strong>E e</strong> [е / о-подібний]<br><em>Eau</em> (вода)</div>\n        <div style=\"padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;\"><strong>F f</strong> [еф]<br><em>Frite</em> (картопля фрі)</div>\n        <div style=\"padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;\"><strong>G g</strong> [же]<br><em>Gare</em> (вокзал)</div>\n        <div style=\"padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;\"><strong>H h</strong> [аш] <em>(німий)</em><br><em>Hôtel</em> (готель)</div>\n        <div style=\"padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;\"><strong>I i</strong> [і]<br><em>Ici</em> (тут)</div>\n        <div style=\"padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;\"><strong>J j</strong> [жі]<br><em>Jour</em> (день)</div>\n        <div style=\"padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;\"><strong>K k</strong> [ка]<br><em>Kilo</em> (кілограм)</div>\n        <div style=\"padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;\"><strong>L l</strong> [ель]<br><em>Lune</em> (місяць)</div>\n        <div style=\"padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;\"><strong>M m</strong> [ем]<br><em>Merci</em> (дякую)</div>\n        <div style=\"padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;\"><strong>N n</strong> [ен]<br><em>Non</em> (ні)</div>\n        <div style=\"padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;\"><strong>O o</strong> [о]<br><em>Oui</em> (так)</div>\n        <div style=\"padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;\"><strong>P p</strong> [пе]<br><em>Paris</em> (Париж)</div>\n        <div style=\"padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;\"><strong>Q q</strong> [кю]<br><em>Quatre</em> (чотири)</div>\n        <div style=\"padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;\"><strong>R r</strong> [ер] <em>(грасуючий)</em><br><em>Rue</em> (вулиця)</div>\n        <div style=\"padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;\"><strong>S s</strong> [ес]<br><em>Salut</em> (привіт)</div>\n        <div style=\"padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;\"><strong>T t</strong> [те]<br><em>Train</em> (поїзд)</div>\n        <div style=\"padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;\"><strong>U u</strong> [ю / губний]<br><em>Une</em> (одна)</div>\n        <div style=\"padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;\"><strong>V v</strong> [ве]<br><em>Vélo</em> (велосипед)</div>\n        <div style=\"padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;\"><strong>W w</strong> [дубль-ве]<br><em>Wagon</em> (вагон)</div>\n        <div style=\"padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;\"><strong>X x</strong> [ікс]<br><em>Taxi</em> (таксі)</div>\n        <div style=\"padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;\"><strong>Y y</strong> [ігрек]<br><em>Yeux</em> (очі)</div>\n        <div style=\"padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;\"><strong>Z z</strong> [зед]<br><em>Zéro</em> (нуль)</div>\n    </div>\n\n    <h3>Акценти та особливі знаки</h3>\n    <ul>\n        <li><strong>É é (Accent aigu)</strong> — закритий звук [е]: <em>café, thé</em>.</li>\n        <li><strong>È è, À à, Ù ù (Accent grave)</strong> — відкритий звук [е] (<em>mère</em>) або для розрізнення слів (<em>où</em> = де, <em>ou</em> = або).</li>\n        <li><strong>Ç ç (Cédille)</strong> — седіль під літерою С. Читається як [С] перед A, O, U: <em>français, garçon, ça va</em>.</li>\n    </ul>\n\n    <h3>Головні буквосполучення</h3>\n    <div class=\"example-box\">\n        <p><strong>OI</strong> = [уа] — <em>moi, toi, bonsoir</em></p>\n        <p><strong>OU</strong> = [у] — <em>bonjour, vous, nous</em></p>\n        <p><strong>AU / EAU</strong> = [о] — <em>beau, restaurant, eau</em></p>\n        <p><strong>CH</strong> = [ш] — <em>chocolat, chat</em></p>\n        <p><strong>GN</strong> = [нь] — <em>champagne, montagne</em></p>\n    </div>\n\n    <div class=\"example-box warning\">\n        <strong>Кінцеві приголосні:</strong> Букви <strong>D, P, S, T, X, Z</strong> на кінці слів зазвичай <strong>не читаються</strong>!\n    </div>\n    ",
+        "content_html_ru": "\n    <h2>Французский алфавит (L'alphabet français)</h2>\n    <p>Во французском алфавите <strong>26 букв</strong> латинского алфавита: 6 гласных (<em>A, E, I, O, U, Y</em>) и 20 согласных.</p>\n\n    <div class=\"conjugation-grid\" style=\"grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 12px;\">\n        <div style=\"padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;\"><strong>A a</strong> [а]<br><em>Avion</em> (самолёт)</div>\n        <div style=\"padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;\"><strong>B b</strong> [бэ]<br><em>Bonjour</em> (здравствуйте)</div>\n        <div style=\"padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;\"><strong>C c</strong> [сэ]<br><em>Café</em> (кофе)</div>\n        <div style=\"padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;\"><strong>D d</strong> [дэ]<br><em>Deux</em> (два)</div>\n        <div style=\"padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;\"><strong>E e</strong> [ё / э]<br><em>Eau</em> (вода)</div>\n        <div style=\"padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;\"><strong>F f</strong> [эф]<br><em>Frite</em> (картофель фри)</div>\n        <div style=\"padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;\"><strong>G g</strong> [жэ]<br><em>Gare</em> (вокзал)</div>\n        <div style=\"padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;\"><strong>H h</strong> [аш] <em>(немой)</em><br><em>Hôtel</em> (отель)</div>\n        <div style=\"padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;\"><strong>I i</strong> [и]<br><em>Ici</em> (здесь)</div>\n        <div style=\"padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;\"><strong>J j</strong> [жи]<br><em>Jour</em> (день)</div>\n        <div style=\"padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;\"><strong>K k</strong> [ка]<br><em>Kilo</em> (килограмм)</div>\n        <div style=\"padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;\"><strong>L l</strong> [эль]<br><em>Lune</em> (луна)</div>\n        <div style=\"padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;\"><strong>M m</strong> [эм]<br><em>Merci</em> (спасибо)</div>\n        <div style=\"padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;\"><strong>N n</strong> [эн]<br><em>Non</em> (нет)</div>\n        <div style=\"padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;\"><strong>O o</strong> [о]<br><em>Oui</em> (да)</div>\n        <div style=\"padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;\"><strong>P p</strong> [пэ]<br><em>Paris</em> (Париж)</div>\n        <div style=\"padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;\"><strong>Q q</strong> [кю]<br><em>Quatre</em> (четыре)</div>\n        <div style=\"padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;\"><strong>R r</strong> [эр] <em>(картавый)</em><br><em>Rue</em> (улица)</div>\n        <div style=\"padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;\"><strong>S s</strong> [эс]<br><em>Salut</em> (привет)</div>\n        <div style=\"padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;\"><strong>T t</strong> [тэ]<br><em>Train</em> (поезд)</div>\n        <div style=\"padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;\"><strong>U u</strong> [ю / узкий губной]<br><em>Une</em> (одна)</div>\n        <div style=\"padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;\"><strong>V v</strong> [вэ]<br><em>Vélo</em> (велосипед)</div>\n        <div style=\"padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;\"><strong>W w</strong> [дубль-вэ]<br><em>Wagon</em> (вагон)</div>\n        <div style=\"padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;\"><strong>X x</strong> [икс]<br><em>Taxi</em> (такси)</div>\n        <div style=\"padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;\"><strong>Y y</strong> [игрек]<br><em>Yeux</em> (глаза)</div>\n        <div style=\"padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;\"><strong>Z z</strong> [зэд]<br><em>Zéro</em> (ноль)</div>\n    </div>\n\n    <h3>Французские значки над буквами (Акценты)</h3>\n    <ul>\n        <li><strong>É é (Accent aigu)</strong> — закрытый чистый звук [э]: <em>café, téléphone</em>.</li>\n        <li><strong>È è, À à, Ù ù (Accent grave)</strong> — открытый широкий [э] (<em>mère, père</em>) или различие слов (<em>à</em> = в/к, <em>où</em> = где).</li>\n        <li><strong>Ê ê, Ô ô, Â â, Î î, Û û (Accent circonflexe)</strong> — крышечка над звуком: <em>fête, hôtel, château</em>.</li>\n        <li><strong>Ç ç (Cédille)</strong> — хвостик под буквой С. Заставляет букву С читаться как [С] перед A, O, U: <em>français [франсэ], garçon [гарсон], ça va [са ва]</em>.</li>\n    </ul>\n\n    <h3>Главные буквосочетания: как читать без ошибок</h3>\n    <div class=\"example-box\">\n        <p><strong>OI</strong> = [уа] — <em>moi [муа], toi [туа], bonsoir [бонсуар]</em></p>\n        <p><strong>OU</strong> = [у] — <em>bonjour [бонжур], vous [ву], nous [ну]</em></p>\n        <p><strong>AU / EAU</strong> = [о] — <em>beau [бо], restaurant [ресторан], eau [о]</em></p>\n        <p><strong>AI / EI</strong> = [э] — <em>mais [мэ], faire [фэр], treize [трэз]</em></p>\n        <p><strong>CH</strong> = [ш] — <em>chocolat [шокола], chat [ша]</em></p>\n        <p><strong>GN</strong> = [нь] — <em>champagne [шампань], montagne [монтань]</em></p>\n    </div>\n\n    <div class=\"example-box warning\">\n        <strong>Золотое правило согласных на конце слов:</strong>\n        <p>Буквы <strong>D, P, S, T, X, Z</strong> на конце слов обычно <strong>НЕ ЧИТАЮТСЯ</strong>!</p>\n        <p><em>salut [салю], chat [ша], deux [дё], vous [ву], paris [пари]</em>.</p>\n    </div>\n    ",
+        "content_html_en": "\n    <h2>The French Alphabet (L'alphabet français)</h2>\n    <p>The French alphabet consists of <strong>26 letters</strong>: 6 vowels and 20 consonants.</p>\n    <div class=\"example-box\">\n        <p>Key letter combinations: <strong>OI</strong> = [wa] (<em>bonsoir</em>), <strong>OU</strong> = [u] (<em>bonjour</em>), <strong>EAU/AU</strong> = [o] (<em>beau</em>), <strong>CH</strong> = [sh] (<em>chocolat</em>), <strong>GN</strong> = [ny] (<em>champagne</em>).</p>\n    </div>\n    <div class=\"example-box warning\">\n        <strong>Silent Endings:</strong> Letters <strong>D, P, S, T, X, Z</strong> are usually silent at the end of French words (e.g. <em>salut, chat, vous, deux</em>).\n    </div>\n    ",
+        "content_html_fr": "\n    <h2>L'alphabet français et les sons</h2>\n    <p>L'alphabet français compte <strong>26 lettres</strong> et des accents particuliers (é, è, ê, ç, ë).</p>\n    <ul>\n        <li><strong>OI</strong> = [wa] (<em>bonsoir</em>)</li>\n        <li><strong>OU</strong> = [u] (<em>bonjour</em>)</li>\n        <li><strong>EAU / AU</strong> = [o] (<em>beau</em>)</li>\n        <li><strong>CH</strong> = [ʃ] (<em>chat</em>)</li>\n        <li><strong>GN</strong> = [ɲ] (<em>montagne</em>)</li>\n    </ul>\n    ",
         "order": 1,
         "date_added": "2025-11-28T06:58:01.707Z"
     }
@@ -778,11 +778,11 @@
     "pk": 31,
     "fields": {
         "lesson": 9,
-        "text": "Скільки букв у французькому алфавіті?",
-        "text_uk": "Скільки букв у французькому алфавіті?",
-        "text_ru": "Сколько букв во французском алфавите?",
-        "text_en": "How many letters are in the French alphabet?",
-        "text_fr": "Combien de lettres y a-t-il dans l'alphabet français ?",
+        "text": "Як читається буквосполучення 'OI' у французькій мові (наприклад у 'bonsoir')?",
+        "text_uk": "Як читається буквосполучення 'OI' у французькій мові (наприклад у 'bonsoir')?",
+        "text_ru": "Как читается буквосочетание 'OI' во французском языке (например в 'bonsoir')?",
+        "text_en": "How is the combination 'OI' pronounced in French (e.g. in 'bonsoir')?",
+        "text_fr": "Comment se prononce la combinaison 'OI' en français ?",
         "order": 0
     }
 },
@@ -1550,58 +1550,6 @@
         "text_ru": "se",
         "text_en": "se",
         "text_fr": "se",
-        "is_correct": false
-    }
-},
-{
-    "model": "quizzes.choice",
-    "pk": 91,
-    "fields": {
-        "question": 31,
-        "text": "24",
-        "text_uk": "24",
-        "text_ru": "24",
-        "text_en": "24",
-        "text_fr": "24",
-        "is_correct": false
-    }
-},
-{
-    "model": "quizzes.choice",
-    "pk": 92,
-    "fields": {
-        "question": 31,
-        "text": "26",
-        "text_uk": "26",
-        "text_ru": "26",
-        "text_en": "26",
-        "text_fr": "26",
-        "is_correct": true
-    }
-},
-{
-    "model": "quizzes.choice",
-    "pk": 93,
-    "fields": {
-        "question": 31,
-        "text": "33",
-        "text_uk": "33",
-        "text_ru": "33",
-        "text_en": "33",
-        "text_fr": "33",
-        "is_correct": false
-    }
-},
-{
-    "model": "quizzes.choice",
-    "pk": 94,
-    "fields": {
-        "question": 31,
-        "text": "28",
-        "text_uk": "28",
-        "text_ru": "28",
-        "text_en": "28",
-        "text_fr": "28",
         "is_correct": false
     }
 },
@@ -2499,6 +2447,45 @@
         "text_ru": "Приятного аппетита",
         "text_en": "Приятного аппетита",
         "text_fr": "Приятного аппетита",
+        "is_correct": false
+    }
+},
+{
+    "model": "quizzes.choice",
+    "pk": 164,
+    "fields": {
+        "question": 31,
+        "text": "[уа]",
+        "text_uk": "[уа]",
+        "text_ru": "[уа]",
+        "text_en": "[wa]",
+        "text_fr": "[wa]",
+        "is_correct": true
+    }
+},
+{
+    "model": "quizzes.choice",
+    "pk": 165,
+    "fields": {
+        "question": 31,
+        "text": "[ой]",
+        "text_uk": "[ой]",
+        "text_ru": "[ой]",
+        "text_en": "[oy]",
+        "text_fr": "[oy]",
+        "is_correct": false
+    }
+},
+{
+    "model": "quizzes.choice",
+    "pk": 166,
+    "fields": {
+        "question": 31,
+        "text": "[і]",
+        "text_uk": "[і]",
+        "text_ru": "[и]",
+        "text_en": "[i]",
+        "text_fr": "[i]",
         "is_correct": false
     }
 }
