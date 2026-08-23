@@ -20,7 +20,12 @@ class FrenchLessonsE2ETest(StaticLiveServerTestCase):
     def setUpClass(cls):
         super().setUpClass()
         cls.playwright = sync_playwright().start()
-        cls.browser = cls.playwright.chromium.launch(headless=True)
+        headless = os.environ.get("HEADLESS", "true").lower() not in ("false", "0", "no")
+        slow_mo = int(os.environ.get("SLOW_MO", "0"))
+        cls.browser = cls.playwright.chromium.launch(
+            headless=headless,
+            slow_mo=slow_mo
+        )
 
     @classmethod
     def tearDownClass(cls):
