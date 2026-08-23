@@ -147,8 +147,12 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // ========================================
-// NAVIGATION & MOBILE MENU
-// ========================================
+function toggleTopic(header) {
+    const topicGroup = header.closest('.topic-group');
+    if (!topicGroup) return;
+    const isCollapsed = topicGroup.classList.toggle('collapsed');
+    header.setAttribute('aria-expanded', !isCollapsed);
+}
 
 function switchLesson(lessonId, element) {
     // 1. Update Navigation Active State
@@ -161,6 +165,11 @@ function switchLesson(lessonId, element) {
 
     if (navItem) {
         navItem.classList.add('active');
+        const parentTopic = navItem.closest('.topic-group');
+        if (parentTopic && parentTopic.classList.contains('collapsed')) {
+            parentTopic.classList.remove('collapsed');
+            parentTopic.querySelector('.topic-header')?.setAttribute('aria-expanded', 'true');
+        }
         navItem.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
     }
 
@@ -336,6 +345,9 @@ function handleSearch(query) {
         document.querySelectorAll('.nav-item').forEach(item => {
             item.style.display = 'flex';
         });
+        document.querySelectorAll('.topic-group').forEach(group => {
+            group.style.display = '';
+        });
         updateNavButtonsState();
         return;
     }
@@ -364,6 +376,19 @@ function handleSearch(query) {
             item.style.display = 'none';
         }
     });
+
+    // Handle topic groups visibility and auto-expansion on search
+    document.querySelectorAll('.topic-group').forEach(group => {
+        const visibleLessons = group.querySelectorAll('.nav-item:not([style*="display: none"])');
+        if (visibleLessons.length > 0) {
+            group.style.display = '';
+            group.classList.remove('collapsed');
+            group.querySelector('.topic-header')?.setAttribute('aria-expanded', 'true');
+        } else {
+            group.style.display = 'none';
+        }
+    });
+
     updateNavButtonsState();
 }
 

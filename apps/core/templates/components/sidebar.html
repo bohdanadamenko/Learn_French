@@ -10,35 +10,86 @@
 
             <nav class="nav-menu" role="navigation" aria-label="Lessons navigation">
                 
-                {% for lesson in lessons %}
-                <div class="nav-item {% if forloop.first %}active{% endif %}" 
-                     onclick="switchLesson('{{ lesson.data_lesson_id }}', this)"
-                     data-lesson-id="{{ lesson.data_lesson_id }}"
-                     role="button"
-                     tabindex="0"
-                     aria-label="Lesson {{ forloop.counter }}">
-                    <div class="progress-indicator" role="checkbox" aria-checked="false" aria-label="Mark lesson as completed"></div>
-                    <span class="nav-number">{{ forloop.counter }}.</span>
-                    
-                    <!-- Localized Titles in Sidebar -->
-                    <span class="lang-content lang-ru">
-                        <span class="nav-emoji">{{ lesson.title_ru|get_emoji }}</span>
-                        <span class="nav-text">{{ lesson.title_ru|get_text_after_emoji }}</span>
-                    </span>
-                    <span class="lang-content lang-uk">
-                        <span class="nav-emoji">{{ lesson.title_uk|default:lesson.title_ru|get_emoji }}</span>
-                        <span class="nav-text">{{ lesson.title_uk|default:lesson.title_ru|get_text_after_emoji }}</span>
-                    </span>
-                    <span class="lang-content lang-en">
-                        <span class="nav-emoji">{{ lesson.title_en|default:lesson.title_ru|get_emoji }}</span>
-                        <span class="nav-text">{{ lesson.title_en|default:lesson.title_ru|get_text_after_emoji }}</span>
-                    </span>
-                    <span class="lang-content lang-fr">
-                        <span class="nav-emoji">{{ lesson.title_fr|default:lesson.title_ru|get_emoji }}</span>
-                        <span class="nav-text">{{ lesson.title_fr|default:lesson.title_ru|get_text_after_emoji }}</span>
-                    </span>
-                </div>
-                {% endfor %}
+                {% if topics %}
+                    {% for topic in topics %}
+                    <div class="topic-group" data-topic-id="{{ topic.id }}">
+                        <div class="topic-header" onclick="toggleTopic(this)" role="button" tabindex="0" aria-expanded="true">
+                            <span class="topic-emoji">{{ topic.emoji }}</span>
+                            <span class="topic-title">
+                                <span class="lang-content lang-ru">{{ topic.title_ru }}</span>
+                                <span class="lang-content lang-uk">{{ topic.title_uk|default:topic.title_ru }}</span>
+                                <span class="lang-content lang-en">{{ topic.title_en|default:topic.title_ru }}</span>
+                                <span class="lang-content lang-fr">{{ topic.title_fr|default:topic.title_ru }}</span>
+                            </span>
+                            <span class="topic-badge">{{ topic.lessons.all|length }}</span>
+                            <svg class="topic-chevron" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </div>
+                        <div class="topic-lessons">
+                            {% for lesson in topic.lessons.all %}
+                            <div class="nav-item {% if forloop.parentloop.first and forloop.first %}active{% endif %}" 
+                                 onclick="switchLesson('{{ lesson.data_lesson_id }}', this)"
+                                 data-lesson-id="{{ lesson.data_lesson_id }}"
+                                 role="button"
+                                 tabindex="0"
+                                 aria-label="Lesson {{ lesson.order }}">
+                                <div class="progress-indicator" role="checkbox" aria-checked="false" aria-label="Mark lesson as completed"></div>
+                                <span class="nav-number">{{ lesson.order }}.</span>
+                                
+                                <!-- Localized Titles in Sidebar -->
+                                <span class="lang-content lang-ru">
+                                    <span class="nav-emoji">{{ lesson.title_ru|get_emoji }}</span>
+                                    <span class="nav-text">{{ lesson.title_ru|get_text_after_emoji }}</span>
+                                </span>
+                                <span class="lang-content lang-uk">
+                                    <span class="nav-emoji">{{ lesson.title_uk|default:lesson.title_ru|get_emoji }}</span>
+                                    <span class="nav-text">{{ lesson.title_uk|default:lesson.title_ru|get_text_after_emoji }}</span>
+                                </span>
+                                <span class="lang-content lang-en">
+                                    <span class="nav-emoji">{{ lesson.title_en|default:lesson.title_ru|get_emoji }}</span>
+                                    <span class="nav-text">{{ lesson.title_en|default:lesson.title_ru|get_text_after_emoji }}</span>
+                                </span>
+                                <span class="lang-content lang-fr">
+                                    <span class="nav-emoji">{{ lesson.title_fr|default:lesson.title_ru|get_emoji }}</span>
+                                    <span class="nav-text">{{ lesson.title_fr|default:lesson.title_ru|get_text_after_emoji }}</span>
+                                </span>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    {% endfor %}
+                {% else %}
+                    {% for lesson in lessons %}
+                    <div class="nav-item {% if forloop.first %}active{% endif %}" 
+                         onclick="switchLesson('{{ lesson.data_lesson_id }}', this)"
+                         data-lesson-id="{{ lesson.data_lesson_id }}"
+                         role="button"
+                         tabindex="0"
+                         aria-label="Lesson {{ forloop.counter }}">
+                        <div class="progress-indicator" role="checkbox" aria-checked="false" aria-label="Mark lesson as completed"></div>
+                        <span class="nav-number">{{ forloop.counter }}.</span>
+                        
+                        <!-- Localized Titles in Sidebar -->
+                        <span class="lang-content lang-ru">
+                            <span class="nav-emoji">{{ lesson.title_ru|get_emoji }}</span>
+                            <span class="nav-text">{{ lesson.title_ru|get_text_after_emoji }}</span>
+                        </span>
+                        <span class="lang-content lang-uk">
+                            <span class="nav-emoji">{{ lesson.title_uk|default:lesson.title_ru|get_emoji }}</span>
+                            <span class="nav-text">{{ lesson.title_uk|default:lesson.title_ru|get_text_after_emoji }}</span>
+                        </span>
+                        <span class="lang-content lang-en">
+                            <span class="nav-emoji">{{ lesson.title_en|default:lesson.title_ru|get_emoji }}</span>
+                            <span class="nav-text">{{ lesson.title_en|default:lesson.title_ru|get_text_after_emoji }}</span>
+                        </span>
+                        <span class="lang-content lang-fr">
+                            <span class="nav-emoji">{{ lesson.title_fr|default:lesson.title_ru|get_emoji }}</span>
+                            <span class="nav-text">{{ lesson.title_fr|default:lesson.title_ru|get_text_after_emoji }}</span>
+                        </span>
+                    </div>
+                    {% endfor %}
+                {% endif %}
             </nav>
             
             <div class="sidebar-footer">

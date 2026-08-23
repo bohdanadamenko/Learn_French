@@ -1,11 +1,15 @@
 from django.shortcuts import render
-from apps.lessons.selectors import get_lessons_list
+from apps.lessons.selectors import get_lessons_list, get_topics_with_lessons
 
 
 def index(request):
-    # Загружаем все уроки через селектор
     lessons = get_lessons_list()
-    return render(request, 'core/index.html', {'lessons': lessons})
+    topics = get_topics_with_lessons()
+    return render(request, 'core/index.html', {
+        'lessons': lessons,
+        'topics': topics,
+    })
+
 
 
 def custom_404(request, exception):

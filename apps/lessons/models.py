@@ -2,12 +2,38 @@ from django.db import models
 from django.utils.translation import gettext_lazy as _
 from django_ckeditor_5.fields import CKEditor5Field
 
+
+class Topic(models.Model):
+    """Модель тематического модуля / подгруппы уроков."""
+    title = models.CharField(
+        max_length=255, verbose_name=_("Название темы"))
+    emoji = models.CharField(
+        max_length=10, default="📁", verbose_name=_("Эмодзи / Иконка"))
+    order = models.IntegerField(
+        default=0, verbose_name=_("Порядок сортировки"))
+
+    class Meta:
+        verbose_name = _("Тема / Модуль")
+        verbose_name_plural = _("Темы / Модули")
+        ordering = ['order']
+        db_table = 'lessons_topic'
+
+    def __str__(self):
+        return f"{self.emoji} {self.title}"
+
+
 class Lesson(models.Model):
     """Модель для хранения контента урока французского языка."""
 
-    # Поля для разных языков удалены в пользу django-modeltranslation
-    
-    # Старые поля (оставляем для миграции)
+    topic = models.ForeignKey(
+        Topic,
+        on_delete=models.SET_NULL,
+        null=True,
+        blank=True,
+        related_name='lessons',
+        verbose_name=_("Тема / Модуль")
+    )
+
     title = models.CharField(
         max_length=255, verbose_name=_("Заголовок и эмодзи (напр., Урок 1: 🇫🇷 Фонетика)"))
     
@@ -31,3 +57,4 @@ class Lesson(models.Model):
 
     def __str__(self):
         return self.title
+

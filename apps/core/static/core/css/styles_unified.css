@@ -504,17 +504,111 @@ body {
     background: rgba(255, 255, 255, 0.1);
 }
 
-.nav-item {
-    padding: 14px 16px;
+/* Topic Groups & Accordion */
+.topic-group {
+    margin-bottom: 8px;
+    border-radius: 14px;
+    transition: all 0.2s ease;
+}
+
+.topic-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 14px;
     border-radius: 12px;
+    background: rgba(0, 0, 0, 0.02);
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.topic-header:hover {
+    background: rgba(0, 0, 0, 0.05);
+    border-color: rgba(0, 0, 0, 0.08);
+}
+
+[data-theme="dark"] .topic-header {
+    background: rgba(255, 255, 255, 0.03);
+    border-color: rgba(255, 255, 255, 0.05);
+}
+
+[data-theme="dark"] .topic-header:hover {
+    background: rgba(255, 255, 255, 0.06);
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.topic-emoji {
+    font-size: 1.1rem;
+    line-height: 1;
+    flex-shrink: 0;
+}
+
+.topic-title {
+    flex: 1;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    letter-spacing: 0.2px;
+}
+
+.topic-badge {
+    padding: 2px 7px;
+    border-radius: 10px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    background: rgba(0, 122, 255, 0.1);
+    color: var(--accent-blue);
+    min-width: 20px;
+    text-align: center;
+}
+
+[data-theme="dark"] .topic-badge {
+    background: rgba(96, 165, 250, 0.15);
+    color: #60A5FA;
+}
+
+.topic-chevron {
+    color: var(--text-secondary);
+    transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    flex-shrink: 0;
+}
+
+.topic-group.collapsed .topic-chevron {
+    transform: rotate(-90deg);
+}
+
+.topic-lessons {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 6px 0 2px 8px;
+    transition: max-height 0.3s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.25s ease, padding 0.25s ease;
+    overflow: hidden;
+}
+
+.topic-group.collapsed .topic-lessons {
+    max-height: 0 !important;
+    opacity: 0;
+    padding: 0;
+    pointer-events: none;
+}
+
+.nav-item {
+    padding: 11px 14px;
+    border-radius: 10px;
     color: var(--text-primary);
     cursor: pointer;
     transition: all 0.2s ease;
     font-weight: 600;
-    font-size: 0.95rem;
+    font-size: 0.92rem;
     display: flex;
     align-items: center;
-    gap: 14px;
+    gap: 12px;
     border: 2px solid transparent;
     background: transparent;
 }
