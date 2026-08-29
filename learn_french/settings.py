@@ -41,14 +41,24 @@ SECRET_KEY = config('SECRET_KEY', default='django-insecure-fallback-key-change-i
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DEBUG', default=False, cast=bool)
 
-ALLOWED_HOSTS = config('ALLOWED_HOSTS', default='localhost,127.0.0.1,.vercel.app', cast=Csv())
+ALLOWED_HOSTS = config(
+    'ALLOWED_HOSTS', 
+    default='localhost,127.0.0.1,.vercel.app,.learn-french.be,learn-french.be,www.learn-french.be', 
+    cast=Csv()
+)
+for host in ['.learn-french.be', 'learn-french.be', 'www.learn-french.be', '.vercel.app']:
+    if host not in ALLOWED_HOSTS:
+        ALLOWED_HOSTS.append(host)
 
 # CSRF Trusted Origins
 CSRF_TRUSTED_ORIGINS = config(
     'CSRF_TRUSTED_ORIGINS', 
-    default='http://localhost:8000,http://127.0.0.1:8000,https://*.vercel.app', 
+    default='http://localhost:8000,http://127.0.0.1:8000,https://*.vercel.app,https://*.learn-french.be,https://learn-french.be,https://www.learn-french.be', 
     cast=Csv()
 )
+for origin in ['https://*.learn-french.be', 'https://learn-french.be', 'https://www.learn-french.be', 'https://*.vercel.app']:
+    if origin not in CSRF_TRUSTED_ORIGINS:
+        CSRF_TRUSTED_ORIGINS.append(origin)
 
 
 # Application definition
