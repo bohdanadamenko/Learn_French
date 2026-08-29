@@ -605,6 +605,106 @@
     }
 },
 {
+    "model": "lessons_app.lesson",
+    "pk": 36,
+    "fields": {
+        "topic": 5,
+        "title": "🚆 Транспорт у Бельгії: STIB, SNCB, MoBIB та квитки",
+        "title_uk": "🚆 Транспорт у Бельгії: STIB, SNCB, MoBIB та квитки",
+        "title_ru": "🚆 Транспорт в Бельгии: STIB, SNCB, MoBIB и билеты",
+        "title_en": "🚆 Transport in Belgium: STIB, SNCB, MoBIB & Tickets",
+        "title_fr": "🚆 Les transports en Belgique : STIB, SNCB et MoBIB",
+        "data_lesson_id": "lesson-transport-be",
+        "content_html": "\n            <h2>Громадський транспорт у Бельгії</h2>\n            <p>Транспорт у Бельгії дуже пунктуальний і зручний. Ось головні оператори:</p>\n\n            <h3>Оператори та системи :</h3>\n            <ul>\n                <li><strong>SNCB / NMBS</strong> — Залізниця по всій Бельгії.</li>\n                <li><strong>STIB / MIVB</strong> — Метро, трамваї та автобуси Брюсселя.</li>\n                <li><strong>TEC</strong> — Автобуси у Валлонії.</li>\n                <li><strong>De Lijn</strong> — Автобуси та трамваї у Фландрії.</li>\n                <li><strong>Carte MoBIB</strong> — Універсальна безконтактна картка для проїзду.</li>\n            </ul>\n\n            <h3>Корисні фрази :</h3>\n            <div class=\"example-box\">\n                <p><strong>Un aller-retour</strong> — Квиток в обидва боки.</p>\n                <p><strong>La voie / Le quai</strong> — Колія / Платформа.</p>\n                <p><strong>« Bonjour, un billet pour Bruxelles-Central, s'il vous plaît. »</strong></p>\n            </div>\n            ",
+        "content_html_uk": "\n            <h2>Громадський транспорт у Бельгії</h2>\n            <p>Транспорт у Бельгії дуже пунктуальний і зручний. Ось головні оператори:</p>\n\n            <h3>Оператори та системи :</h3>\n            <ul>\n                <li><strong>SNCB / NMBS</strong> — Залізниця по всій Бельгії.</li>\n                <li><strong>STIB / MIVB</strong> — Метро, трамваї та автобуси Брюсселя.</li>\n                <li><strong>TEC</strong> — Автобуси у Валлонії.</li>\n                <li><strong>De Lijn</strong> — Автобуси та трамваї у Фландрії.</li>\n                <li><strong>Carte MoBIB</strong> — Універсальна безконтактна картка для проїзду.</li>\n            </ul>\n\n            <h3>Корисні фрази :</h3>\n            <div class=\"example-box\">\n                <p><strong>Un aller-retour</strong> — Квиток в обидва боки.</p>\n                <p><strong>La voie / Le quai</strong> — Колія / Платформа.</p>\n                <p><strong>« Bonjour, un billet pour Bruxelles-Central, s'il vous plaît. »</strong></p>\n            </div>\n            ",
+        "content_html_ru": "\n            <h2>Общественный транспорт в Бельгии: полный гид</h2>\n            <p>В Бельгии транспортная система очень удобная, но разделена между национальным ж/д оператором и региональными компаниями:</p>\n\n            <h3>1. Транспортные операторы:</h3>\n            <ul>\n                <li><strong>SNCB / NMBS</strong> — Национальные поезда по всей Бельгии (поезда IC, P, S-train).</li>\n                <li><strong>STIB / MIVB</strong> — Метро, трамваи и автобусы в Брюсселе.</li>\n                <li><strong>TEC</strong> — Автобусы и трамваи в Валлонии (Шарлеруа, Льеж, Намюр).</li>\n                <li><strong>De Lijn</strong> — Автобусы и трамваи во Фландрии (Антверпен, Гент, Брюгге).</li>\n            </ul>\n\n            <h3>2. Оплата и карта MoBIB:</h3>\n            <div class=\"example-box\">\n                <p><strong>La carte MoBIB</strong> — Единая бесконтактная карта для всех видов транспорта в Бельгии (на неё загружаются проездные <em>abonnements</em> или поездки <em>10 voyages</em>).</p>\n                <p>В транспорте STIB в Брюсселе также можно просто приложить банковскую карту (<em>paiement sans contact</em>) к серым валидаторам на входе.</p>\n            </div>\n\n            <h3>3. Полезные фразы на вокзале и в метро:</h3>\n            <div class=\"conjugation-grid\">\n                <div><strong>Un aller-retour</strong><br>Билет туда и обратно</div>\n                <div><strong>Un aller simple</strong><br>Билет в одну сторону</div>\n                <div><strong>La voie / Le quai</strong><br>Железнодорожный путь / Платформа</div>\n                <div><strong>La correspondance</strong><br>Пересадка</div>\n                <div><strong>Le retard</strong><br>Опоздание (<em>«Le train a 10 min de retard»</em>)</div>\n                <div><strong>Weekend Ticket</strong><br>Билет выходного дня SNCB (-50% стоимости!)</div>\n            </div>\n\n            <div class=\"example-box warning\">\n                <strong>Важные диалоги на вокзале:</strong>\n                <p><strong>« Bonjour, un aller-retour pour Liège-Guillemins, s'il vous plaît. »</strong><br>— Здравствуйте, билет туда и обратно до Льежа, пожалуйста.</p>\n                <p><strong>« À quelle voie part le train pour Namur ? »</strong><br>— С какого пути отправляется поезд на Намюр?</p>\n            </div>\n            ",
+        "content_html_en": "\n            <h2>Public Transport in Belgium</h2>\n            <p>Mastering public transit across Brussels, Wallonia, and Flanders:</p>\n            <ul>\n                <li><strong>SNCB / NMBS</strong>: Belgian national railways.</li>\n                <li><strong>STIB / MIVB</strong>: Brussels metro, tram, and bus network.</li>\n                <li><strong>MoBIB card</strong>: Universal contactless smartcard.</li>\n                <li><strong>Weekend Ticket</strong>: 50% discount on return train tickets from Friday 19:00 to Sunday.</li>\n            </ul>\n            <div class=\"example-box\">\n                <p><strong>« Un aller-retour pour Bruges, s'il vous plaît. »</strong> — Return ticket to Bruges, please.</p>\n            </div>\n            ",
+        "content_html_fr": "\n            <h2>Les transports publics en Belgique</h2>\n            <ul>\n                <li><strong>SNCB</strong> : trains nationaux.</li>\n                <li><strong>STIB</strong> : réseau bruxellois (métro, tram, bus).</li>\n                <li><strong>Carte MoBIB</strong> : carte rechargeable pour tous les transports.</li>\n                <li><strong>Weekend ticket</strong> : réduction de 50% le week-end.</li>\n            </ul>\n            ",
+        "order": 28,
+        "date_added": "2026-08-29T12:11:22.604Z"
+    }
+},
+{
+    "model": "lessons_app.lesson",
+    "pk": 37,
+    "fields": {
+        "topic": 5,
+        "title": "🛒 У бельгійському супермаркеті та Bancontact",
+        "title_uk": "🛒 У бельгійському супермаркеті та Bancontact",
+        "title_ru": "🛒 В бельгийском супермаркете и Bancontact",
+        "title_en": "🛒 Belgian Supermarkets & Bancontact",
+        "title_fr": "🛒 Au supermarché en Belgique et Bancontact",
+        "data_lesson_id": "lesson-supermarket-be",
+        "content_html": "\n            <h2>Покупки в супермаркетах Бельгії</h2>\n            <p>Особливості покупок у Delhaize, Colruyt, Carrefour, Lidl:</p>\n\n            <h3>На касі :</h3>\n            <div class=\"example-box\">\n                <p><strong>« Par carte / Sans contact, s'il vous plaît. »</strong> — Оплата карткою / безконтактно.</p>\n                <p><strong>« Voulez-vous le ticket de caisse ? »</strong> — Чи потрібен вам чек?</p>\n                <p><strong>Bancontact</strong> — Національна платіжна система Бельгії.</p>\n            </div>\n\n            <h3>Бельгійські продукти :</h3>\n            <ul>\n                <li><strong>Les chicons</strong> — Цикорій (ендівій).</li>\n                <li><strong>Le spéculoos</strong> — Традиційне пряне печиво.</li>\n                <li><strong>La vidange</strong> — Повернення тари (застава за скляні пляшки).</li>\n            </ul>\n            ",
+        "content_html_uk": "\n            <h2>Покупки в супермаркетах Бельгії</h2>\n            <p>Особливості покупок у Delhaize, Colruyt, Carrefour, Lidl:</p>\n\n            <h3>На касі :</h3>\n            <div class=\"example-box\">\n                <p><strong>« Par carte / Sans contact, s'il vous plaît. »</strong> — Оплата карткою / безконтактно.</p>\n                <p><strong>« Voulez-vous le ticket de caisse ? »</strong> — Чи потрібен вам чек?</p>\n                <p><strong>Bancontact</strong> — Національна платіжна система Бельгії.</p>\n            </div>\n\n            <h3>Бельгійські продукти :</h3>\n            <ul>\n                <li><strong>Les chicons</strong> — Цикорій (ендівій).</li>\n                <li><strong>Le spéculoos</strong> — Традиційне пряне печиво.</li>\n                <li><strong>La vidange</strong> — Повернення тари (застава за скляні пляшки).</li>\n            </ul>\n            ",
+        "content_html_ru": "\n            <h2>Покупки в супермаркетах Бельгии (Colruyt, Delhaize, Carrefour, Aldi, Lidl)</h2>\n            <p>Походы за продуктами в Бельгии имеют свой колорит и особенности этикета:</p>\n\n            <h3>1. Оплата: Система Bancontact</h3>\n            <p><strong>Bancontact</strong> [банконтакт] — бельгийский национальный стандарт дебетовых карт. Он работает везде (в терминалах, через приложение Payconiq или бесконтактно <em>sans contact</em>).</p>\n\n            <h3>2. На кассе супермаркета:</h3>\n            <div class=\"example-box\">\n                <p><strong>Кассир:</strong> « Bonjour ! Vous avez la carte du magasin ? » <em>(У вас есть карта магазина?)</em></p>\n                <p><strong>Вы:</strong> « Oui, la voici ! » / « Non, je n'en ai pas. »</p>\n                <p><strong>Кассир:</strong> « Ça vous fera 42 euros et nonante centimes, s'il vous plaît. »</p>\n                <p><strong>Вы:</strong> « Par carte / Sans contact, s'il vous plaît. »</p>\n                <p><strong>Кассир:</strong> « Voulez-vous le ticket de caisse ? » <em>(Вам нужен чек?)</em></p>\n                <p><strong>Вы:</strong> « Oui, merci ! Bonne journée ! »</p>\n            </div>\n\n            <h3>3. Бельгийские продукты и словарь:</h3>\n            <ul>\n                <li><strong>Le caddie / Le chariot</strong> — Тележка для покупок (нужна монетка 50 центов, 1€ или 2€).</li>\n                <li><strong>Le sachet / Le sac réutilisable</strong> — Пакет для покупок.</li>\n                <li><strong>Les chicons</strong> — Эндивий / цикорий (традиционный бельгийский овощ).</li>\n                <li><strong>Le spéculoos</strong> — Знаменитое пряное хрустящее бельгийское печенье (Lotus).</li>\n                <li><strong>Américain préparé</strong> — Популярный бельгийский мясной тартар со специями для сэндвичей (<em>baguette / pistolet</em>).</li>\n                <li><strong>La vidange</strong> — Залоговая стоимость стеклянных бутылок и ящиков (возвращается через автомат в магазине).</li>\n            </ul>\n            ",
+        "content_html_en": "\n            <h2>Shopping in Belgian Supermarkets</h2>\n            <ul>\n                <li><strong>Bancontact</strong>: The primary payment method in Belgium.</li>\n                <li><strong>La vidange</strong>: Bottle deposit return system.</li>\n                <li><strong>Le caddie</strong>: Shopping cart (requires a 1€ coin or token).</li>\n                <li><strong>Chicons, Spéculoos, Pistolets</strong>: Iconic Belgian staples.</li>\n            </ul>\n            ",
+        "content_html_fr": "\n            <h2>Faire ses courses en Belgique</h2>\n            <div class=\"example-box\">\n                <p><strong>« Paiement par Bancontact / sans contact. »</strong></p>\n                <p><strong>La vidange</strong> : consigne pour les bouteilles en verre.</p>\n            </div>\n            ",
+        "order": 29,
+        "date_added": "2026-08-29T12:11:22.611Z"
+    }
+},
+{
+    "model": "lessons_app.lesson",
+    "pk": 38,
+    "fields": {
+        "topic": 5,
+        "title": "🏥 Візит до лікаря, аптека та Mutuelle",
+        "title_uk": "🏥 Візит до лікаря, аптека та Mutuelle",
+        "title_ru": "🏥 Визит к врачу, аптека и Mutuelle в Бельгии",
+        "title_en": "🏥 Doctor Visit, Pharmacy & Mutuelle in Belgium",
+        "title_fr": "🏥 Chez le médecin, à la pharmacie et la Mutuelle",
+        "data_lesson_id": "lesson-doctor-be",
+        "content_html": "\n            <h2>Медицина та візит до лікаря в Бельгії</h2>\n            <h3>Діалог у лікаря (Médecin généraliste) :</h3>\n            <div class=\"example-box\">\n                <p><strong>« J'ai de la fièvre et mal à la gorge. »</strong> — У мене температура і болить горло.</p>\n                <p><strong>« Une ordonnance »</strong> — Рецепт на ліки.</p>\n                <p><strong>La Mutuelle</strong> — Страхова каса, яка автоматично повертає кошти за візит.</p>\n            </div>\n\n            <h3>В аптеці :</h3>\n            <p><strong>La pharmacie de garde</strong> — Чергова аптека у вихідні та вночі.</p>\n            ",
+        "content_html_uk": "\n            <h2>Медицина та візит до лікаря в Бельгії</h2>\n            <h3>Діалог у лікаря (Médecin généraliste) :</h3>\n            <div class=\"example-box\">\n                <p><strong>« J'ai de la fièvre et mal à la gorge. »</strong> — У мене температура і болить горло.</p>\n                <p><strong>« Une ordonnance »</strong> — Рецепт на ліки.</p>\n                <p><strong>La Mutuelle</strong> — Страхова каса, яка автоматично повертає кошти за візит.</p>\n            </div>\n\n            <h3>В аптеці :</h3>\n            <p><strong>La pharmacie de garde</strong> — Чергова аптека у вихідні та вночі.</p>\n            ",
+        "content_html_ru": "\n            <h2>Здравоохранение и визит к врачу в Бельгии</h2>\n            <p>Медицинская система Бельгии — одна из лучших в Европе. Вот как устроена запись и визит:</p>\n\n            <h3>1. Запись к врачу (Prendre rendez-vous):</h3>\n            <p>В Бельгии врачи общей практики называются <strong>Médecin généraliste (médecin traitant)</strong>. Записаться онлайн можно через платформы <strong>Rosa.be</strong> или <strong>Doctena.be</strong>.</p>\n\n            <h3>2. Диалог у врача (Chez le médecin):</h3>\n            <div class=\"example-box\">\n                <p><strong>Врач:</strong> « Bonjour, qu'est-ce qui vous amène ? / Où avez-vous mal ? » <em>(Что вас беспокоит? Где болит?)</em></p>\n                <p><strong>Вы:</strong> « J'ai de la fièvre et très mal à la gorge depuis deux jours. » <em>(У меня температура и сильно болит горло уже 2 дня.)</em></p>\n                <p><strong>Вы:</strong> « J'ai mal au ventre / à la tête / au dos. » <em>(Болит живот / голова / спина.)</em></p>\n                <p><strong>Врач:</strong> « Je vais vous ausculter. Voici une ordonnance pour la pharmacie. » <em>(Я вас послушаю. Вот рецепт в аптеку.)</em></p>\n            </div>\n\n            <h3>3. Возмещение от Mutuelle (Le remboursement):</h3>\n            <ul>\n                <li>После приема врач выдает электронную квитанцию <strong>e-Attestation</strong> или бумажный листок <em>attestation de soins</em>.</li>\n                <li>Ваша <strong>Mutuelle</strong> автоматически возмещает большую часть стоимости консультации прямо на ваш бельгийский банковский счет (IBAN).</li>\n                <li>Пациент оплачивает только небольшую личную долю — <strong>Le ticket modérateur</strong> (обычно 4–6 € за прием).</li>\n            </ul>\n\n            <h3>4. В аптеке (À la pharmacie):</h3>\n            <div class=\"example-box\">\n                <p><strong>« Bonjour, j'ai une ordonnance du médecin. »</strong> <em>(Здравствуйте, у меня рецепт от врача.)</em></p>\n                <p><strong>« Avez-vous quelque chose contre le rhume / la toux ? »</strong> <em>(Есть что-то от простуды / кашля?)</em></p>\n                <p><strong>La pharmacie de garde</strong> — Дежурная аптека, работающая ночью и в воскресенье (поиск на <em>pharmacie.be</em>).</p>\n            </div>\n            ",
+        "content_html_en": "\n            <h2>Healthcare & Visiting the Doctor in Belgium</h2>\n            <ul>\n                <li><strong>Médecin généraliste</strong>: General practitioner (book online via Rosa.be / Doctena.be).</li>\n                <li><strong>Une ordonnance</strong>: Medical prescription.</li>\n                <li><strong>La Mutuelle</strong>: Reimburses the majority of consultation costs.</li>\n                <li><strong>Le ticket modérateur</strong>: The small co-pay remaining for the patient.</li>\n                <li><strong>Pharmacie de garde</strong>: On-duty emergency pharmacy.</li>\n            </ul>\n            ",
+        "content_html_fr": "\n            <h2>Chez le médecin et à la pharmacie en Belgique</h2>\n            <div class=\"example-box\">\n                <p><strong>« J'ai mal à la gorge et de la fièvre. »</strong></p>\n                <p><strong>L'ordonnance</strong> et le remboursement par la <strong>Mutuelle</strong>.</p>\n            </div>\n            ",
+        "order": 30,
+        "date_added": "2026-08-29T12:11:22.616Z"
+    }
+},
+{
+    "model": "lessons_app.lesson",
+    "pk": 39,
+    "fields": {
+        "topic": 5,
+        "title": "💼 Робота в Бельгії: Actiris, Forem, контракти та пільги",
+        "title_uk": "💼 Робота в Бельгії: Actiris, Forem, контракти та пільги",
+        "title_ru": "💼 Работа в Бельгии: Actiris, Forem, контракты и льготы",
+        "title_en": "💼 Working in Belgium: Contracts, Benefits & Job Search",
+        "title_fr": "💼 Travailler en Belgique : Actiris, Forem et contrats",
+        "data_lesson_id": "lesson-work-be",
+        "content_html": "\n            <h2>Працевлаштування та робота в Бельгії</h2>\n            <h3>Служби зайнятості :</h3>\n            <ul>\n                <li><strong>Actiris</strong> — Брюссель.</li>\n                <li><strong>Le Forem</strong> — Валлонія.</li>\n            </ul>\n\n            <h3>Бонуси в Бельгії :</h3>\n            <ul>\n                <li><strong>CDI</strong> — Постійний безстроковий контракт.</li>\n                <li><strong>Chèques-repas</strong> — Чеки на харчування (електронна картка).</li>\n                <li><strong>Éco-chèques</strong> — Еко-чеки на екологічні товари.</li>\n                <li><strong>Fiche de paie</strong> — Розрахунковий листок зарплати.</li>\n            </ul>\n            ",
+        "content_html_uk": "\n            <h2>Працевлаштування та робота в Бельгії</h2>\n            <h3>Служби зайнятості :</h3>\n            <ul>\n                <li><strong>Actiris</strong> — Брюссель.</li>\n                <li><strong>Le Forem</strong> — Валлонія.</li>\n            </ul>\n\n            <h3>Бонуси в Бельгії :</h3>\n            <ul>\n                <li><strong>CDI</strong> — Постійний безстроковий контракт.</li>\n                <li><strong>Chèques-repas</strong> — Чеки на харчування (електронна картка).</li>\n                <li><strong>Éco-chèques</strong> — Еко-чеки на екологічні товари.</li>\n                <li><strong>Fiche de paie</strong> — Розрахунковий листок зарплати.</li>\n            </ul>\n            ",
+        "content_html_ru": "\n            <h2>Трудоустройство и работа в Бельгии</h2>\n            <p>Бельгийский рынок труда имеет сильную систему социальной защиты и особые бонусы:</p>\n\n            <h3>1. Службы занятости по регионам:</h3>\n            <ul>\n                <li><strong>Actiris</strong> — Брюссельская служба занятости (помощь в поиске работы, курсы языков <em>Chèques-Langues</em>).</li>\n                <li><strong>Le Forem</strong> — Государственная служба занятости Валлонии.</li>\n                <li><strong>VDAB</strong> — Служба занятости Фландрии.</li>\n            </ul>\n\n            <h3>2. Типы контрактов:</h3>\n            <div class=\"conjugation-grid\">\n                <div><strong>CDI</strong><br>Бессрочный постоянный трудовой договор (<em>Contrat à Durée Indéterminée</em>) — золотой стандарт.</div>\n                <div><strong>CDD</strong><br>Срочный договор на фиксированный период (<em>Contrat à Durée Déterminée</em>).</div>\n                <div><strong>Contrat Intérim</strong><br>Временная работа через агентство занятости (Adecco, Randstad, Manpower).</div>\n            </div>\n\n            <h3>3. Знаменитые бельгийские бонусы и термины:</h3>\n            <ul>\n                <li><strong>Les chèques-repas / Titres-repas</strong> — Талоны на питание (электронные карты Edenred, Sodexo/Pluxee, Monizze — около 8 € за рабочий день без налога!).</li>\n                <li><strong>Les éco-chèques</strong> — Эко-чеки на покупку экологичных товаров, электросамокатов, велосипедов, органической еды.</li>\n                <li><strong>Le salaire brut vs net</strong> — Зарплата до вычета налогов (брутто) и на руки (нетто).</li>\n                <li><strong>Le treizième mois (13e mois)</strong> — Тринадцатая зарплата / годовая премия в конце года.</li>\n                <li><strong>La fiche de paie</strong> — Ежемесячный расчетный листок по заработной плате.</li>\n            </ul>\n            ",
+        "content_html_en": "\n            <h2>Working in Belgium: Contracts & Benefits</h2>\n            <ul>\n                <li><strong>Actiris & Forem</strong>: Regional employment agencies.</li>\n                <li><strong>CDI</strong>: Permanent open-ended work contract.</li>\n                <li><strong>Chèques-repas (Meal vouchers)</strong>: Daily non-taxable meal allowance card (approx. 8€/day).</li>\n                <li><strong>Éco-chèques</strong>: Vouchers for eco-friendly goods and transit.</li>\n            </ul>\n            ",
+        "content_html_fr": "\n            <h2>Le monde du travail en Belgique</h2>\n            <ul>\n                <li><strong>Actiris et Forem</strong> pour l'emploi.</li>\n                <li><strong>CDI et CDD</strong> : types de contrats.</li>\n                <li><strong>Chèques-repas et éco-chèques</strong> : avantages extra-légaux.</li>\n            </ul>\n            ",
+        "order": 31,
+        "date_added": "2026-08-29T12:11:22.623Z"
+    }
+},
+{
+    "model": "lessons_app.lesson",
+    "pk": 40,
+    "fields": {
+        "topic": 5,
+        "title": "🏠 Сортування сміття та комунальні правила в Бельгії",
+        "title_uk": "🏠 Сортування сміття та комунальні правила в Бельгії",
+        "title_ru": "🏠 Сортировка мусора и коммунальные правила в Бельгии",
+        "title_en": "🏠 Waste Sorting & Municipal Rules in Belgium",
+        "title_fr": "🏠 Le tri des déchets et les règles communales en Belgique",
+        "data_lesson_id": "lesson-recycling-be",
+        "content_html": "\n            <h2>Сортування сміття в Бельгії</h2>\n            <h3>Кольори пакетів :</h3>\n            <ul>\n                <li><strong>⚪ Sac blanc</strong> — Звичайне побутове несортоване сміття.</li>\n                <li><strong>🔵 Sac bleu (PMC)</strong> — Пластик, бляшанки, тетрапак.</li>\n                <li><strong>🟠 Sac orange</strong> — Органічні та харчові відходи.</li>\n                <li><strong>🟡 Sac jaune</strong> — Папір та картон.</li>\n                <li><strong>Bulles à verre</strong> — Контейнери для скла (біле та кольорове).</li>\n            </ul>\n            ",
+        "content_html_uk": "\n            <h2>Сортування сміття в Бельгії</h2>\n            <h3>Кольори пакетів :</h3>\n            <ul>\n                <li><strong>⚪ Sac blanc</strong> — Звичайне побутове несортоване сміття.</li>\n                <li><strong>🔵 Sac bleu (PMC)</strong> — Пластик, бляшанки, тетрапак.</li>\n                <li><strong>🟠 Sac orange</strong> — Органічні та харчові відходи.</li>\n                <li><strong>🟡 Sac jaune</strong> — Папір та картон.</li>\n                <li><strong>Bulles à verre</strong> — Контейнери для скла (біле та кольорове).</li>\n            </ul>\n            ",
+        "content_html_ru": "\n            <h2>Сортировка мусора и пакеты в Бельгии</h2>\n            <p>В Бельгии сортировка отходов — строгая обязанность каждого жителя. Неправильный пакет или выброс не в тот день может повлечь штраф от коммуны (<em>amende administrative</em>)!</p>\n\n            <h3>1. Цвета официальных пакетов (Bruxelles-Propreté / Wallonie):</h3>\n            <div class=\"conjugation-grid\">\n                <div><strong>⚪ Sac blanc</strong><br>Остаточный бытовой несортируемый мусор (<em>déchets résiduels</em>).</div>\n                <div><strong>🔵 Sac bleu (PMC)</strong><br>Пластиковые бутылки, упаковка, металлические банки, тетрапаки.</div>\n                <div><strong>🟠 Sac orange / vert</strong><br>Пищевые и органические отходы (<em>déchets alimentaires / compost</em>).</div>\n                <div><strong>🟡 Sac jaune</strong><br>Бумага, газеты, картонные коробки (чистые).</div>\n            </div>\n\n            <h3>2. Стекло (Les bulles à verre):</h3>\n            <p>Стеклянные бутылки и банки выбрасывают в уличные контейнеры-колокола (<strong>bulles à verre</strong>), разделяя на белое прозрачное стекло (<em>verre blanc</em>) и цветное (<em>verre coloré</em>). Запрещено выбрасывать с 22:00 до 07:00 утра из-за шума!</p>\n\n            <h3>3. Правила и лексика:</h3>\n            <ul>\n                <li><strong>Le calendrier des collectes</strong> — Календарь вывоза мусора (в каждом районе свой день недели!).</li>\n                <li><strong>Sortir les poubelles</strong> — Выставить пакеты на улицу (обычно накануне вечером после 18:00).</li>\n                <li><strong>Le parc à conteneurs / Recypark / Déchetterie</strong> — Пункт приема крупногабаритного мусора, мебели, электроники и стройматериалов.</li>\n                <li><strong>Les encombrants</strong> — Крупногабаритный мусор.</li>\n            </ul>\n            ",
+        "content_html_en": "\n            <h2>Waste Sorting in Belgium</h2>\n            <ul>\n                <li><strong>⚪ White bag</strong>: Non-recyclable household waste.</li>\n                <li><strong>🔵 Blue bag (PMC)</strong>: Plastic bottles, metal cans, drink cartons.</li>\n                <li><strong>🟠 Orange bag</strong>: Food and organic waste.</li>\n                <li><strong>🟡 Yellow bag</strong>: Paper and clean cardboard.</li>\n                <li><strong>Bulles à verre</strong>: Public street containers for glass.</li>\n            </ul>\n            ",
+        "content_html_fr": "\n            <h2>Le tri des déchets en Belgique</h2>\n            <ul>\n                <li><strong>Sac blanc</strong> : déchets résiduels.</li>\n                <li><strong>Sac bleu (PMC)</strong> : emballages plastiques et métalliques.</li>\n                <li><strong>Sac orange</strong> : déchets organiques.</li>\n                <li><strong>Sac jaune</strong> : papiers et cartons.</li>\n                <li><strong>Bulles à verre</strong> pour le verre transparent et coloré.</li>\n            </ul>\n            ",
+        "order": 32,
+        "date_added": "2026-08-29T12:11:22.629Z"
+    }
+},
+{
     "model": "quizzes.question",
     "pk": 12,
     "fields": {
@@ -1057,6 +1157,71 @@
         "text_en": "How is '70' called in Belgium?",
         "text_fr": "Comment dit-on '70' en Belgique ?",
         "order": 2
+    }
+},
+{
+    "model": "quizzes.question",
+    "pk": 54,
+    "fields": {
+        "lesson": 36,
+        "text": "Яка знижка діє на квитки туди-назад на поїзди SNCB у вихідні (Weekend Ticket)?",
+        "text_uk": "Яка знижка діє на квитки туди-назад на поїзди SNCB у вихідні (Weekend Ticket)?",
+        "text_ru": "Какая скидка действует на билеты туда-обратно на поездах SNCB по выходным (Weekend Ticket)?",
+        "text_en": "What discount does the SNCB Weekend Ticket offer on return trips?",
+        "text_fr": "Quelle est la réduction du Weekend Ticket de la SNCB ?",
+        "order": 1
+    }
+},
+{
+    "model": "quizzes.question",
+    "pk": 55,
+    "fields": {
+        "lesson": 37,
+        "text": "Що означає термін 'La vidange' у бельгійському супермаркеті?",
+        "text_uk": "Що означає термін 'La vidange' у бельгійському супермаркеті?",
+        "text_ru": "Что означает термин 'La vidange' в бельгийском супермаркете?",
+        "text_en": "What does 'La vidange' mean in a Belgian supermarket?",
+        "text_fr": "Que signifie 'La vidange' au supermarché ?",
+        "order": 1
+    }
+},
+{
+    "model": "quizzes.question",
+    "pk": 56,
+    "fields": {
+        "lesson": 38,
+        "text": "Як французькою сказати лікарю 'У мене болить горло і температура'?",
+        "text_uk": "Як французькою сказати лікарю 'У мене болить горло і температура'?",
+        "text_ru": "Как по-французски сказать врачу 'У меня болит горло и температура'?",
+        "text_en": "How do you say 'I have a sore throat and a fever' in French?",
+        "text_fr": "Comment dire 'J'ai mal à la gorge et de la fièvre' ?",
+        "order": 1
+    }
+},
+{
+    "model": "quizzes.question",
+    "pk": 57,
+    "fields": {
+        "lesson": 39,
+        "text": "Що таке 'CDI' у бельгійському трудовому праві?",
+        "text_uk": "Що таке 'CDI' у бельгійському трудовому праві?",
+        "text_ru": "Что такое 'CDI' в бельгийском трудовом праве?",
+        "text_en": "What is a 'CDI' contract in Belgium?",
+        "text_fr": "Que signifie un contrat 'CDI' ?",
+        "order": 1
+    }
+},
+{
+    "model": "quizzes.question",
+    "pk": 58,
+    "fields": {
+        "lesson": 40,
+        "text": "У який пакет у Бельгії викидають пластикові пляшки, бляшанки та пакування (PMC)?",
+        "text_uk": "У який пакет у Бельгії викидають пластикові пляшки, бляшанки та пакування (PMC)?",
+        "text_ru": "В какой пакет в Бельгии выбрасывают пластиковые бутылки, металлические банки и упаковку (PMC)?",
+        "text_en": "Which bag is used in Belgium for plastic bottles, cans, and drink cartons (PMC)?",
+        "text_fr": "Dans quel sac jette-t-on les emballages PMC en Belgique ?",
+        "order": 1
     }
 },
 {
@@ -2538,6 +2703,201 @@
         "text_ru": "Huitante",
         "text_en": "Huitante",
         "text_fr": "Huitante",
+        "is_correct": false
+    }
+},
+{
+    "model": "quizzes.choice",
+    "pk": 173,
+    "fields": {
+        "question": 54,
+        "text": "-50% стоимости билета туда-обратно",
+        "text_uk": "-50% стоимости билета туда-обратно",
+        "text_ru": "-50% стоимости билета туда-обратно",
+        "text_en": "-50% стоимости билета туда-обратно",
+        "text_fr": "-50% стоимости билета туда-обратно",
+        "is_correct": true
+    }
+},
+{
+    "model": "quizzes.choice",
+    "pk": 174,
+    "fields": {
+        "question": 54,
+        "text": "-10% только для студентов",
+        "text_uk": "-10% только для студентов",
+        "text_ru": "-10% только для студентов",
+        "text_en": "-10% только для студентов",
+        "text_fr": "-10% только для студентов",
+        "is_correct": false
+    }
+},
+{
+    "model": "quizzes.choice",
+    "pk": 175,
+    "fields": {
+        "question": 54,
+        "text": "Билет бесплатный",
+        "text_uk": "Билет бесплатный",
+        "text_ru": "Билет бесплатный",
+        "text_en": "Билет бесплатный",
+        "text_fr": "Билет бесплатный",
+        "is_correct": false
+    }
+},
+{
+    "model": "quizzes.choice",
+    "pk": 176,
+    "fields": {
+        "question": 55,
+        "text": "Возврат залога за сданные стеклянные бутылки / тару",
+        "text_uk": "Возврат залога за сданные стеклянные бутылки / тару",
+        "text_ru": "Возврат залога за сданные стеклянные бутылки / тару",
+        "text_en": "Возврат залога за сданные стеклянные бутылки / тару",
+        "text_fr": "Возврат залога за сданные стеклянные бутылки / тару",
+        "is_correct": true
+    }
+},
+{
+    "model": "quizzes.choice",
+    "pk": 177,
+    "fields": {
+        "question": 55,
+        "text": "Скидочный купон на свежую выпечку",
+        "text_uk": "Скидочный купон на свежую выпечку",
+        "text_ru": "Скидочный купон на свежую выпечку",
+        "text_en": "Скидочный купон на свежую выпечку",
+        "text_fr": "Скидочный купон на свежую выпечку",
+        "is_correct": false
+    }
+},
+{
+    "model": "quizzes.choice",
+    "pk": 178,
+    "fields": {
+        "question": 55,
+        "text": "Платный пластиковый пакет",
+        "text_uk": "Платный пластиковый пакет",
+        "text_ru": "Платный пластиковый пакет",
+        "text_en": "Платный пластиковый пакет",
+        "text_fr": "Платный пластиковый пакет",
+        "is_correct": false
+    }
+},
+{
+    "model": "quizzes.choice",
+    "pk": 179,
+    "fields": {
+        "question": 56,
+        "text": "J'ai de la fièvre et mal à la gorge",
+        "text_uk": "J'ai de la fièvre et mal à la gorge",
+        "text_ru": "J'ai de la fièvre et mal à la gorge",
+        "text_en": "J'ai de la fièvre et mal à la gorge",
+        "text_fr": "J'ai de la fièvre et mal à la gorge",
+        "is_correct": true
+    }
+},
+{
+    "model": "quizzes.choice",
+    "pk": 180,
+    "fields": {
+        "question": 56,
+        "text": "J'ai faim et soif",
+        "text_uk": "J'ai faim et soif",
+        "text_ru": "J'ai faim et soif",
+        "text_en": "J'ai faim et soif",
+        "text_fr": "J'ai faim et soif",
+        "is_correct": false
+    }
+},
+{
+    "model": "quizzes.choice",
+    "pk": 181,
+    "fields": {
+        "question": 56,
+        "text": "Je voudrais un café",
+        "text_uk": "Je voudrais un café",
+        "text_ru": "Je voudrais un café",
+        "text_en": "Je voudrais un café",
+        "text_fr": "Je voudrais un café",
+        "is_correct": false
+    }
+},
+{
+    "model": "quizzes.choice",
+    "pk": 182,
+    "fields": {
+        "question": 57,
+        "text": "Постоянный бессрочный трудовой контракт (Contrat à Durée Indéterminée)",
+        "text_uk": "Постоянный бессрочный трудовой контракт (Contrat à Durée Indéterminée)",
+        "text_ru": "Постоянный бессрочный трудовой контракт (Contrat à Durée Indéterminée)",
+        "text_en": "Постоянный бессрочный трудовой контракт (Contrat à Durée Indéterminée)",
+        "text_fr": "Постоянный бессрочный трудовой контракт (Contrat à Durée Indéterminée)",
+        "is_correct": true
+    }
+},
+{
+    "model": "quizzes.choice",
+    "pk": 183,
+    "fields": {
+        "question": 57,
+        "text": "Временная однодневная стажировка",
+        "text_uk": "Временная однодневная стажировка",
+        "text_ru": "Временная однодневная стажировка",
+        "text_en": "Временная однодневная стажировка",
+        "text_fr": "Временная однодневная стажировка",
+        "is_correct": false
+    }
+},
+{
+    "model": "quizzes.choice",
+    "pk": 184,
+    "fields": {
+        "question": 57,
+        "text": "Волонтерский неоплачиваемый договор",
+        "text_uk": "Волонтерский неоплачиваемый договор",
+        "text_ru": "Волонтерский неоплачиваемый договор",
+        "text_en": "Волонтерский неоплачиваемый договор",
+        "text_fr": "Волонтерский неоплачиваемый договор",
+        "is_correct": false
+    }
+},
+{
+    "model": "quizzes.choice",
+    "pk": 185,
+    "fields": {
+        "question": 58,
+        "text": "В синий пакет (Sac bleu)",
+        "text_uk": "В синий пакет (Sac bleu)",
+        "text_ru": "В синий пакет (Sac bleu)",
+        "text_en": "В синий пакет (Sac bleu)",
+        "text_fr": "В синий пакет (Sac bleu)",
+        "is_correct": true
+    }
+},
+{
+    "model": "quizzes.choice",
+    "pk": 186,
+    "fields": {
+        "question": 58,
+        "text": "В белый пакет (Sac blanc)",
+        "text_uk": "В белый пакет (Sac blanc)",
+        "text_ru": "В белый пакет (Sac blanc)",
+        "text_en": "В белый пакет (Sac blanc)",
+        "text_fr": "В белый пакет (Sac blanc)",
+        "is_correct": false
+    }
+},
+{
+    "model": "quizzes.choice",
+    "pk": 187,
+    "fields": {
+        "question": 58,
+        "text": "В желтый пакет (Sac jaune)",
+        "text_uk": "В желтый пакет (Sac jaune)",
+        "text_ru": "В желтый пакет (Sac jaune)",
+        "text_en": "В желтый пакет (Sac jaune)",
+        "text_fr": "В желтый пакет (Sac jaune)",
         "is_correct": false
     }
 }
