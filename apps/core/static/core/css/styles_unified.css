@@ -2383,21 +2383,30 @@ input:checked + .slider:before {
 }
 
 /* =========================================
-   INTERACTIVE FLASHCARDS / FLIP CARDS
+   INTERACTIVE FLASHCARDS / FLIP CARDS (DYNAMICS)
    ========================================= */
 .flip-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-    gap: 14px;
-    margin: 20px 0;
+    grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+    gap: 16px;
+    margin: 22px 0;
 }
 
 .flip-card {
     background-color: transparent;
-    height: 120px;
+    height: 125px;
     perspective: 1000px;
     cursor: pointer;
     user-select: none;
+    transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.flip-card:hover {
+    transform: translateY(-4px);
+}
+
+.flip-card:active {
+    transform: scale(0.97);
 }
 
 .flip-card-inner {
@@ -2405,9 +2414,9 @@ input:checked + .slider:before {
     width: 100%;
     height: 100%;
     text-align: center;
-    transition: transform 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
     transform-style: preserve-3d;
-    border-radius: 14px;
+    border-radius: 16px;
 }
 
 .flip-card.is-flipped .flip-card-inner {
@@ -2424,11 +2433,18 @@ input:checked + .slider:before {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border-radius: 14px;
-    padding: 14px;
+    border-radius: 16px;
+    padding: 16px;
     box-shadow: var(--shadow-card);
     border: 1px solid var(--glass-border);
     background: var(--bg-card);
+    backdrop-filter: blur(12px);
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.flip-card:hover .flip-card-front {
+    border-color: rgba(59, 130, 246, 0.4);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
 }
 
 .flip-card-front {
@@ -2437,231 +2453,50 @@ input:checked + .slider:before {
 
 .flip-card-back {
     transform: rotateY(180deg);
-    background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(139, 92, 246, 0.1));
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.14), rgba(139, 92, 246, 0.14));
     color: var(--text-primary);
     border-color: var(--accent-purple);
+    box-shadow: 0 8px 24px rgba(139, 92, 246, 0.15);
 }
 
 .flip-hint {
     font-size: 0.72rem;
+    font-weight: 600;
     color: var(--text-tertiary);
     margin-top: 6px;
+    padding: 2px 8px;
+    background: rgba(120, 120, 128, 0.08);
+    border-radius: 9999px;
 }
 
 /* =========================================
-   DIALOGUE MESSENGER BUBBLES
+   CONJUGATION CARDS & EXAMPLE BOX DYNAMICS
    ========================================= */
-.dialogue-container {
-    display: flex;
-    flex-direction: column;
-    gap: 14px;
-    margin: 22px 0;
-    background: rgba(120, 120, 128, 0.04);
-    padding: 18px;
-    border-radius: 18px;
-    border: 1px solid var(--glass-border);
+.conjugation-grid > div, .conjugation-item {
+    transition: transform 0.22s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.22s ease, border-color 0.22s ease !important;
+    border: 1px solid var(--glass-border) !important;
+    border-radius: 14px !important;
 }
 
-.dialogue-msg {
-    display: flex;
-    gap: 12px;
-    align-items: flex-start;
-    max-width: 85%;
+.conjugation-grid > div:hover, .conjugation-item:hover {
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+    border-color: rgba(59, 130, 246, 0.35) !important;
 }
 
-.dialogue-msg.speaker-b {
-    align-self: flex-end;
-    flex-direction: row-reverse;
-}
-
-.dialogue-avatar {
-    width: 38px;
-    height: 38px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.2rem;
-    background: var(--bg-card);
-    border: 1px solid var(--glass-border);
-    box-shadow: var(--shadow-btn);
-    flex-shrink: 0;
-}
-
-.dialogue-bubble {
-    padding: 12px 16px;
-    border-radius: 16px;
-    background: var(--bg-card);
-    border: 1px solid var(--glass-border);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
-}
-
-.dialogue-msg.speaker-a .dialogue-bubble {
-    border-top-left-radius: 4px;
-}
-
-.dialogue-msg.speaker-b .dialogue-bubble {
-    border-top-right-radius: 4px;
-    background: linear-gradient(135deg, var(--accent-blue), var(--accent-purple));
-    color: #FFFFFF;
-    border: none;
-}
-
-.dialogue-msg.speaker-b .dialogue-french {
-    color: #FFFFFF;
-}
-
-.dialogue-msg.speaker-b .dialogue-trans {
-    color: rgba(255, 255, 255, 0.82);
-}
-
-.dialogue-speaker-name {
-    font-size: 0.75rem;
-    font-weight: 700;
-    color: var(--text-tertiary);
-    margin-bottom: 2px;
-}
-
-.dialogue-french {
-    font-size: 1.05rem;
-    font-weight: 600;
-    color: var(--text-primary);
-    display: flex;
-    align-items: center;
-    gap: 6px;
-}
-
-.dialogue-trans {
-    font-size: 0.85rem;
-    color: var(--text-secondary);
-    margin-top: 4px;
-}
-
-/* =========================================
-   GAMIFICATION & QUIZ ENHANCEMENTS
-   ========================================= */
-.xp-float-badge {
-    position: fixed;
-    z-index: 9999;
-    font-size: 1.3rem;
-    font-weight: 800;
-    color: #F59E0B;
-    pointer-events: none;
-    animation: floatUpAndFade 1.2s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
-    text-shadow: 0 4px 12px rgba(245, 158, 11, 0.4);
-}
-
-@keyframes floatUpAndFade {
-    0% {
-        opacity: 1;
-        transform: translateY(0) scale(0.8);
-    }
-    50% {
-        transform: translateY(-35px) scale(1.25);
-    }
-    100% {
-        opacity: 0;
-        transform: translateY(-70px) scale(1);
-    }
-}
-
-.quiz-choice-btn {
-    transition: transform 0.15s cubic-bezier(0.34, 1.56, 0.64, 1), background-color 0.2s, border-color 0.2s, box-shadow 0.2s !important;
-}
-
-.quiz-choice-btn:hover:not(:disabled) {
-    transform: translateY(-2px) scale(1.01);
-}
-
-.quiz-choice-btn:active:not(:disabled) {
-    transform: scale(0.98);
-}
-
-.quiz-choice-btn.correct {
-    animation: correctPulse 0.45s ease-in-out;
-}
-
-@keyframes correctPulse {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.04); }
-    100% { transform: scale(1); }
-}
-
-.quiz-choice-btn.wrong {
-    animation: wrongShake 0.4s ease-in-out;
-}
-
-@keyframes wrongShake {
-    0%, 100% { transform: translateX(0); }
-    20%, 60% { transform: translateX(-6px); }
-    40%, 80% { transform: translateX(6px); }
-}
-
-/* Confetti Canvas */
-#confetti-canvas {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    pointer-events: none;
-    z-index: 10000;
-}
-
-/* =========================================
-   HEADER STAT PILLS & SHORTCUT BADGE
-   ========================================= */
-.header-stats {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-
-.header-stat-pill {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    padding: 6px 14px;
-    border-radius: 20px;
-    background: var(--bg-card);
-    border: 1px solid var(--glass-border);
-    box-shadow: var(--shadow-btn);
-    font-size: 0.88rem;
-    font-weight: 700;
-    cursor: default;
-    user-select: none;
+.example-box {
     transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border-radius: 14px;
 }
 
-.header-stat-pill:hover {
-    transform: translateY(-1px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+.example-box:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-card);
 }
 
-.streak-pill {
-    color: #EA580C;
-    background: rgba(234, 88, 12, 0.08);
-    border-color: rgba(234, 88, 12, 0.2);
-}
-
-.xp-pill {
-    color: #D97706;
-    background: rgba(217, 119, 6, 0.08);
-    border-color: rgba(217, 119, 6, 0.2);
-}
-
-[data-theme="dark"] .streak-pill {
-    color: #FB923C;
-    background: rgba(251, 146, 60, 0.12);
-    border-color: rgba(251, 146, 60, 0.3);
-}
-
-[data-theme="dark"] .xp-pill {
-    color: #FBBF24;
-    background: rgba(251, 191, 36, 0.12);
-    border-color: rgba(251, 191, 36, 0.3);
-}
-
+/* =========================================
+   SEARCH SHORTCUT BADGE
+   ========================================= */
 .search-shortcut-badge {
     display: inline-flex;
     align-items: center;
@@ -2678,12 +2513,6 @@ input:checked + .slider:before {
     border-radius: 6px;
     margin-right: 8px;
     pointer-events: none;
-}
-
-@media (max-width: 768px) {
-    .header-stats {
-        display: none;
-    }
 }
 
 /* =========================================
@@ -2848,5 +2677,6 @@ input:checked + .slider:before {
 ::-webkit-scrollbar-thumb:hover {
     background: rgba(120, 120, 128, 0.45);
 }
+
 
 

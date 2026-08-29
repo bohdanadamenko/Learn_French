@@ -73,7 +73,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // Apply saved theme and language FIRST
     applyStoredTheme();
     applyStoredLang();
-    loadHeaderStats();
     
     // 1. Wrap videos
     document.querySelectorAll('.video-container').forEach(div => {
