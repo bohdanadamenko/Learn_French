@@ -449,17 +449,17 @@
     "pk": 28,
     "fields": {
         "topic": 1,
-        "title": "🔢 Числа 1-100",
-        "title_uk": "🔢 Числа 1-100",
-        "title_ru": "🔢 Числа 1-100",
-        "title_en": "🔢 Numbers 1-100",
-        "title_fr": "🔢 Les nombres de 1 à 100",
+        "title": "🔢 Числа від 0 до 100 (Французькі та бельгійські)",
+        "title_uk": "🔢 Числа від 0 до 100 (Французькі та бельгійські)",
+        "title_ru": "🔢 Числа от 0 до 100 (Французские и бельгийские)",
+        "title_en": "🔢 Numbers from 0 to 100 (French & Belgian)",
+        "title_fr": "🔢 Les nombres de 0 à 100",
         "data_lesson_id": "lesson-numbers-100",
-        "content_html": "\n            <h2>Десятки та логіка рахунку</h2>\n            <p>Французькі числа мають унікальну систему рахунку після 60. Давайте розберемося!</p>\n            <div class=\"conjugation-grid\">\n                <div><strong>10</strong> — Dix</div>\n                <div><strong>20</strong> — Vingt</div>\n                <div><strong>30</strong> — Trente</div>\n                <div><strong>40</strong> — Quarante</div>\n                <div><strong>50</strong> — Cinquante</div>\n                <div><strong>60</strong> — Soixante</div>\n            </div>\n            <h3>Особливості 70, 80, 90 у Франції :</h3>\n            <ul>\n                <li><strong>70</strong> = 60 + 10 : <em>Soixante-dix</em></li>\n                <li><strong>80</strong> = 4 × 20 : <em>Quatre-vingts</em></li>\n                <li><strong>90</strong> = 4 × 20 + 10 : <em>Quatre-vingt-dix</em></li>\n                <li><strong>100</strong> = <em>Cent</em></li>\n            </ul>\n            <div class=\"example-box\">\n                <strong>🇧🇪 У Бельгії та Швейцарії все простіше :</strong>\n                <p>70 = <strong>Septante</strong>, 90 = <strong>Nonante</strong> !</p>\n            </div>\n            ",
-        "content_html_uk": "\n            <h2>Десятки та логіка рахунку</h2>\n            <p>Французькі числа мають унікальну систему рахунку після 60. Давайте розберемося!</p>\n            <div class=\"conjugation-grid\">\n                <div><strong>10</strong> — Dix</div>\n                <div><strong>20</strong> — Vingt</div>\n                <div><strong>30</strong> — Trente</div>\n                <div><strong>40</strong> — Quarante</div>\n                <div><strong>50</strong> — Cinquante</div>\n                <div><strong>60</strong> — Soixante</div>\n            </div>\n            <h3>Особливості 70, 80, 90 у Франції :</h3>\n            <ul>\n                <li><strong>70</strong> = 60 + 10 : <em>Soixante-dix</em></li>\n                <li><strong>80</strong> = 4 × 20 : <em>Quatre-vingts</em></li>\n                <li><strong>90</strong> = 4 × 20 + 10 : <em>Quatre-vingt-dix</em></li>\n                <li><strong>100</strong> = <em>Cent</em></li>\n            </ul>\n            <div class=\"example-box\">\n                <strong>🇧🇪 У Бельгії та Швейцарії все простіше :</strong>\n                <p>70 = <strong>Septante</strong>, 90 = <strong>Nonante</strong> !</p>\n            </div>\n            ",
-        "content_html_ru": "\n            <h2>Десятки и логика счёта</h2>\n            <p>Во французском языке числа после 60 имеют математическую логику:</p>\n            <div class=\"conjugation-grid\">\n                <div><strong>10</strong> — Dix [дис]</div>\n                <div><strong>20</strong> — Vingt [вэн]</div>\n                <div><strong>30</strong> — Trente [трант]</div>\n                <div><strong>40</strong> — Quarante [карант]</div>\n                <div><strong>50</strong> — Cinquante [сэнкант]</div>\n                <div><strong>60</strong> — Soixante [суасант]</div>\n            </div>\n            <h3>Французская математика (70, 80, 90):</h3>\n            <ul>\n                <li><strong>70</strong> = 60 + 10 : <em>Soixante-dix</em> [суасант-дис]</li>\n                <li><strong>80</strong> = 4 × 20 : <em>Quatre-vingts</em> [катр-вэн]</li>\n                <li><strong>90</strong> = 4 × 20 + 10 : <em>Quatre-vingt-dix</em> [катр-вэн-дис]</li>\n                <li><strong>100</strong> = <em>Cent</em> [сан]</li>\n            </ul>\n            <div class=\"example-box\">\n                <strong>🇧🇪 В Бельгии и Швейцарии говорят проще:</strong>\n                <p>70 = <strong>Septante</strong>, 90 = <strong>Nonante</strong>!</p>\n            </div>\n            ",
-        "content_html_en": "\n            <h2>Tens and Number Logic</h2>\n            <p>French numbers after 60 follow an interesting mathematical pattern:</p>\n            <div class=\"conjugation-grid\">\n                <div><strong>10</strong> — Dix</div>\n                <div><strong>20</strong> — Vingt</div>\n                <div><strong>30</strong> — Trente</div>\n                <div><strong>40</strong> — Quarante</div>\n                <div><strong>50</strong> — Cinquante</div>\n                <div><strong>60</strong> — Soixante</div>\n            </div>\n            <h3>The 70, 80, 90 Logic in Standard French:</h3>\n            <ul>\n                <li><strong>70</strong> = 60 + 10 : <em>Soixante-dix</em></li>\n                <li><strong>80</strong> = 4 × 20 : <em>Quatre-vingts</em></li>\n                <li><strong>90</strong> = (4 × 20) + 10 : <em>Quatre-vingt-dix</em></li>\n                <li><strong>100</strong> = <em>Cent</em></li>\n            </ul>\n            ",
-        "content_html_fr": "\n            <h2>Les dizaines et le calcul</h2>\n            <div class=\"conjugation-grid\">\n                <div><strong>10</strong> — Dix</div>\n                <div><strong>20</strong> — Vingt</div>\n                <div><strong>30</strong> — Trente</div>\n                <div><strong>40</strong> — Quarante</div>\n                <div><strong>50</strong> — Cinquante</div>\n                <div><strong>60</strong> — Soixante</div>\n            </div>\n            <h3>En France :</h3>\n            <ul>\n                <li><strong>70</strong> : Soixante-dix</li>\n                <li><strong>80</strong> : Quatre-vingts</li>\n                <li><strong>90</strong> : Quatre-vingt-dix</li>\n                <li><strong>100</strong> : Cent</li>\n            </ul>\n            ",
+        "content_html": "\n    <h2>Французькі числа: від 0 до 100</h2>\n    <p>Рахунок французькою починається з базових чисел від 0 до 10, які знадобляться щодня.</p>\n\n    <h3>1. Базові числа від 0 до 10</h3>\n    <div class=\"conjugation-grid\" style=\"grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 10px;\">\n        <div style=\"padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;\"><strong>0</strong> — <strong>Zéro</strong> [зеро]</div>\n        <div style=\"padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;\"><strong>1</strong> — <strong>Un / Une</strong> [ен / юн]</div>\n        <div style=\"padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;\"><strong>2</strong> — <strong>Deux</strong> [де]</div>\n        <div style=\"padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;\"><strong>3</strong> — <strong>Trois</strong> [труа]</div>\n        <div style=\"padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;\"><strong>4</strong> — <strong>Quatre</strong> [катр]</div>\n        <div style=\"padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;\"><strong>5</strong> — <strong>Cinq</strong> [сенк]</div>\n        <div style=\"padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;\"><strong>6</strong> — <strong>Six</strong> [сіс]</div>\n        <div style=\"padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;\"><strong>7</strong> — <strong>Sept</strong> [сет]</div>\n        <div style=\"padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;\"><strong>8</strong> — <strong>Huit</strong> [юіт]</div>\n        <div style=\"padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;\"><strong>9</strong> — <strong>Neuf</strong> [неф]</div>\n        <div style=\"padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;\"><strong>10</strong> — <strong>Dix</strong> [діс]</div>\n    </div>\n\n    <h3>2. Числа від 11 до 20</h3>\n    <div class=\"conjugation-grid\" style=\"grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 10px;\">\n        <div><strong>11</strong> — Onze</div>\n        <div><strong>12</strong> — Douze</div>\n        <div><strong>13</strong> — Treize</div>\n        <div><strong>14</strong> — Quatorze</div>\n        <div><strong>15</strong> — Quinze</div>\n        <div><strong>16</strong> — Seize</div>\n        <div><strong>17</strong> — Dix-sept</div>\n        <div><strong>18</strong> — Dix-huit</div>\n        <div><strong>19</strong> — Dix-neuf</div>\n        <div><strong>20</strong> — Vingt</div>\n    </div>\n\n    <h3>3. Десятки (20–60)</h3>\n    <div class=\"conjugation-grid\" style=\"grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 10px;\">\n        <div><strong>20</strong> — Vingt</div>\n        <div><strong>30</strong> — Trente</div>\n        <div><strong>40</strong> — Quarante</div>\n        <div><strong>50</strong> — Cinquante</div>\n        <div><strong>60</strong> — Soixante</div>\n    </div>\n\n    <h3>4. 🇧🇪 У Бельгії (70, 80, 90, 100)</h3>\n    <div class=\"example-box\">\n        <p>🇧🇪 <strong>70 = Septante</strong> [септант]</p>\n        <p>🇧🇪 <strong>80 = Quatre-vingts</strong> [катр-вен]</p>\n        <p>🇧🇪 <strong>90 = Nonante</strong> [нонант]</p>\n        <p><strong>100 = Cent</strong> [сан]</p>\n    </div>\n    ",
+        "content_html_uk": "\n    <h2>Французькі числа: від 0 до 100</h2>\n    <p>Рахунок французькою починається з базових чисел від 0 до 10, які знадобляться щодня.</p>\n\n    <h3>1. Базові числа від 0 до 10</h3>\n    <div class=\"conjugation-grid\" style=\"grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 10px;\">\n        <div style=\"padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;\"><strong>0</strong> — <strong>Zéro</strong> [зеро]</div>\n        <div style=\"padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;\"><strong>1</strong> — <strong>Un / Une</strong> [ен / юн]</div>\n        <div style=\"padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;\"><strong>2</strong> — <strong>Deux</strong> [де]</div>\n        <div style=\"padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;\"><strong>3</strong> — <strong>Trois</strong> [труа]</div>\n        <div style=\"padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;\"><strong>4</strong> — <strong>Quatre</strong> [катр]</div>\n        <div style=\"padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;\"><strong>5</strong> — <strong>Cinq</strong> [сенк]</div>\n        <div style=\"padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;\"><strong>6</strong> — <strong>Six</strong> [сіс]</div>\n        <div style=\"padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;\"><strong>7</strong> — <strong>Sept</strong> [сет]</div>\n        <div style=\"padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;\"><strong>8</strong> — <strong>Huit</strong> [юіт]</div>\n        <div style=\"padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;\"><strong>9</strong> — <strong>Neuf</strong> [неф]</div>\n        <div style=\"padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;\"><strong>10</strong> — <strong>Dix</strong> [діс]</div>\n    </div>\n\n    <h3>2. Числа від 11 до 20</h3>\n    <div class=\"conjugation-grid\" style=\"grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 10px;\">\n        <div><strong>11</strong> — Onze</div>\n        <div><strong>12</strong> — Douze</div>\n        <div><strong>13</strong> — Treize</div>\n        <div><strong>14</strong> — Quatorze</div>\n        <div><strong>15</strong> — Quinze</div>\n        <div><strong>16</strong> — Seize</div>\n        <div><strong>17</strong> — Dix-sept</div>\n        <div><strong>18</strong> — Dix-huit</div>\n        <div><strong>19</strong> — Dix-neuf</div>\n        <div><strong>20</strong> — Vingt</div>\n    </div>\n\n    <h3>3. Десятки (20–60)</h3>\n    <div class=\"conjugation-grid\" style=\"grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 10px;\">\n        <div><strong>20</strong> — Vingt</div>\n        <div><strong>30</strong> — Trente</div>\n        <div><strong>40</strong> — Quarante</div>\n        <div><strong>50</strong> — Cinquante</div>\n        <div><strong>60</strong> — Soixante</div>\n    </div>\n\n    <h3>4. 🇧🇪 У Бельгії (70, 80, 90, 100)</h3>\n    <div class=\"example-box\">\n        <p>🇧🇪 <strong>70 = Septante</strong> [септант]</p>\n        <p>🇧🇪 <strong>80 = Quatre-vingts</strong> [катр-вен]</p>\n        <p>🇧🇪 <strong>90 = Nonante</strong> [нонант]</p>\n        <p><strong>100 = Cent</strong> [сан]</p>\n    </div>\n    ",
+        "content_html_ru": "\n    <h2>Французские числа: от 0 до 100</h2>\n    <p>Счёт во французском языке начинается с базовых чисел от 0 до 10, которые используются везде: от цен в магазине до номеров телефонов.</p>\n\n    <h3>1. Базовые числа от 0 до 10</h3>\n    <div class=\"conjugation-grid\" style=\"grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 10px;\">\n        <div style=\"padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;\"><strong>0</strong> — <strong>Zéro</strong> [зеро]</div>\n        <div style=\"padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;\"><strong>1</strong> — <strong>Un / Une</strong> [эн / юн]</div>\n        <div style=\"padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;\"><strong>2</strong> — <strong>Deux</strong> [дё]</div>\n        <div style=\"padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;\"><strong>3</strong> — <strong>Trois</strong> [труа]</div>\n        <div style=\"padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;\"><strong>4</strong> — <strong>Quatre</strong> [катр]</div>\n        <div style=\"padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;\"><strong>5</strong> — <strong>Cinq</strong> [сэнк]</div>\n        <div style=\"padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;\"><strong>6</strong> — <strong>Six</strong> [сис]</div>\n        <div style=\"padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;\"><strong>7</strong> — <strong>Sept</strong> [сэт] <em>(p немой)</em></div>\n        <div style=\"padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;\"><strong>8</strong> — <strong>Huit</strong> [юит]</div>\n        <div style=\"padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;\"><strong>9</strong> — <strong>Neuf</strong> [нёф]</div>\n        <div style=\"padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;\"><strong>10</strong> — <strong>Dix</strong> [дис]</div>\n    </div>\n\n    <h3>2. Числа от 11 до 20</h3>\n    <div class=\"conjugation-grid\" style=\"grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 10px;\">\n        <div style=\"padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;\"><strong>11</strong> — <strong>Onze</strong> [онз]</div>\n        <div style=\"padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;\"><strong>12</strong> — <strong>Douze</strong> [дуз]</div>\n        <div style=\"padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;\"><strong>13</strong> — <strong>Treize</strong> [трэз]</div>\n        <div style=\"padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;\"><strong>14</strong> — <strong>Quatorze</strong> [каторз]</div>\n        <div style=\"padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;\"><strong>15</strong> — <strong>Quinze</strong> [канз]</div>\n        <div style=\"padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;\"><strong>16</strong> — <strong>Seize</strong> [сэз]</div>\n        <div style=\"padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;\"><strong>17</strong> — <strong>Dix-sept</strong> [дис-сэт]</div>\n        <div style=\"padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;\"><strong>18</strong> — <strong>Dix-huit</strong> [диз-юит]</div>\n        <div style=\"padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;\"><strong>19</strong> — <strong>Dix-neuf</strong> [диз-нёф]</div>\n        <div style=\"padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;\"><strong>20</strong> — <strong>Vingt</strong> [вэн]</div>\n    </div>\n\n    <h3>3. Десятки (20–60)</h3>\n    <div class=\"conjugation-grid\" style=\"grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 10px;\">\n        <div><strong>20</strong> — Vingt [вэн]</div>\n        <div><strong>30</strong> — Trente [трант]</div>\n        <div><strong>40</strong> — Quarante [карант]</div>\n        <div><strong>50</strong> — Cinquante [сэнкант]</div>\n        <div><strong>60</strong> — Soixante [суасант]</div>\n    </div>\n    <div class=\"example-box\">\n        <p><strong>Образование составных чисел:</strong></p>\n        <p>Когда прибавляем 1: используется союз <em>et</em> (и): <em>21 = Vingt <strong>et</strong> un</em>, <em>31 = Trente <strong>et</strong> un</em>.</p>\n        <p>Для остальных цифр — через дефис: <em>22 = Vingt-deux</em>, <em>35 = Trente-cinq</em>, <em>48 = Quarante-huit</em>.</p>\n    </div>\n\n    <h3>4. 🇧🇪 В Бельгии (70, 80, 90, 100)</h3>\n    <p>В Бельгии числа 70 и 90 произносятся просто и прямо, без сложных подсчетов:</p>\n    <div class=\"example-box\">\n        <p>🇧🇪 <strong>70 = Septante</strong> [септант] (71 = <em>septante et un</em>, 75 = <em>septante-cinq</em>)</p>\n        <p>🇧🇪 <strong>80 = Quatre-vingts</strong> [катр-вэн] (81 = <em>quatre-vingt-un</em>, 85 = <em>quatre-vingt-cinq</em>)</p>\n        <p>🇧🇪 <strong>90 = Nonante</strong> [нонант] (91 = <em>nonante et un</em>, 99 = <em>nonante-neuf</em>)</p>\n        <p><strong>100 = Cent</strong> [сан] (200 = <em>deux cents</em>)</p>\n    </div>\n\n    <div class=\"example-box warning\">\n        <strong>Сравнение с Францией:</strong>\n        <p>Во Франции говорят: 70 = <em>soixante-dix</em> (60+10), 90 = <em>quatre-vingt-dix</em> (4×20+10). Но в бельгийских супермаркетах, банках и коммунах вы всегда услышите <strong>Septante</strong> и <strong>Nonante</strong>!</p>\n    </div>\n    ",
+        "content_html_en": "\n    <h2>French Numbers: 0 to 100</h2>\n    <h3>1. Basic Numbers 0 to 10:</h3>\n    <p>0 (Zéro), 1 (Un/Une), 2 (Deux), 3 (Trois), 4 (Quatre), 5 (Cinq), 6 (Six), 7 (Sept), 8 (Huit), 9 (Neuf), 10 (Dix).</p>\n    <h3>2. Numbers 11 to 20:</h3>\n    <p>11 (Onze), 12 (Douze), 13 (Treize), 14 (Quatorze), 15 (Quinze), 16 (Seize), 17 (Dix-sept), 18 (Dix-huit), 19 (Dix-neuf), 20 (Vingt).</p>\n    <h3>3. Tens:</h3>\n    <p>20 (Vingt), 30 (Trente), 40 (Quarante), 50 (Cinquante), 60 (Soixante).</p>\n    <h3>4. 🇧🇪 In Belgium:</h3>\n    <p>70 = <strong>Septante</strong>, 80 = <strong>Quatre-vingts</strong>, 90 = <strong>Nonante</strong>, 100 = <strong>Cent</strong>.</p>\n    ",
+        "content_html_fr": "\n    <h2>Les nombres de 0 à 100</h2>\n    <h3>De 0 à 10 :</h3>\n    <p>0 (Zéro), 1 (Un), 2 (Deux), 3 (Trois), 4 (Quatre), 5 (Cinq), 6 (Six), 7 (Sept), 8 (Huit), 9 (Neuf), 10 (Dix).</p>\n    <h3>De 11 à 20 :</h3>\n    <p>11 (Onze), 12 (Douze), 13 (Treize), 14 (Quatorze), 15 (Quinze), 16 (Seize), 17 (Dix-sept), 18 (Dix-huit), 19 (Dix-neuf), 20 (Vingt).</p>\n    <h3>🇧🇪 En Belgique :</h3>\n    <p>70 = Septante, 80 = Quatre-vingts, 90 = Nonante, 100 = Cent.</p>\n    ",
         "order": 20,
         "date_added": "2026-08-23T20:36:47.174Z"
     }
@@ -931,19 +931,6 @@
 },
 {
     "model": "quizzes.question",
-    "pk": 43,
-    "fields": {
-        "lesson": 28,
-        "text": "Як у Франції сказати число 80?",
-        "text_uk": "Як у Франції сказати число 80?",
-        "text_ru": "Как во Франции сказать число 80?",
-        "text_en": "How do you say 80 in standard French?",
-        "text_fr": "Comment s'écrit le nombre 80 en français standard ?",
-        "order": 1
-    }
-},
-{
-    "model": "quizzes.question",
     "pk": 44,
     "fields": {
         "lesson": 29,
@@ -1044,6 +1031,32 @@
         "text_en": "What does the typical Belgian farewell 'À tantôt !' mean?",
         "text_fr": "Que signifie l'expression 'À tantôt !' ?",
         "order": 1
+    }
+},
+{
+    "model": "quizzes.question",
+    "pk": 52,
+    "fields": {
+        "lesson": 28,
+        "text": "Як французькою сказати число '3'?",
+        "text_uk": "Як французькою сказати число '3'?",
+        "text_ru": "Как по-французски сказать число '3'?",
+        "text_en": "How do you say the number '3' in French?",
+        "text_fr": "Comment dit-on le chiffre '3' en français ?",
+        "order": 1
+    }
+},
+{
+    "model": "quizzes.question",
+    "pk": 53,
+    "fields": {
+        "lesson": 28,
+        "text": "Як у Бельгії кажуть число '70'?",
+        "text_uk": "Як у Бельгії кажуть число '70'?",
+        "text_ru": "Как в Бельгии говорят число '70'?",
+        "text_en": "How is '70' called in Belgium?",
+        "text_fr": "Comment dit-on '70' en Belgique ?",
+        "order": 2
     }
 },
 {
@@ -2101,45 +2114,6 @@
 },
 {
     "model": "quizzes.choice",
-    "pk": 137,
-    "fields": {
-        "question": 43,
-        "text": "Quatre-vingts",
-        "text_uk": "Quatre-vingts",
-        "text_ru": "Quatre-vingts",
-        "text_en": "Quatre-vingts",
-        "text_fr": "Quatre-vingts",
-        "is_correct": true
-    }
-},
-{
-    "model": "quizzes.choice",
-    "pk": 138,
-    "fields": {
-        "question": 43,
-        "text": "Huitante",
-        "text_uk": "Huitante",
-        "text_ru": "Huitante",
-        "text_en": "Huitante",
-        "text_fr": "Huitante",
-        "is_correct": false
-    }
-},
-{
-    "model": "quizzes.choice",
-    "pk": 139,
-    "fields": {
-        "question": 43,
-        "text": "Soixante-vingt",
-        "text_uk": "Soixante-vingt",
-        "text_ru": "Soixante-vingt",
-        "text_en": "Soixante-vingt",
-        "text_fr": "Soixante-vingt",
-        "is_correct": false
-    }
-},
-{
-    "model": "quizzes.choice",
     "pk": 140,
     "fields": {
         "question": 44,
@@ -2486,6 +2460,84 @@
         "text_ru": "[и]",
         "text_en": "[i]",
         "text_fr": "[i]",
+        "is_correct": false
+    }
+},
+{
+    "model": "quizzes.choice",
+    "pk": 167,
+    "fields": {
+        "question": 52,
+        "text": "Trois [труа]",
+        "text_uk": "Trois [труа]",
+        "text_ru": "Trois [труа]",
+        "text_en": "Trois",
+        "text_fr": "Trois",
+        "is_correct": true
+    }
+},
+{
+    "model": "quizzes.choice",
+    "pk": 168,
+    "fields": {
+        "question": 52,
+        "text": "Deux [де]",
+        "text_uk": "Deux [де]",
+        "text_ru": "Deux [дё]",
+        "text_en": "Deux",
+        "text_fr": "Deux",
+        "is_correct": false
+    }
+},
+{
+    "model": "quizzes.choice",
+    "pk": 169,
+    "fields": {
+        "question": 52,
+        "text": "Quatre [катр]",
+        "text_uk": "Quatre [катр]",
+        "text_ru": "Quatre [катр]",
+        "text_en": "Quatre",
+        "text_fr": "Quatre",
+        "is_correct": false
+    }
+},
+{
+    "model": "quizzes.choice",
+    "pk": 170,
+    "fields": {
+        "question": 53,
+        "text": "Septante [септант]",
+        "text_uk": "Septante [септант]",
+        "text_ru": "Septante [септант]",
+        "text_en": "Septante",
+        "text_fr": "Septante",
+        "is_correct": true
+    }
+},
+{
+    "model": "quizzes.choice",
+    "pk": 171,
+    "fields": {
+        "question": 53,
+        "text": "Soixante-dix",
+        "text_uk": "Soixante-dix",
+        "text_ru": "Soixante-dix",
+        "text_en": "Soixante-dix",
+        "text_fr": "Soixante-dix",
+        "is_correct": false
+    }
+},
+{
+    "model": "quizzes.choice",
+    "pk": 172,
+    "fields": {
+        "question": 53,
+        "text": "Huitante",
+        "text_uk": "Huitante",
+        "text_ru": "Huitante",
+        "text_en": "Huitante",
+        "text_fr": "Huitante",
         "is_correct": false
     }
 }
