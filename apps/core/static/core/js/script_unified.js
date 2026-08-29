@@ -73,6 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Apply saved theme and language FIRST
     applyStoredTheme();
     applyStoredLang();
+    loadHeaderStats();
     
     // 1. Wrap videos
     document.querySelectorAll('.video-container').forEach(div => {
@@ -454,6 +455,16 @@ function navigateLesson(direction) {
 }
 
 function handleKeydown(e) {
+    if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k') {
+        e.preventDefault();
+        const searchInput = document.querySelector('.search-input');
+        if (searchInput) {
+            searchInput.focus();
+            searchInput.select();
+        }
+        return;
+    }
+
     if (['INPUT', 'TEXTAREA'].includes(e.target.tagName)) {
         if (e.key === 'Escape') e.target.blur();
         return;
@@ -636,6 +647,164 @@ function startQuiz() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
+// ========================================
+// FRENCH TTS & AUDIO PRONUNCIATION
+// ========================================
+
+function speakFrench(text, btnElement) {
+    if (!('speechSynthesis' in window)) {
+        console.warn('Speech synthesis not supported');
+        return;
+    }
+
+    window.speechSynthesis.cancel(); // Stop any ongoing speech
+
+    // Clean text from bracketed phonetics, emojis, or translations
+    const cleanText = text.replace(/\[.*?\]|\(.*?\)|[^\p{L}\p{M}\s'-]/gu, ' ').trim();
+    if (!cleanText) return;
+
+    const utterance = new SpeechSynthesisUtterance(cleanText);
+    utterance.lang = 'fr-FR';
+    utterance.rate = 0.88; // Slightly slower for language learners
+
+    // Find best French voice if available
+    const voices = window.speechSynthesis.getVoices();
+    const frVoice = voices.find(v => v.lang === 'fr-FR' || v.lang.startsWith('fr'));
+    if (frVoice) {
+        utterance.voice = frVoice;
+    }
+
+    if (btnElement) {
+        btnElement.classList.add('is-speaking');
+        utterance.onend = () => btnElement.classList.remove('is-speaking');
+        utterance.onerror = () => btnElement.classList.remove('is-speaking');
+    }
+
+    window.speechSynthesis.speak(utterance);
+}
+
+// Pre-load voices
+if ('speechSynthesis' in window) {
+    window.speechSynthesis.onvoiceschanged = () => {
+        window.speechSynthesis.getVoices();
+    };
+}
+
+// ========================================
+// READING PROGRESS TRACKER
+// ========================================
+
+function updateReadingProgress() {
+    const activeLesson = document.querySelector('.lesson-view.active');
+    if (!activeLesson) return;
+
+    const progressBar = activeLesson.querySelector('.reading-progress-bar');
+    if (!progressBar) return;
+
+    const rect = activeLesson.getBoundingClientRect();
+    const totalHeight = activeLesson.offsetHeight - window.innerHeight;
+    
+    if (totalHeight <= 0) {
+        progressBar.style.width = '100%';
+        return;
+    }
+
+    const currentScroll = -rect.top;
+    const progress = Math.min(Math.max((currentScroll / totalHeight) * 100, 0), 100);
+    progressBar.style.width = `${progress}%`;
+}
+
+// ========================================
+// GAMIFICATION & CELEBRATION EFFECTS
+// ========================================
+
+function showXpBadge(eventOrElement, amount = 10) {
+    const badge = document.createElement('div');
+    badge.className = 'xp-float-badge';
+    badge.textContent = `+${amount} XP ✨`;
+
+    let x = window.innerWidth / 2;
+    let y = window.innerHeight / 2;
+
+    if (eventOrElement && eventOrElement.getBoundingClientRect) {
+        const rect = eventOrElement.getBoundingClientRect();
+        x = rect.left + rect.width / 2;
+        y = rect.top;
+    } else if (eventOrElement && eventOrElement.clientX) {
+        x = eventOrElement.clientX;
+        y = eventOrElement.clientY;
+    }
+
+    badge.style.left = `${x - 40}px`;
+    badge.style.top = `${y - 20}px`;
+
+    document.body.appendChild(badge);
+    setTimeout(() => badge.remove(), 1250);
+}
+
+function launchCelebrationConfetti() {
+    let canvas = document.getElementById('confetti-canvas');
+    if (!canvas) {
+        canvas = document.createElement('canvas');
+        canvas.id = 'confetti-canvas';
+        document.body.appendChild(canvas);
+    }
+    const ctx = canvas.getContext('2d');
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+
+    const pieces = [];
+    const colors = ['#3B82F6', '#8B5CF6', '#EC4899', '#F59E0B', '#10B981', '#06B6D4'];
+
+    for (let i = 0; i < 65; i++) {
+        pieces.push({
+            x: canvas.width * 0.5,
+            y: canvas.height * 0.45,
+            vx: (Math.random() - 0.5) * 16,
+            vy: (Math.random() - 0.85) * 18,
+            size: Math.random() * 8 + 5,
+            color: colors[Math.floor(Math.random() * colors.length)],
+            rotation: Math.random() * 360,
+            rotSpeed: (Math.random() - 0.5) * 10,
+            opacity: 1
+        });
+    }
+
+    let animationFrame;
+    function animate() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        let alive = false;
+
+        pieces.forEach(p => {
+            p.x += p.vx;
+            p.y += p.vy;
+            p.vy += 0.4;
+            p.vx *= 0.98;
+            p.rotation += p.rotSpeed;
+            p.opacity -= 0.012;
+
+            if (p.opacity > 0) {
+                alive = true;
+                ctx.save();
+                ctx.translate(p.x, p.y);
+                ctx.rotate((p.rotation * Math.PI) / 180);
+                ctx.fillStyle = p.color;
+                ctx.globalAlpha = Math.max(p.opacity, 0);
+                ctx.fillRect(-p.size / 2, -p.size / 2, p.size, p.size);
+                ctx.restore();
+            }
+        });
+
+        if (alive) {
+            animationFrame = requestAnimationFrame(animate);
+        } else {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            canvas.remove();
+        }
+    }
+    animate();
+}
+
 function checkAnswer(btn) {
     const isCorrect = btn.dataset.isCorrect === 'true';
     if (btn.parentNode.classList.contains('answered')) return;
@@ -649,12 +818,14 @@ function checkAnswer(btn) {
     if (isCorrect) {
         btn.classList.add('correct');
         quizState.score++;
+        showXpBadge(btn, 10);
         if (currentSegment) {
             currentSegment.classList.remove('active');
             currentSegment.classList.add('correct');
         }
     } else {
         btn.classList.add('incorrect');
+        btn.classList.add('wrong');
         if (currentSegment) {
             currentSegment.classList.remove('active');
             currentSegment.classList.add('incorrect');
@@ -706,6 +877,36 @@ function updateQuizProgress() {
     });
 }
 
+// ========================================
+// HEADER STATS (STREAK & XP)
+// ========================================
+
+function loadHeaderStats() {
+    let streak = parseInt(localStorage.getItem('userStreak') || '3', 10);
+    let xp = parseInt(localStorage.getItem('userXP') || '150', 10);
+
+    const streakEl = document.getElementById('headerStreakVal');
+    const xpEl = document.getElementById('headerXpVal');
+
+    if (streakEl) streakEl.textContent = streak;
+    if (xpEl) xpEl.textContent = xp;
+}
+
+function addXp(amount) {
+    let xp = parseInt(localStorage.getItem('userXP') || '150', 10);
+    xp += amount;
+    localStorage.setItem('userXP', xp);
+
+    const xpEl = document.getElementById('headerXpVal');
+    if (xpEl) {
+        xpEl.textContent = xp;
+        xpEl.closest('.header-stat-pill')?.classList.add('pulse-stat');
+        setTimeout(() => {
+            xpEl.closest('.header-stat-pill')?.classList.remove('pulse-stat');
+        }, 600);
+    }
+}
+
 function showQuizResults() {
     const quizContainer = document.getElementById(`quiz-${quizState.activeLessonId}`);
     if (!quizContainer) return;
@@ -714,12 +915,66 @@ function showQuizResults() {
     const resultsContainer = quizContainer.querySelector('.quiz-results');
     const scoreText = quizContainer.querySelector('.results-score');
     const progressBar = quizContainer.querySelector('.quiz-progress-bar');
+    const victoryBadge = document.getElementById(`victoryBadge-${quizState.activeLessonId}`);
 
     questionsContainer.style.display = 'none';
     resultsContainer.style.display = 'block';
     scoreText.textContent = `${quizState.score} / ${quizState.totalQuestions}`;
-    progressBar.style.width = '100%';
+    if (progressBar) progressBar.style.width = '100%';
+
+    const percent = quizState.totalQuestions > 0 ? Math.round((quizState.score / quizState.totalQuestions) * 100) : 100;
+    
+    // Dynamic badge based on result
+    if (victoryBadge) {
+        if (percent === 100) {
+            victoryBadge.textContent = '🌟 Impeccable ! (100%)';
+        } else if (percent >= 70) {
+            victoryBadge.textContent = '👏 Très bien !';
+        } else {
+            victoryBadge.textContent = '💪 Bon travail !';
+        }
+    }
+
+    // Gamification reward
+    const earnedXp = Math.max(quizState.score * 25, 25);
+    addXp(earnedXp);
+
+    if (quizState.score > 0) {
+        launchCelebrationConfetti();
+        showXpBadge(scoreText, earnedXp);
+    }
 }
+
+// Global click delegation for interactive TTS audio and flipcards
+document.addEventListener('click', (e) => {
+    // 1. Audio play button
+    const audioBtn = e.target.closest('.audio-play-btn');
+    if (audioBtn) {
+        e.stopPropagation();
+        const textToSpeak = audioBtn.getAttribute('data-speak') || audioBtn.parentElement.textContent;
+        speakFrench(textToSpeak, audioBtn);
+        return;
+    }
+
+    // 2. Speakable text element
+    const speakable = e.target.closest('.speakable');
+    if (speakable) {
+        const textToSpeak = speakable.getAttribute('data-speak') || speakable.textContent;
+        speakFrench(textToSpeak, speakable);
+        return;
+    }
+
+    // 3. Interactive flip cards
+    const flipCard = e.target.closest('.flip-card');
+    if (flipCard) {
+        flipCard.classList.toggle('is-flipped');
+        return;
+    }
+});
+
+// Scroll listener for reading progress bar
+window.addEventListener('scroll', updateReadingProgress, { passive: true });
+
 
 // ========================================
 // SETTINGS DROPDOWN

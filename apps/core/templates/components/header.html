@@ -31,9 +31,23 @@
         </div>
         
         <div class="top-actions">
+            <!-- Header Stats: Streak & XP -->
+            <div class="header-stats">
+                <div class="header-stat-pill streak-pill" title="Серия дней обучения">
+                    <span class="stat-icon">🔥</span>
+                    <span class="stat-val" id="headerStreakVal">3</span>
+                </div>
+                <div class="header-stat-pill xp-pill" title="Накопленный опыт">
+                    <span class="stat-icon">⚡</span>
+                    <span class="stat-val" id="headerXpVal">150</span>
+                    <span class="stat-unit">XP</span>
+                </div>
+            </div>
+
             <div class="search-box">
                 <svg class="search-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
                 <input type="text" class="search-input" placeholder="{% trans 'Поиск...' %}" aria-label="Search lessons">
+                <kbd class="search-shortcut-badge">/</kbd>
             </div>
             
             <!-- Settings Button -->
