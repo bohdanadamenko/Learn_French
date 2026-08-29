@@ -648,49 +648,6 @@ function startQuiz() {
 }
 
 // ========================================
-// FRENCH TTS & AUDIO PRONUNCIATION
-// ========================================
-
-function speakFrench(text, btnElement) {
-    if (!('speechSynthesis' in window)) {
-        console.warn('Speech synthesis not supported');
-        return;
-    }
-
-    window.speechSynthesis.cancel(); // Stop any ongoing speech
-
-    // Clean text from bracketed phonetics, emojis, or translations
-    const cleanText = text.replace(/\[.*?\]|\(.*?\)|[^\p{L}\p{M}\s'-]/gu, ' ').trim();
-    if (!cleanText) return;
-
-    const utterance = new SpeechSynthesisUtterance(cleanText);
-    utterance.lang = 'fr-FR';
-    utterance.rate = 0.88; // Slightly slower for language learners
-
-    // Find best French voice if available
-    const voices = window.speechSynthesis.getVoices();
-    const frVoice = voices.find(v => v.lang === 'fr-FR' || v.lang.startsWith('fr'));
-    if (frVoice) {
-        utterance.voice = frVoice;
-    }
-
-    if (btnElement) {
-        btnElement.classList.add('is-speaking');
-        utterance.onend = () => btnElement.classList.remove('is-speaking');
-        utterance.onerror = () => btnElement.classList.remove('is-speaking');
-    }
-
-    window.speechSynthesis.speak(utterance);
-}
-
-// Pre-load voices
-if ('speechSynthesis' in window) {
-    window.speechSynthesis.onvoiceschanged = () => {
-        window.speechSynthesis.getVoices();
-    };
-}
-
-// ========================================
 // READING PROGRESS TRACKER
 // ========================================
 
@@ -945,30 +902,11 @@ function showQuizResults() {
     }
 }
 
-// Global click delegation for interactive TTS audio and flipcards
+// Global click delegation for interactive flip cards
 document.addEventListener('click', (e) => {
-    // 1. Audio play button
-    const audioBtn = e.target.closest('.audio-play-btn');
-    if (audioBtn) {
-        e.stopPropagation();
-        const textToSpeak = audioBtn.getAttribute('data-speak') || audioBtn.parentElement.textContent;
-        speakFrench(textToSpeak, audioBtn);
-        return;
-    }
-
-    // 2. Speakable text element
-    const speakable = e.target.closest('.speakable');
-    if (speakable) {
-        const textToSpeak = speakable.getAttribute('data-speak') || speakable.textContent;
-        speakFrench(textToSpeak, speakable);
-        return;
-    }
-
-    // 3. Interactive flip cards
     const flipCard = e.target.closest('.flip-card');
     if (flipCard) {
         flipCard.classList.toggle('is-flipped');
-        return;
     }
 });
 

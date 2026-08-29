@@ -27,7 +27,7 @@ def update_numbers_lesson():
 
     lesson.content_html_ru = """
     <h2>Французские числа: от 0 до 100</h2>
-    <p>Счёт во французском языке начинается с базовых чисел от 0 до 10. Нажимайте на значок 🔊 рядом с любым словом, чтобы услышать правильное французское произношение.</p>
+    <p>Счёт во французском языке начинается с базовых чисел от 0 до 10. </p>
 
     <h3>1. Базовые числа от 0 до 10</h3>
     <div class="conjugation-grid" style="grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 12px;">
@@ -136,7 +136,7 @@ def update_numbers_lesson():
 
     lesson.content_html_uk = """
     <h2>Французькі числа: від 0 до 100</h2>
-    <p>Рахунок французькою мовою починається з базових чисел від 0 до 10. Натискайте на значок 🔊 біля будь-якого слова, щоб почути правильну французьку вимову.</p>
+    <p>Рахунок французькою мовою починається з базових чисел від 0 до 10. </p>
 
     <h3>1. Базові числа від 0 до 10</h3>
     <div class="conjugation-grid" style="grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 12px;">
@@ -189,7 +189,7 @@ def update_numbers_lesson():
 
     lesson.content_html_en = """
     <h2>French Numbers: 0 to 100</h2>
-    <p>French counting starts with basic numbers from 0 to 10. Click the 🔊 button to listen to clear French pronunciation.</p>
+    <p>French counting starts with basic numbers from 0 to 10. </p>
 
     <h3>1. Basic Numbers 0 to 10</h3>
     <div class="conjugation-grid" style="grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 12px;">
@@ -219,7 +219,7 @@ def update_numbers_lesson():
 
     lesson.content_html_fr = """
     <h2>Les nombres de 0 à 100</h2>
-    <p>Apprenez à compter en français de 0 à 100. Cliquez sur le bouton 🔊 pour écouter la prononciation.</p>
+    <p>Apprenez à compter en français de 0 à 100. </p>
 
     <h3>De 0 à 10 :</h3>
     <div class="conjugation-grid" style="grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 12px;">
