@@ -1,28 +1,28 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="100%">
   <defs>
-    <clipPath id="rounded">
-      <rect width="100" height="100" rx="22" ry="22"/>
+    <clipPath id="innerRounded">
+      <rect x="2" y="2" width="96" height="96" rx="20" ry="20"/>
     </clipPath>
-    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
-      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="1" stdDeviation="2" flood-color="#FFD100" flood-opacity="0.4"/>
     </filter>
   </defs>
-  
+
+  <!-- Outer Luminous White Frame for Dark Theme Contrast -->
+  <rect x="1" y="1" width="98" height="98" rx="22" ry="22" fill="#FFFFFF" fill-opacity="0.25" stroke="rgba(255,255,255,0.7)" stroke-width="1.5"/>
+
   <!-- Belgian Tricolor Background -->
-  <g clip-path="url(#rounded)">
-    <rect x="0" y="0" width="33.33" height="100" fill="#18181B"/>
-    <rect x="33.33" y="0" width="33.33" height="100" fill="#FDD835"/>
-    <rect x="66.66" y="0" width="33.34" height="100" fill="#EF4444"/>
+  <g clip-path="url(#innerRounded)">
+    <rect x="2" y="2" width="32" height="96" fill="#1C1E24"/>
+    <rect x="34" y="2" width="32" height="96" fill="#FFD100"/>
+    <rect x="66" y="2" width="32" height="96" fill="#EF2B3E"/>
   </g>
-  
-  <!-- Center Dark Glass Disc with Border -->
-  <circle cx="50" cy="50" r="32" fill="#0F172A" fill-opacity="0.9" stroke="rgba(255,255,255,0.4)" stroke-width="2" filter="url(#shadow)"/>
-  
+
+  <!-- Inner High-Contrast Dark Glass Disc with Bright Ring -->
+  <circle cx="50" cy="50" r="30" fill="#0F172A" fill-opacity="0.95" stroke="#FFFFFF" stroke-width="2.5" filter="url(#glow)"/>
+
   <!-- Letter F Symbol -->
-  <!-- Stem -->
-  <rect x="41" y="32" width="7" height="36" rx="2.5" fill="#FFFFFF"/>
-  <!-- Top Bar -->
-  <rect x="41" y="32" width="20" height="7" rx="2.5" fill="#FFFFFF"/>
-  <!-- Mid Bar (Belgian Gold) -->
-  <rect x="41" y="47" width="15" height="6" rx="2" fill="#FDD835"/>
+  <rect x="41" y="32" width="7.5" height="36" rx="2.5" fill="#FFFFFF"/>
+  <rect x="41" y="32" width="20" height="7.5" rx="2.5" fill="#FFFFFF"/>
+  <rect x="41" y="47" width="15" height="6.5" rx="2" fill="#FFD100"/>
 </svg>
