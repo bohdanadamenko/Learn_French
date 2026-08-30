@@ -1284,6 +1284,66 @@
   }
 },
 {
+  "model": "lessons_app.lesson",
+  "pk": 64,
+  "fields": {
+    "topic": 5,
+    "title": "🏦 Банківський рахунок у Бельгії: Bancontact, Payconiq та рахунки",
+    "title_uk": "🏦 Банківський рахунок у Бельгії: Bancontact, Payconiq та рахунки",
+    "title_ru": "🏦 Банковский счет в Бельгии: Bancontact, Payconiq и счета",
+    "title_en": "🏦 Banking in Belgium: Accounts, Bancontact & Payconiq",
+    "title_fr": "🏦 Ouvrir un compte bancaire en Belgique",
+    "data_lesson_id": "lesson-banking-be",
+    "content_html": "\n            <h2>Банківська система Бельгії — Все, що потрібно знати</h2>\n            <p>У Бельгії всі платежі відбуваються безготівково: зарплата, комунальні, податки та навіть покупки у фритюрнях.</p>\n\n            <h3>1. 🔑 Ключові терміни:</h3>\n            <ul>\n                <li><strong>Un compte à vue</strong> [ен конт а вю] = Поточний розрахунковий рахунок (для зарплати та щоденних витрат).</li>\n                <li><strong>Un compte d'épargne</strong> [ен конт депарнь] = Ощадний накопичувальний рахунок.</li>\n                <li><strong>Bancontact</strong> [банконтакт] = Національна платіжна дебетова картка Бельгії.</li>\n                <li><strong>Payconiq</strong> [пейконік] = Найпопулярніший мобільний додаток для переказів за QR-кодом між друзями та в магазинах.</li>\n                <li><strong>Un virement bancaire</strong> [ен вірман банкер] = Банківський переказ за номером IBAN.</li>\n                <li><strong>Un extrait de compte</strong> = Виписка з банківського рахунку.</li>\n            </ul>\n\n            <div class=\"callout-box callout-tip\">\n                <div class=\"callout-title\">💡 Провідні банки Бельгії:</div>\n                <div class=\"callout-content\">\n                    <p>Найбільші бельгійські банки: <strong>Belfius</strong>, <strong>BNP Paribas Fortis</strong>, <strong>ING Belgique</strong> та <strong>KBC / CBC</strong>.</p>\n                </div>\n            </div>\n\n            <h3>🃏 Картки для запам'ятовування</h3>\n            <div class=\"flip-grid\">\n                <div class=\"flip-card\">\n                    <div class=\"flip-card-inner\">\n                        <div class=\"flip-card-front\">\n                            <strong style=\"font-size:1.25rem; color:var(--accent-blue);\">Я хочу відкрити поточний рахунок</strong>\n                            <span class=\"flip-hint\">Натисніть для перекладу</span>\n                        </div>\n                        <div class=\"flip-card-back\">\n                            <strong style=\"font-size:1.05rem;\">Je voudrais ouvrir un compte à vue</strong>\n                            <span style=\"font-size:0.8rem;\">[жьо вудре уврір ен конт а вю]</span>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"flip-card\">\n                    <div class=\"flip-card-inner\">\n                        <div class=\"flip-card-front\">\n                            <strong style=\"font-size:1.25rem; color:var(--accent-purple);\">Ви приймаєте Bancontact / Payconiq?</strong>\n                            <span class=\"flip-hint\">Натисніть для перекладу</span>\n                        </div>\n                        <div class=\"flip-card-back\">\n                            <strong style=\"font-size:1.05rem;\">Vous acceptez Bancontact / Payconiq ?</strong>\n                            <span style=\"font-size:0.8rem;\">[ву-з-аксепте банконтакт] 🇧🇪</span>\n                        </div>\n                    </div>\n                </div>\n            </div>\n            ",
+    "content_html_uk": "\n            <h2>Банківська система Бельгії — Все, що потрібно знати</h2>\n            <p>У Бельгії всі платежі відбуваються безготівково: зарплата, комунальні, податки та навіть покупки у фритюрнях.</p>\n\n            <h3>1. 🔑 Ключові терміни:</h3>\n            <ul>\n                <li><strong>Un compte à vue</strong> [ен конт а вю] = Поточний розрахунковий рахунок (для зарплати та щоденних витрат).</li>\n                <li><strong>Un compte d'épargne</strong> [ен конт депарнь] = Ощадний накопичувальний рахунок.</li>\n                <li><strong>Bancontact</strong> [банконтакт] = Національна платіжна дебетова картка Бельгії.</li>\n                <li><strong>Payconiq</strong> [пейконік] = Найпопулярніший мобільний додаток для переказів за QR-кодом між друзями та в магазинах.</li>\n                <li><strong>Un virement bancaire</strong> [ен вірман банкер] = Банківський переказ за номером IBAN.</li>\n                <li><strong>Un extrait de compte</strong> = Виписка з банківського рахунку.</li>\n            </ul>\n\n            <div class=\"callout-box callout-tip\">\n                <div class=\"callout-title\">💡 Провідні банки Бельгії:</div>\n                <div class=\"callout-content\">\n                    <p>Найбільші бельгійські банки: <strong>Belfius</strong>, <strong>BNP Paribas Fortis</strong>, <strong>ING Belgique</strong> та <strong>KBC / CBC</strong>.</p>\n                </div>\n            </div>\n\n            <h3>🃏 Картки для запам'ятовування</h3>\n            <div class=\"flip-grid\">\n                <div class=\"flip-card\">\n                    <div class=\"flip-card-inner\">\n                        <div class=\"flip-card-front\">\n                            <strong style=\"font-size:1.25rem; color:var(--accent-blue);\">Я хочу відкрити поточний рахунок</strong>\n                            <span class=\"flip-hint\">Натисніть для перекладу</span>\n                        </div>\n                        <div class=\"flip-card-back\">\n                            <strong style=\"font-size:1.05rem;\">Je voudrais ouvrir un compte à vue</strong>\n                            <span style=\"font-size:0.8rem;\">[жьо вудре уврір ен конт а вю]</span>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"flip-card\">\n                    <div class=\"flip-card-inner\">\n                        <div class=\"flip-card-front\">\n                            <strong style=\"font-size:1.25rem; color:var(--accent-purple);\">Ви приймаєте Bancontact / Payconiq?</strong>\n                            <span class=\"flip-hint\">Натисніть для перекладу</span>\n                        </div>\n                        <div class=\"flip-card-back\">\n                            <strong style=\"font-size:1.05rem;\">Vous acceptez Bancontact / Payconiq ?</strong>\n                            <span style=\"font-size:0.8rem;\">[ву-з-аксепте банконтакт] 🇧🇪</span>\n                        </div>\n                    </div>\n                </div>\n            </div>\n            ",
+    "content_html_ru": "\n            <h2>Банковская система Бельгии — Все, что нужно знать</h2>\n            <p>В Бельгии практически все расчеты производятся безналично.</p>\n\n            <h3>1. 🔑 Ключевые термины:</h3>\n            <ul>\n                <li><strong>Un compte à vue</strong> [эн конт а вю] = Текущий расчетный счет (для зарплаты и расходов).</li>\n                <li><strong>Un compte d'épargne</strong> [эн конт депарнь] = Сберегательный счет.</li>\n                <li><strong>Bancontact</strong> = Главная дебетовая платежная система Бельгии.</li>\n                <li><strong>Payconiq</strong> = Мобильное приложение для быстрой оплаты по QR-коду.</li>\n                <li><strong>Un virement bancaire</strong> = Банковский перевод по IBAN.</li>\n            </ul>\n\n            <h3>🃏 Карточки для запоминания</h3>\n            <div class=\"flip-grid\">\n                <div class=\"flip-card\">\n                    <div class=\"flip-card-inner\">\n                        <div class=\"flip-card-front\">\n                            <strong style=\"font-size:1.25rem; color:var(--accent-blue);\">Я хотел бы открыть расчетный счет</strong>\n                            <span class=\"flip-hint\">Нажмите для перевода</span>\n                        </div>\n                        <div class=\"flip-card-back\">\n                            <strong style=\"font-size:1.05rem;\">Je voudrais ouvrir un compte à vue</strong>\n                            <span style=\"font-size:0.8rem;\">[жё вудрэ уврир эн конт а вю]</span>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"flip-card\">\n                    <div class=\"flip-card-inner\">\n                        <div class=\"flip-card-front\">\n                            <strong style=\"font-size:1.25rem; color:var(--accent-purple);\">Вы принимаете Bancontact?</strong>\n                            <span class=\"flip-hint\">Нажмите для перевода</span>\n                        </div>\n                        <div class=\"flip-card-back\">\n                            <strong style=\"font-size:1.05rem;\">Vous acceptez Bancontact ?</strong>\n                            <span style=\"font-size:0.8rem;\">[ву-з-аксэптэ банконтакт] 🇧🇪</span>\n                        </div>\n                    </div>\n                </div>\n            </div>\n            ",
+    "content_html_en": "<p>🏦 Banking in Belgium: Accounts, Bancontact & Payconiq</p>",
+    "content_html_fr": "<p>🏦 Ouvrir un compte bancaire en Belgique</p>",
+    "order": 51,
+    "date_added": "2026-08-30T00:18:57.713Z"
+  }
+},
+{
+  "model": "lessons_app.lesson",
+  "pk": 65,
+  "fields": {
+    "topic": 5,
+    "title": "📬 Пошта в Бельгії (Bpost): Посилки та Заказні листи",
+    "title_uk": "📬 Пошта в Бельгії (Bpost): Посилки та Заказні листи",
+    "title_ru": "📬 Почта в Бельгии (Bpost): Посылки и Заказные письма",
+    "title_en": "📬 Post Office in Belgium (Bpost): Parcels & Registered Letters",
+    "title_fr": "📬 La poste en Belgique (Bpost)",
+    "data_lesson_id": "lesson-post-office-be",
+    "content_html": "\n            <h2>Пошта в Бельгії (Bpost) та офіційне листування</h2>\n            <p>У Бельгії пошта має величезне юридичне значення. Офіційні сповіщення від комуни, податкової та орендодавців надходять <strong>заказними листами</strong>.</p>\n\n            <h3>1. 🔑 Словник поштових послуг:</h3>\n            <ul>\n                <li><strong>Un envoi recommandé / Une lettre recommandée</strong> = Заказний лист з повідомленням про вручення (юридично обов'язковий формат для розірвання договорів оренди чи контрактів!).</li>\n                <li><strong>Un colis</strong> [ен колі] = Посилка.</li>\n                <li><strong>Un avis de passage</strong> = Повідомлення листоноші про те, що вас не було вдома, і посилку можна забрати у відділенні.</li>\n                <li><strong>Un timbre</strong> [ен тембр] = Поштова марка.</li>\n                <li><strong>Un distributeur de colis</strong> = Поштомат Bpost для цілодобового отримання посилок.</li>\n            </ul>\n\n            <h3>🃏 Картки для запам'ятовування</h3>\n            <div class=\"flip-grid\">\n                <div class=\"flip-card\">\n                    <div class=\"flip-card-inner\">\n                        <div class=\"flip-card-front\">\n                            <strong style=\"font-size:1.25rem; color:var(--accent-blue);\">Я хочу відправити заказний лист</strong>\n                            <span class=\"flip-hint\">Натисніть для перекладу</span>\n                        </div>\n                        <div class=\"flip-card-back\">\n                            <strong style=\"font-size:1.05rem;\">Je voudrais envoyer une lettre recommandée</strong>\n                            <span style=\"font-size:0.8rem;\">[жьо вудре анвуайє юн летр рьокоманде]</span>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"flip-card\">\n                    <div class=\"flip-card-inner\">\n                        <div class=\"flip-card-front\">\n                            <strong style=\"font-size:1.25rem; color:var(--accent-purple);\">Я прийшов забрати посилку</strong>\n                            <span class=\"flip-hint\">Натисніть для перекладу</span>\n                        </div>\n                        <div class=\"flip-card-back\">\n                            <strong style=\"font-size:1.05rem;\">Je viens retirer un colis</strong>\n                            <span style=\"font-size:0.8rem;\">[жьо в'єн рьотіре ен колі]</span>\n                        </div>\n                    </div>\n                </div>\n            </div>\n            ",
+    "content_html_uk": "\n            <h2>Пошта в Бельгії (Bpost) та офіційне листування</h2>\n            <p>У Бельгії пошта має величезне юридичне значення. Офіційні сповіщення від комуни, податкової та орендодавців надходять <strong>заказними листами</strong>.</p>\n\n            <h3>1. 🔑 Словник поштових послуг:</h3>\n            <ul>\n                <li><strong>Un envoi recommandé / Une lettre recommandée</strong> = Заказний лист з повідомленням про вручення (юридично обов'язковий формат для розірвання договорів оренди чи контрактів!).</li>\n                <li><strong>Un colis</strong> [ен колі] = Посилка.</li>\n                <li><strong>Un avis de passage</strong> = Повідомлення листоноші про те, що вас не було вдома, і посилку можна забрати у відділенні.</li>\n                <li><strong>Un timbre</strong> [ен тембр] = Поштова марка.</li>\n                <li><strong>Un distributeur de colis</strong> = Поштомат Bpost для цілодобового отримання посилок.</li>\n            </ul>\n\n            <h3>🃏 Картки для запам'ятовування</h3>\n            <div class=\"flip-grid\">\n                <div class=\"flip-card\">\n                    <div class=\"flip-card-inner\">\n                        <div class=\"flip-card-front\">\n                            <strong style=\"font-size:1.25rem; color:var(--accent-blue);\">Я хочу відправити заказний лист</strong>\n                            <span class=\"flip-hint\">Натисніть для перекладу</span>\n                        </div>\n                        <div class=\"flip-card-back\">\n                            <strong style=\"font-size:1.05rem;\">Je voudrais envoyer une lettre recommandée</strong>\n                            <span style=\"font-size:0.8rem;\">[жьо вудре анвуайє юн летр рьокоманде]</span>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"flip-card\">\n                    <div class=\"flip-card-inner\">\n                        <div class=\"flip-card-front\">\n                            <strong style=\"font-size:1.25rem; color:var(--accent-purple);\">Я прийшов забрати посилку</strong>\n                            <span class=\"flip-hint\">Натисніть для перекладу</span>\n                        </div>\n                        <div class=\"flip-card-back\">\n                            <strong style=\"font-size:1.05rem;\">Je viens retirer un colis</strong>\n                            <span style=\"font-size:0.8rem;\">[жьо в'єн рьотіре ен колі]</span>\n                        </div>\n                    </div>\n                </div>\n            </div>\n            ",
+    "content_html_ru": "\n            <h2>Почта в Бельгии (Bpost) и официальная переписка</h2>\n            <p>Официальные уведомления от государственных органов, коммуны и владельцев жилья в Бельгии отправляются заказными письмами.</p>\n\n            <h3>1. 🔑 Словарь Bpost:</h3>\n            <ul>\n                <li><strong>Une lettre recommandée</strong> = Заказное письмо (имеет строгую юридическую силу).</li>\n                <li><strong>Un colis</strong> [эн коли] = Посылка.</li>\n                <li><strong>Un avis de passage</strong> = Извещение почтальона о недоставленной посылке.</li>\n            </ul>\n\n            <h3>🃏 Карточки для запоминания</h3>\n            <div class=\"flip-grid\">\n                <div class=\"flip-card\">\n                    <div class=\"flip-card-inner\">\n                        <div class=\"flip-card-front\">\n                            <strong style=\"font-size:1.25rem; color:var(--accent-blue);\">Я хочу отправить заказное письмо</strong>\n                            <span class=\"flip-hint\">Нажмите для перевода</span>\n                        </div>\n                        <div class=\"flip-card-back\">\n                            <strong style=\"font-size:1.05rem;\">Je voudrais envoyer une lettre recommandée</strong>\n                            <span style=\"font-size:0.8rem;\">[жё вудрэ анвуайе юн летр рёкомандэ]</span>\n                        </div>\n                    </div>\n                </div>\n            </div>\n            ",
+    "content_html_en": "<p>📬 Post Office in Belgium (Bpost): Parcels & Registered Letters</p>",
+    "content_html_fr": "<p>📬 La poste en Belgique (Bpost)</p>",
+    "order": 52,
+    "date_added": "2026-08-30T00:18:57.722Z"
+  }
+},
+{
+  "model": "lessons_app.lesson",
+  "pk": 66,
+  "fields": {
+    "topic": 4,
+    "title": "🥖 Пекарня (Boulangerie) та Ринок: Покупки щодня",
+    "title_uk": "🥖 Пекарня (Boulangerie) та Ринок: Покупки щодня",
+    "title_ru": "🥖 Пекарня (Boulangerie) и Рынок: Повседневные покупки",
+    "title_en": "🥖 Bakery & Market: Daily Shopping",
+    "title_fr": "🥖 À la boulangerie et au marché",
+    "data_lesson_id": "lesson-market-bakery",
+    "content_html": "\n            <h2>У пекарні та на щотижневому бельгійському ринку</h2>\n            <p>Ранковий похід до булочної за свіжою випічкою — свята традиція.</p>\n\n            <h3>1. 🥐 У пекарні:</h3>\n            <ul>\n                <li><strong>Une baguette bien cuite / pas trop cuite</strong> = Добре пропечений багет / світлий багет.</li>\n                <li><strong>Un croissant / Un pain au chocolat</strong> (У Бельгії також кажуть <em>Une couque au chocolat</em> 🇧🇪).</li>\n                <li><strong>Un pain tranché</strong> = Нарізаний хліб.</li>\n                <li><strong>Ce sera tout, merci !</strong> = Це все, дякую!</li>\n            </ul>\n\n            <h3>🃏 Картки для запам'ятовування</h3>\n            <div class=\"flip-grid\">\n                <div class=\"flip-card\">\n                    <div class=\"flip-card-inner\">\n                        <div class=\"flip-card-front\">\n                            <strong style=\"font-size:1.25rem; color:var(--accent-blue);\">Два круасани, будь ласка</strong>\n                            <span class=\"flip-hint\">Натисніть для перекладу</span>\n                        </div>\n                        <div class=\"flip-card-back\">\n                            <strong style=\"font-size:1.05rem;\">Deux croissants, s'il vous plaît</strong>\n                            <span style=\"font-size:0.8rem;\">[дьо круасан сіль ву пле]</span>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"flip-card\">\n                    <div class=\"flip-card-inner\">\n                        <div class=\"flip-card-front\">\n                            <strong style=\"font-size:1.25rem; color:var(--accent-purple);\">Це все, дякую!</strong>\n                            <span class=\"flip-hint\">Натисніть для перекладу</span>\n                        </div>\n                        <div class=\"flip-card-back\">\n                            <strong style=\"font-size:1.05rem;\">Ce sera tout, merci !</strong>\n                            <span style=\"font-size:0.8rem;\">[сьо сьора ту мерсі]</span>\n                        </div>\n                    </div>\n                </div>\n            </div>\n            ",
+    "content_html_uk": "\n            <h2>У пекарні та на щотижневому бельгійському ринку</h2>\n            <p>Ранковий похід до булочної за свіжою випічкою — свята традиція.</p>\n\n            <h3>1. 🥐 У пекарні:</h3>\n            <ul>\n                <li><strong>Une baguette bien cuite / pas trop cuite</strong> = Добре пропечений багет / світлий багет.</li>\n                <li><strong>Un croissant / Un pain au chocolat</strong> (У Бельгії також кажуть <em>Une couque au chocolat</em> 🇧🇪).</li>\n                <li><strong>Un pain tranché</strong> = Нарізаний хліб.</li>\n                <li><strong>Ce sera tout, merci !</strong> = Це все, дякую!</li>\n            </ul>\n\n            <h3>🃏 Картки для запам'ятовування</h3>\n            <div class=\"flip-grid\">\n                <div class=\"flip-card\">\n                    <div class=\"flip-card-inner\">\n                        <div class=\"flip-card-front\">\n                            <strong style=\"font-size:1.25rem; color:var(--accent-blue);\">Два круасани, будь ласка</strong>\n                            <span class=\"flip-hint\">Натисніть для перекладу</span>\n                        </div>\n                        <div class=\"flip-card-back\">\n                            <strong style=\"font-size:1.05rem;\">Deux croissants, s'il vous plaît</strong>\n                            <span style=\"font-size:0.8rem;\">[дьо круасан сіль ву пле]</span>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"flip-card\">\n                    <div class=\"flip-card-inner\">\n                        <div class=\"flip-card-front\">\n                            <strong style=\"font-size:1.25rem; color:var(--accent-purple);\">Це все, дякую!</strong>\n                            <span class=\"flip-hint\">Натисніть для перекладу</span>\n                        </div>\n                        <div class=\"flip-card-back\">\n                            <strong style=\"font-size:1.05rem;\">Ce sera tout, merci !</strong>\n                            <span style=\"font-size:0.8rem;\">[сьо сьора ту мерсі]</span>\n                        </div>\n                    </div>\n                </div>\n            </div>\n            ",
+    "content_html_ru": "\n            <h2>В пекарне и на рынке</h2>\n            <p>Утренний поход за свежим багетом и круассанами.</p>\n\n            <h3>1. 🥐 Полезные фразы:</h3>\n            <ul>\n                <li><strong>Une baguette</strong> = Багет.</li>\n                <li><strong>Un pain au chocolat</strong> (в Бельгии: <em>Une couque au chocolat</em> 🇧🇪).</li>\n                <li><strong>Ce sera tout, merci !</strong> = Это всё, спасибо!</li>\n            </ul>\n\n            <h3>🃏 Карточки для запоминания</h3>\n            <div class=\"flip-grid\">\n                <div class=\"flip-card\">\n                    <div class=\"flip-card-inner\">\n                        <div class=\"flip-card-front\">\n                            <strong style=\"font-size:1.25rem; color:var(--accent-blue);\">Два круассана, пожалуйста</strong>\n                            <span class=\"flip-hint\">Нажмите для перевода</span>\n                        </div>\n                        <div class=\"flip-card-back\">\n                            <strong style=\"font-size:1.05rem;\">Deux croissants, s'il vous plaît</strong>\n                            <span style=\"font-size:0.8rem;\">[дё круассан силь ву плэ]</span>\n                        </div>\n                    </div>\n                </div>\n            </div>\n            ",
+    "content_html_en": "<p>🥖 Bakery & Market: Daily Shopping</p>",
+    "content_html_fr": "<p>🥖 À la boulangerie et au marché</p>",
+    "order": 53,
+    "date_added": "2026-08-30T00:18:57.730Z"
+  }
+},
+{
   "model": "quizzes.question",
   "pk": 12,
   "fields": {
@@ -2164,6 +2224,45 @@
     "text_ru": "Как по-французски называется договор аренды жилья в Бельгии?",
     "text_en": "What is a rental lease called in French?",
     "text_fr": "Comment s'appelle le contrat de location ?",
+    "order": 1
+  }
+},
+{
+  "model": "quizzes.question",
+  "pk": 93,
+  "fields": {
+    "lesson": 64,
+    "text": "Як французькою називається поточний розрахунковий рахунок?",
+    "text_uk": "Як французькою називається поточний розрахунковий рахунок?",
+    "text_ru": "Как по-французски называется текущий расчетный счет?",
+    "text_en": "Как по-французски называется текущий расчетный счет?",
+    "text_fr": "Как по-французски называется текущий расчетный счет?",
+    "order": 1
+  }
+},
+{
+  "model": "quizzes.question",
+  "pk": 94,
+  "fields": {
+    "lesson": 65,
+    "text": "Як називається заказний юридичний лист у Бельгії?",
+    "text_uk": "Як називається заказний юридичний лист у Бельгії?",
+    "text_ru": "Как называется заказное юридическое письмо в Бельгии?",
+    "text_en": "Как называется заказное юридическое письмо в Бельгии?",
+    "text_fr": "Как называется заказное юридическое письмо в Бельгии?",
+    "order": 1
+  }
+},
+{
+  "model": "quizzes.question",
+  "pk": 95,
+  "fields": {
+    "lesson": 66,
+    "text": "Як сказати продавцеві: «Це все, дякую»?",
+    "text_uk": "Як сказати продавцеві: «Це все, дякую»?",
+    "text_ru": "Как сказать продавцу: «Это всё, спасибо»?",
+    "text_en": "Как сказать продавцу: «Это всё, спасибо»?",
+    "text_fr": "Как сказать продавцу: «Это всё, спасибо»?",
     "order": 1
   }
 },
@@ -4829,6 +4928,84 @@
     "text_ru": "La facture (это счет)",
     "text_en": "La facture",
     "text_fr": "La facture",
+    "is_correct": false
+  }
+},
+{
+  "model": "quizzes.choice",
+  "pk": 282,
+  "fields": {
+    "question": 93,
+    "text": "Un compte à vue",
+    "text_uk": "Un compte à vue",
+    "text_ru": "Un compte à vue",
+    "text_en": "Un compte à vue",
+    "text_fr": "Un compte à vue",
+    "is_correct": true
+  }
+},
+{
+  "model": "quizzes.choice",
+  "pk": 283,
+  "fields": {
+    "question": 93,
+    "text": "Un compte d'épargne",
+    "text_uk": "Un compte d'épargne",
+    "text_ru": "Un compte d'épargne",
+    "text_en": "Un compte d'épargne",
+    "text_fr": "Un compte d'épargne",
+    "is_correct": false
+  }
+},
+{
+  "model": "quizzes.choice",
+  "pk": 284,
+  "fields": {
+    "question": 94,
+    "text": "Une lettre recommandée",
+    "text_uk": "Une lettre recommandée",
+    "text_ru": "Une lettre recommandée",
+    "text_en": "Une lettre recommandée",
+    "text_fr": "Une lettre recommandée",
+    "is_correct": true
+  }
+},
+{
+  "model": "quizzes.choice",
+  "pk": 285,
+  "fields": {
+    "question": 94,
+    "text": "Un colis standard",
+    "text_uk": "Un colis standard",
+    "text_ru": "Un colis standard",
+    "text_en": "Un colis standard",
+    "text_fr": "Un colis standard",
+    "is_correct": false
+  }
+},
+{
+  "model": "quizzes.choice",
+  "pk": 286,
+  "fields": {
+    "question": 95,
+    "text": "Ce sera tout, merci !",
+    "text_uk": "Ce sera tout, merci !",
+    "text_ru": "Ce sera tout, merci !",
+    "text_en": "Ce sera tout, merci !",
+    "text_fr": "Ce sera tout, merci !",
+    "is_correct": true
+  }
+},
+{
+  "model": "quizzes.choice",
+  "pk": 287,
+  "fields": {
+    "question": 95,
+    "text": "Je ne veux rien",
+    "text_uk": "Je ne veux rien",
+    "text_ru": "Je ne veux rien",
+    "text_en": "Je ne veux rien",
+    "text_fr": "Je ne veux rien",
     "is_correct": false
   }
 }
