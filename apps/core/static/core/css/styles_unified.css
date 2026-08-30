@@ -2495,27 +2495,6 @@ input:checked + .slider:before {
 }
 
 /* =========================================
-   SEARCH SHORTCUT BADGE
-   ========================================= */
-.search-shortcut-badge {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    min-width: 20px;
-    height: 20px;
-    padding: 0 5px;
-    font-size: 0.72rem;
-    font-family: inherit;
-    font-weight: 700;
-    color: var(--text-tertiary);
-    background: rgba(120, 120, 128, 0.12);
-    border: 1px solid var(--glass-border);
-    border-radius: 6px;
-    margin-right: 8px;
-    pointer-events: none;
-}
-
-/* =========================================
    TACTILE 3D BUTTONS
    ========================================= */
 .tactile-btn {
