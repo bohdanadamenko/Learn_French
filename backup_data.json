@@ -408,17 +408,17 @@
   "pk": 20,
   "fields": {
     "topic": 3,
-    "title": "🕰 Минулий час",
-    "title_uk": "🕰 Минулий час",
-    "title_ru": "🕰 Прошедшее время",
-    "title_en": "🕰 Past Tense",
-    "title_fr": "🕰 Le passé composé",
+    "title": "🕰 Минулий час Passé Composé (Avoir та Être)",
+    "title_uk": "🕰 Минулий час Passé Composé (Avoir та Être)",
+    "title_ru": "🕰 Прошедшее время Passé Composé (Avoir и Être)",
+    "title_en": "🕰 Past Tense Passé Composé (Avoir & Être)",
+    "title_fr": "🕰 Le Passé Composé (Avoir et Être)",
     "data_lesson_id": "lesson-passe-compose",
-    "content_html": "\n            <h2>Passé Composé</h2>\n            <p>Основний минулий час для закінчених дій.</p>\n            <div class=\"example-box\">\n                <strong>Допоміжне дієслово (Avoir) + Дієприкметник</strong>\n            </div>\n            <h3>Як утворити дієприкметник?</h3>\n            <ul>\n                <li>Дієслова на -ER (parler) → <strong>é</strong> (parlé)</li>\n                <li>Manger → Mangé (поїв)</li>\n                <li>Regarder → Regardé (подивився)</li>\n            </ul>\n            <h3>Приклади:</h3>\n            <ul>\n                <li>J'<strong>ai</strong> mangé une pizza. (Я з'їв піцу).</li>\n                <li>Tu <strong>as</strong> regardé le film. (Ти подивився фільм).</li>\n            </ul>\n        ",
-    "content_html_uk": "\n            <h2>Passé Composé</h2>\n            <p>Основний минулий час для закінчених дій.</p>\n            <div class=\"example-box\">\n                <strong>Допоміжне дієслово (Avoir) + Дієприкметник</strong>\n            </div>\n            <h3>Як утворити дієприкметник?</h3>\n            <ul>\n                <li>Дієслова на -ER (parler) → <strong>é</strong> (parlé)</li>\n                <li>Manger → Mangé (поїв)</li>\n                <li>Regarder → Regardé (подивився)</li>\n            </ul>\n            <h3>Приклади:</h3>\n            <ul>\n                <li>J'<strong>ai</strong> mangé une pizza. (Я з'їв піцу).</li>\n                <li>Tu <strong>as</strong> regardé le film. (Ти подивився фільм).</li>\n            </ul>\n        ",
-    "content_html_ru": "\n                    <h2>Passé Composé</h2>\n                    <p>Основное прошедшее время для законченных действий.</p>\n                    <div class=\"example-box\">\n                        <strong>Вспомогательный глагол (Avoir) + Причастие</strong>\n                    </div>\n                    <h3>Как образовать причастие?</h3>\n                    <ul>\n                        <li>Глаголы на -ER (parler) → <strong>é</strong> (parlé)</li>\n                        <li>Manger → Mangé (поел)</li>\n                        <li>Regarder → Regardé (посмотрел)</li>\n                    </ul>\n                    <h3>Примеры:</h3>\n                    <ul>\n                        <li>J'<strong>ai</strong> mangé une pizza. (Я съел пиццу).</li>\n                        <li>Tu <strong>as</strong> regardé le film. (Ты посмотрел фильм).</li>\n                    </ul>\n                ",
-    "content_html_en": "\n            <h2>Passé Composé</h2>\n            <p>The main past tense for completed actions.</p>\n            <div class=\"example-box\">\n                <strong>Auxiliary Verb (Avoir) + Participle</strong>\n            </div>\n            <h3>How to form the participle?</h3>\n            <ul>\n                <li>Verbs ending in -ER (parler) → <strong>é</strong> (parlé)</li>\n                <li>Manger → Mangé (eaten)</li>\n                <li>Regarder → Regardé (watched)</li>\n            </ul>\n            <h3>Examples:</h3>\n            <ul>\n                <li>J'<strong>ai</strong> mangé une pizza. (I ate a pizza).</li>\n                <li>Tu <strong>as</strong> regardé le film. (You watched the movie).</li>\n            </ul>\n        ",
-    "content_html_fr": "\n            <h2>Le passé composé</h2>\n            <p>Le principal temps du passé pour les actions terminées.</p>\n            <div class=\"example-box\">\n                <strong>Auxiliaire (Avoir) + Participe passé</strong>\n            </div>\n            <h3>Comment former le participe passé ?</h3>\n            <ul>\n                <li>Verbes en -ER (parler) → <strong>é</strong> (parlé)</li>\n                <li>Manger → Mangé</li>\n                <li>Regarder → Regardé</li>\n            </ul>\n            <h3>Exemples :</h3>\n            <ul>\n                <li>J'<strong>ai</strong> mangé une pizza.</li>\n                <li>Tu <strong>as</strong> regardé le film.</li>\n            </ul>\n        ",
+    "content_html": "\n    <h2>Passé Composé — Головний минулий час для завершених дій</h2>\n    <p><strong>Passé Composé</strong> використовується для дій, які <strong>відбулися і завершилися у минулому</strong> (<em>«Я поїв»</em>, <em>«Він приїхав»</em>, <em>«Ми купили квитки»</em>).</p>\n\n    <h3>1. 📐 Формула утворення</h3>\n    <div style=\"background:rgba(59,130,246,0.08); padding:16px; border-radius:14px; border:1px solid rgba(59,130,246,0.25); text-align:center; margin:16px 0;\">\n        <span style=\"font-size:1.3rem; font-weight:800; color:var(--accent-blue);\">AVOIR / ÊTRE (в Présent) + Participe Passé (Дієприкметник)</span>\n    </div>\n\n    <h3>2. 🎯 Закінчення дієприкметників (Participe Passé):</h3>\n    <ul>\n        <li><strong>1-ша група (-ER) ➔ -É:</strong> <em>Parler ➔ Parlé</em> (J'ai parlé), <em>Manger ➔ Mangé</em> (J'ai mangé).</li>\n        <li><strong>2-га група (-IR) ➔ -I:</strong> <em>Finir ➔ Fini</em> (J'ai fini), <em>Choisir ➔ Choisi</em> (J'ai choisi).</li>\n        <li><strong>Неправильні (3-тя група):</strong> <em>Avoir ➔ Eu</em> [ю], <em>Être ➔ Été</em>, <em>Faire ➔ Fait</em>, <em>Prendre ➔ Pris</em>, <em>Voir ➔ Vu</em>, <em>Boire ➔ Bu</em>.</li>\n    </ul>\n\n    <div class=\"callout-box callout-warning\">\n        <div class=\"callout-title\">⚠️ Глаголи руху та стану відмінюються з ÊTRE (Dr & Mrs Vandertramp)!</div>\n        <div class=\"callout-content\">\n            <p>14 дієслів руху (<em>Aller, Venir, Partir, Arriver, Entrer, Sortir, Monter, Descendre, Naître, Mourir, Rester, Tomber, Retourner, Passer</em>) та <strong>всі зворотні дієслова</strong> беруть <strong>ÊTRE</strong> з обов'язковим узгодженням за родом і числом:</p>\n            <ul>\n                <li><em>Il est allé</em> (Він пішов) vs <em>Elle est allé<strong>e</strong></em> (Вона пішла)</li>\n                <li><em>Ils sont partis</em> (Вони пішли) vs <em>Elles sont parti<strong>es</strong></em></li>\n            </ul>\n        </div>\n    </div>\n\n    <h3>3. 🃏 Інтерактивні флеш-картки (ФМ)</h3>\n    <div class=\"flip-grid\">\n        <div class=\"flip-card\">\n            <div class=\"flip-card-inner\">\n                <div class=\"flip-card-front\">\n                    <strong style=\"font-size:1.3rem; color:var(--accent-blue);\">Я завершив роботу</strong>\n                    <span class=\"flip-hint\">Натисніть для перекладу</span>\n                </div>\n                <div class=\"flip-card-back\">\n                    <strong style=\"font-size:1.05rem;\">J'ai fini le travail</strong>\n                    <span style=\"font-size:0.8rem;\">[же фіні льо травай]</span>\n                </div>\n            </div>\n        </div>\n        <div class=\"flip-card\">\n            <div class=\"flip-card-inner\">\n                <div class=\"flip-card-front\">\n                    <strong style=\"font-size:1.3rem; color:var(--accent-purple);\">Вона приїхала в Брюссель</strong>\n                    <span class=\"flip-hint\">Натисніть для перекладу</span>\n                </div>\n                <div class=\"flip-card-back\">\n                    <strong style=\"font-size:1.05rem;\">Elle est arrivée à Bruxelles</strong>\n                    <span style=\"font-size:0.8rem;\">[ель ет-аріве а брюсель] 🇧🇪</span>\n                </div>\n            </div>\n        </div>\n        <div class=\"flip-card\">\n            <div class=\"flip-card-inner\">\n                <div class=\"flip-card-front\">\n                    <strong style=\"font-size:1.3rem; color:var(--accent-green);\">Ми випили кави</strong>\n                    <span class=\"flip-hint\">Натисніть для перекладу</span>\n                </div>\n                <div class=\"flip-card-back\">\n                    <strong style=\"font-size:1.05rem;\">Nous avons bu un café</strong>\n                    <span style=\"font-size:0.8rem;\">[ну-з-авон бю ен кафе]</span>\n                </div>\n            </div>\n        </div>\n    </div>\n    ",
+    "content_html_uk": "\n    <h2>Passé Composé — Головний минулий час для завершених дій</h2>\n    <p><strong>Passé Composé</strong> використовується для дій, які <strong>відбулися і завершилися у минулому</strong> (<em>«Я поїв»</em>, <em>«Він приїхав»</em>, <em>«Ми купили квитки»</em>).</p>\n\n    <h3>1. 📐 Формула утворення</h3>\n    <div style=\"background:rgba(59,130,246,0.08); padding:16px; border-radius:14px; border:1px solid rgba(59,130,246,0.25); text-align:center; margin:16px 0;\">\n        <span style=\"font-size:1.3rem; font-weight:800; color:var(--accent-blue);\">AVOIR / ÊTRE (в Présent) + Participe Passé (Дієприкметник)</span>\n    </div>\n\n    <h3>2. 🎯 Закінчення дієприкметників (Participe Passé):</h3>\n    <ul>\n        <li><strong>1-ша група (-ER) ➔ -É:</strong> <em>Parler ➔ Parlé</em> (J'ai parlé), <em>Manger ➔ Mangé</em> (J'ai mangé).</li>\n        <li><strong>2-га група (-IR) ➔ -I:</strong> <em>Finir ➔ Fini</em> (J'ai fini), <em>Choisir ➔ Choisi</em> (J'ai choisi).</li>\n        <li><strong>Неправильні (3-тя група):</strong> <em>Avoir ➔ Eu</em> [ю], <em>Être ➔ Été</em>, <em>Faire ➔ Fait</em>, <em>Prendre ➔ Pris</em>, <em>Voir ➔ Vu</em>, <em>Boire ➔ Bu</em>.</li>\n    </ul>\n\n    <div class=\"callout-box callout-warning\">\n        <div class=\"callout-title\">⚠️ Глаголи руху та стану відмінюються з ÊTRE (Dr & Mrs Vandertramp)!</div>\n        <div class=\"callout-content\">\n            <p>14 дієслів руху (<em>Aller, Venir, Partir, Arriver, Entrer, Sortir, Monter, Descendre, Naître, Mourir, Rester, Tomber, Retourner, Passer</em>) та <strong>всі зворотні дієслова</strong> беруть <strong>ÊTRE</strong> з обов'язковим узгодженням за родом і числом:</p>\n            <ul>\n                <li><em>Il est allé</em> (Він пішов) vs <em>Elle est allé<strong>e</strong></em> (Вона пішла)</li>\n                <li><em>Ils sont partis</em> (Вони пішли) vs <em>Elles sont parti<strong>es</strong></em></li>\n            </ul>\n        </div>\n    </div>\n\n    <h3>3. 🃏 Інтерактивні флеш-картки (ФМ)</h3>\n    <div class=\"flip-grid\">\n        <div class=\"flip-card\">\n            <div class=\"flip-card-inner\">\n                <div class=\"flip-card-front\">\n                    <strong style=\"font-size:1.3rem; color:var(--accent-blue);\">Я завершив роботу</strong>\n                    <span class=\"flip-hint\">Натисніть для перекладу</span>\n                </div>\n                <div class=\"flip-card-back\">\n                    <strong style=\"font-size:1.05rem;\">J'ai fini le travail</strong>\n                    <span style=\"font-size:0.8rem;\">[же фіні льо травай]</span>\n                </div>\n            </div>\n        </div>\n        <div class=\"flip-card\">\n            <div class=\"flip-card-inner\">\n                <div class=\"flip-card-front\">\n                    <strong style=\"font-size:1.3rem; color:var(--accent-purple);\">Вона приїхала в Брюссель</strong>\n                    <span class=\"flip-hint\">Натисніть для перекладу</span>\n                </div>\n                <div class=\"flip-card-back\">\n                    <strong style=\"font-size:1.05rem;\">Elle est arrivée à Bruxelles</strong>\n                    <span style=\"font-size:0.8rem;\">[ель ет-аріве а брюсель] 🇧🇪</span>\n                </div>\n            </div>\n        </div>\n        <div class=\"flip-card\">\n            <div class=\"flip-card-inner\">\n                <div class=\"flip-card-front\">\n                    <strong style=\"font-size:1.3rem; color:var(--accent-green);\">Ми випили кави</strong>\n                    <span class=\"flip-hint\">Натисніть для перекладу</span>\n                </div>\n                <div class=\"flip-card-back\">\n                    <strong style=\"font-size:1.05rem;\">Nous avons bu un café</strong>\n                    <span style=\"font-size:0.8rem;\">[ну-з-авон бю ен кафе]</span>\n                </div>\n            </div>\n        </div>\n    </div>\n    ",
+    "content_html_ru": "\n    <h2>Passé Composé — Главное прошедшее время для завершенных событий</h2>\n    <p><strong>Passé Composé</strong> используется для действий, которые <strong>произошли и полностью завершились в прошлом</strong> (<em>«Я поел»</em>, <em>«Он приехал»</em>, <em>«Мы купили билеты»</em>).</p>\n\n    <h3>1. 📐 Формула образования</h3>\n    <div style=\"background:rgba(59,130,246,0.08); padding:16px; border-radius:14px; border:1px solid rgba(59,130,246,0.25); text-align:center; margin:16px 0;\">\n        <span style=\"font-size:1.3rem; font-weight:800; color:var(--accent-blue);\">AVOIR / ÊTRE (в Présent) + Participe Passé (Причастие)</span>\n    </div>\n\n    <h3>2. 🎯 Окончания причастий:</h3>\n    <ul>\n        <li><strong>1-я группа (-ER) ➔ -É:</strong> <em>Parler ➔ Parlé</em> (J'ai parlé), <em>Manger ➔ Mangé</em> (J'ai mangé).</li>\n        <li><strong>2-я группа (-IR) ➔ -I:</strong> <em>Finir ➔ Fini</em> (J'ai fini), <em>Choisir ➔ Choisi</em> (J'ai choisi).</li>\n        <li><strong>Неправильные (3-я группа):</strong> <em>Avoir ➔ Eu</em> [ю], <em>Être ➔ Été</em>, <em>Faire ➔ Fait</em>, <em>Prendre ➔ Pris</em>, <em>Voir ➔ Vu</em>, <em>Boire ➔ Bu</em>.</li>\n    </ul>\n\n    <div class=\"callout-box callout-warning\">\n        <div class=\"callout-title\">⚠️ Глаголы движения и состояния спрягаются с ÊTRE (Dr & Mrs Vandertramp)!</div>\n        <div class=\"callout-content\">\n            <p>14 глаголов движения (<em>Aller, Venir, Partir, Arriver, Entrer, Sortir, Monter, Descendre, Naître, Mourir, Rester, Tomber, Retourner, Passer</em>) и <strong>все возвратные глаголы</strong> спрягаются с <strong>ÊTRE</strong> и согласуются в роде и числе:</p>\n            <ul>\n                <li><em>Il est allé</em> (Он пошел) vs <em>Elle est allé<strong>e</strong></em> (Она пошла)</li>\n                <li><em>Ils sont partis</em> (Они ушли) vs <em>Elles sont parti<strong>es</strong></em></li>\n            </ul>\n        </div>\n    </div>\n\n    <h3>3. 🃏 Интерактивные флеш-карточки (ФМ)</h3>\n    <div class=\"flip-grid\">\n        <div class=\"flip-card\">\n            <div class=\"flip-card-inner\">\n                <div class=\"flip-card-front\">\n                    <strong style=\"font-size:1.3rem; color:var(--accent-blue);\">Я закончил работу</strong>\n                    <span class=\"flip-hint\">Нажмите для перевода</span>\n                </div>\n                <div class=\"flip-card-back\">\n                    <strong style=\"font-size:1.05rem;\">J'ai fini le travail</strong>\n                    <span style=\"font-size:0.8rem;\">[жэ фини лё травай]</span>\n                </div>\n            </div>\n        </div>\n        <div class=\"flip-card\">\n            <div class=\"flip-card-inner\">\n                <div class=\"flip-card-front\">\n                    <strong style=\"font-size:1.3rem; color:var(--accent-purple);\">Она приехала в Брюссель</strong>\n                    <span class=\"flip-hint\">Нажмите для перевода</span>\n                </div>\n                <div class=\"flip-card-back\">\n                    <strong style=\"font-size:1.05rem;\">Elle est arrivée à Bruxelles</strong>\n                    <span style=\"font-size:0.8rem;\">[эль эт-аривэ а брюсель] 🇧🇪</span>\n                </div>\n            </div>\n        </div>\n        <div class=\"flip-card\">\n            <div class=\"flip-card-inner\">\n                <div class=\"flip-card-front\">\n                    <strong style=\"font-size:1.3rem; color:var(--accent-green);\">Мы выпили кофе</strong>\n                    <span class=\"flip-hint\">Нажмите для перевода</span>\n                </div>\n                <div class=\"flip-card-back\">\n                    <strong style=\"font-size:1.05rem;\">Nous avons bu un café</strong>\n                    <span style=\"font-size:0.8rem;\">[ну-з-авон бю эн кафэ]</span>\n                </div>\n            </div>\n        </div>\n    </div>\n    ",
+    "content_html_en": "<p>Passé Composé past tense masterclass with Avoir and Être.</p>",
+    "content_html_fr": "<p>Le passé composé avec avoir et être.</p>",
     "order": 12,
     "date_added": "2025-11-28T06:58:01.715Z"
   }
@@ -1088,17 +1088,17 @@
   "pk": 54,
   "fields": {
     "topic": 3,
-    "title": "🕰️ Минулий тривалий час (L'Imparfait)",
-    "title_uk": "🕰️ Минулий тривалий час (L'Imparfait)",
-    "title_ru": "🕰️ Прошедшее время описания (L'Imparfait)",
-    "title_en": "🕰️ The Imperfect Tense (L'Imparfait)",
-    "title_fr": "🕰️ L'Imparfait de l'indicatif",
+    "title": "🕰️ Минулий час опису L'Imparfait та різниця з Passé Composé",
+    "title_uk": "🕰️ Минулий час опису L'Imparfait та різниця з Passé Composé",
+    "title_ru": "🕰️ Прошедшее время описания L'Imparfait и разница с Passé Composé",
+    "title_en": "🕰️ Imperfect Tense L'Imparfait & Passé Composé",
+    "title_fr": "🕰️ L'Imparfait et le Passé Composé",
     "data_lesson_id": "lesson-imparfait",
-    "content_html": "\n            <h2>L'Imparfait: минулий опис та звички</h2>\n            <p>Закінчення однакові для всіх дієслів: <strong>-ais, -ais, -ait, -ions, -iez, -aient</strong>.</p>\n            <div class=\"example-box\">\n                <p><strong>« Quand j'étais petit... »</strong> — Коли я був маленьким...</p>\n            </div>\n            ",
-    "content_html_uk": "\n            <h2>L'Imparfait: минулий опис та звички</h2>\n            <p>Закінчення однакові для всіх дієслів: <strong>-ais, -ais, -ait, -ions, -iez, -aient</strong>.</p>\n            <div class=\"example-box\">\n                <p><strong>« Quand j'étais petit... »</strong> — Коли я був маленьким...</p>\n            </div>\n            ",
-    "content_html_ru": "\n            <h2>L'Imparfait: описание и привычки в прошлом</h2>\n            <p>Если <em>Passé Composé</em> описывает разовое завершенное действие (*«Я купил билет»*), то <strong>Imparfait</strong> передает фон, погоду, чувства и регулярные привычки (*«Когда я жил в Брюсселе, светило солнце...»*).</p>\n\n            <h3>Окончания Imparfait (одинаковы для всех глаголов!):</h3>\n            <div class=\"conjugation-grid\">\n                <div>Je ... <strong>-ais</strong> [э]</div>\n                <div>Tu ... <strong>-ais</strong> [э]</div>\n                <div>Il / Elle ... <strong>-ait</strong> [э]</div>\n                <div>Nous ... <strong>-ions</strong> [йон]</div>\n                <div>Vous ... <strong>-iez</strong> [йе]</div>\n                <div>Ils / Elles ... <strong>-aient</strong> [э]</div>\n            </div>\n\n            <div class=\"example-box\">\n                <p><strong>« Quand j'étais jeune, je prenais le tram tous les jours. »</strong><br>— Когда я был молод, я ездил на трамвае каждый день.</p>\n                <p><strong>« Il faisait beau et il y avait du monde sur la Grand-Place. »</strong><br>— Была хорошая погода, и на Гран-Плас было много людей.</p>\n            </div>\n            ",
-    "content_html_en": "\n            <h2>The Imperfect Tense (L'Imparfait)</h2>\n            <p>Used for descriptions, background, and habits in the past:</p>\n            <ul>\n                <li>Endings: <strong>-ais, -ais, -ait, -ions, -iez, -aient</strong>.</li>\n            </ul>\n            ",
-    "content_html_fr": "\n            <h2>L'Imparfait</h2>\n            <p>Pour la description et les habitudes passées.</p>\n            <ul>\n                <li>Terminaisons : <strong>-ais, -ais, -ait, -ions, -iez, -aient</strong>.</li>\n            </ul>\n            ",
+    "content_html": "\n    <h2>L'Imparfait — Минулий час для фону, звичок, погоди та почуттів</h2>\n    <p>Якщо <strong>Passé Composé</strong> — це фотоапарат (що конкретно сталося: <em>клац!</em>), то <strong>L'Imparfait</strong> — це відеокамера (що відбувалося в цей момент: опис погоди, природи, віку, настрою, повторюваних звичок).</p>\n\n    <h3>1. 📐 Утворення L'Imparfait:</h3>\n    <p>Візьміть основу форми <strong>NOUS</strong> у теперішньому часі (Présent), приберіть <em>-ons</em> і додайте універсальні закінчення:</p>\n    <ul>\n        <li>Je ➔ <strong>-ais</strong> [е] (<em>J'étais, Je parlais, Je faisais</em>)</li>\n        <li>Tu ➔ <strong>-ais</strong> [е] (<em>Tu avais</em>)</li>\n        <li>Il / Elle / On ➔ <strong>-ait</strong> [е] (<em>Il faisait beau, Il pleuvait</em>)</li>\n        <li>Nous ➔ <strong>-ions</strong> [йон] (<em>Nous habitions</em>)</li>\n        <li>Vous ➔ <strong>-iez</strong> [йе] (<em>Vous mangiez</em>)</li>\n        <li>Ils / Elles ➔ <strong>-aient</strong> [е] (<em>Ils étaient</em>)</li>\n    </ul>\n\n    <div class=\"callout-box callout-tip\">\n        <div class=\"callout-title\">💡 Золоте правило вибору в оповіданні:</div>\n        <div class=\"callout-content\">\n            <p><em>«Quand j'<strong>étais</strong> petit (Imparfait — тривалий стан у дитинстві), je <strong>suis allé</strong> à Bruxelles pour la première fois (Passé Composé — конкретна подія)».</em></p>\n        </div>\n    </div>\n\n    <h3>2. 🃏 Інтерактивні флеш-картки (ФМ)</h3>\n    <div class=\"flip-grid\">\n        <div class=\"flip-card\">\n            <div class=\"flip-card-inner\">\n                <div class=\"flip-card-front\">\n                    <strong style=\"font-size:1.3rem; color:var(--accent-blue);\">Була гарна погода</strong>\n                    <span class=\"flip-hint\">Натисніть для перекладу</span>\n                </div>\n                <div class=\"flip-card-back\">\n                    <strong style=\"font-size:1.05rem;\">Il faisait beau</strong>\n                    <span style=\"font-size:0.8rem;\">[іль фезе бо]</span>\n                </div>\n            </div>\n        </div>\n        <div class=\"flip-card\">\n            <div class=\"flip-card-inner\">\n                <div class=\"flip-card-front\">\n                    <strong style=\"font-size:1.3rem; color:var(--accent-purple);\">Коли я жив у Бельгії...</strong>\n                    <span class=\"flip-hint\">Натисніть для перекладу</span>\n                </div>\n                <div class=\"flip-card-back\">\n                    <strong style=\"font-size:1.05rem;\">Quand j'habitais en Belgique...</strong>\n                    <span style=\"font-size:0.8rem;\">[кан жабіте ан бельжік] 🇧🇪</span>\n                </div>\n            </div>\n        </div>\n    </div>\n    ",
+    "content_html_uk": "\n    <h2>L'Imparfait — Минулий час для фону, звичок, погоди та почуттів</h2>\n    <p>Якщо <strong>Passé Composé</strong> — це фотоапарат (що конкретно сталося: <em>клац!</em>), то <strong>L'Imparfait</strong> — це відеокамера (що відбувалося в цей момент: опис погоди, природи, віку, настрою, повторюваних звичок).</p>\n\n    <h3>1. 📐 Утворення L'Imparfait:</h3>\n    <p>Візьміть основу форми <strong>NOUS</strong> у теперішньому часі (Présent), приберіть <em>-ons</em> і додайте універсальні закінчення:</p>\n    <ul>\n        <li>Je ➔ <strong>-ais</strong> [е] (<em>J'étais, Je parlais, Je faisais</em>)</li>\n        <li>Tu ➔ <strong>-ais</strong> [е] (<em>Tu avais</em>)</li>\n        <li>Il / Elle / On ➔ <strong>-ait</strong> [е] (<em>Il faisait beau, Il pleuvait</em>)</li>\n        <li>Nous ➔ <strong>-ions</strong> [йон] (<em>Nous habitions</em>)</li>\n        <li>Vous ➔ <strong>-iez</strong> [йе] (<em>Vous mangiez</em>)</li>\n        <li>Ils / Elles ➔ <strong>-aient</strong> [е] (<em>Ils étaient</em>)</li>\n    </ul>\n\n    <div class=\"callout-box callout-tip\">\n        <div class=\"callout-title\">💡 Золоте правило вибору в оповіданні:</div>\n        <div class=\"callout-content\">\n            <p><em>«Quand j'<strong>étais</strong> petit (Imparfait — тривалий стан у дитинстві), je <strong>suis allé</strong> à Bruxelles pour la première fois (Passé Composé — конкретна подія)».</em></p>\n        </div>\n    </div>\n\n    <h3>2. 🃏 Інтерактивні флеш-картки (ФМ)</h3>\n    <div class=\"flip-grid\">\n        <div class=\"flip-card\">\n            <div class=\"flip-card-inner\">\n                <div class=\"flip-card-front\">\n                    <strong style=\"font-size:1.3rem; color:var(--accent-blue);\">Була гарна погода</strong>\n                    <span class=\"flip-hint\">Натисніть для перекладу</span>\n                </div>\n                <div class=\"flip-card-back\">\n                    <strong style=\"font-size:1.05rem;\">Il faisait beau</strong>\n                    <span style=\"font-size:0.8rem;\">[іль фезе бо]</span>\n                </div>\n            </div>\n        </div>\n        <div class=\"flip-card\">\n            <div class=\"flip-card-inner\">\n                <div class=\"flip-card-front\">\n                    <strong style=\"font-size:1.3rem; color:var(--accent-purple);\">Коли я жив у Бельгії...</strong>\n                    <span class=\"flip-hint\">Натисніть для перекладу</span>\n                </div>\n                <div class=\"flip-card-back\">\n                    <strong style=\"font-size:1.05rem;\">Quand j'habitais en Belgique...</strong>\n                    <span style=\"font-size:0.8rem;\">[кан жабіте ан бельжік] 🇧🇪</span>\n                </div>\n            </div>\n        </div>\n    </div>\n    ",
+    "content_html_ru": "\n    <h2>L'Imparfait — Прошедшее время для описания фона, погоды и привычек</h2>\n    <p>Если <strong>Passé Composé</strong> — это вспышка фотоаппарата (что конкретно произошло: <em>щелк!</em>), то <strong>L'Imparfait</strong> — это видеокамера (что происходило: описание фона, погоды, возраста, чувств, привычек в прошлом).</p>\n\n    <h3>1. 📐 Универсальные окончания L'Imparfait:</h3>\n    <ul>\n        <li>Je ➔ <strong>-ais</strong> [э] (<em>J'étais, Je parlais, Je faisais</em>)</li>\n        <li>Tu ➔ <strong>-ais</strong> [э] (<em>Tu avais</em>)</li>\n        <li>Il / Elle / On ➔ <strong>-ait</strong> [э] (<em>Il faisait beau, Il était 20h</em>)</li>\n        <li>Nous ➔ <strong>-ions</strong> [йон] (<em>Nous habitions</em>)</li>\n        <li>Vous ➔ <strong>-iez</strong> [йе] (<em>Vous faisiez</em>)</li>\n        <li>Ils / Elles ➔ <strong>-aient</strong> [э] (<em>Ils étaient heureux</em>)</li>\n    </ul>\n\n    <h3>2. 🃏 Интерактивные флеш-карточки (ФМ)</h3>\n    <div class=\"flip-grid\">\n        <div class=\"flip-card\">\n            <div class=\"flip-card-inner\">\n                <div class=\"flip-card-front\">\n                    <strong style=\"font-size:1.3rem; color:var(--accent-blue);\">Была хорошая погода</strong>\n                    <span class=\"flip-hint\">Нажмите для перевода</span>\n                </div>\n                <div class=\"flip-card-back\">\n                    <strong style=\"font-size:1.05rem;\">Il faisait beau</strong>\n                    <span style=\"font-size:0.8rem;\">[иль фэзэ бо]</span>\n                </div>\n            </div>\n        </div>\n        <div class=\"flip-card\">\n            <div class=\"flip-card-inner\">\n                <div class=\"flip-card-front\">\n                    <strong style=\"font-size:1.3rem; color:var(--accent-purple);\">Когда я жил в Бельгии...</strong>\n                    <span class=\"flip-hint\">Нажмите для перевода</span>\n                </div>\n                <div class=\"flip-card-back\">\n                    <strong style=\"font-size:1.05rem;\">Quand j'habitais en Belgique...</strong>\n                    <span style=\"font-size:0.8rem;\">[кан жабитэ ан бельжик] 🇧🇪</span>\n                </div>\n            </div>\n        </div>\n    </div>\n    ",
+    "content_html_en": "<p>L'Imparfait vs Passé Composé past tenses masterclass.</p>",
+    "content_html_fr": "<p>L'imparfait et le passé composé.</p>",
     "order": 46,
     "date_added": "2026-08-29T13:18:40.838Z"
   }
@@ -1224,6 +1224,66 @@
   }
 },
 {
+  "model": "lessons_app.lesson",
+  "pk": 61,
+  "fields": {
+    "topic": 3,
+    "title": "👑 Умовний спосіб Le Conditionnel (Ввічливість і бажання)",
+    "title_uk": "👑 Умовний спосіб Le Conditionnel (Ввічливість і бажання)",
+    "title_ru": "👑 Условное наклонение Le Conditionnel (Вежливость и желания)",
+    "title_en": "👑 Conditional Mood Le Conditionnel Présent",
+    "title_fr": "👑 Le Conditionnel Présent (Politesse et souhaits)",
+    "data_lesson_id": "lesson-conditionnel",
+    "content_html": "\n    <h2>Le Conditionnel Présent — Мова ввічливості, порад та мрій</h2>\n    <p>На рівні A2 <strong>Conditionnel</strong> — це найважливіший інструмент ввічливого спілкування в ресторані, банку, на пошті та в комуні.</p>\n\n    <h3>1. 🌟 Ключові ввічливі форми:</h3>\n    <div class=\"conjugation-grid\" style=\"grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px;\">\n        <div><strong style=\"color:var(--accent-blue); font-size:1.15rem;\">Je voudrais...</strong><br><span style=\"color:var(--text-tertiary);\">[жьо вудре]</span><br>Я хотів би... (замовлення / прохання)</div>\n        <div><strong style=\"color:var(--accent-blue); font-size:1.15rem;\">J'aimerais...</strong><br><span style=\"color:var(--text-tertiary);\">[жемере]</span><br>Мені б хотілося... (мрії)</div>\n        <div><strong style=\"color:var(--accent-purple); font-size:1.15rem;\">Pourriez-vous...?</strong><br><span style=\"color:var(--text-tertiary);\">[пур'є-ву]</span><br>Чи не могли б ви...? (найвища ввічливість)</div>\n        <div><strong style=\"color:var(--accent-purple); font-size:1.15rem;\">Vous devriez...</strong><br><span style=\"color:var(--text-tertiary);\">[ву дьовріє]</span><br>Вам варто було б... (порада)</div>\n    </div>\n\n    <h3>2. 🃏 Інтерактивні флеш-картки (ФМ)</h3>\n    <div class=\"flip-grid\">\n        <div class=\"flip-card\">\n            <div class=\"flip-card-inner\">\n                <div class=\"flip-card-front\">\n                    <strong style=\"font-size:1.3rem; color:var(--accent-blue);\">Чи не могли б ви мені допомогти?</strong>\n                    <span class=\"flip-hint\">Натисніть для перекладу</span>\n                </div>\n                <div class=\"flip-card-back\">\n                    <strong style=\"font-size:1.05rem;\">Pourriez-vous m'aider ?</strong>\n                    <span style=\"font-size:0.8rem;\">[пур'є-ву меде]</span>\n                </div>\n            </div>\n        </div>\n        <div class=\"flip-card\">\n            <div class=\"flip-card-inner\">\n                <div class=\"flip-card-front\">\n                    <strong style=\"font-size:1.3rem; color:var(--accent-purple);\">Я хотів би записатися на прийом</strong>\n                    <span class=\"flip-hint\">Натисніть для перекладу</span>\n                </div>\n                <div class=\"flip-card-back\">\n                    <strong style=\"font-size:1.05rem;\">Je voudrais prendre un rendez-vous</strong>\n                    <span style=\"font-size:0.8rem;\">[жьо вудре прандр ен рандеву]</span>\n                </div>\n            </div>\n        </div>\n    </div>\n    ",
+    "content_html_uk": "\n    <h2>Le Conditionnel Présent — Мова ввічливості, порад та мрій</h2>\n    <p>На рівні A2 <strong>Conditionnel</strong> — це найважливіший інструмент ввічливого спілкування в ресторані, банку, на пошті та в комуні.</p>\n\n    <h3>1. 🌟 Ключові ввічливі форми:</h3>\n    <div class=\"conjugation-grid\" style=\"grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px;\">\n        <div><strong style=\"color:var(--accent-blue); font-size:1.15rem;\">Je voudrais...</strong><br><span style=\"color:var(--text-tertiary);\">[жьо вудре]</span><br>Я хотів би... (замовлення / прохання)</div>\n        <div><strong style=\"color:var(--accent-blue); font-size:1.15rem;\">J'aimerais...</strong><br><span style=\"color:var(--text-tertiary);\">[жемере]</span><br>Мені б хотілося... (мрії)</div>\n        <div><strong style=\"color:var(--accent-purple); font-size:1.15rem;\">Pourriez-vous...?</strong><br><span style=\"color:var(--text-tertiary);\">[пур'є-ву]</span><br>Чи не могли б ви...? (найвища ввічливість)</div>\n        <div><strong style=\"color:var(--accent-purple); font-size:1.15rem;\">Vous devriez...</strong><br><span style=\"color:var(--text-tertiary);\">[ву дьовріє]</span><br>Вам варто було б... (порада)</div>\n    </div>\n\n    <h3>2. 🃏 Інтерактивні флеш-картки (ФМ)</h3>\n    <div class=\"flip-grid\">\n        <div class=\"flip-card\">\n            <div class=\"flip-card-inner\">\n                <div class=\"flip-card-front\">\n                    <strong style=\"font-size:1.3rem; color:var(--accent-blue);\">Чи не могли б ви мені допомогти?</strong>\n                    <span class=\"flip-hint\">Натисніть для перекладу</span>\n                </div>\n                <div class=\"flip-card-back\">\n                    <strong style=\"font-size:1.05rem;\">Pourriez-vous m'aider ?</strong>\n                    <span style=\"font-size:0.8rem;\">[пур'є-ву меде]</span>\n                </div>\n            </div>\n        </div>\n        <div class=\"flip-card\">\n            <div class=\"flip-card-inner\">\n                <div class=\"flip-card-front\">\n                    <strong style=\"font-size:1.3rem; color:var(--accent-purple);\">Я хотів би записатися на прийом</strong>\n                    <span class=\"flip-hint\">Натисніть для перекладу</span>\n                </div>\n                <div class=\"flip-card-back\">\n                    <strong style=\"font-size:1.05rem;\">Je voudrais prendre un rendez-vous</strong>\n                    <span style=\"font-size:0.8rem;\">[жьо вудре прандр ен рандеву]</span>\n                </div>\n            </div>\n        </div>\n    </div>\n    ",
+    "content_html_ru": "\n    <h2>Le Conditionnel Présent — Язык вежливости, советов и желаний</h2>\n    <p>На уровне A2 <strong>Conditionnel</strong> — главный инструмент для вежливого общения в кафе, магазинах, банках и учреждениях.</p>\n\n    <h3>1. 🌟 Главные вежливые формы:</h3>\n    <div class=\"conjugation-grid\" style=\"grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px;\">\n        <div><strong style=\"color:var(--accent-blue); font-size:1.15rem;\">Je voudrais...</strong><br><span style=\"color:var(--text-tertiary);\">[жё вудрэ]</span><br>Я хотел бы... (заказ / просьба)</div>\n        <div><strong style=\"color:var(--accent-blue); font-size:1.15rem;\">J'aimerais...</strong><br><span style=\"color:var(--text-tertiary);\">[жэмрэ]</span><br>Мне бы хотелось... (желания)</div>\n        <div><strong style=\"color:var(--accent-purple); font-size:1.15rem;\">Pourriez-vous...?</strong><br><span style=\"color:var(--text-tertiary);\">[пурьé-ву]</span><br>Не могли бы вы...? (вежливая просьба)</div>\n        <div><strong style=\"color:var(--accent-purple); font-size:1.15rem;\">Vous devriez...</strong><br><span style=\"color:var(--text-tertiary);\">[ву дёврьé]</span><br>Вам следовало бы... (совет)</div>\n    </div>\n\n    <h3>2. 🃏 Интерактивные флеш-карточки (ФМ)</h3>\n    <div class=\"flip-grid\">\n        <div class=\"flip-card\">\n            <div class=\"flip-card-inner\">\n                <div class=\"flip-card-front\">\n                    <strong style=\"font-size:1.3rem; color:var(--accent-blue);\">Не могли бы вы мне помочь?</strong>\n                    <span class=\"flip-hint\">Нажмите для перевода</span>\n                </div>\n                <div class=\"flip-card-back\">\n                    <strong style=\"font-size:1.05rem;\">Pourriez-vous m'aider ?</strong>\n                    <span style=\"font-size:0.8rem;\">[пурьé-ву мэдэ]</span>\n                </div>\n            </div>\n        </div>\n        <div class=\"flip-card\">\n            <div class=\"flip-card-inner\">\n                <div class=\"flip-card-front\">\n                    <strong style=\"font-size:1.3rem; color:var(--accent-purple);\">Я хотел бы записаться на прием</strong>\n                    <span class=\"flip-hint\">Нажмите для перевода</span>\n                </div>\n                <div class=\"flip-card-back\">\n                    <strong style=\"font-size:1.05rem;\">Je voudrais prendre un rendez-vous</strong>\n                    <span style=\"font-size:0.8rem;\">[жё вудрэ прандр эн рандэву]</span>\n                </div>\n            </div>\n        </div>\n    </div>\n    ",
+    "content_html_en": "<p>Conditional mood for politeness and wishes.</p>",
+    "content_html_fr": "<p>Le conditionnel présent de politesse.</p>",
+    "order": 15,
+    "date_added": "2026-08-30T00:12:36.821Z"
+  }
+},
+{
+  "model": "lessons_app.lesson",
+  "pk": 62,
+  "fields": {
+    "topic": 2,
+    "title": "📍 Займенники Y та EN (Заміна місць і кількостей)",
+    "title_uk": "📍 Займенники Y та EN (Заміна місць і кількостей)",
+    "title_ru": "📍 Местоимения Y и EN (Замена мест и количеств)",
+    "title_en": "📍 Pronouns Y and EN",
+    "title_fr": "📍 Les pronoms Y et EN",
+    "data_lesson_id": "lesson-pronouns-y-en",
+    "content_html": "\n    <h2>Займенники Y та EN — Секрет природної французької мови</h2>\n    <p>Французи ненавидять повторювати ті самі іменники, тому використовують крихітні слова <strong>Y</strong> та <strong>EN</strong>.</p>\n\n    <h3>1. Займенник Y [і] ➔ Замінює МІСЦЕ (à, en, dans, chez + місце):</h3>\n    <ul>\n        <li><em>Tu vas à Bruxelles ?</em> ➔ <strong>Oui, j'y vais !</strong> (Так, я туди їду!)</li>\n        <li><em>Tu es chez toi ?</em> ➔ <strong>Oui, j'y suis.</strong> (Так, я вдома.)</li>\n    </ul>\n\n    <h3>2. Займенник EN [ан] ➔ Замінює КІЛЬКІСТЬ або прийменник DE:</h3>\n    <ul>\n        <li><em>Tu veux du chocolat ?</em> ➔ <strong>Oui, j'en veux !</strong> (Так, я його хочу!)</li>\n        <li><em>Tu as des enfants ?</em> ➔ <strong>Oui, j'en ai deux.</strong> (Так, у мене їх двоє.)</li>\n    </ul>\n\n    <h3>3. 🃏 Інтерактивні флеш-картки (ФМ)</h3>\n    <div class=\"flip-grid\">\n        <div class=\"flip-card\">\n            <div class=\"flip-card-inner\">\n                <div class=\"flip-card-front\">\n                    <strong style=\"font-size:1.3rem; color:var(--accent-blue);\">Я туди їду (в Брюссель)</strong>\n                    <span class=\"flip-hint\">Натисніть для перекладу</span>\n                </div>\n                <div class=\"flip-card-back\">\n                    <strong style=\"font-size:1.05rem;\">J'y vais</strong>\n                    <span style=\"font-size:0.8rem;\">[жі ве]</span>\n                </div>\n            </div>\n        </div>\n        <div class=\"flip-card\">\n            <div class=\"flip-card-inner\">\n                <div class=\"flip-card-front\">\n                    <strong style=\"font-size:1.3rem; color:var(--accent-purple);\">У мене їх двоє (дітей / речей)</strong>\n                    <span class=\"flip-hint\">Натисніть для перекладу</span>\n                </div>\n                <div class=\"flip-card-back\">\n                    <strong style=\"font-size:1.05rem;\">J'en ai deux</strong>\n                    <span style=\"font-size:0.8rem;\">[жан-не дьо]</span>\n                </div>\n            </div>\n        </div>\n    </div>\n    ",
+    "content_html_uk": "\n    <h2>Займенники Y та EN — Секрет природної французької мови</h2>\n    <p>Французи ненавидять повторювати ті самі іменники, тому використовують крихітні слова <strong>Y</strong> та <strong>EN</strong>.</p>\n\n    <h3>1. Займенник Y [і] ➔ Замінює МІСЦЕ (à, en, dans, chez + місце):</h3>\n    <ul>\n        <li><em>Tu vas à Bruxelles ?</em> ➔ <strong>Oui, j'y vais !</strong> (Так, я туди їду!)</li>\n        <li><em>Tu es chez toi ?</em> ➔ <strong>Oui, j'y suis.</strong> (Так, я вдома.)</li>\n    </ul>\n\n    <h3>2. Займенник EN [ан] ➔ Замінює КІЛЬКІСТЬ або прийменник DE:</h3>\n    <ul>\n        <li><em>Tu veux du chocolat ?</em> ➔ <strong>Oui, j'en veux !</strong> (Так, я його хочу!)</li>\n        <li><em>Tu as des enfants ?</em> ➔ <strong>Oui, j'en ai deux.</strong> (Так, у мене їх двоє.)</li>\n    </ul>\n\n    <h3>3. 🃏 Інтерактивні флеш-картки (ФМ)</h3>\n    <div class=\"flip-grid\">\n        <div class=\"flip-card\">\n            <div class=\"flip-card-inner\">\n                <div class=\"flip-card-front\">\n                    <strong style=\"font-size:1.3rem; color:var(--accent-blue);\">Я туди їду (в Брюссель)</strong>\n                    <span class=\"flip-hint\">Натисніть для перекладу</span>\n                </div>\n                <div class=\"flip-card-back\">\n                    <strong style=\"font-size:1.05rem;\">J'y vais</strong>\n                    <span style=\"font-size:0.8rem;\">[жі ве]</span>\n                </div>\n            </div>\n        </div>\n        <div class=\"flip-card\">\n            <div class=\"flip-card-inner\">\n                <div class=\"flip-card-front\">\n                    <strong style=\"font-size:1.3rem; color:var(--accent-purple);\">У мене їх двоє (дітей / речей)</strong>\n                    <span class=\"flip-hint\">Натисніть для перекладу</span>\n                </div>\n                <div class=\"flip-card-back\">\n                    <strong style=\"font-size:1.05rem;\">J'en ai deux</strong>\n                    <span style=\"font-size:0.8rem;\">[жан-не дьо]</span>\n                </div>\n            </div>\n        </div>\n    </div>\n    ",
+    "content_html_ru": "\n    <h2>Местоимения Y и EN — Секрет естественной беглой речи</h2>\n    <p>Французы избегают повторов одних и тех же существительных с помощью коротких местоимений <strong>Y</strong> и <strong>EN</strong>.</p>\n\n    <h3>1. Местоимение Y [и] ➔ Заменяет МЕСТО (куда? где?):</h3>\n    <ul>\n        <li><em>Tu vas à Bruxelles ?</em> ➔ <strong>Oui, j'y vais !</strong> (Да, я туда еду!)</li>\n        <li><em>Tu penses à ton travail ?</em> ➔ <strong>Oui, j'y pense.</strong> (Да, я думаю об этом.)</li>\n    </ul>\n\n    <h3>2. Местоимение EN [ан] ➔ Заменяет КОЛИЧЕСТВО или предлог DE:</h3>\n    <ul>\n        <li><em>Tu veux du fromage ?</em> ➔ <strong>Oui, j'en veux !</strong> (Да, я его хочу!)</li>\n        <li><em>Tu as des frères ?</em> ➔ <strong>Oui, j'en ai un.</strong> (Да, у меня есть один.)</li>\n    </ul>\n\n    <h3>3. 🃏 Интерактивные флеш-карточки (ФМ)</h3>\n    <div class=\"flip-grid\">\n        <div class=\"flip-card\">\n            <div class=\"flip-card-inner\">\n                <div class=\"flip-card-front\">\n                    <strong style=\"font-size:1.3rem; color:var(--accent-blue);\">Я туда иду / еду</strong>\n                    <span class=\"flip-hint\">Нажмите для перевода</span>\n                </div>\n                <div class=\"flip-card-back\">\n                    <strong style=\"font-size:1.05rem;\">J'y vais</strong>\n                    <span style=\"font-size:0.8rem;\">[жи вэ]</span>\n                </div>\n            </div>\n        </div>\n        <div class=\"flip-card\">\n            <div class=\"flip-card-inner\">\n                <div class=\"flip-card-front\">\n                    <strong style=\"font-size:1.3rem; color:var(--accent-purple);\">У меня их двое</strong>\n                    <span class=\"flip-hint\">Нажмите для перевода</span>\n                </div>\n                <div class=\"flip-card-back\">\n                    <strong style=\"font-size:1.05rem;\">J'en ai deux</strong>\n                    <span style=\"font-size:0.8rem;\">[жан-нэ дё]</span>\n                </div>\n            </div>\n        </div>\n    </div>\n    ",
+    "content_html_en": "<p>Pronouns Y and EN in French.</p>",
+    "content_html_fr": "<p>Les pronoms Y et EN.</p>",
+    "order": 44,
+    "date_added": "2026-08-30T00:12:36.829Z"
+  }
+},
+{
+  "model": "lessons_app.lesson",
+  "pk": 63,
+  "fields": {
+    "topic": 5,
+    "title": "🏡 Оренда житла в Бельгії: Договір (Bail), Застава та Опис",
+    "title_uk": "🏡 Оренда житла в Бельгії: Договір (Bail), Застава та Опис",
+    "title_ru": "🏡 Аренда жилья в Бельгии: Договор (Bail), Залог и Опись",
+    "title_en": "🏡 Renting an Apartment in Belgium: Lease & Deposit",
+    "title_fr": "🏡 Louer un logement en Belgique (Le bail, garantie)",
+    "data_lesson_id": "lesson-rent-housing-be",
+    "content_html": "\n    <h2>Оренда квартири в Бельгії — Практичний путівник A2</h2>\n    <p>Оренда житла в Бельгії має свої суворі юридичні терміни та правила.</p>\n\n    <h3>1. 🔑 Ключовий словник орендаря:</h3>\n    <ul>\n        <li><strong>Le bail</strong> [льйо бей] = Договір оренди (найчастіше <em>Bail de 9 ans (3-6-9)</em> або короткостроковий <em>Bail de courte durée (1-3 ans)</em>).</li>\n        <li><strong>La garantie locative</strong> = Гарантійний залог (зазвичай 2-3 місяці оренди на заблокованому банківському рахунку).</li>\n        <li><strong>L'état des lieux</strong> [лєта де льє] = Опис стану квартири (при в'їзді та виїзді експертом).</li>\n        <li><strong>Les charges</strong> [ле шарж] = Комунальні платежі (опалення, вода, ліфт, прибирання під'їзду).</li>\n        <li><strong>Non meublé / Meublé</strong> = Без меблів / З меблями.</li>\n    </ul>\n\n    <h3>2. 🃏 Інтерактивні флеш-картки (ФМ)</h3>\n    <div class=\"flip-grid\">\n        <div class=\"flip-card\">\n            <div class=\"flip-card-inner\">\n                <div class=\"flip-card-front\">\n                    <strong style=\"font-size:1.25rem; color:var(--accent-blue);\">Комунальні витрати включені?</strong>\n                    <span class=\"flip-hint\">Натисніть для перекладу</span>\n                </div>\n                <div class=\"flip-card-back\">\n                    <strong style=\"font-size:1.05rem;\">Les charges sont comprises ?</strong>\n                    <span style=\"font-size:0.8rem;\">[ле шарж сон компріз]</span>\n                </div>\n            </div>\n        </div>\n        <div class=\"flip-card\">\n            <div class=\"flip-card-inner\">\n                <div class=\"flip-card-front\">\n                    <strong style=\"font-size:1.25rem; color:var(--accent-purple);\">Коли можна подивитися квартиру?</strong>\n                    <span class=\"flip-hint\">Натисніть для перекладу</span>\n                </div>\n                <div class=\"flip-card-back\">\n                    <strong style=\"font-size:1.05rem;\">Quand est-il possible de visiter ?</strong>\n                    <span style=\"font-size:0.8rem;\">[кан е-т-іль посібль дьо візіте]</span>\n                </div>\n            </div>\n        </div>\n    </div>\n    ",
+    "content_html_uk": "\n    <h2>Оренда квартири в Бельгії — Практичний путівник A2</h2>\n    <p>Оренда житла в Бельгії має свої суворі юридичні терміни та правила.</p>\n\n    <h3>1. 🔑 Ключовий словник орендаря:</h3>\n    <ul>\n        <li><strong>Le bail</strong> [льйо бей] = Договір оренди (найчастіше <em>Bail de 9 ans (3-6-9)</em> або короткостроковий <em>Bail de courte durée (1-3 ans)</em>).</li>\n        <li><strong>La garantie locative</strong> = Гарантійний залог (зазвичай 2-3 місяці оренди на заблокованому банківському рахунку).</li>\n        <li><strong>L'état des lieux</strong> [лєта де льє] = Опис стану квартири (при в'їзді та виїзді експертом).</li>\n        <li><strong>Les charges</strong> [ле шарж] = Комунальні платежі (опалення, вода, ліфт, прибирання під'їзду).</li>\n        <li><strong>Non meublé / Meublé</strong> = Без меблів / З меблями.</li>\n    </ul>\n\n    <h3>2. 🃏 Інтерактивні флеш-картки (ФМ)</h3>\n    <div class=\"flip-grid\">\n        <div class=\"flip-card\">\n            <div class=\"flip-card-inner\">\n                <div class=\"flip-card-front\">\n                    <strong style=\"font-size:1.25rem; color:var(--accent-blue);\">Комунальні витрати включені?</strong>\n                    <span class=\"flip-hint\">Натисніть для перекладу</span>\n                </div>\n                <div class=\"flip-card-back\">\n                    <strong style=\"font-size:1.05rem;\">Les charges sont comprises ?</strong>\n                    <span style=\"font-size:0.8rem;\">[ле шарж сон компріз]</span>\n                </div>\n            </div>\n        </div>\n        <div class=\"flip-card\">\n            <div class=\"flip-card-inner\">\n                <div class=\"flip-card-front\">\n                    <strong style=\"font-size:1.25rem; color:var(--accent-purple);\">Коли можна подивитися квартиру?</strong>\n                    <span class=\"flip-hint\">Натисніть для перекладу</span>\n                </div>\n                <div class=\"flip-card-back\">\n                    <strong style=\"font-size:1.05rem;\">Quand est-il possible de visiter ?</strong>\n                    <span style=\"font-size:0.8rem;\">[кан е-т-іль посібль дьо візіте]</span>\n                </div>\n            </div>\n        </div>\n    </div>\n    ",
+    "content_html_ru": "\n    <h2>Аренда квартиры в Бельгии — Практический путеводитель A2</h2>\n    <p>Аренда жилья в Бельгии имеет свои строгие юридические термины и правила.</p>\n\n    <h3>1. 🔑 Ключевой словарь арендатора:</h3>\n    <ul>\n        <li><strong>Le bail</strong> [лё бай] = Договор аренды (стандартный <em>Bail 3-6-9</em> или краткосрочный).</li>\n        <li><strong>La garantie locative</strong> = Гарантийный залог (обычно 2-3 месяца аренды на заблокированном счете).</li>\n        <li><strong>L'état des lieux</strong> [лэта дэ льё] = Опись состояния жилья (при въезде и выезде с экспертом).</li>\n        <li><strong>Les charges</strong> [ле шарж] = Коммунальные платежи (вода, отопление, уборка).</li>\n    </ul>\n\n    <h3>2. 🃏 Интерактивные флеш-карточки (ФМ)</h3>\n    <div class=\"flip-grid\">\n        <div class=\"flip-card\">\n            <div class=\"flip-card-inner\">\n                <div class=\"flip-card-front\">\n                    <strong style=\"font-size:1.25rem; color:var(--accent-blue);\">Коммунальные включены?</strong>\n                    <span class=\"flip-hint\">Нажмите для перевода</span>\n                </div>\n                <div class=\"flip-card-back\">\n                    <strong style=\"font-size:1.05rem;\">Les charges sont comprises ?</strong>\n                    <span style=\"font-size:0.8rem;\">[ле шарж сон комприз]</span>\n                </div>\n            </div>\n        </div>\n        <div class=\"flip-card\">\n            <div class=\"flip-card-inner\">\n                <div class=\"flip-card-front\">\n                    <strong style=\"font-size:1.25rem; color:var(--accent-purple);\">Когда можно посмотреть квартиру?</strong>\n                    <span class=\"flip-hint\">Нажмите для перевода</span>\n                </div>\n                <div class=\"flip-card-back\">\n                    <strong style=\"font-size:1.05rem;\">Quand est-il possible de visiter ?</strong>\n                    <span style=\"font-size:0.8rem;\">[кан э-т-иль посибль дё визитэ]</span>\n                </div>\n            </div>\n        </div>\n    </div>\n    ",
+    "content_html_en": "<p>Renting an apartment in Belgium guide.</p>",
+    "content_html_fr": "<p>Guide pratique pour louer en Belgique.</p>",
+    "order": 33,
+    "date_added": "2026-08-30T00:12:36.836Z"
+  }
+},
+{
   "model": "quizzes.question",
   "pk": 12,
   "fields": {
@@ -1324,19 +1384,6 @@
     "text_ru": "Как образуется Futur Proche?",
     "text_en": "How is Futur Proche formed?",
     "text_fr": "Comment se forme le Futur Proche ?",
-    "order": 0
-  }
-},
-{
-  "model": "quizzes.question",
-  "pk": 27,
-  "fields": {
-    "lesson": 20,
-    "text": "Яке закінчення у дієприкметників дієслів на -ER?",
-    "text_uk": "Яке закінчення у дієприкметників дієслів на -ER?",
-    "text_ru": "Какое окончание у причастий глаголов на -ER?",
-    "text_en": "What is the ending for participles of -ER verbs?",
-    "text_fr": "Quelle est la terminaison des participes des verbes en -ER ?",
     "order": 0
   }
 },
@@ -2056,6 +2103,71 @@
   }
 },
 {
+  "model": "quizzes.question",
+  "pk": 88,
+  "fields": {
+    "lesson": 20,
+    "text": "Як правильно сказати: «Вона пішла в магазин» (з узгодженням)?",
+    "text_uk": "Як правильно сказати: «Вона пішла в магазин» (з узгодженням)?",
+    "text_ru": "Как правильно сказать: «Она пошла в магазин» (с согласованием)?",
+    "text_en": "How to say 'She went to the store'?",
+    "text_fr": "Comment dit-on 'Elle est allée au magasin' ?",
+    "order": 1
+  }
+},
+{
+  "model": "quizzes.question",
+  "pk": 89,
+  "fields": {
+    "lesson": 20,
+    "text": "Яка форма participe passé у дієслова FAIRE?",
+    "text_uk": "Яка форма participe passé у дієслова FAIRE?",
+    "text_ru": "Какая форма participe passé у глагола FAIRE?",
+    "text_en": "What is the past participle of FAIRE?",
+    "text_fr": "Quel est le participe passé de FAIRE ?",
+    "order": 2
+  }
+},
+{
+  "model": "quizzes.question",
+  "pk": 90,
+  "fields": {
+    "lesson": 61,
+    "text": "Як максимально ввічливо попросити рахунок у ресторані?",
+    "text_uk": "Як максимально ввічливо попросити рахунок у ресторані?",
+    "text_ru": "Как максимально вежливо попросить счет в ресторане?",
+    "text_en": "How to politely ask for the check?",
+    "text_fr": "Comment demander poliment l'addition ?",
+    "order": 1
+  }
+},
+{
+  "model": "quizzes.question",
+  "pk": 91,
+  "fields": {
+    "lesson": 62,
+    "text": "Як відповісти: «Так, я туди їду» на запитання «Tu vas à Paris ?»",
+    "text_uk": "Як відповісти: «Так, я туди їду» на запитання «Tu vas à Paris ?»",
+    "text_ru": "Как ответить: «Да, я туда еду» на вопрос «Tu vas à Paris ?»",
+    "text_en": "How to answer 'Yes, I am going there'?",
+    "text_fr": "Comment répondre 'Oui, j'y vais' ?",
+    "order": 1
+  }
+},
+{
+  "model": "quizzes.question",
+  "pk": 92,
+  "fields": {
+    "lesson": 63,
+    "text": "Як французькою називається договір оренди житла в Бельгії?",
+    "text_uk": "Як французькою називається договір оренди житла в Бельгії?",
+    "text_ru": "Как по-французски называется договор аренды жилья в Бельгии?",
+    "text_en": "What is a rental lease called in French?",
+    "text_fr": "Comment s'appelle le contrat de location ?",
+    "order": 1
+  }
+},
+{
   "model": "quizzes.choice",
   "pk": 34,
   "fields": {
@@ -2364,45 +2476,6 @@
     "text_ru": "Avoir + Причастие",
     "text_en": "Avoir + Participle",
     "text_fr": "Avoir + Participe",
-    "is_correct": false
-  }
-},
-{
-  "model": "quizzes.choice",
-  "pk": 79,
-  "fields": {
-    "question": 27,
-    "text": "-i",
-    "text_uk": "-i",
-    "text_ru": "-i",
-    "text_en": "-i",
-    "text_fr": "-i",
-    "is_correct": false
-  }
-},
-{
-  "model": "quizzes.choice",
-  "pk": 80,
-  "fields": {
-    "question": 27,
-    "text": "-é",
-    "text_uk": "-é",
-    "text_ru": "-é",
-    "text_en": "-é",
-    "text_fr": "-é",
-    "is_correct": true
-  }
-},
-{
-  "model": "quizzes.choice",
-  "pk": 81,
-  "fields": {
-    "question": 27,
-    "text": "-u",
-    "text_uk": "-u",
-    "text_ru": "-u",
-    "text_en": "-u",
-    "text_fr": "-u",
     "is_correct": false
   }
 },
@@ -4626,6 +4699,136 @@
     "text_ru": "Je veux un café (слишком резко)",
     "text_en": "Je veux un café",
     "text_fr": "Je veux un café",
+    "is_correct": false
+  }
+},
+{
+  "model": "quizzes.choice",
+  "pk": 272,
+  "fields": {
+    "question": 88,
+    "text": "Elle est allée (із закінченням -e жіночого роду)",
+    "text_uk": "Elle est allée (із закінченням -e жіночого роду)",
+    "text_ru": "Elle est allée (с окончанием -e женского рода)",
+    "text_en": "Elle est allée",
+    "text_fr": "Elle est allée",
+    "is_correct": true
+  }
+},
+{
+  "model": "quizzes.choice",
+  "pk": 273,
+  "fields": {
+    "question": 88,
+    "text": "Elle a allé (помилка)",
+    "text_uk": "Elle a allé (помилка)",
+    "text_ru": "Elle a allé (ошибка: aller спрягается с être)",
+    "text_en": "Elle a allé",
+    "text_fr": "Elle a allé",
+    "is_correct": false
+  }
+},
+{
+  "model": "quizzes.choice",
+  "pk": 274,
+  "fields": {
+    "question": 89,
+    "text": "Fait (J'ai fait)",
+    "text_uk": "Fait (J'ai fait)",
+    "text_ru": "Fait (J'ai fait)",
+    "text_en": "Fait",
+    "text_fr": "Fait",
+    "is_correct": true
+  }
+},
+{
+  "model": "quizzes.choice",
+  "pk": 275,
+  "fields": {
+    "question": 89,
+    "text": "Faisé",
+    "text_uk": "Faisé",
+    "text_ru": "Faisé (не существует)",
+    "text_en": "Faisé",
+    "text_fr": "Faisé",
+    "is_correct": false
+  }
+},
+{
+  "model": "quizzes.choice",
+  "pk": 276,
+  "fields": {
+    "question": 90,
+    "text": "Je voudrais l'addition, s'il vous plaît",
+    "text_uk": "Je voudrais l'addition, s'il vous plaît",
+    "text_ru": "Je voudrais l'addition, s'il vous plaît",
+    "text_en": "Je voudrais l'addition, s'il vous plaît",
+    "text_fr": "Je voudrais l'addition, s'il vous plaît",
+    "is_correct": true
+  }
+},
+{
+  "model": "quizzes.choice",
+  "pk": 277,
+  "fields": {
+    "question": 90,
+    "text": "Donne-moi l'addition (грубо)",
+    "text_uk": "Donne-moi l'addition (грубо)",
+    "text_ru": "Donne-moi l'addition (грубо)",
+    "text_en": "Donne-moi l'addition",
+    "text_fr": "Donne-moi l'addition",
+    "is_correct": false
+  }
+},
+{
+  "model": "quizzes.choice",
+  "pk": 278,
+  "fields": {
+    "question": 91,
+    "text": "Oui, j'y vais",
+    "text_uk": "Oui, j'y vais",
+    "text_ru": "Oui, j'y vais (Y заменяет à Paris)",
+    "text_en": "Oui, j'y vais",
+    "text_fr": "Oui, j'y vais",
+    "is_correct": true
+  }
+},
+{
+  "model": "quizzes.choice",
+  "pk": 279,
+  "fields": {
+    "question": 91,
+    "text": "Oui, j'en vais",
+    "text_uk": "Oui, j'en vais",
+    "text_ru": "Oui, j'en vais (ошибка)",
+    "text_en": "Oui, j'en vais",
+    "text_fr": "Oui, j'en vais",
+    "is_correct": false
+  }
+},
+{
+  "model": "quizzes.choice",
+  "pk": 280,
+  "fields": {
+    "question": 92,
+    "text": "Le bail [льйо бей]",
+    "text_uk": "Le bail [льйо бей]",
+    "text_ru": "Le bail [лё бай]",
+    "text_en": "Le bail",
+    "text_fr": "Le bail",
+    "is_correct": true
+  }
+},
+{
+  "model": "quizzes.choice",
+  "pk": 281,
+  "fields": {
+    "question": 92,
+    "text": "La facture (це рахунок)",
+    "text_uk": "La facture (це рахунок)",
+    "text_ru": "La facture (это счет)",
+    "text_en": "La facture",
+    "text_fr": "La facture",
     "is_correct": false
   }
 }
