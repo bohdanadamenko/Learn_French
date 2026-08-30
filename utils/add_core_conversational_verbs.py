@@ -87,7 +87,7 @@ def setup_core_verbs():
         </div>
     </div>
 
-    <h3>2. 🃏 Інтерактивні флеш-картки (ФМ)</h3>
+    <h3>🃏 Картки для запам'ятовування</h3>
     <div class="flip-grid">
         <div class="flip-card">
             <div class="flip-card-inner">
@@ -154,7 +154,7 @@ def setup_core_verbs():
         </div>
     </div>
 
-    <h3>2. 🃏 Интерактивные флеш-карточки (ФМ)</h3>
+    <h3>🃏 Карточки для запоминания</h3>
     <div class="flip-grid">
         <div class="flip-card">
             <div class="flip-card-inner">
@@ -230,7 +230,7 @@ def setup_core_verbs():
         </div>
     </div>
 
-    <h3>2. 🃏 Інтерактивні флеш-картки (ФМ)</h3>
+    <h3>🃏 Картки для запам'ятовування</h3>
     <div class="flip-grid">
         <div class="flip-card">
             <div class="flip-card-inner">
@@ -273,7 +273,7 @@ def setup_core_verbs():
         <div><strong style="color:var(--accent-purple); font-size:1.15rem;">Ils / Elles font</strong><br><span style="color:var(--text-tertiary);">[иль / эль фон]</span><br>Они делают</div>
     </div>
 
-    <h3>2. 🃏 Интерактивные флеш-карточки (ФМ)</h3>
+    <h3>🃏 Карточки для запоминания</h3>
     <div class="flip-grid">
         <div class="flip-card">
             <div class="flip-card-inner">
@@ -362,7 +362,7 @@ def setup_core_verbs():
         <div><strong>Ils doivent</strong> [іль дуав] — Вони мусять</div>
     </div>
 
-    <h3>3. 🃏 Інтерактивні флеш-картки (ФМ)</h3>
+    <h3>🃏 Картки для запам'ятовування</h3>
     <div class="flip-grid">
         <div class="flip-card">
             <div class="flip-card-inner">
@@ -442,7 +442,7 @@ def setup_core_verbs():
         <div><strong>Ils doivent</strong> [иль дуав] — Они должны</div>
     </div>
 
-    <h3>3. 🃏 Интерактивные флеш-карточки (ФМ)</h3>
+    <h3>🃏 Карточки для запоминания</h3>
     <div class="flip-grid">
         <div class="flip-card">
             <div class="flip-card-inner">

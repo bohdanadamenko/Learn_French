@@ -63,7 +63,7 @@ def setup_a2_curriculum():
         </div>
     </div>
 
-    <h3>3. 🃏 Інтерактивні флеш-картки (ФМ)</h3>
+    <h3>🃏 Картки для запам'ятовування</h3>
     <div class="flip-grid">
         <div class="flip-card">
             <div class="flip-card-inner">
@@ -131,7 +131,7 @@ def setup_a2_curriculum():
         </div>
     </div>
 
-    <h3>3. 🃏 Интерактивные флеш-карточки (ФМ)</h3>
+    <h3>🃏 Карточки для запоминания</h3>
     <div class="flip-grid">
         <div class="flip-card">
             <div class="flip-card-inner">
@@ -216,7 +216,7 @@ def setup_a2_curriculum():
         </div>
     </div>
 
-    <h3>2. 🃏 Інтерактивні флеш-картки (ФМ)</h3>
+    <h3>🃏 Картки для запам'ятовування</h3>
     <div class="flip-grid">
         <div class="flip-card">
             <div class="flip-card-inner">
@@ -259,7 +259,7 @@ def setup_a2_curriculum():
         <li>Ils / Elles ➔ <strong>-aient</strong> [э] (<em>Ils étaient heureux</em>)</li>
     </ul>
 
-    <h3>2. 🃏 Интерактивные флеш-карточки (ФМ)</h3>
+    <h3>🃏 Карточки для запоминания</h3>
     <div class="flip-grid">
         <div class="flip-card">
             <div class="flip-card-inner">
@@ -313,7 +313,7 @@ def setup_a2_curriculum():
         <div><strong style="color:var(--accent-purple); font-size:1.15rem;">Vous devriez...</strong><br><span style="color:var(--text-tertiary);">[ву дьовріє]</span><br>Вам варто було б... (порада)</div>
     </div>
 
-    <h3>2. 🃏 Інтерактивні флеш-картки (ФМ)</h3>
+    <h3>🃏 Картки для запам'ятовування</h3>
     <div class="flip-grid">
         <div class="flip-card">
             <div class="flip-card-inner">
@@ -354,7 +354,7 @@ def setup_a2_curriculum():
         <div><strong style="color:var(--accent-purple); font-size:1.15rem;">Vous devriez...</strong><br><span style="color:var(--text-tertiary);">[ву дёврьé]</span><br>Вам следовало бы... (совет)</div>
     </div>
 
-    <h3>2. 🃏 Интерактивные флеш-карточки (ФМ)</h3>
+    <h3>🃏 Карточки для запоминания</h3>
     <div class="flip-grid">
         <div class="flip-card">
             <div class="flip-card-inner">
@@ -417,7 +417,7 @@ def setup_a2_curriculum():
         <li><em>Tu as des enfants ?</em> ➔ <strong>Oui, j'en ai deux.</strong> (Так, у мене їх двоє.)</li>
     </ul>
 
-    <h3>3. 🃏 Інтерактивні флеш-картки (ФМ)</h3>
+    <h3>🃏 Картки для запам'ятовування</h3>
     <div class="flip-grid">
         <div class="flip-card">
             <div class="flip-card-inner">
@@ -462,7 +462,7 @@ def setup_a2_curriculum():
         <li><em>Tu as des frères ?</em> ➔ <strong>Oui, j'en ai un.</strong> (Да, у меня есть один.)</li>
     </ul>
 
-    <h3>3. 🃏 Интерактивные флеш-карточки (ФМ)</h3>
+    <h3>🃏 Карточки для запоминания</h3>
     <div class="flip-grid">
         <div class="flip-card">
             <div class="flip-card-inner">
@@ -522,7 +522,7 @@ def setup_a2_curriculum():
         <li><strong>Non meublé / Meublé</strong> = Без меблів / З меблями.</li>
     </ul>
 
-    <h3>2. 🃏 Інтерактивні флеш-картки (ФМ)</h3>
+    <h3>🃏 Картки для запам'ятовування</h3>
     <div class="flip-grid">
         <div class="flip-card">
             <div class="flip-card-inner">
@@ -563,7 +563,7 @@ def setup_a2_curriculum():
         <li><strong>Les charges</strong> [ле шарж] = Коммунальные платежи (вода, отопление, уборка).</li>
     </ul>
 
-    <h3>2. 🃏 Интерактивные флеш-карточки (ФМ)</h3>
+    <h3>🃏 Карточки для запоминания</h3>
     <div class="flip-grid">
         <div class="flip-card">
             <div class="flip-card-inner">
