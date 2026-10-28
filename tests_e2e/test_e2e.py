@@ -278,16 +278,3 @@ class FrenchLessonsE2ETest(StaticLiveServerTestCase):
         expect(results_container).to_be_visible(timeout=5000)
         expect(results_container.locator(".results-score")).to_have_text("1 / 1")
 
-    def test_07_guest_login_flow(self):
-        """Test guest login from login page."""
-        self.page.goto(f"{self.live_server_url}/auth/login/")
-
-        # Click guest login link
-        guest_btn = self.page.locator(".guest-btn")
-        expect(guest_btn).to_be_visible()
-        guest_btn.click()
-
-        # Should redirect back to index and show user profile menu
-        expect(self.page).to_have_url(f"{self.live_server_url}/")
-        user_profile = self.page.locator(".user-profile")
-        expect(user_profile).to_be_visible()

@@ -40,27 +40,6 @@ class SignUpView(generic.CreateView):
     template_name = "users/signup.html"
 
 
-class GuestLoginView(generic.RedirectView):
-    url = reverse_lazy("core:index")
-
-    def get(self, request, *args, **kwargs):
-        # Get or create a guest user
-        guest_user, created = User.objects.get_or_create(
-            username='guest',
-            defaults={
-                'email': 'guest@example.com',
-                'first_name': 'Guest',
-                'last_name': 'User',
-            }
-        )
-        if created:
-            guest_user.set_unusable_password()
-            guest_user.save()
-        
-        login(request, guest_user, backend='django.contrib.auth.backends.ModelBackend')
-        return super().get(request, *args, **kwargs)
-
-
 class ProfileView(LoginRequiredMixin, generic.TemplateView):
     """Display user profile information."""
     template_name = "users/profile.html"
@@ -73,11 +52,7 @@ class ProfileView(LoginRequiredMixin, generic.TemplateView):
         # Check if user is connected via Google
         is_google_user = user.socialaccount_set.filter(provider='google').exists() if hasattr(user, 'socialaccount_set') else False
         
-        # Check if user is a guest
-        is_guest = user.username == 'guest'
-        
         context['is_google_user'] = is_google_user
-        context['is_guest'] = is_guest
         context['initials'] = self._get_initials(user)
         return context
 

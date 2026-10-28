@@ -29,7 +29,7 @@ An interactive platform for learning French, featuring lessons, quizzes, and pro
 - 📝 **CKEditor 5** for rich-text content in admin
 - 🔐 **Jazzmin Admin** — beautiful and functional admin panel
 - 🌙 **Dark/Light Theme** with smooth transitions
-- 🔐 **Premium Auth System** — Login, Signup, and Glassmorphism Guest Login
+- 🔐 **Premium Auth System** — Login and Signup with Email & Google OAuth
 - 👤 **Enhanced User Menu** — accessible profile dropdown for all users
 - 🌍 **Elegant Language Selection** — refined active states and transitions
 - 🔍 **Real-time Lesson Search**
@@ -46,7 +46,6 @@ The platform offers multiple ways to access the content:
 - 📧 **Email Registration**: Standard signup with email and password.
 - 🌐 **Google OAuth 2.0**: Quick and secure login via your Google account.
 - 🔗 **Automatic Linking**: Existing accounts are automatically linked to Google if the email addresses match.
-- 👤 **Guest Login**: One-click access to explore the platform without registration, featuring a premium glassmorphism design.
 
 ---
 
