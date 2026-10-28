@@ -31,3 +31,42 @@ class CustomSocialAccountAdapter(DefaultSocialAccountAdapter):
             client_id=google_client_id,
             secret=google_secret,
         )
+
+    def pre_social_login(self, request, sociallogin):
+        """
+        Auto-promote configured admin emails to staff and superuser on Google login.
+        """
+        super().pre_social_login(request, sociallogin)
+        admin_emails = [
+            e.strip().lower()
+            for e in config('ADMIN_EMAILS', default='adamenko.bogdan@gmail.com').split(',')
+            if e.strip()
+        ]
+        
+        email = ''
+        if sociallogin.account.extra_data:
+            email = sociallogin.account.extra_data.get('email', '')
+        if not email and sociallogin.user.email:
+            email = sociallogin.user.email
+
+        if email and email.lower() in admin_emails:
+            sociallogin.user.is_staff = True
+            sociallogin.user.is_superuser = True
+            if sociallogin.user.pk:
+                sociallogin.user.save(update_fields=['is_staff', 'is_superuser'])
+
+    def save_user(self, request, sociallogin, form=None):
+        """
+        Ensure newly registered social user gets staff/superuser if email matches admin list.
+        """
+        user = super().save_user(request, sociallogin, form=form)
+        admin_emails = [
+            e.strip().lower()
+            for e in config('ADMIN_EMAILS', default='adamenko.bogdan@gmail.com').split(',')
+            if e.strip()
+        ]
+        if user.email and user.email.lower() in admin_emails:
+            user.is_staff = True
+            user.is_superuser = True
+            user.save(update_fields=['is_staff', 'is_superuser'])
+        return user

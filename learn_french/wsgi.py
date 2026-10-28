@@ -36,9 +36,23 @@ if os.environ.get('VERCEL') or os.environ.get('AWS_LAMBDA_FUNCTION_NAME'):
             
             if backup_file.exists():
                 try:
-                    call_command('loaddata', str(backup_file))
+                    from apps.lessons.models import Topic
+                    force_reload = os.environ.get('FORCE_RELOAD_FIXTURES', '').lower() in ('1', 'true', 'yes')
+                    if force_reload or not Topic.objects.exists():
+                        call_command('loaddata', str(backup_file))
+                        print("Initialized topics, lessons, and quizzes from backup_data.json")
                 except Exception as load_err:
                     print(f"Content load notice: {load_err}")
+
+            # Ensure admin permissions for owner
+            try:
+                from apps.users.models import User
+                from django.db.models import Q
+                User.objects.filter(
+                    Q(email__iexact='adamenko.bogdan@gmail.com') | Q(username__iexact='Bohdan')
+                ).update(is_staff=True, is_superuser=True)
+            except Exception as admin_err:
+                print(f"Admin init warning: {admin_err}")
 
             # Initialize Site and SocialApp for Google OAuth if env vars present
             google_client_id = os.environ.get('GOOGLE_CLIENT_ID')
