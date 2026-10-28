@@ -23,7 +23,7 @@ if os.environ.get('VERCEL') or os.environ.get('AWS_LAMBDA_FUNCTION_NAME'):
     from django.core.management import call_command
 
     # 1. Run migrations if not yet run on this container
-    migrate_marker = Path('/tmp') / '.db_migrated'
+    migrate_marker = Path('/tmp') / '.db_migrated_v2'
     if not migrate_marker.exists():
         try:
             call_command('migrate', interactive=False)

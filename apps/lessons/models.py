@@ -38,7 +38,7 @@ class Lesson(models.Model):
         max_length=255, verbose_name=_("Заголовок и эмодзи (напр., Урок 1: 🇫🇷 Фонетика)"))
     
     data_lesson_id = models.CharField(
-        max_length=20, unique=True, verbose_name=_("ID урока (lesson1, lesson2...)"))
+        max_length=100, unique=True, verbose_name=_("ID урока (lesson1, lesson2...)"))
     
     content_html = CKEditor5Field(
         verbose_name=_("HTML-содержимое урока (с тегами H3, P, UL и т.д.)"), config_name='extends')
