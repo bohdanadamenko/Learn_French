@@ -35,6 +35,34 @@ if (os.environ.get('VERCEL') or os.environ.get('AWS_LAMBDA_FUNCTION_NAME')) and 
             call_command('migrate', interactive=False)
             if backup_file.exists():
                 call_command('loaddata', str(backup_file))
+
+            # Initialize Site and SocialApp for Google OAuth if env vars present
+            google_client_id = os.environ.get('GOOGLE_CLIENT_ID')
+            google_secret = os.environ.get('GOOGLE_CLIENT_SECRET')
+            if google_client_id and google_secret:
+                try:
+                    from django.contrib.sites.models import Site
+                    from allauth.socialaccount.models import SocialApp
+                    site, _ = Site.objects.get_or_create(id=1, defaults={'domain': 'www.learn-french.be', 'name': 'FrenchLessons'})
+                    if site.domain == 'example.com':
+                        site.domain = 'www.learn-french.be'
+                        site.name = 'FrenchLessons'
+                        site.save()
+                    app, _ = SocialApp.objects.get_or_create(
+                        provider='google',
+                        defaults={
+                            'name': 'FrenchLessons',
+                            'client_id': google_client_id,
+                            'secret': google_secret,
+                        }
+                    )
+                    app.client_id = google_client_id
+                    app.secret = google_secret
+                    app.sites.add(site)
+                    app.save()
+                except Exception as app_err:
+                    print(f"Vercel SocialApp init warning: {app_err}")
+
             init_marker.touch()
         except Exception as e:
             print(f"Vercel auto-init warning: {e}")
