@@ -6,12 +6,23 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 from django import forms
 from django.utils.translation import gettext_lazy as _
 from .models import User
+from .validators import validate_username_custom
 
 
 class SignUpForm(UserCreationForm):
     class Meta(UserCreationForm.Meta):
         model = User
         fields = ("username", "email")
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.fields['username'].help_text = _("Не менее 4 символов (разрешены буквы, цифры и знаки !, _, -).")
+
+    def clean_username(self):
+        username = super().clean_username()
+        if username:
+            validate_username_custom(username)
+        return username
 
 
 class ProfileUpdateForm(forms.ModelForm):
@@ -32,6 +43,12 @@ class ProfileUpdateForm(forms.ModelForm):
         labels = {
             'email': '',
         }
+
+    def clean_username(self):
+        username = self.cleaned_data.get('username')
+        if username:
+            validate_username_custom(username)
+        return username
 
 
 class SignUpView(generic.CreateView):

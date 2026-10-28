@@ -56,3 +56,66 @@ class UserModelTest(TestCase):
             password="pass123"
         )
         self.assertEqual(str(user), "displayname")
+
+
+class RegistrationValidationTest(TestCase):
+    """Tests for username and password validation rules during registration."""
+
+    def test_valid_registration(self):
+        """Test valid registration with min 4 chars, letters, digits, and !_-."""
+        from apps.users.views import SignUpForm
+        form = SignUpForm(data={
+            "username": "u_1-!",
+            "email": "valid@example.com",
+            "password1": "p_4-!",
+            "password2": "p_4-!",
+        })
+        self.assertTrue(form.is_valid(), form.errors)
+
+    def test_username_too_short(self):
+        """Test username with less than 4 characters is rejected."""
+        from apps.users.views import SignUpForm
+        form = SignUpForm(data={
+            "username": "abc",
+            "email": "short@example.com",
+            "password1": "valid123",
+            "password2": "valid123",
+        })
+        self.assertFalse(form.is_valid())
+        self.assertIn("username", form.errors)
+
+    def test_username_invalid_characters(self):
+        """Test username with invalid characters (e.g. @, space) is rejected."""
+        from apps.users.views import SignUpForm
+        form = SignUpForm(data={
+            "username": "user@name",
+            "email": "invalid_char@example.com",
+            "password1": "valid123",
+            "password2": "valid123",
+        })
+        self.assertFalse(form.is_valid())
+        self.assertIn("username", form.errors)
+
+    def test_password_too_short(self):
+        """Test password with less than 4 characters is rejected."""
+        from apps.users.views import SignUpForm
+        form = SignUpForm(data={
+            "username": "valid_user",
+            "email": "short_pass@example.com",
+            "password1": "123",
+            "password2": "123",
+        })
+        self.assertFalse(form.is_valid())
+        self.assertIn("password2", form.errors)
+
+    def test_password_invalid_characters(self):
+        """Test password with invalid characters (e.g. #, space) is rejected."""
+        from apps.users.views import SignUpForm
+        form = SignUpForm(data={
+            "username": "valid_user",
+            "email": "invalid_pass@example.com",
+            "password1": "pass#12",
+            "password2": "pass#12",
+        })
+        self.assertFalse(form.is_valid())
+        self.assertIn("password2", form.errors)
