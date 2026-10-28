@@ -34,12 +34,11 @@ if os.environ.get('VERCEL') or os.environ.get('AWS_LAMBDA_FUNCTION_NAME'):
         try:
             call_command('migrate', interactive=False)
             
-            try:
-                from apps.lessons.models import Lesson
-                if not Lesson.objects.exists() and backup_file.exists():
+            if backup_file.exists():
+                try:
                     call_command('loaddata', str(backup_file))
-            except Exception as load_err:
-                print(f"Content load notice: {load_err}")
+                except Exception as load_err:
+                    print(f"Content load notice: {load_err}")
 
             # Initialize Site and SocialApp for Google OAuth if env vars present
             google_client_id = os.environ.get('GOOGLE_CLIENT_ID')
