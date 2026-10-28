@@ -17,8 +17,8 @@ application = get_wsgi_application()
 # Vercel WSGI entrypoint alias
 app = application
 
-# Auto-initialize SQLite in /tmp on Vercel if external PostgreSQL is not configured
-if (os.environ.get('VERCEL') or os.environ.get('AWS_LAMBDA_FUNCTION_NAME')) and not os.environ.get('DATABASE_URL'):
+# Auto-initialize database on Vercel boot (both for SQLite and Neon PostgreSQL)
+if os.environ.get('VERCEL') or os.environ.get('AWS_LAMBDA_FUNCTION_NAME'):
     import hashlib
     from pathlib import Path
     from django.core.management import call_command
@@ -33,8 +33,13 @@ if (os.environ.get('VERCEL') or os.environ.get('AWS_LAMBDA_FUNCTION_NAME')) and 
     if not init_marker.exists():
         try:
             call_command('migrate', interactive=False)
-            if backup_file.exists():
-                call_command('loaddata', str(backup_file))
+            
+            try:
+                from apps.lessons.models import Lesson
+                if not Lesson.objects.exists() and backup_file.exists():
+                    call_command('loaddata', str(backup_file))
+            except Exception as load_err:
+                print(f"Content load notice: {load_err}")
 
             # Initialize Site and SocialApp for Google OAuth if env vars present
             google_client_id = os.environ.get('GOOGLE_CLIENT_ID')
